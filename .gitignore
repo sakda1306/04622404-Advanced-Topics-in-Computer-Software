@@ -2,3 +2,9 @@
 __pycache__/
 .venv/
 
+
+# Embedding stage: secrets, the local vector cache, and the vectors themselves
+.env
+*.key
+Pipeline/embedding_cache/
+Pipeline/outputs/embeddings_*.json
