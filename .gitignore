@@ -8,3 +8,7 @@ __pycache__/
 *.key
 Pipeline/embedding_cache/
 Pipeline/outputs/embeddings_*.json
+
+# Vector Store stage: the local index, rebuilt from the vectors above
+Pipeline/chroma_db/
+*.sqlite3

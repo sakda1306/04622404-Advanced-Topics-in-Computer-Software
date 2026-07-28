@@ -1,5 +1,6 @@
 appnope==0.1.4
 asttokens==3.0.2
+chromadb==1.5.9
 comm==0.2.3
 debugpy==1.8.21
 decorator==5.3.1
