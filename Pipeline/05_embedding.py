@@ -24,7 +24,9 @@ from embedding import (
     DEFAULT_BACKOFF,
     DEFAULT_BATCH_SIZE,
     DEFAULT_DIMENSION,
+    DEFAULT_MAX_BATCH_TOKENS,
     DEFAULT_MAX_RETRIES,
+    DEFAULT_TOKENS_PER_MINUTE,
     PROVIDERS,
     check_embeddings,
     embed_chunks,
@@ -62,6 +64,18 @@ def parse_args():
         help="must match the width the Vector Store stage indexes on",
     )
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE)
+    parser.add_argument(
+        "--max-batch-tokens",
+        type=int,
+        default=DEFAULT_MAX_BATCH_TOKENS,
+        help="close a batch once it reaches this many estimated tokens",
+    )
+    parser.add_argument(
+        "--tokens-per-minute",
+        type=int,
+        default=DEFAULT_TOKENS_PER_MINUTE,
+        help="pace requests against this budget; 0 disables pacing",
+    )
     parser.add_argument("--max-retries", type=int, default=DEFAULT_MAX_RETRIES)
     parser.add_argument("--backoff", type=float, default=DEFAULT_BACKOFF)
     parser.add_argument(
@@ -96,13 +110,17 @@ def main():
         "model": args.model,
         "dimension": args.dimension,
         "batch_size": args.batch_size,
+        "max_batch_tokens": args.max_batch_tokens,
+        "tokens_per_minute": args.tokens_per_minute,
         "max_retries": args.max_retries,
         "backoff": args.backoff,
         "use_cache": args.cache,
     }
     print(f"provider:  {args.provider}   model: {args.model or 'provider default'}")
     print(f"settings:  dimension={args.dimension} batch_size={args.batch_size} "
-          f"max_retries={args.max_retries} cache={args.cache}\n")
+          f"max_batch_tokens={args.max_batch_tokens} max_retries={args.max_retries} "
+          f"cache={args.cache}")
+    print(f"pacing:    {args.tokens_per_minute or 'off'} tokens/minute\n")
 
     all_records = []
     all_chunks = []

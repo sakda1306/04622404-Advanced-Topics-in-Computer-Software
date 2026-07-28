@@ -24,6 +24,10 @@ built from the chunk's own metadata is prepended, so a chunk cut from the
 middle of a posting still carries the job title and company it belongs to. The
 body itself is passed through untouched -- Cleaning already normalized it.
 
+Requests are batched, paced against a tokens-per-minute budget, and retried
+with exponential backoff, because a free-tier key is metered in tokens per
+minute and answers 429 for a whole batch once that window is full.
+
 Repeated runs are cheap. Each vector is cached on disk under a key covering the
 exact text, provider, model and dimension, so re-running only pays for chunks
 that are new or whose settings changed.
@@ -46,6 +50,20 @@ DEFAULT_DIMENSION = 1536
 # One request carries many chunks. 100 is the largest batch the Gemini endpoint
 # accepts, and is comfortably inside the OpenAI request size limit.
 DEFAULT_BATCH_SIZE = 100
+
+# The count above is not the binding limit: a free-tier key is metered in
+# tokens per minute, and 100 chunks of this corpus is around 45k tokens, well
+# over the 30k/minute the Gemini free tier allows. So a batch is capped by
+# estimated tokens as well as by count, and requests are paced against a
+# per-minute budget kept under the real one. Raise both on a paid key.
+DEFAULT_MAX_BATCH_TOKENS = 12000
+DEFAULT_TOKENS_PER_MINUTE = 25000
+
+# Rough token count without pulling in tiktoken, which this stage otherwise
+# does not need. English prose runs about four characters per token; the
+# estimate only has to be close enough to keep batches under a limit, and
+# erring high is the safe direction.
+CHARS_PER_TOKEN = 4
 
 DEFAULT_MAX_RETRIES = 5
 DEFAULT_BACKOFF = 1.0
@@ -243,10 +261,59 @@ def append_cache(entries, path=CACHE_PATH):
             handle.write(json.dumps({"key": key, "vector": vector}) + "\n")
 
 
-def batched(items, size):
-    """Split a list into consecutive batches of at most size items."""
-    for start in range(0, len(items), size):
-        yield items[start:start + size]
+def estimate_tokens(text):
+    """Approximate the token count of a string, rounding up."""
+    return max(1, -(-len(text) // CHARS_PER_TOKEN))
+
+
+def batched(items, size, max_tokens=None, text_of=lambda item: item):
+    """Split a list into batches bounded by item count and by estimated tokens.
+
+    A batch is closed as soon as adding the next item would break either
+    limit, so a single oversized item still goes out on its own rather than
+    being dropped.
+    """
+    batch = []
+    tokens = 0
+    for item in items:
+        cost = estimate_tokens(text_of(item))
+        full = len(batch) >= size or (max_tokens is not None and tokens + cost > max_tokens)
+        if batch and full:
+            yield batch
+            batch, tokens = [], 0
+        batch.append(item)
+        tokens += cost
+    if batch:
+        yield batch
+
+
+class RateLimiter:
+    """Hold requests back so a rolling minute never exceeds a token budget.
+
+    The free tier meters tokens per minute, not requests, and answers 429 for
+    the whole batch once the window is full. Waiting for room is cheaper than
+    sending, failing, and backing off.
+    """
+
+    def __init__(self, tokens_per_minute, log=print):
+        self.budget = tokens_per_minute
+        self.log = log
+        self.window = []
+
+    def take(self, tokens):
+        """Block until the last 60 seconds have room for this many tokens."""
+        if not self.budget:
+            return
+        while True:
+            now = time.monotonic()
+            self.window = [(at, cost) for at, cost in self.window if now - at < 60]
+            used = sum(cost for _, cost in self.window)
+            if used + tokens <= self.budget or not self.window:
+                self.window.append((now, tokens))
+                return
+            wait = 60 - (now - self.window[0][0]) + 0.5
+            self.log(f"    {used}/{self.budget} tokens used this minute, waiting {wait:.0f}s")
+            time.sleep(wait)
 
 
 def post_json(url, headers, body, timeout=DEFAULT_TIMEOUT):
@@ -286,7 +353,8 @@ def post_with_retry(url, headers, body, max_retries=DEFAULT_MAX_RETRIES,
 
 
 def embed_texts(texts, provider="gemini", model=None, dimension=DEFAULT_DIMENSION,
-                batch_size=DEFAULT_BATCH_SIZE, max_retries=DEFAULT_MAX_RETRIES,
+                batch_size=DEFAULT_BATCH_SIZE, max_batch_tokens=DEFAULT_MAX_BATCH_TOKENS,
+                tokens_per_minute=DEFAULT_TOKENS_PER_MINUTE, max_retries=DEFAULT_MAX_RETRIES,
                 backoff=DEFAULT_BACKOFF, cache_path=CACHE_PATH, use_cache=True, log=print):
     """Embed a list of strings and return (vectors, stats).
 
@@ -314,11 +382,14 @@ def embed_texts(texts, provider="gemini", model=None, dimension=DEFAULT_DIMENSIO
             f"at dimension {dimension}, batch size {batch_size}")
 
     fresh = []
-    batches = list(batched(list(pending.items()), batch_size))
+    limiter = RateLimiter(tokens_per_minute, log=log)
+    batches = list(batched(list(pending.items()), batch_size,
+                           max_tokens=max_batch_tokens, text_of=lambda item: item[1]))
     for number, batch in enumerate(batches, start=1):
         batch_keys = [key for key, _ in batch]
         batch_texts = [text for _, text in batch]
 
+        limiter.take(sum(estimate_tokens(text) for text in batch_texts))
         url, headers, body = provider.request(batch_texts, model, dimension, api_key)
         payload = post_with_retry(url, headers, body, max_retries=max_retries,
                                   backoff=backoff, log=log)
@@ -334,7 +405,8 @@ def embed_texts(texts, provider="gemini", model=None, dimension=DEFAULT_DIMENSIO
             cache[key] = vector
             fresh.append((key, vector))
 
-        log(f"  batch {number}/{len(batches)}  {len(batch_texts)} texts  ok")
+        log(f"  batch {number}/{len(batches)}  {len(batch_texts)} texts  "
+            f"~{sum(estimate_tokens(text) for text in batch_texts)} tokens  ok")
 
     if use_cache:
         append_cache(fresh, cache_path)
