@@ -1,0 +1,738 @@
+[
+  {
+    "chunk_id": "aidevboard_ai:48720738-0f4b-483d-9739-14039ae457d0:0",
+    "id": "48720738-0f4b-483d-9739-14039ae457d0",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 204,
+    "text": "About Anthropic\nAbout the RL Teams\nOur Reinforcement Learning teams lead Anthropic's reinforcement learning research and development, playing a critical role in advancing our AI systems. We've contributed to all Claude models, with significant impacts on the autonomy and coding capabilities of Claude Sonnet 4.6 and Opus 4.6. Our work spans several key areas:\nDeveloping systems that enable models to use computers effectively\nAdvancing code generation through reinforcement learning\nPioneering fundamental RL research for large language models\nBuilding scalable RL infrastructure and training methodologies\nEnhancing model reasoning capabilities\nWe collaborate closely with Anthropic's alignment and frontier red teams to ensure our systems are both capable and safe. We partner with the applied production training team to bring research innovations into deployed models, and are dedicated to implement our research at scale. Our Reinforcement Learning teams sit at the intersection of cutting-edge research and engineering excellence, with a deep commitment to building high-quality, scalable systems that push the boundaries of what AI can accomplish.",
+    "metadata": {
+      "title": "Research Engineer, Performance RL (Reinforcement Learning) ",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/48720738-0f4b-483d-9739-14039ae457d0"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:48720738-0f4b-483d-9739-14039ae457d0:1",
+    "id": "48720738-0f4b-483d-9739-14039ae457d0",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "About the Role We're hiring for the Code RL team within the RL organization. As a Research Engineer, you'll advance our models' ability to safely write correct, fast code for accelerators. You'll need to know accelerator performance well to turn it into tasks and signals models can learn from. Specifically, you will: Invent, design and implement RL environments and evaluations. Conduct experiments and shape our research roadmap. Deliver your work into training runs. Collaborate with other researchers, engineers, and performance engineering specialists across and outside Anthropic. You may be a good fit if you: Have expertise with accelerators (CUDA, ROCm, Triton, Pallas), ML framework programming (JAX or PyTorch). Have worked across the stack – kernels, model code, distributed systems. Know how to balance research exploration with engineering implementation. Are passionate about AI's potential and committed to developing safe and beneficial systems. Strong candidates may also have: Experience with reinforcement learning. Experience porting ML workloads between different types of accelerators. Familiarity with LLM training methodologies. The annual compensation range for this role is listed below. For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role. Annual Salary: $350,000 — $850,000 USD Logistics Minimum education: Bachelor’s degree or an equivalent combination of education, training, and/or experience Required field of study: A field relevant to the role as demonstrated through coursework, training, or professional experience Minimum years of experience: Years of experience required will correlate with the internal job level requirements for the position Location-based hybrid policy: Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices. Visa sponsorship: We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this. We encourage you to apply even if you do not believe you meet every single qualification. Not all strong candidates will meet every single qualification as listed. Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to",
+    "metadata": {
+      "title": "Research Engineer, Performance RL (Reinforcement Learning) ",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/48720738-0f4b-483d-9739-14039ae457d0"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:48720738-0f4b-483d-9739-14039ae457d0:2",
+    "id": "48720738-0f4b-483d-9739-14039ae457d0",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 195,
+    "text": "single qualification. Not all strong candidates will meet every single qualification as listed. Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team. Your safety matters to us. To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a",
+    "metadata": {
+      "title": "Research Engineer, Performance RL (Reinforcement Learning) ",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/48720738-0f4b-483d-9739-14039ae457d0"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f47b2b52-9138-4056-a197-783873a96c39:0",
+    "id": "f47b2b52-9138-4056-a197-783873a96c39",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 495,
+    "text": "SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge. Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. We operate with a flat organizational structure. All employees are expected to be hands-on and to contribute directly to the company’s mission. Leadership is given to those who show initiative and consistently deliver excellence. Work ethic and strong prioritization skills are important. All employees are expected to have strong communication skills. They should be able to concisely and accurately share knowledge with their teammates. ABOUT THE ROLE: You will join the Grok Voice Model team to help build the world’s best voice AI. We deliver smooth, natural, low-latency spoken interactions — expressive, multilingual, and reliable across devices and real-time scenarios. We own the full training pipeline: massive data curation, premium audio processing, frontier speech-language pre-training, and intensive post-training to push quality, speed, and stability to the limit. Our goal: make talking to AI feel like conversing with the most charming, kind, and knowledgeable person imaginable. We’re seeking exceptionally smart, execution-oriented engineers to help us get there. RESPONSIBILITIES: Design and execute large-scale speech data curation and processing pipelines, including collection of diverse real-world audio, synthetic data generation, and automated annotation workflows to enable high-quality model training and evaluation. Work on pre-training and post-training of speech-language models, with targeted enhancements through supervised fine-tuning, reinforcement learning, and other techniques to ensure Grok Voice responses are accurate, factually grounded, natural and idiomatic in spoken style, conversational in tone, and fluent across multiple languages. Build and iterate a comprehensive evaluation framework covering objective metrics (accuracy, quality, latency, expressiveness), human preference studies, content factuality assessments, real-time interaction quality, and experimentation infrastructure to measure and improve performance. Work closely with product teams to integrate voice models into applications and real-time environments, define spoken interaction specifications, and handle the full lifecycle from prototype to global-scale deployment for stable, low-latency, delightful voice experiences. BASIC QUALIFICATIONS: Python expert with deep proficiency in writing clean, efficient code for AI/ML systems. Hands-on experience processing large-scale datasets using tools like Spark and Ray for cleaning, augmentation, and feature extraction. Proficiency in pre-training and post-training speech-language models using",
+    "metadata": {
+      "title": "Member of Technical Staff - Voice Model",
+      "company": "xAI",
+      "url": "https://aidevboard.com/job/f47b2b52-9138-4056-a197-783873a96c39"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f47b2b52-9138-4056-a197-783873a96c39:1",
+    "id": "f47b2b52-9138-4056-a197-783873a96c39",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 253,
+    "text": "expert with deep proficiency in writing clean, efficient code for AI/ML systems. Hands-on experience processing large-scale datasets using tools like Spark and Ray for cleaning, augmentation, and feature extraction. Proficiency in pre-training and post-training speech-language models using JAX/PyTorch, including supervised fine-tuning, reinforcement learning, and optimizations for accuracy, factuality, natural spoken style, detail, and multilingual fluency. Ability to set up and run rigorous evaluation pipelines: objective metrics, human preference studies, content factuality checks, and iterative A/B testing to drive model improvements. Experience building or working with large-scale distributed training and inference systems on Kubernetes. Proactive, self-driven attitude — ready to grind in a fast-paced, high-caliber team to deliver outstanding voice AI experiences. COMPENSATION AND BENEFITS: $150,000 - $450,000 USD Base salary is just one part of our total rewards package at SpaceXAI, which also includes equity, comprehensive medical, vision, and dental coverage, access to a 401(k) retirement plan, short & long-term disability insurance, life insurance, and various other discounts and perks. SpaceXAI is an equal opportunity employer. For details on data processing, view our Recruitment Privacy Notice .",
+    "metadata": {
+      "title": "Member of Technical Staff - Voice Model",
+      "company": "xAI",
+      "url": "https://aidevboard.com/job/f47b2b52-9138-4056-a197-783873a96c39"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f8c6c621-b459-40f6-b41d-0baa191734ff:0",
+    "id": "f8c6c621-b459-40f6-b41d-0baa191734ff",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "About Anthropic About the role As a Research Lead on the Training Insights team, you'll develop the strategy for, and lead execution on, how we measure and characterize model capabilities across training and deployment. This is a hands-on leadership role: you'll drive original research into new evaluation methodologies while leading a small team of researchers and research engineers doing the same. Your work will span the full lifecycle of model development. You'll research and build new long-horizon evaluations that test the boundaries of what our models can achieve, develop novel approaches to measuring emerging capabilities, and deepen our understanding of how those capabilities develop — both during production RL training and after. You'll also take a cross-organizational view, working across Reinforcement Learning, Pretraining, Inference, Product, Alignment, Safeguards, and other teams to map the landscape of model evaluations at Anthropic and identify critical gaps in coverage. This role carries significant visibility and impact. You'll help shape the evaluation narrative for model releases, contributing directly to how Anthropic communicates about its models to both internal and external audiences. Done well, you will change how the industry measures and understands model capabilities, significantly furthering our safety mission. Responsibilities: Build new novel and long-horizon evaluations Develop novel measurement approaches for understanding how model capabilities emerge and evolve during RL training Lead strategic evaluation coverage across the company Shape the evaluation narrative for model releases Lead and mentor a small team of researchers and research engineers, setting research direction and fostering a culture of rigorous, creative research Design evaluation frameworks that balance scientific rigor with the practical demands of production training schedules Build and maintain relationships across Anthropic's research organization to ensure evaluation insights inform training and deployment decisions Contribute to the broader research community through publications, open-source contributions, or external engagement on evaluation best practices You may be a good fit if you: Have significant experience designing and running evaluations for large language models or similar complex ML systems Have led technical projects or teams, either formally or through sustained ownership of critical research directions Are equally comfortable designing experiments and writing code—you can move between research and implementation fluidly Think strategically about what to measure and why, not just how to measure it Can synthesize information across multiple teams and workstreams to form a coherent picture of model capabilities Communicate complex technical findings clearly to both technical and non-technical audiences Are results-oriented and thrive in fast-paced environments where priorities shift based on research findings Care deeply about AI safety and want your work to directly influence how capable AI systems are developed and deployed",
+    "metadata": {
+      "title": "Research Lead, Training Insights",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/f8c6c621-b459-40f6-b41d-0baa191734ff"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f8c6c621-b459-40f6-b41d-0baa191734ff:1",
+    "id": "f8c6c621-b459-40f6-b41d-0baa191734ff",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 278,
+    "text": "Communicate complex technical findings clearly to both technical and non-technical audiences Are results-oriented and thrive in fast-paced environments where priorities shift based on research findings Care deeply about AI safety and want your work to directly influence how capable AI systems are developed and deployed Strong candidates may also have: Experience building evaluations for long-horizon or agentic tasks Deep familiarity with Reinforcement Learning training dynamics and how model behavior changes during training Published research in machine learning evaluation, benchmarking, or related areas Experience with safety evaluation frameworks and red teaming methodologies Background in psychometrics, experimental psychology, or other measurement-focused disciplines A track record of communicating evaluation results to inform high-stakes decisions about model development or deployment Experience managing or mentoring researchers and engineers Representative projects: Designing and implementing a suite of long-horizon evaluations that test model capabilities on tasks requiring sustained reasoning, planning, and tool use over extended interactions Building systems to track capability development across RL training checkpoints, surfacing insights about when and how specific capabilities emerge Conducting a cross-org audit of evaluation coverage, identifying blind spots, and prioritizing new evaluations to fill critical gaps across Pretraining, RL, Inference, and Product Developing the evaluation methodology and narrative for a major model release, working with research leads and communications to clearly characterize model capabilities and limitations Researching and prototyping novel evaluation approaches for capabilities that are difficult to measure with existing benchmarks Leading a team",
+    "metadata": {
+      "title": "Research Lead, Training Insights",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/f8c6c621-b459-40f6-b41d-0baa191734ff"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:fd4226af-9faa-4819-8327-113cce284a3e:0",
+    "id": "fd4226af-9faa-4819-8327-113cce284a3e",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 410,
+    "text": "About the Role\nThe Engineering Acceleration Delivery / Continuous Deployment team builds and operates the systems that safely ship OpenAI’s infrastructure and product code to production.\nWe own the deployment platform, release pipelines, and rollout safety mechanisms that allow engineers across OpenAI to deploy changes rapidly while minimizing operational risk. Our mission is to make production deployments fast, safe, and increasingly autonomous.\nThis role sits at the intersection of developer productivity, distributed systems reliability, and large-scale infrastructure orchestration.\nIn This Role, You Will\n- Design and build continuous deployment infrastructure that safely rolls out changes across dozens of Kubernetes clusters and global regions.\n- Develop systems for progressive delivery, including canary releases, staged rollouts, and automated rollback.\n- Improve engineering velocity by reducing friction in the release pipeline and automating manual operational workflows.\n- Work with product and infrastructure teams to ensure their services are deployable, observable, and resilient at scale.\n- Implement and evolve deployment methodologies such as GitOps, infrastructure-as-code, and progressive delivery patterns.\n- Build systems that automatically evaluate deployment health using metrics, logs, traces, and alerts to detect regressions and trigger safe rollbacks.\n- Build systems that support agent-assisted or autonomous deployment workflows using modern AI tooling.\nTechnologies commonly used in this environment include:\n- Kubernetes for large-scale container orchestration and runtime infrastructure\n- Python and FastAPI for internal services\n- Terraform for infrastructure as code\n- GitOps-based deployment workflows (e.g., ArgoCD, Flux, or similar systems)\n- Buildkite for CI orchestration\nYou may be a strong fit if you:\n- Have worked with Kubernetes-based deployment systems at scale\n- Have experience building or operating continuous deployment platforms\n- Are familiar with GitOps tooling such as ArgoCD or Flux\n- Are excited about building AI-assisted systems and agents that intelligently shepherd software changes from commit to safe production rollout.\n- Care deeply about safe production rollouts and minimizing blast radius\n- Enjoy building internal platforms that improve developer productivity across the organization",
+    "metadata": {
+      "title": "Software Engineer, Delivery / CD",
+      "company": "OpenAI",
+      "url": "https://aidevboard.com/job/fd4226af-9faa-4819-8327-113cce284a3e"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:fd4226af-9faa-4819-8327-113cce284a3e:1",
+    "id": "fd4226af-9faa-4819-8327-113cce284a3e",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 499,
+    "text": "Compensation\n$230K – $490K + Offers Equity\nAbout OpenAI\nOpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.\nWe are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.\nFor additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement https://cdn.openai.com/policies/eeo-policy-statement.pdf.\nBackground checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.\nTo notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form https://form.asana.com/?d=57018692298241&k=5MqR40fZd7jlxVUh5J-UeA. No response will be provided to inquiries unrelated to job posting compliance.\nWe are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link https://form.asana.com/?k=bQ7w9h3iexRlicUdWRiwvg&d=57018692298241.\nOpenAI Global Applicant Privacy P",
+    "metadata": {
+      "title": "Software Engineer, Delivery / CD",
+      "company": "OpenAI",
+      "url": "https://aidevboard.com/job/fd4226af-9faa-4819-8327-113cce284a3e"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:7428a739-b63b-4260-a7d7-e88203ce9f56:0",
+    "id": "7428a739-b63b-4260-a7d7-e88203ce9f56",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 1,
+    "strategy": "heading",
+    "token_count": 326,
+    "text": "SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge. Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. We operate with a flat organizational structure. All employees are expected to be hands-on and to contribute directly to the company’s mission. Leadership is given to those who show initiative and consistently deliver excellence. Work ethic and strong prioritization skills are important. All employees are expected to have strong communication skills. They should be able to concisely and accurately share knowledge with their teammates.\nABOUT THE ROLE:\nYou will work on the most critical modeling challenges at any given time.\nYou will get clarity on your first project before an offer.\nBASIC QUALIFICATIONS:\nYou believe truth-seeking AI is the most important and challenging problem.\nYou are obsessed about building incredibly useful models.\nYou are a power user of AI models.\nIf you previously trained models used by millions of people it’s a big plus, but modeling experience is not required.\nYou take pride in your work and thrive in meritocratic environments.\nCOMPENSATION AND BENEFITS:\n$180,000 - $600,000 USD\nBase salary is just one part of our total rewards package at SpaceXAI, which also includes equity, comprehensive medical, vision, and dental coverage, access to a 401(k) retirement plan, short & long-term disability insurance, life insurance, and various other discounts and perks.\nSpaceXAI is an equal opportunity employer. For details on data processing, view our Recruitment Privacy Notice .",
+    "metadata": {
+      "title": "Member of Technical Staff - Model Training",
+      "company": "xAI",
+      "url": "https://aidevboard.com/job/7428a739-b63b-4260-a7d7-e88203ce9f56"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:80ef34be-f9a8-4166-aa70-a6284c364fcb:0",
+    "id": "80ef34be-f9a8-4166-aa70-a6284c364fcb",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 396,
+    "text": "Who we are\nAt Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.\nOur dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!\n.\nSee yourself at Twilio\nJoin the team as Twilio’s next Senior Principal Field Architect - AI Agents\nAbout the job\nThe Senior Principal Field Engineer is a critical, highly visible leader on the Field CTO team who bridges the gap between Twilio's product vision and our customers' needs. In the rapidly evolving era of AI, Twilio takes an open and flexible approach: we want developers to use their preferred AI coding tools and agent builder platforms to get up and running extremely quickly with our platform of APIs across a variety of services that address many use cases.\nIn this P7 Distinguished Engineer role, you will be in R&D and partner with Product, Engineering, Sales and GTM teams to spearhead the launch and adoption of our AI-native platform services. You will be the field engineering linchpin ensuring that the newly launched Twilio Conversations suite and Twilio Agent Connect (TAC) integrate flawlessly with the industry's top AI tools. Your mission is to ensure that insights from the field directly influence product strategy while actively building deep, functional partnerships with the companies driving the AI revolution. You will derisk adoption, increase partner integrations to accelerate adoption and create repeatable blueprints for mass adoption.",
+    "metadata": {
+      "title": "Senior Principal Field Architect - AI Agents",
+      "company": "Twilio",
+      "url": "https://aidevboard.com/job/80ef34be-f9a8-4166-aa70-a6284c364fcb"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:80ef34be-f9a8-4166-aa70-a6284c364fcb:1",
+    "id": "80ef34be-f9a8-4166-aa70-a6284c364fcb",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 275,
+    "text": "Responsibilities\nIn this role, you’ll:\nEcosystem Engineering & Integration: Engineer seamless integrations between Twilio Agent Connect (TAC), the Twilio Conversations suite, and hyperscaler AI platforms (AWS Bedrock, Azure Foundry, GCP Vertex AI Agent Builder, and Meta's Business Agent platform for example).\nChampion the Builder’s Mindset: Demonstrate a deep, practical understanding of modern software development. You must know how developers are using AI coding tools like Claude, Gemini, and Cursor to build conversational AI (omnichannel customer support agents, for example) on top of Twilio today and in the future.\nStrategic Partnerships: Act as a technical liaison and partnership builder with our Partner Teams with leading AI tool and cloud companies, ensuring Twilio's APIs work perfectly within their ecosystems to accelerate our customers' time-to-market.\nRoadmap & Vision Leadership: Present Twilio's technical roadmap and vision to customers. Consolidate insights into structured inputs for planning to help shape R&D priorities.\nSales & Go-to-Market Enablement: Support and provide direction to Sales and Specialist teams on the latest positioning, use cases, and technical roadmaps. Work with sales enablement to ensure teams are covering the right topics.\nCustomer Discovery: Partner with the Specialist team to capture technical and business requirements with key enterprise accounts identified as design partners.",
+    "metadata": {
+      "title": "Senior Principal Field Architect - AI Agents",
+      "company": "Twilio",
+      "url": "https://aidevboard.com/job/80ef34be-f9a8-4166-aa70-a6284c364fcb"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:80ef34be-f9a8-4166-aa70-a6284c364fcb:2",
+    "id": "80ef34be-f9a8-4166-aa70-a6284c364fcb",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 247,
+    "text": "Qualifications\nTwilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!\n*Required:\n10+ years of engineering experience coupled with 8+ years in enterprise technology strategy technical product management, cloud engineering, or executive consulting roles.\nCloud & AI Expertise: Deep architectural understanding of major cloud hyperscalers (AWS, Azure, GCP) and hands-on familiarity with conversational AI, chatbots, cognitive services, and machine learning architectures and engineering practices.\nEngineering Nuance: A strong technical background to discuss complex system architectures and integrate AI technologies. .\nStrategic Thinking & Leadership: Ability to develop and execute long-term solution architectures, roadmaps, and cross-functional initiatives at an enterprise scale with significant business impact.\nTechnical & Business Acumen: Exceptional communication skills to articulate complex concepts to both highly technical developers and business-focused executives.\nCustomer Focus & Agility: Proven ability to advocate for customer-centric engineering practices and thrive in a fast-paced, evolving environment with comfort operating in areas",
+    "metadata": {
+      "title": "Senior Principal Field Architect - AI Agents",
+      "company": "Twilio",
+      "url": "https://aidevboard.com/job/80ef34be-f9a8-4166-aa70-a6284c364fcb"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f9a5f1e9-0763-4bec-a0ed-2eea4126b457:0",
+    "id": "f9a5f1e9-0763-4bec-a0ed-2eea4126b457",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 269,
+    "text": "About Anthropic\nAbout the role\nCode RL at Anthropic drives reinforcement learning efforts behind Claude's coding capabilities, creating and scaling agentic coding environments. This is an engineering role with unusual latitude to set technical direction and standards.\nYou'll be part of a team solving the engineering side of research efforts such as embedding with research teams, getting up to speed on their systems and needs, and designing the frameworks, APIs, and infrastructure that let researchers move faster, then rotating off, leaving behind well-oiled systems those teams can understand, own, and maintain themselves. Your remit also includes the ongoing health of production RL runs: maintainable, monitored, and straightforward to triage.\nThe team's problem space spans the client side of sandboxed execution for agentic RL environments, large-scale data processing jobs, the lifecycle of production datasets, and the frameworks researchers build environments on. You won't own all of this yourself, you'll take on the slices where your depth matters most. You'll be a strong fit if you have deep expertise in Python, a refined sense of taste for API and framework design, and hard-won intuition for how complex systems fail — especially silently. You should be comfortable diving into messy research code, finding the load-bearing abstractions, and improving them incrementally while researchers continue to build on top of your work.",
+    "metadata": {
+      "title": "Staff Software Engineer, Code RL",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/f9a5f1e9-0763-4bec-a0ed-2eea4126b457"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f9a5f1e9-0763-4bec-a0ed-2eea4126b457:1",
+    "id": "f9a5f1e9-0763-4bec-a0ed-2eea4126b457",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Key responsibilities Design widely-used APIs, frameworks, and abstractions that other engineers and researchers build on, with careful attention to interface legibility and principled defaults Embed with research teams on a rotational basis: understand their engineering needs, build systems and APIs that support their work, and transfer ownership so teams can maintain those systems after you rotate off Work directly in research codebases, improving reliability and structure without slowing down the research they support Anticipate silent failure modes and prevent them structurally through type safety, well-designed invariants, targeted testing, and refactors that shrink the surface area for bugs Contribute to the reliability of production RL systems, including monitoring, regression detection, and triage tooling Help define engineering standards, review practices, and design patterns for a new team, and mentor researchers and engineers in adopting them Minimum qualifications Deep expertise in Python, including static typing, safe async and concurrency patterns, and writing performant Python code A track record of designing intuitive, safe APIs or frameworks that other engineers or teams adopted and built on Experience working productively in large, evolving, or research-style codebases that you didn't originally write Demonstrated ability to anticipate failure modes — especially silent ones — and prevent them structurally through system design, type safety, and testing Strong written and verbal communication skills, including the ability to explain system designs to collaborators with varied engineering backgrounds Comfort with ambiguity: able to scope your own work from a loosely defined problem and drive it to a maintainable outcome Preferred qualifications Experience building infrastructure, tooling, or frameworks for machine learning research or RL workflows Familiarity with reinforcement learning concepts, agentic systems, or LLM training pipelines Experience building or operating large-scale distributed systems Experience building client libraries or SDKs on top of sandboxed, containerized, or remote execution platforms Experience with large-scale data processing or dataset lifecycle management Experience designing plugin systems or extensible class hierarchies used across an organization Experience embedding with or consulting for other teams, including successfully handing off systems for others to own Experience defining code standards, lint rules, or static verification approaches adopted across multiple teams Prior experience as a technical lead, or setting engineering standards for a team Prior experience maintaining an open source project Representative projects These are examples of the challenges the team tackles; no one person will work on all of them: Design a base RL environment abstraction general enough to be subclassed across a wide range of environments Design a model-tool interface for sandboxed agentic environments that has explicit serialization semantics Partner with the platform teams that",
+    "metadata": {
+      "title": "Staff Software Engineer, Code RL",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/f9a5f1e9-0763-4bec-a0ed-2eea4126b457"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:f9a5f1e9-0763-4bec-a0ed-2eea4126b457:2",
+    "id": "f9a5f1e9-0763-4bec-a0ed-2eea4126b457",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 66,
+    "text": "no one person will work on all of them: Design a base RL environment abstraction general enough to be subclassed across a wide range of environments Design a model-tool interface for sandboxed agentic environments that has explicit serialization semantics Partner with the platform teams that own the sandbox runtime to specify low-level features that improve the integrity of agentic",
+    "metadata": {
+      "title": "Staff Software Engineer, Code RL",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/f9a5f1e9-0763-4bec-a0ed-2eea4126b457"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:41f85ee7-c11f-4afa-9aef-064477c2574d:0",
+    "id": "41f85ee7-c11f-4afa-9aef-064477c2574d",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 248,
+    "text": "About Anthropic\nAbout the role\nAnthropic's Environments organization builds and maintains the infrastructure that improves Claude’s capabilities through reinforcement learning. That includes the frameworks researchers use to build environments and the infrastructure responsible for running them. The team's mission is to productionize research. You'll embed with research teams, get up to speed on how they work, and design the frameworks and APIs that let them move faster, building systems the team can understand, own, and maintain themselves. Scope also includes keeping production RL runs healthy, maintainable, monitored, and easy to triage.\nYou'll be a strong fit if you have deep expertise in Python, a refined sense of taste for API and framework design, and good intuition for how complex systems fail, especially silently. It's a bonus if you've built and operated a stateful distributed system, such as a workflow engine, actor framework, or durable-execution runtime, where correctness depends on getting shared state and recovery right. You should be comfortable diving into messy research code, finding the abstractions that matter, and improving them incrementally while researchers continue to build on your work. You should also be comfortable using AI tools to accelerate your own development, but have an impulse towards deep verification.",
+    "metadata": {
+      "title": "Staff Software Engineer, Environments Infrastructure",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/41f85ee7-c11f-4afa-9aef-064477c2574d"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:41f85ee7-c11f-4afa-9aef-064477c2574d:1",
+    "id": "41f85ee7-c11f-4afa-9aef-064477c2574d",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Key responsibilities Design widely used APIs, frameworks, and abstractions that other engineers and researchers build on, making correct usage the default and ruling out entire classes of errors structurally Own the platform layers that sit beneath every environment, including the agent runtime Build the tooling that lets environment owners understand, debug, and maintain their environments in production without needing an infrastructure engineer in the loop Embed with research teams on a rotational basis, work directly in their codebases without slowing down the research they support, and transfer ownership when you rotate off Anticipate silent failure modes and prevent them structurally through type safety, well-designed invariants, targeted testing, and refactors that reduce the room for correctness issues Drive adoption of new frameworks across the organization, including deprecations and cutovers Help define the engineering standards, review practices, and design patterns for a new team, and mentor researchers and engineers in adopting them Minimum qualifications Deep expertise in Python, including static typing, safe async and concurrency patterns, and writing performant code Strong taste in API and framework design, the ability to explain why an interface is right or wrong rather than just recognizing it, and a track record of other engineers or teams adopting and building on frameworks you have built Experience designing or operating stateful concurrent or distributed systems, and reasoning carefully about failure, retires, idempotency, and consistency A habit of verification: you measure before you conclude, and you build the checks that let a system show it's correct Experience working productively in large, evolving, or research-style codebases that you didn't originally write Strong written and verbal communication with collaborators of varied engineering backgrounds, and comfort with ambiguity: able to scope your own work from a loosely defined problem and drive it to a maintainable outcome Preferred qualifications Experience building infrastructure, tooling, or frameworks for machine learning research or RL workflows, and familiarity with agentic systems or LLM training pipelines Experience building agent frameworks, orchestration engines, or multi-agent systems, including checkpoint and restore, replay, and coordination of long-running stateful processes Experience using AI coding tools on code where correctness matters, with good judgment about what to delegate and how to make the results verifiable Experience building client libraries or SDKs on top of sandboxed, containerized, or remote execution platforms Experience with large-scale data processing, dataset lifecycle management, or data lineage systems Experience designing serialization schemes, plugin systems, or extensible class hierarchies used across an organization Experience embedding with or consulting for other teams and handing off systems",
+    "metadata": {
+      "title": "Staff Software Engineer, Environments Infrastructure",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/41f85ee7-c11f-4afa-9aef-064477c2574d"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:41f85ee7-c11f-4afa-9aef-064477c2574d:2",
+    "id": "41f85ee7-c11f-4afa-9aef-064477c2574d",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 93,
+    "text": "or remote execution platforms Experience with large-scale data processing, dataset lifecycle management, or data lineage systems Experience designing serialization schemes, plugin systems, or extensible class hierarchies used across an organization Experience embedding with or consulting for other teams and handing off systems for others to own, or defining code standards adopted across teams, or prior experience as a technical lead Representative projects These are examples of the challenges the team tackles: Design a base RL environment abstraction that can be subclassed",
+    "metadata": {
+      "title": "Staff Software Engineer, Environments Infrastructure",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/41f85ee7-c11f-4afa-9aef-064477c2574d"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:145cd846-4fea-4df7-a373-0f0eba950f29:0",
+    "id": "145cd846-4fea-4df7-a373-0f0eba950f29",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 143,
+    "text": "About Anthropic\nAbout the role\nWe're looking for a Research Scientist who has done hands-on research on large models (pretraining, fine-tuning, RL, evals, or agents scaffolds) and wants to focus on measuring and understanding recursive-self-improvement. You know what the model-development loop looks like from the inside: which signals matter and where the real bottlenecks are. On this team you'll use that judgment to decide what's worth measuring, design the evaluations and models that measure it, and interpret what the results mean for how fast this is moving.\nWe're hiring at both junior and senior levels. Senior researchers should be comfortable doing hands-on technical work alongside setting research direction.",
+    "metadata": {
+      "title": "Research Scientist, Takeoff Intel",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/145cd846-4fea-4df7-a373-0f0eba950f29"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:145cd846-4fea-4df7-a373-0f0eba950f29:1",
+    "id": "145cd846-4fea-4df7-a373-0f0eba950f29",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Responsibilities Identify the signals that track AI R&D acceleration and design the evaluations that measure them Build quantitative models of capability growth and self-improvement dynamics, grounded in evaluation and telemetry data Run experiments and evals to test hypotheses about automation and capability Make opinionated research bets and own the outcome Write graded assessments of what our measurements show, for internal decision-makers and public reporting Collaborate with pretraining, RL, economic research, and policy teams You may be a good fit if you Have done hands-on research on large language models: pretraining, fine-tuning, RL, evals, or agent systems Have strong quantitative instincts, are comfortable with quantitative modeling and reasoning Have experience in forecasting, may have published AI forecasting scenarios Can design an evaluation from a vague question and defend the methodology Write clearly and calibrate: state confidence, name what would change your conclusion Are motivated by impact: comfortable with work whose output is graded assessments and system-card sections more often than papers Care about AI safety and think carefully about where rapid capability growth leads Strong candidates may also have Trained or RL'd frontier models hands-on Experience with scaling laws, capability forecasting, or emergent-capability studies A physics, applied-math, or similarly quantitative background that moved into ML Written a system card section, capability report, or methodology document that others cite Experience supervising and correcting AI-written code Some examples of our work Anthropic ECI: our adaptation of Epoch Capabilities Index published in all recent system cards to measure capability acceleration AI R&D capability assessments in the Claude system cards When AI Builds Itself : all data in the article comes from our team The annual compensation range for this role is listed below. For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role. Annual Salary: $350,000 — $850,000 USD Logistics Minimum education: Bachelor’s degree or an equivalent combination of education, training, and/or experience Required field of study: A field relevant to the role as demonstrated through coursework, training, or professional experience Minimum years of experience: Years of experience required will correlate with the internal job level requirements for the position Location-based hybrid policy: Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices. Visa sponsorship: We do sponsor visas! However, we aren't",
+    "metadata": {
+      "title": "Research Scientist, Takeoff Intel",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/145cd846-4fea-4df7-a373-0f0eba950f29"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:145cd846-4fea-4df7-a373-0f0eba950f29:2",
+    "id": "145cd846-4fea-4df7-a373-0f0eba950f29",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 240,
+    "text": "policy: Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices. Visa sponsorship: We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this. We encourage you to apply even if you do not believe you meet every single qualification. Not all strong candidates will meet every single qualification as listed. Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team. Your safety matters to us. To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses",
+    "metadata": {
+      "title": "Research Scientist, Takeoff Intel",
+      "company": "Anthropic",
+      "url": "https://aidevboard.com/job/145cd846-4fea-4df7-a373-0f0eba950f29"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:756b530d-4528-4497-9a2f-77fe8156d8e4:0",
+    "id": "756b530d-4528-4497-9a2f-77fe8156d8e4",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Samsara, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and manufacturing — and we are excited to help digitally transform their operations at scale. Working at Samsara means you’ll help define the future of physical operations and be on a team that’s shaping an exciting array of product solutions, including Video-Based Safety, Vehicle Telematics, Apps and Driver Workflows, and Equipment Monitoring. As part of a recently public company, you’ll have the autonomy and support to make an impact as we build for the long term. About the role: Samsara’s Revenue Operations AI & Data Team is building the future of how we go to market — with intelligence, personalization, and speed. We’re a high-impact team of builders, scientists, and strategists focused on transforming sales operations through AI. Our mission is to help sellers reach the right customer at the right time with the right message — and to put everything they need at their fingertips, whether that’s data from Salesforce, context from a past call, or content that wins deals. As a Senior Software Engineer, AI Platform, you’ll lead the design and development of core platform capabilities that power Samsara’s next generation of AI-driven experiences. You’ll focus on building scalable, reliable systems that enable multi-step AI workflows, model execution, and integrations across products, rather than individual features. This role sits at the intersection of distributed systems and applied AI, where correctness, extensibility, and operational excellence matter as much as speed. You’ll partner closely with AI engineers, backend engineers, and cross-functional teams to shape shared execution patterns, define platform contracts, and evolve the foundations that support S+Engine and future AI use cases. You’ll be empowered to make architectural decisions, move fast on early iterations, and help turn emerging AI capabilities into a durable, production-grade platform that other teams can build on with confidence. This is a remote position open to candidates residing in the US except the San Francisco Bay Metro Area, NYC Metro Area, and",
+    "metadata": {
+      "title": "Sr. Software Engineer II, AI Platform",
+      "company": "Samsara",
+      "url": "https://aidevboard.com/job/756b530d-4528-4497-9a2f-77fe8156d8e4"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:756b530d-4528-4497-9a2f-77fe8156d8e4:1",
+    "id": "756b530d-4528-4497-9a2f-77fe8156d8e4",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 472,
+    "text": "early iterations, and help turn emerging AI capabilities into a durable, production-grade platform that other teams can build on with confidence. This is a remote position open to candidates residing in the US except the San Francisco Bay Metro Area, NYC Metro Area, and Washington, D.C. Metro Area. You should apply if: You want to impact the industries that run our world: Your efforts will result in real-world impact—helping to keep the lights on, get food into grocery stores, reduce emissions, and most importantly, ensure workers return home safely. You are the architect of your own career: If you put in the work, this role won’t be your last at Samsara. We set up our employees for success and have built a culture that encourages rapid career development, countless opportunities to experiment and master your craft in a hyper growth environment. You’re energized by our opportunity: The vision we have to digitize large sectors of the global economy requires your full focus and best efforts to bring forth creative, ambitious ideas for our customers. You want to be with the best: At Samsara, we win together, celebrate together and support each other. You will be surrounded by a high-calibre team that will encourage you to do your best. Build and evolve core AI platform capabilities that enable teams to develop, run, and scale GenAI-powered applications across Samsara. Design and implement shared execution patterns, APIs, and services that support multi-step AI workflows and system integrations. Develop reliable, extensible backend systems that power AI-driven experiences used across the sales funnel and beyond. Work hands-on across the stack, from backend services and execution infrastructure to integration with AI models and tooling. Collaborate closely with AI engineers, data scientists, product partners, and sales operators to turn emerging AI use cases into production-ready platform capabilities. Minimum requirements for the role: 6+ years of professional software engineering experience (excluding internships/contract roles) , with a strong emphasis on building and operating large-scale, production backend or platform systems. Hands-on experience building and operating GenAI-powered systems in production , including integration with large language models (LLMs) or similar AI services. Experience designing or implementing GenAI workflows such as prompt orchestration, tool execution, routing, or multi-step reasoning pipelines. Proven experience designing and implementing distributed systems that",
+    "metadata": {
+      "title": "Sr. Software Engineer II, AI Platform",
+      "company": "Samsara",
+      "url": "https://aidevboard.com/job/756b530d-4528-4497-9a2f-77fe8156d8e4"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:9dc0505f-b9bb-460a-bedb-cd7310931d7a:0",
+    "id": "9dc0505f-b9bb-460a-bedb-cd7310931d7a",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 477,
+    "text": "Who we are\nAt Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.\nOur dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!\n.\nSee yourself at Twilio\nJoin the team as Twilio’s next Sr AI Architect - Conversation AI.\nAbout the job\nThis position is critical to leveraging Twilio’s massive data ecosystem and unmatched communication scale to build our customer facing AI capabilities, such as Twilio Conversational Memory, Enterprise Knowledge, Behavioral Data Intelligence and many more to power the future of our customer engagement platform.\nAs a Sr. AI Architect for Twilio Platform, you will also influence the design and evolution of our company-wide ML/AI Ops foundation. You will set the long-term technical vision, establish architectural guardrails, and ensure strict adherence to responsible AI principles. You will drive cross-organizational initiatives, solve complex technical challenges, and elevate the technical standards across all of Twilio. Transitioning AI/ML concepts from cutting-edge research to resilient, compliant, and cost-effective production systems will be your core mission.\nAs a Sr AI Architect, you will lead the company as the Distinguished Engineer and AI Contextual Engineering SME, serving as the guiding authority to our Architects, driving company-wide impact, and steering Twilio's overarching technical direction for conversational AI. In this pivotal leadership role, you will also influence the design and evolution of our company-wide ML/AI Ops foundation. You will set the long-term technical vision, establish architectural guardrails, and ensure strict adherence to responsible AI principles. By driving cross-organizational initiatives and solving complex technical challenges, you will elevate the technical standards across all of Twilio. Transitioning AI/ML concepts from cutting-edge research to resilient, compliant, and cost-effective production systems will be your core mission.",
+    "metadata": {
+      "title": "Sr AI Architect - Conversational AI",
+      "company": "Twilio",
+      "url": "https://aidevboard.com/job/9dc0505f-b9bb-460a-bedb-cd7310931d7a"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:9dc0505f-b9bb-460a-bedb-cd7310931d7a:1",
+    "id": "9dc0505f-b9bb-460a-bedb-cd7310931d7a",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 413,
+    "text": "Responsibilities\nIn this role, you’ll:\nDefine and drive a long-term AI/ML architectural vision that aligns with Twilio’s business goals, specifically focusing on how data and memory power the next generation of customer engagement.\nOwn the strategic roadmap for Twilio’s ML/AI Ops platform and tooling, ensuring a unified approach to model development, deployment, and lifecycle management across all platform capabilities.\nEvaluate and implement modern LLM architectures, RAG systems, MCP/tooling frameworks, and inference optimization techniques.\nLead architecture for agentic AI systems including orchestration, reasoning, tool usage, and contextual grounding.\nStay current with rapidly evolving advancements in LLMs, agent frameworks, reasoning systems, and AI infrastructure.\nTransition seamlessly from high-level strategic communication with executives to deep-dive code reviews and pair programming with engineers.\nPartner closely with Product Management to turn a roadmap into a sequence of technical milestones, ensuring that technical investments always map to customer value.\nHave a 'player-coach' mentality, and contribute hands-on technical expertise while providing strategic direction and mentorship to the team.\nQualifications\nTwilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!\nRequired:\n15+ years of experience in software engineering, with at least 6+ years specifically focused on building and scaling production-grade ML systems at a platform level.\nExtensive experience with ML Ops and LLM Ops patterns, including designing and implementing rigorous evaluation metrics, automated retraining loops, and monitoring for non-deterministic AI features at scale.\nDeep expertise in the design, architecture, and deployment of production-grade ML/AI systems, including deep knowledge of transformer models, LLM orchestration, embedding models, inference optimization and vector stores.\nDeep understanding of the Context Engineering lifecycle, including semantic retrieval, contextual compression, state management across multi-turn convers",
+    "metadata": {
+      "title": "Sr AI Architect - Conversational AI",
+      "company": "Twilio",
+      "url": "https://aidevboard.com/job/9dc0505f-b9bb-460a-bedb-cd7310931d7a"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:af754cf9-3428-4230-aabf-c048ea94b84d:0",
+    "id": "af754cf9-3428-4230-aabf-c048ea94b84d",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Secure Every Identity, from AI to Human Identity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. This work requires a relentless drive to solve complex challenges with real-world stakes. We are looking for builders and owners who operate with speed and urgency and execute with excellence. This is an opportunity to do career-defining work. We're all in on this mission. If you are too, let's talk. The Staff AI Security Engineer Opportunity Identity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. This work requires a relentless drive to solve complex challenges with real-world stakes. We are looking for builders and owners who operate with speed and urgency and execute with excellence. This is an opportunity to do career-defining work. We're all in on this mission. If you are too, let's talk. At Okta, we’re building the future of secure, enterprise-grade AI Agents. We’re looking for a Staff AI Security Engineer to join our dedicated Security team. In this role, you will define the technical vision, architecture, and hands-on security controls for AI models, agentic workflows, and autonomous systems across Okta. This is a senior individual contributor role for a hands-on engineer who can design scalable AI security infrastructure, mentor engineers, and partner with cross-functional teams to build secure \"paved roads\" for AI innovation. What you’ll be doing Secure AI Implementations: Design and deploy enterprise AI guardrails, gateways, and other controls to protect our agentic workflows from emerging threats Agent Hardening & Sandboxing: Establish security architectures for local and hosted agents to mitigate tool-calling, prompt injection, goal misalignment, and data exfiltration risks. Define Paved Roads & Security Standards: Develop secure design patterns and developer tools that allow engineering teams to build and deploy AI features safely and quickly. Threat Modeling for AI Workflows: Lead threat modeling and security reviews for agentic AI systems, enterprise deployments, and agent ecosystems. AI Discovery & Visibility: Build systems to discover, inventory, and assess AI usage and data flows across the enterprise. Agentic Platform Infrastructure: Design and operate internal AI security platforms and develop integrated AI capabilities that automate complex security operations. Technical Leadership & Mentorship: Drive technical alignment across product, security, and infrastructure teams. Mentor engineers and security",
+    "metadata": {
+      "title": "Staff AI Security Engineer",
+      "company": "Okta",
+      "url": "https://aidevboard.com/job/af754cf9-3428-4230-aabf-c048ea94b84d"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:af754cf9-3428-4230-aabf-c048ea94b84d:1",
+    "id": "af754cf9-3428-4230-aabf-c048ea94b84d",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 477,
+    "text": "flows across the enterprise. Agentic Platform Infrastructure: Design and operate internal AI security platforms and develop integrated AI capabilities that automate complex security operations. Technical Leadership & Mentorship: Drive technical alignment across product, security, and infrastructure teams. Mentor engineers and security practitioners across domains What you’ll bring to the role AI Security Expertise: Deep knowledge of the AI threat landscape, including OWASP, MITRE ATLAS, NIST AI RMF with practical experience prompt injection, excessive agency, and other AI-related threats. Software Engineering: 8+ years of experience in security engineering or backend software development, with strong coding proficiency in Python or Go and hands-on cloud experience. Agentic Framework Knowledge: Experience securing or auditing agentic frameworks (such as LangChain, Strands, Claude Agent SDK, or custom tool-calling agents) operating within sandboxed environments. Architectural Expertise: Proven ability to design scalable cloud infrastructure (AWS/GCP), API gateways, proxy architectures, and access controls for enterprise systems. Paved Road Construction: Track record of building developer-first security tools and platform controls that maintain engineering velocity. Technical Leadership: Strong communication skills with a history of driving technical strategy, influencing engineering leaders, and mentoring engineers. Education: Bachelor's degree in Computer Science, Cybersecurity, Information Security, or equivalent practical experience #LI-SM1 #LI-Hybrid P25518_3502406 The annual base salary range for this position for candidates located in the San Francisco Bay area is between: $180,000 — $247,500 USD Below is the annual base salary range for candidates located in California (excluding San Francisco Bay Area), Colorado, Illinois, New York and Washington. Your actual base salary will depend on factors such as your skills, qualifications, experience, and work location. In addition, Okta offers equity (where applicable), bonus, and benefits, including health, dental and vision insurance, 401(k), flexible spending account, and paid leave (including PTO and parental leave) in accordance with our applicable plans and policies. To learn more about our Total Rewards program please visit: https://rewards.okta.com/us . The annual base salary range for this position for candidates located in California (excluding San Francisco Bay Area), Colorado, Illinois, New York, and Washington is between: $161,000 — $221,000 USD The Okt",
+    "metadata": {
+      "title": "Staff AI Security Engineer",
+      "company": "Okta",
+      "url": "https://aidevboard.com/job/af754cf9-3428-4230-aabf-c048ea94b84d"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:c578e738-87fe-40c6-95b9-0f6118ec3842:0",
+    "id": "c578e738-87fe-40c6-95b9-0f6118ec3842",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 283,
+    "text": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 126 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit www.redditinc.com .\nReddit has a flexible workforce! If you happen to live close to one of our physical office locations our doors are open for you to come into the office as often as you'd like. Don't live near one of our offices? No worries: You can apply to work remotely in any country in which we have a physical presence.\nAbout the Role\nReddit is building a dedicated Ads ML Efficiency function to make model training and inference materially faster, cheaper, safer, and more scalable. This person will be a key senior engineer on that team, owning meaningful efficiency work across training systems, inference and serving paths, launch-readiness tooling, and reusable optimization capabilities for Ads ML.\nThis role sits at the intersection of ML modeling, systems optimization, and engineering leverage. The engineer will partner closely with ranking teams, serving owners, and ML Platform to identify important bottlenecks, land measurable efficiency wins, and help build the mechanisms that make those wins repeatable.",
+    "metadata": {
+      "title": "Senior Machine Learning Engineer, ML Efficiency",
+      "company": "Reddit",
+      "url": "https://aidevboard.com/job/c578e738-87fe-40c6-95b9-0f6118ec3842"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:c578e738-87fe-40c6-95b9-0f6118ec3842:1",
+    "id": "c578e738-87fe-40c6-95b9-0f6118ec3842",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 401,
+    "text": "What you’ll do\nIndependently own high-value optimization initiatives across training, inference, or launch-readiness for important Ads ML workloads.\nDiagnose bottlenecks in real production systems using profiling, benchmarking, and observability rather than intuition-first debugging.\nBuild performance tooling, optimization playbooks, observability hooks, guardrails, or efficiency primitives that help more than one team or workload over time.\nImprove launch-safety and efficiency readiness by contributing to load testing, fallback readiness, latency and cost visibility, and operational confidence for heavy models.\nWork with model owners and platform teams to land pragmatic fixes while helping the team gradually standardize repeated solutions.\nContribute to the team’s technical direction by surfacing patterns, tradeoffs, and opportunities for reuse or automation.\nMentor less-experienced engineers through code, debugging, measurement rigor, and strong execution habits.\nWhat we’re looking for\nDeep ML systems experience close to real production models and workloads, not just generic infra exposure.\nDirect hands-on experience improving training or serving efficiency with measurable outcomes.\nStrong technical judgment across model-level, runtime-level, and infrastructure-level optimization choices.\nAbility to own complex projects end to end and collaborate effectively across team boundaries.\nGood customer and platform instincts: can solve concrete bottlenecks while keeping maintainability, adoption, and future reuse in mind.\nStrong communication: able to explain tradeoffs clearly to engineers and partner teams.\nNice-to-have\nExperience with GPU training or serving migrations.\nExperience with PyTorch, distributed training frameworks, or kernel/runtime optimization.\nExperience building launch certification, efficiency benchmarking, or cost observability systems.\nExperience in organizations where platform and applied modeling responsibilities are split across multiple teams.\nExperience with model compression or deployment optimizations such as quantization, pruning, distillation, or checkpoint optimization.\nBenefits:\nComprehensive Healthcare Benefits and Income Replacement Programs\n401k with Employer Match\nGlobal Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support\nFamily Planning Support",
+    "metadata": {
+      "title": "Senior Machine Learning Engineer, ML Efficiency",
+      "company": "Reddit",
+      "url": "https://aidevboard.com/job/c578e738-87fe-40c6-95b9-0f6118ec3842"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:c578e738-87fe-40c6-95b9-0f6118ec3842:2",
+    "id": "c578e738-87fe-40c6-95b9-0f6118ec3842",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 215,
+    "text": "Gender-Affirming Care\nMental Health & Coaching Benefits\nFlexible Vacation & Paid Volunteer Time Off\nGenerous Paid Parental Leave\nPay Transparency:\nThis job posting may span more than one career level.\nIn addition to base salary, this job is eligible to receive equity in the form of restricted stock units, and depending on the position offered, it may also be eligible to receive a commission. Additionally, Reddit offers a wide range of benefits to U.S.-based employees, including medical, dental, and vision insurance, 401(k) program with employer match, generous time off for vacation, and parental leave. To learn more, please visit https://www.redditinc.com/careers/ .\nTo provide greater transparency to candidates, we share base salary ranges for all US-based job postings regardless of state. We set standard base pay ranges for all roles based on function, level, and country location, benchmarked against similar stage growth companies. Final offer amounts are determined by multiple factors including, skills, depth of work experience and relevant licenses/credentials, and may",
+    "metadata": {
+      "title": "Senior Machine Learning Engineer, ML Efficiency",
+      "company": "Reddit",
+      "url": "https://aidevboard.com/job/c578e738-87fe-40c6-95b9-0f6118ec3842"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:8c1a812e-e15b-4f41-adec-d56b9a321557:0",
+    "id": "8c1a812e-e15b-4f41-adec-d56b9a321557",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 499,
+    "text": "P-1930 At Databricks, we are passionate about enabling data and AI teams to solve the world's toughest problems — from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world's best data and AI infrastructure platform so our customers can use deep data insights to improve their business. Founded by engineers — and customer-obsessed — we leap at every opportunity to solve technical challenges, from designing next-gen UI/UX for interfacing with data to scaling our services and infrastructure across millions of virtual machines. And we're only getting started. As part of the AI team, you'll build the platforms and products that power everything from data apps, AI agents, model training, model serving, and Vector Search. You'll be joining a high-agency, high-visibility team operating at the frontier of AI infrastructure — with deep ties to research, product, and real-world enterprise use cases. Databricks Mosaic AI is one of our fastest-growing businesses, helping thousands of our customers democratize AI within their organizations. We're building the products and infrastructure that power the next generation of AI. The Foundation Model Inference team is the backbone of Databricks’ generative AI capabilities. We build the infrastructure that enables our customers to serve, scale, and optimize frontier models with enterprise-grade reliability and performance. Our Foundation Model APIs provide a unified platform that gives customers access to LLMs with the governance, flexibility, and scalability required for enterprise production workloads. We are looking for high-agency engineers who are excited to work on powering model inference at enterprise scale. The impact you will have: Build LLM infrastructure powering large-scale inference workloads for customers through partner models (OpenAI, Anthropic, Gemini) and self-hosted models (Qwen, GPT-OSS, Llama) Improve reliability, latency, and efficiency of distributed AI workloads Collaborate with platform, infra, and ML teams to deliver seamless end-to-end experiences Shape how developers and data scientists build and interact with AI on Databricks What we look for: 8+ years of experience in backend or infrastructure engineering Experience with distributed systems, scalable APIs, or cloud-native infrastructure Experience with real-time serving, ML infrastructure, or GPU orchestration Familiarity with service-oriented architecture, deployment pipelines, and system observability Bonus points for: Exposure to platforms like SageMaker, Vertex AI, or Azure ML Contributions to OSS projects like",
+    "metadata": {
+      "title": "Staff Software Engineer- Foundation Model Inference",
+      "company": "Databricks",
+      "url": "https://aidevboard.com/job/8c1a812e-e15b-4f41-adec-d56b9a321557"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:8c1a812e-e15b-4f41-adec-d56b9a321557:1",
+    "id": "8c1a812e-e15b-4f41-adec-d56b9a321557",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 487,
+    "text": "Experience with real-time serving, ML infrastructure, or GPU orchestration Familiarity with service-oriented architecture, deployment pipelines, and system observability Bonus points for: Exposure to platforms like SageMaker, Vertex AI, or Azure ML Contributions to OSS projects like MLflow, PyTorch, Ray, vLLM, SGLang Built developer platforms or internal tools supporting AI workflows Pay Range Transparency Databricks is committed to fair and equitable compensation practices. The pay range(s) for this role is listed below and represents the expected salary range for non-commissionable roles or on-target earnings for commissionable roles. Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to job-related skills, depth of experience, relevant certifications and training, and specific work location. Based on the factors above, Databricks anticipates utilizing the full width of the range. The total compensation package for this position may also include eligibility for annual performance bonus, equity, and the benefits listed above. For more information regarding which range your location is in visit our page here . Local Pay Range $190,000 — $265,000 USD About Databricks Databricks is the data and AI company. More than 10,000 organizations worldwide — including Comcast, Condé Nast, Grammarly, and over 50% of the Fortune 500 — rely on the Databricks Data Intelligence Platform to unify and democratize data, analytics and AI. Databricks is headquartered in San Francisco, with offices around the globe and was founded by the original creators of Lakehouse, Apache Spark™, Delta Lake and MLflow. To learn more, follow Databricks on Twitter , LinkedIn and Facebook . Benefits At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click here . Our Commitment to Diversity and Inclusion At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran sta",
+    "metadata": {
+      "title": "Staff Software Engineer- Foundation Model Inference",
+      "company": "Databricks",
+      "url": "https://aidevboard.com/job/8c1a812e-e15b-4f41-adec-d56b9a321557"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:db3b255c-0351-4198-b2f4-3f6968c9a5f2:0",
+    "id": "db3b255c-0351-4198-b2f4-3f6968c9a5f2",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 499,
+    "text": "Scale AI accelerates the development of AI systems by providing the data, infrastructure, and tooling that power the most advanced models in the world. Our teams operate at the intersection of cutting-edge research, large-scale engineering, and real-world deployment, partnering with leading frontier labs, enterprises, and government agencies to push Generative AI into new capabilities and applications. As AI rapidly evolves from static models to dynamic, agentic systems, Scale is building the foundational research, evaluation methodologies, and agent/RL infrastructure that will define this next era. You’ll join a high-impact research organization driving advances in large-language models, post-training, evaluation, and agentic/RL environments, helping shape how next-generation AI is built, measured, and deployed. As a Research Scientist Manager, you will lead a world-class team of research scientists and engineers, define the research roadmap, and drive execution from early prototyping to deployment. You’ll thrive in a fast-moving environment, balancing deep technical leadership with people management, vision setting, and delivery. You will: Lead, mentor and grow a team of research scientists and engineers working on GenAI research initiatives (e.g., evaluation, post-training, agents, RL environments). Define and drive a multi-year research roadmap: identify key scientific questions, set milestones, allocate resources, and ensure rigorous execution. Collaborate cross-functionally with engineering, product, client-facing teams and external academic or industry partners to translate research into components, insights, and actionable outcomes. Communicate compellingly: publish research, present at conferences, engage in open-source contributions, and represent the team externally. Drive an inclusive, high-performing culture: help your team through technical challenges, provide growth opportunities, and attract top talent. Stay deeply connected to the research community, understanding major trends, and helping set them. Thrive in a high-energy, fast-paced startup environment and are ready to dedicate the time and effort needed to drive impactful results. Ideally you'd have: 5+ years of hands-on research experience (PhD or equivalent preferred) in machine learning, deep learning, generative models, agent/rl systems or related domains. A strong track record of research excellence, including publications in top-tier ML/AI venues (NeurIPS, ICML, ICLR, ACL, etc.). Experience and track of recording in landing major research impacts in a fast-paced environment Experience leading or managing research teams. You’re excited to mentor, coach and develop talent. Excellent written and verbal communication",
+    "metadata": {
+      "title": "Manager, Research Scientist",
+      "company": "Scale AI",
+      "url": "https://aidevboard.com/job/db3b255c-0351-4198-b2f4-3f6968c9a5f2"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:db3b255c-0351-4198-b2f4-3f6968c9a5f2:1",
+    "id": "db3b255c-0351-4198-b2f4-3f6968c9a5f2",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 454,
+    "text": "ICML, ICLR, ACL, etc.). Experience and track of recording in landing major research impacts in a fast-paced environment Experience leading or managing research teams. You’re excited to mentor, coach and develop talent. Excellent written and verbal communication skills. You are able to articulate research ideas and outcomes to both technical and non-technical stakeholders. Compensation packages at Scale for eligible roles include base salary, equity, and benefits. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position and may be inclusive of several career levels at Scale; it will be determined during the interview process based on work location and additional factors, including job-related skills, experience, qualifications, interview performance, and relevant education or training. Scale employees in eligible roles are also granted equity based compensation, subject to Board of Director approval. Your recruiter can share more about the specific salary range for your preferred location during the hiring process, and confirm whether the hired role will be eligible for equity grant. You'll also receive benefits including, but not limited to: comprehensive health, dental and vision coverage, retirement benefits, a learning and development stipend, and generous PTO. Additionally, this role may be eligible for additional benefits such as a commuter stipend. Please reference the job posting's subtitle for where this position will be located. For pay transparency purposes, the base salary range for this full-time position in the locations of San Francisco, New York, Seattle is: $290,400 — $363,000 USD PLEASE NOTE: Our policy requires a 90-day waiting period before reconsidering candidates for the same role. This allows us to ensure a fair and thorough evaluation of all applicants. About Us: At Scale, our mission is to develop reliable AI systems for the world's most important decisions. Our products provide the high-quality data and full-stack technologies that power the world's leading models, and help enterprises and governments build, deploy, and oversee AI applications that deliver real impact. We work closely with industry leaders like Meta, Ernst & Young, Mayo Clinic, Time Inc., the Government of Qatar, and U.S. government agencies including the Army and Air Force. We are expanding our team to accelerate the development of AI applications. We believe that everyone shou",
+    "metadata": {
+      "title": "Manager, Research Scientist",
+      "company": "Scale AI",
+      "url": "https://aidevboard.com/job/db3b255c-0351-4198-b2f4-3f6968c9a5f2"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:9a596f69-e4b6-4f5d-9b1f-73d8bc94af23:0",
+    "id": "9a596f69-e4b6-4f5d-9b1f-73d8bc94af23",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Opportunity Overview: We are seeking a Senior Forward-Deployed Engineer to join our Forward Deployed Engineering team at Cohere Health. In this highly technical, customer-facing role, you will own end-to-end technical integration work with enterprise customers and partners—from pre-sales through production deployment—bridging complex healthcare systems with Cohere’s AI-first platform. You’ll partner closely with Engineering, Product, Solutions Architecture, and Customer Success teams to design and execute sophisticated integrations that improve access to care for millions of members. What you’ll do: Own end-to-end technical integration design and execution for enterprise customers, from initial scoping through production deployment, serving as the primary technical authority throughout Lead technical discovery, scoping, and proof-of-concept work during pre-sales cycles, creating technical proposals and estimates to validate feasibility for prospective customers Design system architectures that bridge customer IT environments with Cohere’s platform, making key architectural decisions that balance customer constraints with platform capabilities Work hands-on with AI/ML-enabled healthcare features—including clinical decision support, automated review, and intelligent routing—ensuring they meet regulatory requirements and clinical safety standards Produce high-quality technical artifacts including integration designs, architecture diagrams, data mappings, API implementation guides, and operational runbooks Build reusable integration patterns and templates that scale across customers, and continuously identify opportunities to improve platform capabilities based on implementation learnings Collaborate cross-functionally with Engineering, Product, Solutions Architecture, and Customer Success teams to drive successful go-live outcomes and mentor junior team members What you’ll need: 6–10+ years of software engineering experience with a strong backend/systems focus Healthcare industry experience, particularly on the payer side (health plans, managed care organizations), including familiarity with healthcare workflows, data standards, and regulatory requirements Deep expertise in data architecture and integration patterns: data modeling, transformation logic, schema design, and enterprise integration patterns (middleware, message queues, event-driven architectures) Hands-on experience with AWS cloud platforms (Lambda, ECS, RDS, S3, API Gateway, EventBridge) Strong API integration and authentication experience: RESTful APIs, webhooks, OAuth2/OIDC, SAML 2.0, JWT, mTLS, and API key management Production coding skills in modern languages (Python, Node.js, Java, Go, or similar) Experience working directly with enterprise customers in technical implementation roles (not just internal teams) Comfort with ambiguity and high agency: ability to define problems, propose solutions, and execute independently Direct experience with payer-side technology:",
+    "metadata": {
+      "title": "Sr. Forward Deployed Engineer",
+      "company": "Cohere Health",
+      "url": "https://aidevboard.com/job/9a596f69-e4b6-4f5d-9b1f-73d8bc94af23"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:9a596f69-e4b6-4f5d-9b1f-73d8bc94af23:1",
+    "id": "9a596f69-e4b6-4f5d-9b1f-73d8bc94af23",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 434,
+    "text": "Java, Go, or similar) Experience working directly with enterprise customers in technical implementation roles (not just internal teams) Comfort with ambiguity and high agency: ability to define problems, propose solutions, and execute independently Direct experience with payer-side technology: prior authorization platforms, utilization management systems, or claims processing is a plus Familiarity with healthcare data standards: FHIR, X12 (837, 278, 275), HL7v2, or similar specifications is a plus AI/ML integration experience: working with LLMs, embedding AI capabilities into production systems, or ML model deployment is a plus Infrastructure-as-code experience with Terraform, CloudFormation, or similar tools is a plus Experience in regulated environments (HIPAA, SOC2, HITRUST) is a plus Database expertise: SQL and NoSQL (PostgreSQL, MongoDB, DynamoDB), query optimization, and data modeling is a plus Identity and access management (IAM) experience: SSO implementations, federated identity, RBAC, and multi-tenancy security patterns is a plus Pay & Perks: 💻 Fully remote opportunity with about 5% travel 🩺 Medical, dental, vision, life, disability insurance, and Employee Assistance Program 📈 401K retirement plan with company match; flexible spending and health savings account 🏝️ Flex Time Off + company holidays 👶 Up to 14 weeks of paid parental leave 🐶 Pet insurance The salary range for this position is $135,000 to $155,000 annually; as part of a total benefits package which includes health insurance, 401k and bonus. In accordance with state applicable laws, Cohere is required to provide a reasonable estimate of the compensation range for this role. Individual pay decisions are ultimately based on a number of factors, including but not limited to qualifications for the role, experience level, skillset, and internal alignment. Interview Process*: Connect with Talent Acquisition for a Preliminary Phone Screening Meet your Hiring Manager! Design Exercises Cross-Functional Interview *Subject to change About Cohere Health: Cohere Health’s clinical intelligence platform delivers AI-powered solutions that streamline access to quality care by improving p",
+    "metadata": {
+      "title": "Sr. Forward Deployed Engineer",
+      "company": "Cohere Health",
+      "url": "https://aidevboard.com/job/9a596f69-e4b6-4f5d-9b1f-73d8bc94af23"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:c4678633-b5b2-4905-b05e-6d241202c544:0",
+    "id": "c4678633-b5b2-4905-b05e-6d241202c544",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "Astronomer empowers data teams to bring mission-critical software, analytics, and AI to life and is the company behind Astro, the industry-leading unified DataOps platform powered by Apache Airflow®. Astro accelerates building reliable data products that unlock insights, unleash AI value, and powers data-driven applications. Trusted by more than 800 of the world's leading enterprises, Astronomer lets businesses do more with their data. To learn more, visit www.astronomer.io http://www.astronomer.io. ABOUT THIS ROLE Apache Airflow is one of the most popular open-source data platform tools. It powers the data platforms at nearly every large company and fast-growing startups: Airbnb, Uber, OpenAI, Anthropic, Nike, Capital One, Disney all use Airflow extensively. At Astronomer, we’re the largest contributors to the project and are building commercial products around Airflow to make it easier to use, run, and scale. We’re in a unique position: as the company behind Apache Airflow, we see data as it moves across entire organizations—from raw ingestion to production dashboards, machine learning models, and AI products. Leveraging this vantage point, our R&D team is developing a global context layer for data—an intelligence layer that powers search and discovery, code generation for data and analytics, and automated root cause analysis. LLMs are already quite good at writing Python and SQL code against data platforms; we think this context layer will give them the metadata necessary for data practitioners everywhere to use LLMs effectively. As a Software Engineer on this team, you’ll help design and build this foundation and the applications around it. You’ll work on some of the hardest and most exciting challenges in data—search, information retrieval, and AI for data pracitioners—while collaborating with a small, highly skilled team that values velocity, creativity, and impact. This role sits at the intersection of applied research, software engineering, and product: we think it takes someone who can work across the stack to build, release, and scale products successfully in this space. Hybrid Work Model: For this role, you will embrace a flexible hybrid work model with at least 3 days per week in our New York City office. WHAT YOU GET TO DO: - Shape the future of AI for data engineering - build intelligent systems that understand, reason about, and optimize the flow of data across entire organizations. - Design and engineer the brain of Astronomer’s",
+    "metadata": {
+      "title": "Senior Software Engineer, Build - NYC",
+      "company": "Astronomer",
+      "url": "https://aidevboard.com/job/c4678633-b5b2-4905-b05e-6d241202c544"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:c4678633-b5b2-4905-b05e-6d241202c544:1",
+    "id": "c4678633-b5b2-4905-b05e-6d241202c544",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 499,
+    "text": "York City office. WHAT YOU GET TO DO: - Shape the future of AI for data engineering - build intelligent systems that understand, reason about, and optimize the flow of data across entire organizations. - Design and engineer the brain of Astronomer’s context layer, crafting components that power data modeling, semantic search, retrieval, and code generation. - Push the boundaries of applied AI - experiment with LLMs, embeddings, and cutting-edge retrieval techniques to create developer tools that deliver insights to you and our customers. - Turn research into reality - work side by side with R&D and product teams to bring early AI concepts to life in the product experience. - Solve high-impact information retrieval and search challenges at a global scale, leveraging Astronomer’s unparalleled visibility into data pipelines across industries. - Influence the technical vision and architecture for the next generation of AI-driven data products. - Represent Astronomer in the community - through open-source contributions, technical talks, and publications that showcase our leadership in AI and data innovation. WHAT YOU BRING TO THE ROLE: - 5-8 years of software engineering experience with Python or Go - Empathy for users, and a deep interest in improving the workflows of data professionals. - Familiarity with early-stage product development; comfortable working with ambiguity in a fast-changing field. - Experience with LLMs, vector databases, embeddings, or other applied AI areas—or a strong desire to dive in. - A creative, experimental mindset: you enjoy exploring uncharted areas, validating hypotheses, and learning through iteration. - Strong collaboration and communication skills—you can explain complex systems clearly to both technical and non-technical audiences. - A collaborative approach and comfort working in an evolving, research-driven environment where ideas move quickly. BONUS POINTS IF YOU HAVE: - A passion for AI systems for data, developer tools, or machine learning infrastructure. - Familiarity with Apache Airflow or other orchestration tools. - Demonstrated contributions to open source projects. - Experience in search, IR, or large-scale data infrastructure. - Exposure to early-stage startups or R&D organizations where ambiguity is the norm. - Experience building out agentic systems on top of frontier models. The estimated total compensation for this role ranges from $200,000 - $230,000 based on leveling and geography, along with an equity component and a comprehensive benefits package. This range is merely an estimate; actual compensation may deviate from this range based on skills, experience, and",
+    "metadata": {
+      "title": "Senior Software Engineer, Build - NYC",
+      "company": "Astronomer",
+      "url": "https://aidevboard.com/job/c4678633-b5b2-4905-b05e-6d241202c544"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:c4678633-b5b2-4905-b05e-6d241202c544:2",
+    "id": "c4678633-b5b2-4905-b05e-6d241202c544",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 2,
+    "chunk_count": 3,
+    "strategy": "heading",
+    "token_count": 52,
+    "text": "ranges from $200,000 - $230,000 based on leveling and geography, along with an equity component and a comprehensive benefits package. This range is merely an estimate; actual compensation may deviate from this range based on skills, experience, and qualifica",
+    "metadata": {
+      "title": "Senior Software Engineer, Build - NYC",
+      "company": "Astronomer",
+      "url": "https://aidevboard.com/job/c4678633-b5b2-4905-b05e-6d241202c544"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:25ca1525-1e44-4f42-9cc5-f91f67282348:0",
+    "id": "25ca1525-1e44-4f42-9cc5-f91f67282348",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "We're looking for an Engineering Manager to lead the Agent Context team in NYC. This team owns how Asana's AI systems search, retrieve, and reason over the work graph the search infrastructure, dense embedding pipelines, ranking systems, and evaluation frameworks that determine whether every AI experience at Asana is trustworthy or not. Your mission is to make retrieval comprehensive, reliable, and fast at enterprise scale, positioning Asana as the coordination and memory layer for the agentic enterprise. This is a high-leverage platform role: nearly every AI product at Asana - AI Teammates, chat experiences, agentic workflows depends on the systems this team builds. You will manage a team of senior engineers in New York collaborating daily with partner teams in San Francisco and Warsaw, and work alongside a dedicated Product Manager as your direct counterpart. This role is based in our New York office with an office-centric hybrid schedule. The standard in-office days are Monday, Tuesday, and Thursday; most Asanas have the option to work from home on Wednesdays. What you'll achieve Own the technical direction and delivery of Asana's retrieval stack end to end: lexical and semantic search, dense embedding generation and backfill at scale, chunking and ranking strategies, and RAG comprehensiveness across the work graph. Build and operate the evaluation infrastructure that makes retrieval quality measurable recall/precision benchmarks, offline and online evals, and comparative testing across retrieval backends - so quality decisions are made with data, not vibes. Drive the cost, performance, and quality tradeoffs that define this space: when semantic search earns its infrastructure cost over lexical, how to hit latency targets without sacrificing recall, and how retrieval improvements compound into cheaper, faster downstream LLM calls. Set and enforce the bar for how other teams at Asana integrate with retrieval: clear ownership of embedding decisions, rollout guidance, metrics to watch, and a platform posture that says no to unjustified infrastructure spend. Hire, grow, and retain a team of strong senior engineers in NYC, and lead effectively across three time zones with deliberate async communication practices. Partner with your PM counterpart to translate a multi-year platform thesis into a sequenced roadmap, and represent the team's technical strategy to engineering and product leadership. About you 8+ years of software engineering experience with 3+ years managing engineers, including senior engineers, on infrastructure or ML systems teams. You've hired, coached, grown, and when necessary exited engineers and your former reports would work for you again.",
+    "metadata": {
+      "title": "Senior Engineering Manager, Agent Context",
+      "company": "Asana",
+      "url": "https://aidevboard.com/job/25ca1525-1e44-4f42-9cc5-f91f67282348"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:25ca1525-1e44-4f42-9cc5-f91f67282348:1",
+    "id": "25ca1525-1e44-4f42-9cc5-f91f67282348",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 480,
+    "text": "8+ years of software engineering experience with 3+ years managing engineers, including senior engineers, on infrastructure or ML systems teams. You've hired, coached, grown, and when necessary exited engineers and your former reports would work for you again. You have shipped and operated production search, retrieval, or ML-serving systems at meaningful scale. You can speak concretely about systems you've run: the index architecture, the embedding models, the latency budgets, the incidents, and what you'd do differently. Deep working knowledge of the modern retrieval stack inverted indexes and BM25, vector search and embedding models, hybrid retrieval, chunking strategies, re-ranking and strong opinions about when each is worth its cost. You should be able to argue both sides of \"semantic search everywhere\" and tell us where you actually land. You've built or heavily used evaluation systems for ML/AI quality: golden datasets, recall/precision metrics, LLM-as-judge, online experimentation. You believe unmeasured quality claims are noise. You're technically credible enough to review a design doc for an embedding backfill or an OpenSearch mapping change and catch the problem the team missed. You don't need to write the code, but engineers should leave design reviews with you sharper than they arrived. You've led distributed teams across time zones and know that it runs on written communication. You write clearly, decisively, and often. Experience with LLM-powered products, agent systems, or RAG pipelines in production is strongly preferred. Experience scaling a platform team that serves internal customers is a plus. What we'll offer Our comprehensive compensation package plays a big part in how we recognize you for the impact you have on our path to achieving our mission. We believe that compensation should be reflective of the value you create relative to the market value of your role. To ensure pay is fair and not impacted by biases, we're committed to looking at market value which is why we check ourselves and conduct a yearly pay equity audit. For this role, the estimated base salary range is between $264,000 - $300,000 . The actual base salary will vary based on various factors, including market and individual qualifications objectively assessed during the interview process. The listed range above is a guideline, and the base salary range for this role may be modified. In addition to base salary, your compensation package may include additional components such as equity and",
+    "metadata": {
+      "title": "Senior Engineering Manager, Agent Context",
+      "company": "Asana",
+      "url": "https://aidevboard.com/job/25ca1525-1e44-4f42-9cc5-f91f67282348"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:aa3b817c-a815-4ea6-ad1b-0086fd1bf362:0",
+    "id": "aa3b817c-a815-4ea6-ad1b-0086fd1bf362",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologies to make this possible, with the ultimate goal of enabling human life on Mars. SR. MISSION INTEGRATION ENGINEER, AI (STARSHIELD) Special Programs leverages technology and launch capability to support national security efforts. Starshield, within Special Programs, is designed for government use, with an initial focus on earth observation, communications, and hosted payloads. The data applications team is building highly reliable mission-critical AI solutions supporting Starshield use-cases. You will drive the development and enhancement of core applications while collaborating cross-functionally to deliver end-to-end products. Aerospace experience is not required to be successful here—we want our engineers to bring fresh ideas from all areas. We look for engineers who love solving problems and seek to make an impact on an inspiring mission. As we expand this team, we’re looking for versatile, motivated, and collaborative engineers. Our team is responsible for identifying pain points, scoping product specifications, and designing and building LLM-powered software for government or enterprise use cases. This role will enhance model performance through system prompt tuning or fine-tuning, with an eye toward secure and scalable deployment. RESPONSIBILITIES: Develop full-stack solutions to manage scalable AI content interaction systems with user applications Develop prototypes to prove key design concepts and quantify technical constraints Apply creativity to build an immersive earth observation experience for users whether they are in offices or in the field See your software through from start-to-finish: from figuring out the core needs to prototyping, developing, and testing; to production rollout and beyond BASIC QUALIFICATIONS: Bachelor’s degree in computer science, data science, physics, mathematics, or engineering discipline 5+ experience developing Python applications PREFERRED SKILLS AND EXPERIENCE: Professional experience developing web services and distributed applications across cloud and on-premise networks Professional experience developing within Linux server environments, SSH, scripting, and configuration Experience with Kubernetes or similar container orchestration frameworks Experience with Model Context Protocol or large model content interaction systems Experience with developing RAG pipelines, tool callers, and AI orchestration systems Experience with Vector databases or implementing highly performant databases Experience with image data processing and machine learning Experience with graphics-intensive web application development ADDITIONAL REQUIREMENTS: Must be willing to work extended hours and weekends as needed Active Top Secret, Top Secret SCI, or DOE Level Q clearance An active clearance may provide the",
+    "metadata": {
+      "title": "Sr. Mission Integration Engineer, AI (Starshield)",
+      "company": "SpaceX",
+      "url": "https://aidevboard.com/job/aa3b817c-a815-4ea6-ad1b-0086fd1bf362"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:aa3b817c-a815-4ea6-ad1b-0086fd1bf362:1",
+    "id": "aa3b817c-a815-4ea6-ad1b-0086fd1bf362",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 472,
+    "text": "Experience with image data processing and machine learning Experience with graphics-intensive web application development ADDITIONAL REQUIREMENTS: Must be willing to work extended hours and weekends as needed Active Top Secret, Top Secret SCI, or DOE Level Q clearance An active clearance may provide the opportunity for you to work on sensitive SpaceX missions; if so, you will be subject to pre-employment drug and random drug and alcohol testing COMPENSATION AND BENEFITS: Pay range: Mission Integration Engineer/Senior: $130,000.00 - $180,000.00/per year Your actual level and base salary will be determined on a case-by-case basis and may vary based on the following considerations: job-related knowledge and skills, education, and experience. Those with an active clearance will receive a 10% differential, up to an additional $20,000 annually, once officially briefed into a classified program. Base salary is just one part of your total rewards package at SpaceX. You may also be eligible for long-term incentives, in the form of company stock, stock options, or long-term cash awards, as well as potential discretionary bonuses and the ability to purchase additional stock at a discount through an Employee Stock Purchase Plan. You will also receive access to comprehensive medical, vision, and dental coverage, access to a 401(k) retirement plan, short and long-term disability insurance, life insurance, paid parental leave, and various other discounts and perks. You may also accrue 3 weeks of paid vacation and will be eligible for 10 or more paid holidays per year. Employees accrue paid sick leave pursuant to Company policy which satisfies or exceeds the accrual, carryover, and use requirements of the law. ITAR REQUIREMENTS: To conform to U.S. Government export regulations, applicant must be a (i) U.S. citizen or national, (ii) U.S. lawful, permanent resident (aka green card holder), (iii) Refugee under 8 U.S.C. § 1157, or (iv) Asylee under 8 U.S.C. § 1158, or be eligible to obtain the required authorizations from the U.S. Department of State. Learn more about the ITAR here . SpaceX is an Equal Opportunity Employer; employment with SpaceX is governed on the basis of merit, competence and qualifications and will not be influenc",
+    "metadata": {
+      "title": "Sr. Mission Integration Engineer, AI (Starshield)",
+      "company": "SpaceX",
+      "url": "https://aidevboard.com/job/aa3b817c-a815-4ea6-ad1b-0086fd1bf362"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:b9050fe5-6a0f-49a3-bfec-6d3e32d4b422:0",
+    "id": "b9050fe5-6a0f-49a3-bfec-6d3e32d4b422",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 0,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 500,
+    "text": "ABOUT THE COMPANY Pilots don't train with real passengers. Actors don't rehearse with real audiences. Yet, the most consequential decisions in society are often pushed straight to production. Simile is changing that. We have built the first AI simulation of society, populated by generative agents based on real humans. Our research pioneered the field of AI-based simulation, proving it is possible to model human behavior with high accuracy. Today, we are developing a Foundation Model to predict human behavior in any situation, at any scale. We are backed by $100M in funding led by Index Ventures, with participation from Hanabi, A*, Bain Capital Ventures, and AI visionaries including Andrej Karpathy, Fei-Fei Li, Adam D'Angelo, and Guillermo Rauch. ABOUT THE TEAM The Security team is the guardian of our simulation’s integrity. We ensure that as we model human society, we do so with uncompromising privacy and world-class defenses. We operate at the intersection of application security, AI safety, and enterprise-grade privacy to protect our foundation models and our customers' most sensitive data. We organize our work into three core pillars: - Application Security: Partnering with engineers to \"shift left,\" conducting threat models and secure design reviews to catch vulnerabilities before they reach production. - Product and AI/ML Security: Defending our generative agents against emerging threats like prompt injection, data poisoning, and model extraction. - Infrastructure & Compliance: Hardening our multi-cloud footprint (AWS/GCP) and automating identity management (SAML/SCIM) to maintain SOC2 and HIPAA standards. ABOUT THE ROLE We are looking for a Security Engineer who thrives on securing novel AI products. You will own the security roadmap, ensuring our platform is resilient, compliant, and stays ahead of an ever-evolving threat landscape. RESPONSIBILITIES - Customer Security & Trust: Partner with our largest enterprise customers to navigate the procurement process , leading technical discussions regarding security agreements, providing comprehensive posture overviews, and ensuring alignment on rigorous data handling requirements - Lead Secure Design: Conduct threat modeling and secure design reviews for new features, ensuring security is a core consideration from initial design through implementation. - Automate Defenses: Develop tooling and \"paved paths\" that allow our engineering and research teams to ship code safely without sacrificing velocity. - Own Vulnerability Management: Oversee our bug bounty program and internal vulnerability scanning, prioritizing fixes based on actual risk to our foundation",
+    "metadata": {
+      "title": "Security Engineer - Member of Technical Staff",
+      "company": "Simile",
+      "url": "https://aidevboard.com/job/b9050fe5-6a0f-49a3-bfec-6d3e32d4b422"
+    }
+  },
+  {
+    "chunk_id": "aidevboard_ai:b9050fe5-6a0f-49a3-bfec-6d3e32d4b422:1",
+    "id": "b9050fe5-6a0f-49a3-bfec-6d3e32d4b422",
+    "source": "aidevboard_ai",
+    "source_file": "cleaned_aidevboard_ai.json",
+    "chunk_index": 1,
+    "chunk_count": 2,
+    "strategy": "heading",
+    "token_count": 491,
+    "text": "tooling and \"paved paths\" that allow our engineering and research teams to ship code safely without sacrificing velocity. - Own Vulnerability Management: Oversee our bug bounty program and internal vulnerability scanning, prioritizing fixes based on actual risk to our foundation models. - Secure AI/ML Pipelines: Build specific defenses against AI-novel risks, including protecting high-throughput inference systems and GPU-accelerated computing environments. - Champion GitOps Security: Manage security configurations via Terraform/Pulumi, ensuring \"security-as-code\" is the truth across all multi-region environments. REQUIREMENTS MUST HAVES - Experience: 5+ years of experience in application or infrastructure security within a high-growth environment. - Security Polyglot: Deep expertise in securing AWS environments; experience with GCP or Azure is a major plus. - Offensive Mindset: Ability to think like an attacker to anticipate risks, paired with a collaborative spirit to help engineers remediate them. - Operational Mindset: Experience with modern observability and a \"you build it, you run it\" mentality toward security infrastructure. - Agentic Security Tooling: Experience integrating agentic AI workflows into the developer lifecycle to provide real-time security feedback, enabling engineers to be \"secure-by-design\" as code is written rather than after the fact. NICE TO HAVES - AI/ML Security: Experience securing AI/ML workloads, specifically defending against prompt injection or protecting model weights. - Kubernetes Mastery: Strong K8s (EKS/GKE) experience, specifically around multi-tenant security and resource isolation. - Compliance Expertise: Proven track record of navigating SOC2, HIPAA, or similar regulatory frameworks in a cloud-native environment. COMPENSATION & BENEFITS At Simile, we provide competitive compensation packages that include base salary, equity, and comprehensive benefits. - Salary Range: $200,000 – $400,000 USD - Note: Final offers are based on experience, specialized skills, interview performance, and relevant training. - Equity: Grants are available for eligible roles, subject to board approval. - Health & Wellness: Comprehensive medical, dental, and vision coverage. - Time Off: Flexible time off policies to support work-life balance. OUR PROCESS We prioritize thoughtful conversations and clear examples of past work. Our hiring journey is designed to help both sides align on fit, working style, and expectations. Reapplication Policy: To ensure a fair and thor",
+    "metadata": {
+      "title": "Security Engineer - Member of Technical Staff",
+      "company": "Simile",
+      "url": "https://aidevboard.com/job/b9050fe5-6a0f-49a3-bfec-6d3e32d4b422"
+    }
+  }
+]
