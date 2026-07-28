@@ -20,3 +20,4 @@ The course follows the official course description and extends it with modern AI
 | Week | My part | Folder |
 |---|---|---|
 | 1 | Vector Database + Retrieval/LLM (LLM data pipeline, stage 6) | [`week1/`](week1/) |
+| 2 | RAG retrieval system built from scratch: chunking, embeddings, FAISS vector database, semantic search | [`week2/`](week2/) |

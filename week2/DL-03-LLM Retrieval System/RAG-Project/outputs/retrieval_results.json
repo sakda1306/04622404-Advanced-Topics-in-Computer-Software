@@ -1,0 +1,154 @@
+[
+  {
+    "query": "What is the age of the youngest player ever to feature in a FIFA World Cup final?",
+    "results": [
+      {
+        "chunk_id": 623,
+        "qa_id": 622,
+        "category": "World Cup",
+        "question": "Who is the youngest player ever to play in a World Cup match?",
+        "answer": "Norman Whiteside",
+        "text": "Question: Who is the youngest player ever to play in a World Cup match? Answer: Norman Whiteside",
+        "part_idx": 0,
+        "line_no": 2496,
+        "score": 0.8531070947647095
+      },
+      {
+        "chunk_id": 1834,
+        "qa_id": 1809,
+        "category": "World Cup",
+        "question": "Who is the youngest player to ever play in a World Cup final match?",
+        "answer": "Pele",
+        "text": "Question: Who is the youngest player to ever play in a World Cup final match? Answer: Pele",
+        "part_idx": 0,
+        "line_no": 7244,
+        "score": 0.850186824798584
+      },
+      {
+        "chunk_id": 75,
+        "qa_id": 75,
+        "category": "World Cup",
+        "question": "Who is the youngest player to have played in a FIFA World Cup match?",
+        "answer": "Norman Whiteside",
+        "text": "Question: Who is the youngest player to have played in a FIFA World Cup match? Answer: Norman Whiteside",
+        "part_idx": 0,
+        "line_no": 308,
+        "score": 0.842630922794342
+      }
+    ]
+  },
+  {
+    "query": "Which footballer holds the record for being the youngest participant in a World Cup final match?",
+    "results": [
+      {
+        "chunk_id": 220,
+        "qa_id": 220,
+        "category": "World Cup",
+        "question": "Who is the youngest footballer to have played in a World Cup match?",
+        "answer": "Norman Whiteside",
+        "text": "Question: Who is the youngest footballer to have played in a World Cup match? Answer: Norman Whiteside",
+        "part_idx": 0,
+        "line_no": 888,
+        "score": 0.8780772089958191
+      },
+      {
+        "chunk_id": 30,
+        "qa_id": 30,
+        "category": "World Cup",
+        "question": "Who is the youngest footballer to have played in a World Cup final match?",
+        "answer": "Pelé",
+        "text": "Question: Who is the youngest footballer to have played in a World Cup final match? Answer: Pelé",
+        "part_idx": 0,
+        "line_no": 128,
+        "score": 0.877871572971344
+      },
+      {
+        "chunk_id": 623,
+        "qa_id": 622,
+        "category": "World Cup",
+        "question": "Who is the youngest player ever to play in a World Cup match?",
+        "answer": "Norman Whiteside",
+        "text": "Question: Who is the youngest player ever to play in a World Cup match? Answer: Norman Whiteside",
+        "part_idx": 0,
+        "line_no": 2496,
+        "score": 0.8609097599983215
+      }
+    ]
+  },
+  {
+    "query": "Which club has the most consecutive English Premier League wins?",
+    "results": [
+      {
+        "chunk_id": 33,
+        "qa_id": 33,
+        "category": "English Premier League",
+        "question": "Which club has the most consecutive English Premier League wins?",
+        "answer": "Liverpool",
+        "text": "Question: Which club has the most consecutive English Premier League wins? Answer: Liverpool",
+        "part_idx": 0,
+        "line_no": 140,
+        "score": 0.9523413181304932
+      },
+      {
+        "chunk_id": 497,
+        "qa_id": 496,
+        "category": "English Premier League",
+        "question": "Which team has won the most English Premier League titles?",
+        "answer": "Manchester United",
+        "text": "Question: Which team has won the most English Premier League titles? Answer: Manchester United",
+        "part_idx": 0,
+        "line_no": 1992,
+        "score": 0.8922306299209595
+      },
+      {
+        "chunk_id": 753,
+        "qa_id": 752,
+        "category": "English Premier League",
+        "question": "Which team has the most consecutive Premier League titles?",
+        "answer": "Manchester United",
+        "text": "Question: Which team has the most consecutive Premier League titles? Answer: Manchester United",
+        "part_idx": 0,
+        "line_no": 3016,
+        "score": 0.8353201746940613
+      }
+    ]
+  },
+  {
+    "query": "What is the nickname of Portuguese footballer Cristiano Ronaldo?",
+    "results": [
+      {
+        "chunk_id": 122,
+        "qa_id": 122,
+        "category": "General Football Trivia",
+        "question": "What is the nickname of Portuguese footballer Cristiano Ronaldo?",
+        "answer": "CR7",
+        "text": "Question: What is the nickname of Portuguese footballer Cristiano Ronaldo? Answer: CR7",
+        "part_idx": 0,
+        "line_no": 496,
+        "score": 0.9576393365859985
+      },
+      {
+        "chunk_id": 129,
+        "qa_id": 129,
+        "category": "General Football Trivia",
+        "question": "What is the nickname of Brazilian footballer Ronaldinho?",
+        "answer": "Ronnie",
+        "text": "Question: What is the nickname of Brazilian footballer Ronaldinho? Answer: Ronnie",
+        "part_idx": 0,
+        "line_no": 524,
+        "score": 0.8442913889884949
+      },
+      {
+        "chunk_id": 2019,
+        "qa_id": 1993,
+        "category": "Player Nationality & Background",
+        "question": "Where is Cristiano Ronaldo from",
+        "answer": "Portugal",
+        "text": "Question: Where is Cristiano Ronaldo from Answer: Portugal",
+        "part_idx": 0,
+        "line_no": 7980,
+        "score": 0.8068100214004517
+      }
+    ]
+  }
+]
