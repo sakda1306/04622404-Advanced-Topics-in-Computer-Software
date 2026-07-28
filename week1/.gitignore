@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+.venv/
+
+
+# Embedding stage: secrets, the local vector cache, and the vectors themselves
+.env
+*.key
+Pipeline/embedding_cache/
+Pipeline/outputs/embeddings_*.json
+
+# Vector Store stage: the local index, rebuilt from the vectors above
+Pipeline/chroma_db/
+*.sqlite3
