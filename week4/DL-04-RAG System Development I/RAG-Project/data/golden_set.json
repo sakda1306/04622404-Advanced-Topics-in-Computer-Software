@@ -1,0 +1,795 @@
+{
+  "size": 56,
+  "items": [
+    {
+      "id": "g0022",
+      "category": "English Premier League",
+      "question": "Who scored the first ever goal in the English Premier League?",
+      "variants": {
+        "verbatim": "Who scored the first ever goal in the English Premier League?",
+        "slang": "Who scored the first ever goal in the EPL?",
+        "partial": "Who scored first ever",
+        "natural": "Could you tell me Who scored the first ever goal in the English Premier League? please"
+      },
+      "relevant_chunk_ids": [
+        22
+      ],
+      "reference_answer": "Brian Deane"
+    },
+    {
+      "id": "g0023",
+      "category": "MLS",
+      "question": "What team won the inaugural MLS Cup in the United States?",
+      "variants": {
+        "verbatim": "What team won the inaugural MLS Cup in the United States?",
+        "partial": "What team won inaugural",
+        "natural": "Could you tell me What team won the inaugural MLS Cup in the United States? please"
+      },
+      "relevant_chunk_ids": [
+        23
+      ],
+      "reference_answer": "D.C. United"
+    },
+    {
+      "id": "g0043",
+      "category": "Copa Libertadores",
+      "question": "Who holds the record for most goals scored in the history of the Copa Libertadores?",
+      "variants": {
+        "verbatim": "Who holds the record for most goals scored in the history of the Copa Libertadores?",
+        "partial": "Who holds record most goals",
+        "natural": "I wonder Who holds the record for most goals scored in the history of the Copa Libertadores? mate"
+      },
+      "relevant_chunk_ids": [
+        43
+      ],
+      "reference_answer": "Alberto Spencer"
+    },
+    {
+      "id": "g0045",
+      "category": "Ligue 1",
+      "question": "Which team has the most titles in the history of the Ligue 1?",
+      "variants": {
+        "verbatim": "Which team has the most titles in the history of the Ligue 1?",
+        "partial": "Which team has most",
+        "natural": "Which team has the most titles in the history of the Ligue 1?"
+      },
+      "relevant_chunk_ids": [
+        45
+      ],
+      "reference_answer": "Saint-Étienne"
+    },
+    {
+      "id": "g0069",
+      "category": "Serie A",
+      "question": "Who is the oldest player to score a goal in the Serie A?",
+      "variants": {
+        "verbatim": "Who is the oldest player to score a goal in the Serie A?",
+        "partial": "Who oldest player score",
+        "natural": "I wonder the oldest player to score a goal in the Serie A? please"
+      },
+      "relevant_chunk_ids": [
+        69
+      ],
+      "reference_answer": "Alessandro Costacurta"
+    },
+    {
+      "id": "g0077",
+      "category": "MLS",
+      "question": "Who is the youngest player to score a goal in the MLS?",
+      "variants": {
+        "verbatim": "Who is the youngest player to score a goal in the MLS?",
+        "partial": "Who youngest player",
+        "natural": "Could you tell me the youngest player to score a goal in the MLS? mate"
+      },
+      "relevant_chunk_ids": [
+        77
+      ],
+      "reference_answer": "Freddy Adu"
+    },
+    {
+      "id": "g0185",
+      "category": "Player Nationality & Background",
+      "question": "Which national football team is known as The Three Lions?",
+      "variants": {
+        "verbatim": "Which national football team is known as The Three Lions?",
+        "partial": "Which national football team known",
+        "natural": "I wonder Which national football team is known as The Three Lions? please"
+      },
+      "relevant_chunk_ids": [
+        185
+      ],
+      "reference_answer": "England"
+    },
+    {
+      "id": "g0251",
+      "category": "La Liga",
+      "question": "Who is the highest scoring British player in La Liga history?",
+      "variants": {
+        "verbatim": "Who is the highest scoring British player in La Liga history?",
+        "partial": "Who highest scoring British",
+        "natural": "I wonder the highest scoring British player in La Liga history? mate"
+      },
+      "relevant_chunk_ids": [
+        251
+      ],
+      "reference_answer": "Gareth Bale"
+    },
+    {
+      "id": "g0293",
+      "category": "English Premier League",
+      "question": "FA Premier League: which team won the most titles in the nineties?",
+      "variants": {
+        "verbatim": "FA Premier League: which team won the most titles in the nineties?",
+        "partial": "FA Premier League: which team",
+        "natural": "I want to know FA Premier League: which team won the most titles in the nineties? mate"
+      },
+      "relevant_chunk_ids": [
+        293
+      ],
+      "reference_answer": "Manchester United"
+    },
+    {
+      "id": "g0308",
+      "category": "La Liga",
+      "question": "June 2003 came the  biggest blockbuster of the summer, when La Liga Club Real Madrid sealed  the transfer deal of this super star. Who is he?",
+      "variants": {
+        "verbatim": "June 2003 came the  biggest blockbuster of the summer, when La Liga Club Real Madrid sealed  the transfer deal of this super star. Who is he?",
+        "partial": "June 2003 came biggest blockbuster summer, La Liga Club Real Madrid",
+        "natural": "June 2003 came the  biggest blockbuster of the summer, when La Liga Club Real Madrid sealed  the transfer deal of this super star. Who is he?"
+      },
+      "relevant_chunk_ids": [
+        308
+      ],
+      "reference_answer": "David Beckham"
+    },
+    {
+      "id": "g0317",
+      "category": "Bundesliga",
+      "question": "Argentinean sensation D'Alessandro transferred from River Plate to what Bundesliga club in 2003?",
+      "variants": {
+        "verbatim": "Argentinean sensation D'Alessandro transferred from River Plate to what Bundesliga club in 2003?",
+        "partial": "Argentinean sensation D'Alessandro transferred from River",
+        "natural": "Argentinean sensation D'Alessandro transferred from River Plate to what Bundesliga club in 2003?"
+      },
+      "relevant_chunk_ids": [
+        317
+      ],
+      "reference_answer": "Wolfsburg"
+    },
+    {
+      "id": "g0388",
+      "category": "Player Nationality & Background",
+      "question": "Which one of these clubs became, in 1979, the first from their country to win a major continental trophy?",
+      "variants": {
+        "verbatim": "Which one of these clubs became, in 1979, the first from their country to win a major continental trophy?",
+        "partial": "Which one these clubs became, 1979, first from",
+        "natural": "I wonder Which one of these clubs became, in 1979, the first from their country to win a major continental trophy? thanks"
+      },
+      "relevant_chunk_ids": [
+        389
+      ],
+      "reference_answer": "Olimpia Asuncion"
+    },
+    {
+      "id": "g0416",
+      "category": "Copa Libertadores",
+      "question": "Which Argentinian club, who wear red and white stripes, won the Copa Libertadores three straight times between 1968-1969-1970?",
+      "variants": {
+        "verbatim": "Which Argentinian club, who wear red and white stripes, won the Copa Libertadores three straight times between 1968-1969-1970?",
+        "partial": "Which Argentinian club, wear red white stripes, won Copa",
+        "natural": "Which Argentinian club, who wear red and white stripes, won the Copa Libertadores three straight times between 1968-1969-1970?"
+      },
+      "relevant_chunk_ids": [
+        417
+      ],
+      "reference_answer": "Estudiantes"
+    },
+    {
+      "id": "g0492",
+      "category": "Copa America",
+      "question": "Which country has won the most Copa America tournaments?",
+      "variants": {
+        "verbatim": "Which country has won the most Copa America tournaments?",
+        "partial": "Which country has won",
+        "natural": "I wonder Which country has won the most Copa America tournaments? mate"
+      },
+      "relevant_chunk_ids": [
+        493
+      ],
+      "reference_answer": "Uruguay"
+    },
+    {
+      "id": "g0507",
+      "category": "Serie A",
+      "question": "Who holds the record for most goals in a single Serie A season?",
+      "variants": {
+        "verbatim": "Who holds the record for most goals in a single Serie A season?",
+        "partial": "Who holds record most",
+        "natural": "I want to know Who holds the record for most goals in a single Serie A season?"
+      },
+      "relevant_chunk_ids": [
+        508
+      ],
+      "reference_answer": "Gonzalo Higuain"
+    },
+    {
+      "id": "g0511",
+      "category": "Bundesliga",
+      "question": "Who holds the record for most goals in a single Bundesliga season?",
+      "variants": {
+        "verbatim": "Who holds the record for most goals in a single Bundesliga season?",
+        "partial": "Who holds record most",
+        "natural": "I want to know Who holds the record for most goals in a single Bundesliga season?"
+      },
+      "relevant_chunk_ids": [
+        512
+      ],
+      "reference_answer": "Gerd Müller"
+    },
+    {
+      "id": "g0515",
+      "category": "Ligue 1",
+      "question": "Who holds the record for most goals in a single Ligue 1 season?",
+      "variants": {
+        "verbatim": "Who holds the record for most goals in a single Ligue 1 season?",
+        "partial": "Who holds record most",
+        "natural": "Could you tell me Who holds the record for most goals in a single Ligue 1 season? mate"
+      },
+      "relevant_chunk_ids": [
+        516
+      ],
+      "reference_answer": "Josip Skoblar"
+    },
+    {
+      "id": "g0540",
+      "category": "Copa Libertadores",
+      "question": "Who has made the most appearances in the Copa Libertadores?",
+      "variants": {
+        "verbatim": "Who has made the most appearances in the Copa Libertadores?",
+        "partial": "Who has made most",
+        "natural": "I wonder Who has made the most appearances in the Copa Libertadores? please"
+      },
+      "relevant_chunk_ids": [
+        541
+      ],
+      "reference_answer": "Ever Hugo Almeida"
+    },
+    {
+      "id": "g0548",
+      "category": "Ballon d'Or",
+      "question": "Who has won the most Ballon d'Or awards?",
+      "variants": {
+        "verbatim": "Who has won the most Ballon d'Or awards?",
+        "partial": "Who has won most",
+        "natural": "I want to know Who has won the most Ballon d'Or awards? mate"
+      },
+      "relevant_chunk_ids": [
+        549
+      ],
+      "reference_answer": "Lionel Messi"
+    },
+    {
+      "id": "g0553",
+      "category": "MLS",
+      "question": "Who has made the most appearances in the MLS?",
+      "variants": {
+        "verbatim": "Who has made the most appearances in the MLS?",
+        "partial": "Who has made",
+        "natural": "I wonder Who has made the most appearances in the MLS? mate"
+      },
+      "relevant_chunk_ids": [
+        554
+      ],
+      "reference_answer": "Kyle Beckerman"
+    },
+    {
+      "id": "g0576",
+      "category": "English Premier League",
+      "question": "Who is the oldest outfield player to appear in a Premier League match?",
+      "variants": {
+        "verbatim": "Who is the oldest outfield player to appear in a Premier League match?",
+        "slang": "Who is the oldest outpitch player to appear in a Premier League match?",
+        "partial": "Who oldest outfield player",
+        "natural": "the oldest outfield player to appear in a Premier League match?"
+      },
+      "relevant_chunk_ids": [
+        577
+      ],
+      "reference_answer": "Teddy Sheringham"
+    },
+    {
+      "id": "g0646",
+      "category": "Player Nationality & Background",
+      "question": "Who is the top scorer for the United States Women's National Team?",
+      "variants": {
+        "verbatim": "Who is the top scorer for the United States Women's National Team?",
+        "partial": "Who top scorer United",
+        "natural": "Could you tell me the top scorer for the United States Women's National Team?"
+      },
+      "relevant_chunk_ids": [
+        647
+      ],
+      "reference_answer": "Abby Wambach"
+    },
+    {
+      "id": "g0683",
+      "category": "Copa America",
+      "question": "Who is the all-time top scorer in Copa America?",
+      "variants": {
+        "verbatim": "Who is the all-time top scorer in Copa America?",
+        "partial": "Who all-time top",
+        "natural": "I wonder the all-time top scorer in Copa America?"
+      },
+      "relevant_chunk_ids": [
+        684
+      ],
+      "reference_answer": "Norberto Méndez and Zizinho"
+    },
+    {
+      "id": "g0689",
+      "category": "UEFA European Championship",
+      "question": "Who is the oldest scorer in European Championship (Euro) history?",
+      "variants": {
+        "verbatim": "Who is the oldest scorer in European Championship (Euro) history?",
+        "partial": "Who oldest scorer",
+        "natural": "I want to know the oldest scorer in European Championship (Euro) history? mate"
+      },
+      "relevant_chunk_ids": [
+        690
+      ],
+      "reference_answer": "Ivica Vastic"
+    },
+    {
+      "id": "g0733",
+      "category": "La Liga",
+      "question": "Which team won the first ever La Liga?",
+      "variants": {
+        "verbatim": "Which team won the first ever La Liga?",
+        "partial": "Which team won first",
+        "natural": "Which team won the first ever La Liga? mate"
+      },
+      "relevant_chunk_ids": [
+        734
+      ],
+      "reference_answer": "Barcelona"
+    },
+    {
+      "id": "g0735",
+      "category": "Ligue 1",
+      "question": "Which team won the first ever Ligue 1?",
+      "variants": {
+        "verbatim": "Which team won the first ever Ligue 1?",
+        "partial": "Which team won first",
+        "natural": "I want to know Which team won the first ever Ligue 1? please"
+      },
+      "relevant_chunk_ids": [
+        736
+      ],
+      "reference_answer": "Olympique Lillois"
+    },
+    {
+      "id": "g0737",
+      "category": "La Liga",
+      "question": "Who scored the first goal in La Liga history?",
+      "variants": {
+        "verbatim": "Who scored the first goal in La Liga history?",
+        "partial": "Who scored first goal",
+        "natural": "Who scored the first goal in La Liga history? mate"
+      },
+      "relevant_chunk_ids": [
+        738
+      ],
+      "reference_answer": "Pichichi"
+    },
+    {
+      "id": "g0751",
+      "category": "Ligue 1",
+      "question": "Which team has the most consecutive Ligue 1 titles?",
+      "variants": {
+        "verbatim": "Which team has the most consecutive Ligue 1 titles?",
+        "partial": "Which team has most",
+        "natural": "Could you tell me Which team has the most consecutive Ligue 1 titles? please"
+      },
+      "relevant_chunk_ids": [
+        752
+      ],
+      "reference_answer": "Lyon"
+    },
+    {
+      "id": "g0755",
+      "category": "MLS",
+      "question": "Which team has the most consecutive MLS Cup titles?",
+      "variants": {
+        "verbatim": "Which team has the most consecutive MLS Cup titles?",
+        "partial": "Which team has most",
+        "natural": "Could you tell me Which team has the most consecutive MLS Cup titles?"
+      },
+      "relevant_chunk_ids": [
+        756
+      ],
+      "reference_answer": "D.C. United and LA Galaxy"
+    },
+    {
+      "id": "g0782",
+      "category": "UEFA European Championship",
+      "question": "Who won the UEFA European Championship (Euro) in 1972?",
+      "variants": {
+        "verbatim": "Who won the UEFA European Championship (Euro) in 1972?",
+        "partial": "Who won UEFA",
+        "natural": "I want to know Who won the UEFA European Championship (Euro) in 1972? thanks"
+      },
+      "relevant_chunk_ids": [
+        783
+      ],
+      "reference_answer": "West Germany"
+    },
+    {
+      "id": "g0837",
+      "category": "World Cup",
+      "question": "Who finished third in the FIFA World Cup in 2018?",
+      "variants": {
+        "verbatim": "Who finished third in the FIFA World Cup in 2018?",
+        "partial": "Who finished third FIFA",
+        "natural": "I want to know Who finished third in the FIFA World Cup in 2018? thanks"
+      },
+      "relevant_chunk_ids": [
+        838
+      ],
+      "reference_answer": "Belgium"
+    },
+    {
+      "id": "g0889",
+      "category": "UEFA European Championship",
+      "question": "Where was the UEFA European Championship (Euro) held in 2008?",
+      "variants": {
+        "verbatim": "Where was the UEFA European Championship (Euro) held in 2008?",
+        "partial": "Where was UEFA European",
+        "natural": "I wonder Where was the UEFA European Championship (Euro) held in 2008? mate"
+      },
+      "relevant_chunk_ids": [
+        890
+      ],
+      "reference_answer": "Austria and Switzerland"
+    },
+    {
+      "id": "g0898",
+      "category": "Copa Libertadores",
+      "question": "Who holds the record for most goals in a single Copa Libertadores season?",
+      "variants": {
+        "verbatim": "Who holds the record for most goals in a single Copa Libertadores season?",
+        "partial": "Who holds record most goals",
+        "natural": "Who holds the record for most goals in a single Copa Libertadores season? please"
+      },
+      "relevant_chunk_ids": [
+        899
+      ],
+      "reference_answer": "Daniel Onega"
+    },
+    {
+      "id": "g0899",
+      "category": "Ballon d'Or",
+      "question": "Which two players won the ballon dor from Czech republic",
+      "variants": {
+        "verbatim": "Which two players won the ballon dor from Czech republic",
+        "partial": "Which two players won ballon",
+        "natural": "Could you tell me Which two players won the ballon dor from Czech republic"
+      },
+      "relevant_chunk_ids": [
+        900
+      ],
+      "reference_answer": "Pavel Nedved and Josef Masopust"
+    },
+    {
+      "id": "g0905",
+      "category": "General Football Trivia",
+      "question": "February 1993, London:  Tottenham Hotspur were a goal down at home to Southampton with 55  minutes played. However, an incredible sequence over the next five  minutes sent the game into the record books. What happened?",
+      "variants": {
+        "verbatim": "February 1993, London:  Tottenham Hotspur were a goal down at home to Southampton with 55  minutes played. However, an incredible sequence over the next five  minutes sent the game into the record books. What happened?",
+        "partial": "February 1993, London: Tottenham Hotspur were goal down home Southampton 55 minutes played. However, incredible sequence",
+        "natural": "I wonder February 1993, London:  Tottenham Hotspur were a goal down at home to Southampton with 55  minutes played. However, an incredible sequence over the next five  minutes sent the game into the record books. What happened? mate"
+      },
+      "relevant_chunk_ids": [
+        906
+      ],
+      "reference_answer": "Spurs scored four times in those five minutes"
+    },
+    {
+      "id": "g0933",
+      "category": "World Cup",
+      "question": "In central defence is a  man who captained and coached his country to World Cup glory. Who is  this man who was nicknamed the \"Kaiser\"?",
+      "variants": {
+        "verbatim": "In central defence is a  man who captained and coached his country to World Cup glory. Who is  this man who was nicknamed the \"Kaiser\"?",
+        "partial": "In central defence man captained coached his country World Cup",
+        "natural": "In central defence is a  man who captained and coached his country to World Cup glory. Who is  this man who was nicknamed the \"Kaiser\"? please"
+      },
+      "relevant_chunk_ids": [
+        935
+      ],
+      "reference_answer": "Franz Beckenbauer"
+    },
+    {
+      "id": "g1058",
+      "category": "Copa America",
+      "question": "July 1999, Paraguay:  Colombia faced Argentina in a Copa America match that went down in the  records book for all the wrong reasons as regards to one player. Why?",
+      "variants": {
+        "verbatim": "July 1999, Paraguay:  Colombia faced Argentina in a Copa America match that went down in the  records book for all the wrong reasons as regards to one player. Why?",
+        "partial": "July 1999, Paraguay: Colombia faced Argentina Copa America match that went down records",
+        "natural": "Could you tell me July 1999, Paraguay:  Colombia faced Argentina in a Copa America match that went down in the  records book for all the wrong reasons as regards to one player. Why? mate"
+      },
+      "relevant_chunk_ids": [
+        1064
+      ],
+      "reference_answer": "One Argentine player missed three penalties"
+    },
+    {
+      "id": "g1070",
+      "category": "UEFA European Championship",
+      "question": "How many games did England win in the European Championships, held in Sweden in 1992?",
+      "variants": {
+        "verbatim": "How many games did England win in the European Championships, held in Sweden in 1992?",
+        "partial": "How many games did England win",
+        "natural": "How many games did England win in the European Championships, held in Sweden in 1992? mate"
+      },
+      "relevant_chunk_ids": [
+        1076
+      ],
+      "reference_answer": "0"
+    },
+    {
+      "id": "g1222",
+      "category": "UEFA Champions League",
+      "question": "Who won the UEFA Champions League in 2014?",
+      "variants": {
+        "verbatim": "Who won the UEFA Champions League in 2014?",
+        "slang": "Who won the UCL in 2014?",
+        "partial": "Who won UEFA",
+        "natural": "I wonder Who won the UEFA Champions League in 2014? thanks"
+      },
+      "relevant_chunk_ids": [
+        1239
+      ],
+      "reference_answer": "Real Madrid"
+    },
+    {
+      "id": "g1235",
+      "category": "UEFA Champions League",
+      "question": "Who was the runner-up of the UEFA Champions League in 1959?",
+      "variants": {
+        "verbatim": "Who was the runner-up of the UEFA Champions League in 1959?",
+        "slang": "Who was the runner-up of the UCL in 1959?",
+        "partial": "Who was runner-up UEFA",
+        "natural": "I want to know Who was the runner-up of the UEFA Champions League in 1959? please"
+      },
+      "relevant_chunk_ids": [
+        1252
+      ],
+      "reference_answer": "Stade de Reims"
+    },
+    {
+      "id": "g1405",
+      "category": "Serie A",
+      "question": "Since its inception in  the 1929-30 season, two teams had played in every season until 2006;  when one of them were relegated. Which club remained as the onlyone to  have played in Serie A every season?",
+      "variants": {
+        "verbatim": "Since its inception in  the 1929-30 season, two teams had played in every season until 2006;  when one of them were relegated. Which club remained as the onlyone to  have played in Serie A every season?",
+        "partial": "Since its inception 1929-30 season, two teams had played every season until 2006; one them were",
+        "natural": "Could you tell me Since its inception in  the 1929-30 season, two teams had played in every season until 2006;  when one of them were relegated. Which club remained as the onlyone to  have played in Serie A every season?"
+      },
+      "relevant_chunk_ids": [
+        1422
+      ],
+      "reference_answer": "Inter Milan"
+    },
+    {
+      "id": "g1409",
+      "category": "Bundesliga",
+      "question": "Which club has won the Bundesliga more than 30 times?",
+      "variants": {
+        "verbatim": "Which club has won the Bundesliga more than 30 times?",
+        "partial": "Which club has won Bundesliga",
+        "natural": "Which club has won the Bundesliga more than 30 times? please"
+      },
+      "relevant_chunk_ids": [
+        1426
+      ],
+      "reference_answer": "Bayern Munich"
+    },
+    {
+      "id": "g1466",
+      "category": "General Football Trivia",
+      "question": "Which two goalkeepers, along with John Fashanu, were accused of match fixing in 1994?",
+      "variants": {
+        "verbatim": "Which two goalkeepers, along with John Fashanu, were accused of match fixing in 1994?",
+        "slang": "Which two goalies, along with John Fashanu, were accused of match fixing in 1994?",
+        "partial": "Which two goalkeepers, along John Fashanu,",
+        "natural": "I wonder Which two goalkeepers, along with John Fashanu, were accused of match fixing in 1994? mate"
+      },
+      "relevant_chunk_ids": [
+        1484
+      ],
+      "reference_answer": "Bruce Grobbelaar and Hans Segers"
+    },
+    {
+      "id": "g1525",
+      "category": "Copa America",
+      "question": "Which South American country won the Copa America in 1979?",
+      "variants": {
+        "verbatim": "Which South American country won the Copa America in 1979?",
+        "partial": "Which South American country",
+        "natural": "Which South American country won the Copa America in 1979? thanks"
+      },
+      "relevant_chunk_ids": [
+        1544
+      ],
+      "reference_answer": "Paraguay"
+    },
+    {
+      "id": "g1528",
+      "category": "Bundesliga",
+      "question": "Which of these clubs has NOT won the German Bundesliga title during the 1990s?",
+      "variants": {
+        "verbatim": "Which of these clubs has NOT won the German Bundesliga title during the 1990s?",
+        "partial": "Which these clubs has NOT won",
+        "natural": "I wonder Which of these clubs has NOT won the German Bundesliga title during the 1990s?"
+      },
+      "relevant_chunk_ids": [
+        1547
+      ],
+      "reference_answer": "Bayer Leverkusen"
+    },
+    {
+      "id": "g1544",
+      "category": "General Football Trivia",
+      "question": "A : Ajax play in this city?",
+      "variants": {
+        "verbatim": "A : Ajax play in this city?",
+        "partial": "Ajax play",
+        "natural": "Could you tell me A : Ajax play in this city? please"
+      },
+      "relevant_chunk_ids": [
+        1563
+      ],
+      "reference_answer": "Amsterdam"
+    },
+    {
+      "id": "g1555",
+      "category": "English Premier League",
+      "question": "Which of the following grounds was not used in the English Football League in season 2000-01?",
+      "variants": {
+        "verbatim": "Which of the following grounds was not used in the English Football League in season 2000-01?",
+        "partial": "Which following grounds was not used",
+        "natural": "Could you tell me Which of the following grounds was not used in the English Football League in season 2000-01? please"
+      },
+      "relevant_chunk_ids": [
+        1574
+      ],
+      "reference_answer": "Deva Stadium"
+    },
+    {
+      "id": "g1637",
+      "category": "General Football Trivia",
+      "question": "Who won the UEFA Cup in 1981?",
+      "variants": {
+        "verbatim": "Who won the UEFA Cup in 1981?",
+        "partial": "Who won UEFA",
+        "natural": "Who won the UEFA Cup in 1981? thanks"
+      },
+      "relevant_chunk_ids": [
+        1656
+      ],
+      "reference_answer": "Ipswich Town"
+    },
+    {
+      "id": "g1663",
+      "category": "UEFA Champions League",
+      "question": "Which club was the first to score 950 goals in European Champions Cup/European Champions League games?",
+      "variants": {
+        "verbatim": "Which club was the first to score 950 goals in European Champions Cup/European Champions League games?",
+        "partial": "Which club was first score 950 goals European",
+        "natural": "Which club was the first to score 950 goals in European Champions Cup/European Champions League games? please"
+      },
+      "relevant_chunk_ids": [
+        1682
+      ],
+      "reference_answer": "Real Madrid"
+    },
+    {
+      "id": "g1708",
+      "category": "World Cup",
+      "question": "What are the legendary  words of TV-commentator on the BBC in the World Cup final between  England and Germany in 1966 after he said 'They think it's all over'?",
+      "variants": {
+        "verbatim": "What are the legendary  words of TV-commentator on the BBC in the World Cup final between  England and Germany in 1966 after he said 'They think it's all over'?",
+        "partial": "What legendary words TV-commentator BBC World Cup final between England Germany 1966",
+        "natural": "I wonder What are the legendary  words of TV-commentator on the BBC in the World Cup final between  England and Germany in 1966 after he said 'They think it's all over'? mate"
+      },
+      "relevant_chunk_ids": [
+        1727
+      ],
+      "reference_answer": "It is now"
+    },
+    {
+      "id": "g1763",
+      "category": "Player Nationality & Background",
+      "question": "What stadium do the Republic of Ireland play their home games at after moving from Landsdown Road?",
+      "variants": {
+        "verbatim": "What stadium do the Republic of Ireland play their home games at after moving from Landsdown Road?",
+        "partial": "What stadium Republic Ireland play their home",
+        "natural": "I want to know What stadium do the Republic of Ireland play their home games at after moving from Landsdown Road? mate"
+      },
+      "relevant_chunk_ids": [
+        1788
+      ],
+      "reference_answer": "Croke Park"
+    },
+    {
+      "id": "g1813",
+      "category": "UEFA Champions League",
+      "question": "Who scored the fastest goal in UEFA Champions League history?",
+      "variants": {
+        "verbatim": "Who scored the fastest goal in UEFA Champions League history?",
+        "slang": "Who scored the fastest goal in UCL history?",
+        "partial": "Who scored fastest goal",
+        "natural": "I wonder Who scored the fastest goal in UEFA Champions League history? thanks"
+      },
+      "relevant_chunk_ids": [
+        1838
+      ],
+      "reference_answer": "Roy Makaay"
+    },
+    {
+      "id": "g1814",
+      "category": "Ballon d'Or",
+      "question": "Who was the first player to win five Ballon d'Or awards?",
+      "variants": {
+        "verbatim": "Who was the first player to win five Ballon d'Or awards?",
+        "partial": "Who was first player win",
+        "natural": "Could you tell me Who was the first player to win five Ballon d'Or awards? mate"
+      },
+      "relevant_chunk_ids": [
+        1839
+      ],
+      "reference_answer": "Lionel Messi"
+    },
+    {
+      "id": "g1826",
+      "category": "Ballon d'Or",
+      "question": "Who was the first ever African footballer to win the Ballon d'Or?",
+      "variants": {
+        "verbatim": "Who was the first ever African footballer to win the Ballon d'Or?",
+        "partial": "Who was first ever African",
+        "natural": "Could you tell me Who was the first ever African footballer to win the Ballon d'Or? please"
+      },
+      "relevant_chunk_ids": [
+        1851
+      ],
+      "reference_answer": "George Weah"
+    },
+    {
+      "id": "g1866",
+      "category": "World Cup",
+      "question": "Who was the first player to score in consecutive FIFA World Cup finals?",
+      "variants": {
+        "verbatim": "Who was the first player to score in consecutive FIFA World Cup finals?",
+        "partial": "Who was first player score consecutive",
+        "natural": "Could you tell me Who was the first player to score in consecutive FIFA World Cup finals? thanks"
+      },
+      "relevant_chunk_ids": [
+        1891
+      ],
+      "reference_answer": "Vavá"
+    },
+    {
+      "id": "g1956",
+      "category": "Serie A",
+      "question": "Juventus, Inter Milan,  A.C. Milan, Roma, and a Napoli side that included Diego Maradona were  all vying for the 1984-1985 Serie A title. Which unlikely underdog  pipped all aforementioned teams to become Italian champions?",
+      "variants": {
+        "verbatim": "Juventus, Inter Milan,  A.C. Milan, Roma, and a Napoli side that included Diego Maradona were  all vying for the 1984-1985 Serie A title. Which unlikely underdog  pipped all aforementioned teams to become Italian champions?",
+        "partial": "Juventus, Inter Milan, A.C. Milan, Roma, Napoli side that included Diego Maradona were all vying 1984-1985",
+        "natural": "Could you tell me Juventus, Inter Milan,  A.C. Milan, Roma, and a Napoli side that included Diego Maradona were  all vying for the 1984-1985 Serie A title. Which unlikely underdog  pipped all aforementioned teams to become Italian champions?"
+      },
+      "relevant_chunk_ids": [
+        1982
+      ],
+      "reference_answer": "Hellas Verona"
+    }
+  ]
+}

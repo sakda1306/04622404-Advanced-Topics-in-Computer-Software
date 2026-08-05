@@ -1,0 +1,13 @@
+{
+  "file": {
+    "size": 295937,
+    "mtime": 1785896931
+  },
+  "settings": {
+    "CHUNK_SIZE": 400,
+    "CHUNK_OVERLAP": 50,
+    "EMBEDDING_MODEL_NAME": "paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  "n_chunks": 2022,
+  "source_file": "football_trivia_qa.txt"
+}
