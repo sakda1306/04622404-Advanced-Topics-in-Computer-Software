@@ -12,7 +12,7 @@
 import config
 
 # แปลง role ของข้อความ เป็นคำที่คนอ่านเข้าใจ
-ROLE_NAMES = {"user": "ผู้ใช้", "assistant": "ผู้ช่วย"}
+ROLE_NAMES = {"user": "User", "assistant": "Assistant"}
 
 
 class ConversationMemory:
@@ -45,7 +45,7 @@ class ConversationMemory:
         lines = []
 
         if self.first_topic:
-            lines.append(f"[หัวข้อที่คุยก่อนหน้า: {self.first_topic}]")
+            lines.append(f"[Previous Topic: {self.first_topic}]")
 
         for message in self.messages:
             name = ROLE_NAMES.get(message["role"], message["role"])
@@ -65,9 +65,9 @@ class ConversationMemory:
         if not self.messages:
             return False
 
-        markers = ("แล้ว", "มัน", "อันนั้น", "อันนี้", "ต่อ", "อีก", "ทำไม", "ล่ะ")
-        text = query.strip()
-        return len(text) < 30 and text.startswith(markers)
+        markers = ("he ", "she ", "it ", "they ", "then", "what about", "how about", "this", "that", "why", "and")
+        text = query.strip().lower()
+        return len(text) < 50 and text.startswith(markers)
 
     def clear(self):
         self.messages = []

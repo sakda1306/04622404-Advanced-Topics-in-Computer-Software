@@ -73,7 +73,7 @@ def clean_line(line):
     """ตัดเลขข้อ เครื่องหมายคำพูด และคำนำหน้า ที่ LLM ชอบใส่มาให้"""
     text = line.strip()
     text = re.sub(r"^\s*(\d+[\.\)]|[-*•])\s*", "", text)    # "1. " หรือ "- "
-    text = re.sub(r"^(คำถาม|คำค้นหา|Query)\s*[:：]\s*", "", text)
+    text = re.sub(r"^(Question|Search|Query)\s*[:：]\s*", "", text, flags=re.IGNORECASE)
     return text.strip().strip('"').strip("'")
 
 
@@ -86,7 +86,7 @@ class QueryTransformer:
 
     def rewrite(self, query, history):
         """ให้ LLM เขียนคำถามใหม่ให้ชัดเจนและสมบูรณ์ในตัวเอง"""
-        history_block = f"บทสนทนาก่อนหน้า:\n{history}\n\n" if history else ""
+        history_block = f"Chat History:\n{history}\n\n" if history else ""
         prompt = REWRITE_PROMPT.format(history=history_block, question=query)
         return [clean_line(self.ask_llm(prompt))]
 

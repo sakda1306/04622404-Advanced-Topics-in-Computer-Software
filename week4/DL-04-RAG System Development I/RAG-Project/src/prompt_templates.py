@@ -45,7 +45,7 @@ def format_context(chunks, max_chars=6000):
 
 def build_messages(question, chunks, history=""):
     """ประกอบเป็น messages list สำหรับส่งให้ LLM"""
-    history_block = f"บทสนทนาก่อนหน้า:\n{history}\n\n" if history else ""
+    history_block = f"Chat History:\n{history}\n\n" if history else ""
     return [
         {"role": "system", "content": SYSTEM_PROMPT.format(no_context=config.NO_CONTEXT_MESSAGE)},
         {
