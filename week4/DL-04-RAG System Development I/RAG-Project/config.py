@@ -86,7 +86,7 @@ LLM_PROVIDERS = {
     "ollama": ("http://localhost:11434/v1", "llama3.1:8b", None),
     "openai": ("https://api.openai.com/v1", "gpt-4o-mini", "OPENAI_API_KEY"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai/",
-               "gemini-2.0-flash", "GOOGLE_API_KEY"),
+               "gemini-3.6-flash", "GOOGLE_API_KEY"),
     "groq": ("https://api.groq.com/openai/v1", "llama-3.1-8b-instant", "GROQ_API_KEY"),
 }
 
