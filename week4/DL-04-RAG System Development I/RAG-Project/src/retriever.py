@@ -25,7 +25,7 @@ class Retriever:
         self.store.load(config.FAISS_INDEX_FILE)
         self.chunks = load_chunk_store(config.CHUNK_STORE_FILE)
 
-    def retrieve(self, query, top_k=config.TOP_K):
+    def retrieve(self, query, top_k=config.TOP_K): # ส่ง 3 chunk ให้ LLM เขียนคำตอบ
         """คืน chunk ที่ใกล้เคียงคำถามที่สุด top_k ชิ้น พร้อมคะแนน"""
         # 1. แปลงคำถามเป็นเวกเตอร์
         query_vector = self.model.encode_query(query)
