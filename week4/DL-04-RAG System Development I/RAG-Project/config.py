@@ -87,7 +87,7 @@ LLM_PROVIDERS = {
     "openai": ("https://api.openai.com/v1", "gpt-4o-mini", "OPENAI_API_KEY"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai/",
                "gemini-3.6-flash", "GOOGLE_API_KEY"),
-    "groq": ("https://api.groq.com/openai/v1", "llama-3.1-8b-instant", "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"),
+    "groq": ("https://api.groq.com/openai/v1", "llama-3.1-8b-instant", "GROQ_API_KEY"),
 }
 
 
