@@ -19,12 +19,12 @@ for _s in (sys.stdout, sys.stderr):
 # 1. ลองปิดทีละตัวแล้วรัน evaluation ดูว่าคะแนนเปลี่ยนไปแค่ไหน
 
 USE_HYBRID = True            # ค้นด้วย BM25 ควบคู่กับ dense (ปิด = dense อย่างเดียว)
-USE_RERANK = False            # จัดอันดับใหม่ด้วย cross-encoder — แม่นขึ้นแต่ช้ามาก
+USE_RERANK = True            # จัดอันดับใหม่ด้วย cross-encoder — แม่นขึ้นแต่ช้ามาก
 USE_QUERY_TRANSFORM = True      # แปลงคำถามก่อนค้น — เสีย LLM เพิ่ม 1 ครั้งต่อคำถาม
 USE_MEMORY = True              # จำบทสนทนา เพื่อตอบคำถามต่อเนื่องได้
 USE_LLM = True              # False = แสดงข้อความที่ค้นได้ดิบ ๆ ไม่เรียก LLM เลย
-SHOW_SOURCES =  False        # True = แสดงรายการแหล่งอ้างอิงท้ายคำตอบ
-SHOW_DEBUG = False          # True = แสดงคะแนนและเวลาของแต่ละขั้น
+SHOW_SOURCES =  True       # True = แสดงรายการแหล่งอ้างอิงท้ายคำตอบ
+SHOW_DEBUG = True         # True = แสดงคะแนนและเวลาของแต่ละขั้น
 
 
 # 2. ที่อยู่ไฟล์
@@ -78,7 +78,7 @@ MULTI_QUERY_COUNT = 3
 # 5. LLM
 LLM_PROVIDER = "groq"
 LLM_MODEL = ""          # เว้นว่าง = ใช้ค่า default ของ provider ที่เลือก
-LLM_TEMPERATURE = 0.2   # เหมือนค่าเทรดโฮล 
+LLM_TEMPERATURE = 0.0   # เหมือนค่าเทรดโฮล 
 LLM_MAX_TOKENS = 800
 
 # (base_url, default_model, env_var สำหรับ API key — None = ไม่ต้องใช้ key)
@@ -87,7 +87,7 @@ LLM_PROVIDERS = {
     "openai": ("https://api.openai.com/v1", "gpt-4o-mini", "OPENAI_API_KEY"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai/",
                "gemini-3.6-flash", "GOOGLE_API_KEY"),
-    "groq": ("https://api.groq.com/openai/v1", "llama-3.1-8b-instant", "GROQ_API_KEY"),
+    "groq": ("https://api.groq.com/openai/v1", "openai/gpt-oss-120b", "GROQ_API_KEY"),
 }
 
 

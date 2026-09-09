@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-# Main script for demonstrating RAG problem scenarios on MY OWN system
-# (same structure as the instructor's DL-05 main.py, but using my own week4
-# football trivia RAG system and its own dataset/fixes instead of the
-# instructor's sample project)
+# Main script for demonstrating RAG problem scenarios found in MY OWN system
+# (same structure as the instructor's DL-05 main.py, but every problem here
+# comes from actually testing my week4 football trivia RAG system)
 #
 # Run:
 #     python main.py
@@ -10,24 +9,18 @@
 # Or select a problem directly:
 #     python main.py 1
 #
-# Problems are added one at a time. More entries will be added to PROBLEMS
-# below as each one is built, following the same 9-problem structure as the
-# instructor's DL-05-RAG System Development II.
+# Problems are added one at a time.
 
 import sys
 
-from problem01_hallucination import run as problem01
+from problem01_vocabulary_mismatch import run as problem01
 
 PROBLEMS = {
-    1: ("Hallucination / Context", problem01),
-    # 2: ("Vocabulary Mismatch / Position", problem02),   # planned
-    # 3: ("Data Quality", problem03),                     # planned
-    # 4: ("Chunk Size / Overlap", problem04),              # planned
-    # 5: ("Metadata Filtering", problem05),                # planned
-    # 6: ("Top-k / Re-ranking", problem06),                # planned
-    # 7: ("Retrieval Correct, Generation Wrong", problem07),  # planned
-    # 8: ("RAG Configuration", problem08),                 # planned
-    # 9: ("Chunk & Retrieval Evaluation", problem09),       # planned
+    1: ("Vocabulary Mismatch / Query Normalisation", problem01),
+    # 2: ("Data Quality / Duplicates", problem02),          # planned
+    # 3: ("Chunk Size / Overlap", problem03),               # planned
+    # 4: ("Conversation Memory / Follow-up", problem04),    # planned
+    # 5: ("Retrieval Evaluation", problem05),               # planned
 }
 
 
@@ -35,7 +28,7 @@ def show_menu():
     print("*" * 65)
     print("   My RAG System — Problem-Based Simulations (Football Trivia)")
     print("*" * 65)
-    for no, (name, _) in PROBLEMS.items():
+    for no, (name, _) in sorted(PROBLEMS.items()):
         print(f"{no:2}. {name}")
     print("*" * 65)
 
@@ -55,7 +48,7 @@ def execute(number):
 def main_loop():
     while True:
         show_menu()
-        available = "/".join(str(k) for k in PROBLEMS)
+        available = "/".join(str(k) for k in sorted(PROBLEMS))
         choice = input(f"Select a problem to simulate [{available}] or Q to exit: ").strip()
 
         if choice.upper() == "Q":

@@ -1,15 +1,15 @@
 # Week 5 — RAG System Problems & Fixes (My Own System)
 
-This project follows the same structure as the instructor's [`DL-05-RAG System Development II`](https://github.com/aproot-en/Advanced-Topic-in-Computer-Software-Course/tree/main/DL-05-RAG%20System%20Development%20II), which demonstrates common problems in LLM and RAG (Retrieval-Augmented Generation) systems. The difference is that every simulation here uses my own dataset, football_trivia_qa.txt, and my own RAG system built in [`week4/DL-04-RAG System Development I/RAG-Project`](../../week4/DL-04-RAG%20System%20Development%20I/RAG-Project). Each problem is reproduced on real data, then traced back to where it is already handled in my week4 source code. Problems are added one at a time.
+This project follows the same structure as the instructor's [`DL-05-RAG System Development II`](https://github.com/aproot-en/Advanced-Topic-in-Computer-Software-Course/tree/main/DL-05-RAG%20System%20Development%20II), which demonstrates common problems in LLM and RAG (Retrieval-Augmented Generation) systems. The difference is that every problem here was found by actually testing my own RAG system built in [`week4/DL-04-RAG System Development I/RAG-Project`](../../week4/DL-04-RAG%20System%20Development%20I/RAG-Project), using my own dataset, football_trivia_qa.txt. Each `problemXX_*.py` reproduces the failure mode on the real knowledge base through a small simulation script and measures the damage at runtime, then reports the status of that problem in my week4 code. Problems are added one at a time.
 
 # Structure:
 
 ```text
 DL-05-RAG System Development II/
-├── football_trivia_qa.txt          # Raw data / RAG Knowledge Base (copied from week4)
-├── data_loader.py                  # Shared parser: football_trivia_qa.txt -> list of dict
-├── main.py                         # Main menu for running each problem
-└── problem01_hallucination.py      # Hallucination / answer without supporting context
+├── football_trivia_qa.txt              # Raw data / RAG Knowledge Base (copied from week4)
+├── data_loader.py                      # Shared parser: football_trivia_qa.txt -> list of dict
+├── main.py                             # Main menu for running each problem
+└── problem01_vocabulary_mismatch.py    # Slang/abbreviation mismatch and the query normalisation bug
 ```
 
 # Dataset:
@@ -33,15 +33,11 @@ Unlike the instructor's dataset, this one has no language variants — every ent
 
 | # | Problem | Main Idea | Status |
 |---|---------|-----------|--------|
-| 1 | Hallucination | The LLM answers without supporting context. | Done |
-| 2 | Vocabulary Mismatch / Position | BoW cannot handle different wording or word order well. | Planned |
-| 3 | Data Quality | Duplicate and noisy data reduce data quality. | Planned |
-| 4 | Chunking | Poor chunk size or overlap can lose context. | Planned |
-| 5 | Metadata Filtering | Similar content may have the wrong metadata. | Planned |
-| 6 | Re-ranking | First-stage retrieval may rank the best document too low. | Planned |
-| 7 | Faithfulness | Retrieval is correct, but generation changes important information. | Planned |
-| 8 | RAG Configuration | Configuration controls which RAG components are active. | Planned |
-| 9 | Evaluation | Measure chunking and retrieval with numerical metrics. | Planned |
+| 1 | Vocabulary Mismatch | Slang and abbreviations do not match the words stored in the KB, and the normalisation that fixes it corrupts ordinary words. | Done |
+| 2 | Data Quality | Duplicate entries fill every Top-K slot with the same answer. | Planned |
+| 3 | Chunking | Long answers are split into fragments that start in the middle of a word. | Planned |
+| 4 | Conversation Memory | Follow-up questions are detected by a rule that misses most of them, and the history never reaches the query transformer. | Planned |
+| 5 | Retrieval Evaluation | The golden set's query variants and category balance do not measure what they claim to measure. | Planned |
 
 All simulations use the same real Knowledge Base through `data_loader.py`.
 This allows different LLM and RAG problems to be tested using the same dataset and pipeline.
