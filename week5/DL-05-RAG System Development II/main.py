@@ -14,13 +14,17 @@
 import sys
 
 from problem01_vocabulary_mismatch import run as problem01
+from problem02_data_quality import run as problem02
+from problem03_chunking import run as problem03
+from problem04_memory import run as problem04
+from problem05_evaluation import run as problem05
 
 PROBLEMS = {
     1: ("Vocabulary Mismatch / Query Normalisation", problem01),
-    # 2: ("Data Quality / Duplicates", problem02),          # planned
-    # 3: ("Chunk Size / Overlap", problem03),               # planned
-    # 4: ("Conversation Memory / Follow-up", problem04),    # planned
-    # 5: ("Retrieval Evaluation", problem05),               # planned
+    2: ("Data Quality / Duplicates & Contradictions", problem02),
+    3: ("Chunking / Split Entries & Fragments", problem03),
+    4: ("Conversation Memory / Follow-up Questions", problem04),
+    5: ("Retrieval Evaluation / Golden Set", problem05),
 }
 
 

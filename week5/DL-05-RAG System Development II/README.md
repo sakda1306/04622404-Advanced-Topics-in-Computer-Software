@@ -9,7 +9,11 @@ DL-05-RAG System Development II/
 ├── football_trivia_qa.txt              # Raw data / RAG Knowledge Base (copied from week4)
 ├── data_loader.py                      # Shared parser: football_trivia_qa.txt -> list of dict
 ├── main.py                             # Main menu for running each problem
-└── problem01_vocabulary_mismatch.py    # Slang/abbreviation mismatch and the query normalisation bug
+├── problem01_vocabulary_mismatch.py    # Slang/abbreviation mismatch and the query normalisation bug
+├── problem02_data_quality.py           # Duplicate entries, contradictory answers and whitespace noise
+├── problem03_chunking.py               # Entries split by character count into unreadable fragments
+├── problem04_memory.py                 # Follow-up questions searched without their conversation context
+└── problem05_evaluation.py             # A golden set whose size, category mix and query variants are all skewed
 ```
 
 # Dataset:
@@ -34,10 +38,10 @@ Unlike the instructor's dataset, this one has no language variants — every ent
 | # | Problem | Main Idea | Status |
 |---|---------|-----------|--------|
 | 1 | Vocabulary Mismatch | Slang and abbreviations do not match the words stored in the KB, and the normalisation that fixes it corrupts ordinary words. | Done |
-| 2 | Data Quality | Duplicate entries fill every Top-K slot with the same answer. | Planned |
-| 3 | Chunking | Long answers are split into fragments that start in the middle of a word. | Planned |
-| 4 | Conversation Memory | Follow-up questions are detected by a rule that misses most of them, and the history never reaches the query transformer. | Planned |
-| 5 | Retrieval Evaluation | The golden set's query variants and category balance do not measure what they claim to measure. | Planned |
+| 2 | Data Quality | Duplicate entries fill every Top-K slot with the same answer, and some duplicated questions contradict each other. | Done |
+| 3 | Chunking | Long entries are split by character count into fragments that start mid-word, and the main chunk loses the end of its answer. | Done |
+| 4 | Conversation Memory | Follow-up questions are detected by a rule that misses most of them, and the history never reaches the query transformer. | Done |
+| 5 | Retrieval Evaluation | The golden set's size, category mix and query variants are all skewed, so its scores blame the retriever for the test's own defects. | Done |
 
 All simulations use the same real Knowledge Base through `data_loader.py`.
 This allows different LLM and RAG problems to be tested using the same dataset and pipeline.
