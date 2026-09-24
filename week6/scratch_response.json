@@ -1,0 +1,169 @@
+{
+  "run_id": "14fa28e6-6c16-47bf-bb05-e0e422b62833",
+  "status": "completed",
+  "risk": {
+    "level": "HIGH",
+    "score": 0.85,
+    "confidence": 0.65,
+    "factors": [
+      {
+        "type": "WEATHER",
+        "level": "MEDIUM",
+        "description": "Weather record open-meteo:cabfff3e1a77df00b3363075 is elevated by rain_probability."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:b9c53d1d966d66cd31ca1057 is elevated by rain_probability."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:274613788b7f3acf3ffa14fd is elevated by rain_probability."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:2496141fb87db9c08627f40f is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:d56c573dd51d4bd75665ad0c is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:20bd944a8040716428e77628 is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:103641835315d9bdecc0197f is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:88df8949763634d3ccfc89de is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:13f742052381ff28cd55173b is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:3d08f1f9a9373fc9cd07f40f is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:e9224675a322595b9ade0f20 is elevated by rain."
+      },
+      {
+        "type": "WEATHER",
+        "level": "LOW",
+        "description": "Weather record open-meteo:ac576cfe6b7c1138df9165bc is elevated by rain."
+      }
+    ]
+  },
+  "recommendation": {
+    "type": "AVOID_TRAVEL",
+    "summary": "แนะนำให้งดการเดินทางตามแผนนี้ในขณะนี้ และตรวจสอบข้อมูลเพิ่มเติมก่อนตัดสินใจ",
+    "reasons": [
+      "ผลประเมินที่ได้รับจัดความเสี่ยงเป็นระดับสูง"
+    ],
+    "suggested_departure_time": null
+  },
+  "routes": {
+    "primary": {
+      "route_id": "osrm-route-1",
+      "label": null,
+      "travel_modes": [
+        "CAR"
+      ],
+      "distance_km": 687.178,
+      "duration_minutes": 515.98,
+      "risk_level": "HIGH",
+      "geometry": null,
+      "legs": [],
+      "restrictions": [],
+      "tips": []
+    },
+    "alternatives": [
+      {
+        "route_id": "osrm-route-2",
+        "label": null,
+        "travel_modes": [
+          "CAR"
+        ],
+        "distance_km": 714.868,
+        "duration_minutes": 554.5,
+        "risk_level": "HIGH",
+        "geometry": null,
+        "legs": [],
+        "restrictions": [],
+        "tips": []
+      }
+    ]
+  },
+  "hazards": [],
+  "emergency_instructions": {
+    "what_to_do_now": "ยังไม่มีคำแนะนำฉุกเฉินเฉพาะพื้นที่และประเภทภัยที่ตรวจสอบได้ กรุณาตรวจสอบประกาศและคำแนะนำจากหน่วยงานทางการในพื้นที่ก่อนดำเนินการ",
+    "safety_steps": [
+      "ตรวจสอบข้อมูลล่าสุดจากช่องทางทางการของพื้นที่",
+      "ผลแนะนำให้งดเดินทางอาจเกิดจากข้อมูลไม่เพียงพอ ไม่ใช่การยืนยันว่าเกิดเหตุฉุกเฉินแล้ว"
+    ],
+    "contacts": [],
+    "nearest_support": []
+  },
+  "sources": [
+    {
+      "source_id": "risk-36",
+      "name": "Module 06 deterministic assessment",
+      "category": "DISASTER",
+      "url": "https://github.com/sakda1306/Advanced-Topic-in-Computer-Software-Course-Team-D/tree/develop/DL-07-Agentic-AI-System-II/06_risk_knowledge_services",
+      "retrieved_at": "2026-09-22T09:07:57.316725Z"
+    }
+  ],
+  "data_freshness": {
+    "items": [
+      {
+        "category": "WEATHER",
+        "updated_at": "2026-09-22T09:07:50.599646Z"
+      },
+      {
+        "category": "TRANSPORT",
+        "updated_at": "2026-09-22T09:07:49.766807Z"
+      },
+      {
+        "category": "DISASTER",
+        "updated_at": "2026-09-22T09:07:49.766879Z"
+      }
+    ]
+  },
+  "service_status": {
+    "weather": "ok",
+    "transport": "ok",
+    "disaster": "ok",
+    "route_candidates": "ok",
+    "integration": "ok",
+    "risk_model": "ok",
+    "rag": "ok",
+    "route": "ok",
+    "decision": "ok"
+  },
+  "clarification": null,
+  "valid_until": "2026-09-22T09:12:49.766929Z",
+  "versions": {
+    "agent": "0.1.0",
+    "risk_model": "rule-baseline-v0.1.2",
+    "prompt": "rules-v1"
+  },
+  "diagnostics": {
+    "tool_calls": 9,
+    "duration_ms": 7834,
+    "trace_id": "14fa28e6-6c16-47bf-bb05-e0e422b62833"
+  }
+}

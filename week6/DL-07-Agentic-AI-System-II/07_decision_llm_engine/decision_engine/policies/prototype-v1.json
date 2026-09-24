@@ -1,0 +1,16 @@
+{
+  "version": "prototype-v1",
+  "status": "prototype",
+  "approval": null,
+  "note": "Draft precedence for mocked integration, not approved operational safety policy.",
+  "rules": [
+    {"id": "OFFICIAL_RESTRICTION", "action": "AVOID"},
+    {"id": "HIGH_RISK", "action": "AVOID"},
+    {"id": "NO_SAFE_ROUTE", "action": "AVOID"},
+    {"id": "INSUFFICIENT_EVIDENCE", "action": "AVOID"},
+    {"id": "SAFER_ROUTE", "action": "CHANGE_ROUTE"},
+    {"id": "SAFER_TIME", "action": "DELAY"},
+    {"id": "LOW_RISK_CLEAR", "action": "NORMAL"},
+    {"id": "UNRESOLVED", "action": "AVOID"}
+  ]
+}

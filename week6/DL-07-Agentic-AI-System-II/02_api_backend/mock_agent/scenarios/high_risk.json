@@ -1,0 +1,216 @@
+{
+  "description": "Active flood warning on the route; avoid travel with emergency steps.",
+  "valid_for_seconds": 900,
+  "freshness_age_seconds": {
+    "WEATHER": 1200,
+    "TRANSPORT": 120,
+    "DISASTER": 180
+  },
+  "response": {
+    "status": "completed",
+    "risk": {
+      "level": "HIGH",
+      "score": 0.91,
+      "confidence": 0.84,
+      "factors": [
+        {
+          "type": "DISASTER",
+          "level": "HIGH",
+          "description": "Flash flood warning in Lampang."
+        }
+      ]
+    },
+    "recommendation": {
+      "type": "AVOID_TRAVEL",
+      "summary": "Avoid travel through Lampang until the flood warning ends.",
+      "reasons": [
+        "Official flash flood warning on the route.",
+        "Rail services are suspended north of Lampang."
+      ]
+    },
+    "routes": {
+      "primary": {
+        "route_id": "r-primary",
+        "label": "Train via Phitsanulok",
+        "travel_modes": [
+          "TRAIN"
+        ],
+        "distance_km": 661,
+        "duration_minutes": 690,
+        "risk_level": "HIGH",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.5018,
+              13.7563
+            ],
+            [
+              99.5,
+              16.0
+            ],
+            [
+              98.9853,
+              18.7883
+            ]
+          ]
+        },
+        "legs": [
+          {
+            "mode": "TRAIN",
+            "from": "Krung Thep Aphiwat",
+            "to": "Chiang Mai",
+            "operator": "State Railway of Thailand",
+            "service_status": "on_time"
+          }
+        ],
+        "restrictions": [],
+        "tips": [
+          "Book a sleeper seat in advance."
+        ]
+      },
+      "alternatives": [
+        {
+          "route_id": "r-alt",
+          "label": "Bus via Tak",
+          "travel_modes": [
+            "BUS"
+          ],
+          "distance_km": 661,
+          "duration_minutes": 690,
+          "risk_level": "MEDIUM",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                100.5018,
+                13.7563
+              ],
+              [
+                100.2,
+                16.4
+              ],
+              [
+                98.9853,
+                18.7883
+              ]
+            ]
+          },
+          "legs": [],
+          "restrictions": [],
+          "tips": [
+            "Book a sleeper seat in advance."
+          ]
+        }
+      ]
+    },
+    "hazards": [
+      {
+        "hazard_id": "ext-flood-1",
+        "type": "FLOOD",
+        "severity": "HIGH",
+        "title": "Flash flood warning, Lampang",
+        "area": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                99.3,
+                18.1
+              ],
+              [
+                99.7,
+                18.1
+              ],
+              [
+                99.7,
+                18.5
+              ],
+              [
+                99.3,
+                18.5
+              ],
+              [
+                99.3,
+                18.1
+              ]
+            ]
+          ]
+        },
+        "source_id": "src-disaster"
+      }
+    ],
+    "emergency_instructions": {
+      "what_to_do_now": "Do not travel into the flooded districts. Stay in a safe building on higher ground.",
+      "safety_steps": [
+        "Avoid walking or driving through flood water.",
+        "Keep your phone charged.",
+        "Follow instructions from local officials."
+      ],
+      "contacts": [
+        {
+          "name": "Emergency Medical Services",
+          "phone": "1669",
+          "available_hours": "24/7"
+        },
+        {
+          "name": "Department of Disaster Prevention and Mitigation",
+          "phone": "1784",
+          "available_hours": "24/7"
+        }
+      ],
+      "nearest_support": [
+        {
+          "name": "Lampang Provincial Shelter",
+          "type": "SHELTER",
+          "location": {
+            "type": "Point",
+            "coordinates": [
+              99.49,
+              18.29
+            ]
+          }
+        }
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "src-weather",
+        "name": "Thai Meteorological Department",
+        "category": "WEATHER",
+        "url": "https://www.tmd.go.th"
+      },
+      {
+        "source_id": "src-disaster",
+        "name": "Department of Disaster Prevention and Mitigation",
+        "category": "DISASTER",
+        "url": "https://www.disaster.go.th"
+      },
+      {
+        "source_id": "src-rail",
+        "name": "State Railway of Thailand",
+        "category": "TRANSPORT",
+        "url": "https://www.railway.co.th"
+      }
+    ],
+    "service_status": {
+      "weather": "ok",
+      "transport": "ok",
+      "disaster": "ok",
+      "risk_model": "ok",
+      "rag": "ok",
+      "llm": "ok"
+    },
+    "clarification": null,
+    "versions": {
+      "agent": "mock-0.1.0",
+      "risk_model": "mock-risk-2026.09",
+      "prompt": "mock-advice-v1"
+    },
+    "diagnostics": {
+      "tool_calls": 9,
+      "duration_ms": 2600,
+      "trace_id": "mock-trace-high"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+# Shared infrastructure for all Team D modules (identity/README.md).
+#
+# Only services that more than one module depends on belong here. Each module keeps
+# its own compose file for its own stack; how the module stacks are combined is still
+# open (02_api_backend/docs/04_project_structure.md, D-19).
+#
+#   docker compose up -d keycloak
+#
+# Keycloak is published on localhost:8180 and every token carries
+# iss=http://localhost:8180/realms/travel-safety, whichever host name was used to
+# reach it. Containers of other modules fetch the signing keys through
+# http://host.docker.internal:8180 (see identity/README.md).
+name: teamd-shared
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.7.4
+    command: ["start-dev", "--import-realm"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KC_ADMIN_USER:-admin}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KC_ADMIN_PASSWORD:-admin-dev-change-me}
+      # Fixed public URL, so the issuer is the same for browsers and for containers.
+      KC_HOSTNAME: http://localhost:${KC_HOST_PORT:-8180}
+      KC_HOSTNAME_BACKCHANNEL_DYNAMIC: "true"
+      KC_HTTP_ENABLED: "true"
+      KC_HEALTH_ENABLED: "true"
+      # Read by the realm file placeholders at import time.
+      KC_DEV_USER_PASSWORD: ${KC_DEV_USER_PASSWORD:-dev-password-change-me}
+      KC_OPS_ADMIN_SECRET: ${KC_OPS_ADMIN_SECRET:-ops-admin-dev-secret-change-me}
+    ports:
+      - "127.0.0.1:${KC_HOST_PORT:-8180}:8080"
+    volumes:
+      # Mount the whole data dir: it exists in the image with the keycloak user as owner,
+      # so the volume inherits that ownership (a new sub-path would be owned by root).
+      - keycloak-data:/opt/keycloak/data
+      - ./identity/keycloak:/opt/keycloak/data/import:ro
+    healthcheck:
+      # The image has no curl; ask the management port directly.
+      test:
+        - CMD-SHELL
+        - >-
+          exec 3<>/dev/tcp/127.0.0.1/9000 &&
+          printf 'GET /health/ready HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n' >&3 &&
+          grep -q '"UP"' <&3
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+volumes:
+  keycloak-data:

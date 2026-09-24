@@ -1,0 +1,147 @@
+{
+  "request_id": "00000000-0000-4000-8000-000000000007",
+  "action_code": "AVOID",
+  "backend_action_code": "AVOID_TRAVEL",
+  "risk_level": "HIGH",
+  "confidence": 0.9,
+  "confidence_kind": "heuristic_policy_score",
+  "confidence_details": {
+    "base": 0.9,
+    "completeness": 1.0,
+    "freshness": 1.0,
+    "issue_cap": 1.0
+  },
+  "emergency_instructions": {
+    "what_to_do_now": "ยังไม่มีคำแนะนำฉุกเฉินเฉพาะพื้นที่และประเภทภัยที่ตรวจสอบได้ กรุณาตรวจสอบประกาศและคำแนะนำจากหน่วยงานทางการในพื้นที่ก่อนดำเนินการ",
+    "safety_steps": [
+      "ตรวจสอบข้อมูลล่าสุดจากช่องทางทางการของพื้นที่",
+      "ผลแนะนำให้งดเดินทางอาจเกิดจากข้อมูลไม่เพียงพอ ไม่ใช่การยืนยันว่าเกิดเหตุฉุกเฉินแล้ว"
+    ],
+    "contacts": [],
+    "nearest_support": []
+  },
+  "emergency_contact_metadata": {},
+  "emergency_assessment": {
+    "status": "fallback",
+    "procedure_id": null,
+    "evidence_ids": [],
+    "issues": [
+      "emergency_guidance_unavailable"
+    ],
+    "rejected_evidence": {
+      "mock-knowledge": [
+        "emergency_unverified_source",
+        "emergency_scope_not_reviewed"
+      ]
+    }
+  },
+  "escalation_required": true,
+  "escalation_reasons": [
+    "emergency_guidance_unavailable"
+  ],
+  "selected_route_id": null,
+  "suggested_departure_time": null,
+  "explanation": {
+    "summary": "แนะนำให้งดการเดินทางตามแผนนี้ในขณะนี้ และตรวจสอบข้อมูลเพิ่มเติมก่อนตัดสินใจ",
+    "reasons": [
+      "ผลประเมินที่ได้รับจัดความเสี่ยงเป็นระดับสูง"
+    ],
+    "instructions": [
+      "ตรวจสอบประกาศจากหน่วยงานทางการและความพร้อมของเส้นทางก่อนออกเดินทาง",
+      "ให้ผู้รับผิดชอบตรวจสอบข้อมูลที่ขาดหรือขัดแย้งก่อนนำผลไปใช้"
+    ],
+    "uncertainty": [
+      "ผลนี้มีข้อจำกัดด้านข้อมูล โปรดอ่านสถานะข้อมูลและเหตุผลที่ต้องตรวจสอบต่อ"
+    ],
+    "mode": "template"
+  },
+  "citations": [
+    {
+      "evidence_id": "mock-risk",
+      "source_name": "SYNTHETIC risk fixture",
+      "url": "https://example.org/mock/risk",
+      "observed_at": "2026-09-19T15:44:48.978736Z",
+      "fetched_at": "2026-09-19T15:49:48.978736Z",
+      "expires_at": "2026-09-19T16:54:48.978736Z"
+    }
+  ],
+  "evidence_status": [
+    {
+      "evidence_id": "mock-knowledge",
+      "used_by_decision": false,
+      "used_by_emergency": false,
+      "cited": false,
+      "validation_issues": []
+    },
+    {
+      "evidence_id": "mock-official",
+      "used_by_decision": false,
+      "used_by_emergency": false,
+      "cited": false,
+      "validation_issues": []
+    },
+    {
+      "evidence_id": "mock-risk",
+      "used_by_decision": true,
+      "used_by_emergency": false,
+      "cited": true,
+      "validation_issues": []
+    },
+    {
+      "evidence_id": "mock-route",
+      "used_by_decision": false,
+      "used_by_emergency": false,
+      "cited": false,
+      "validation_issues": []
+    },
+    {
+      "evidence_id": "mock-time",
+      "used_by_decision": false,
+      "used_by_emergency": false,
+      "cited": false,
+      "validation_issues": []
+    },
+    {
+      "evidence_id": "mock-transport",
+      "used_by_decision": false,
+      "used_by_emergency": false,
+      "cited": false,
+      "validation_issues": []
+    },
+    {
+      "evidence_id": "mock-weather",
+      "used_by_decision": false,
+      "used_by_emergency": false,
+      "cited": false,
+      "validation_issues": []
+    }
+  ],
+  "rules_fired": [
+    "HIGH_RISK"
+  ],
+  "degraded_services": [
+    "llm"
+  ],
+  "validation_results": [
+    "INPUT_SCHEMA_VALID",
+    "CONTEXT_MATCHED",
+    "ACTION_LOCKED",
+    "EMERGENCY_FALLBACK",
+    "LLM_DISABLED_TEMPLATE_USED"
+  ],
+  "versions": {
+    "policy": "prototype-v3",
+    "policy_sha256": "f87e7a7311f14210955b8d655cf36a045fbb632d0274ef4e90106219a5c38dec",
+    "policy_status": "prototype",
+    "prompt": "v1",
+    "model": "template-v1",
+    "risk_model": "mock-risk-v1",
+    "data": "mock-data-v1",
+    "schema_version": "07-draft-v3",
+    "emergency_catalog": "emergency-v1",
+    "emergency_catalog_sha256": "9d2d28c87674b38567353782ef62e221745e99a40baeeff0fb397fb44feb988d"
+  },
+  "evaluated_at": "2026-09-19T15:54:49.055574Z",
+  "valid_until": "2026-09-19T16:54:48.978736Z",
+  "prototype_only": true
+}

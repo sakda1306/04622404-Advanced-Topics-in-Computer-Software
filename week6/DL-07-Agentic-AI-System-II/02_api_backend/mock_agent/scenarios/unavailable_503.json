@@ -1,0 +1,11 @@
+{
+  "description": "The agent is overloaded and asks the caller to retry later.",
+  "http": {
+    "status": 503,
+    "error": "overloaded",
+    "headers": {
+      "Retry-After": "2"
+    }
+  },
+  "response": {}
+}

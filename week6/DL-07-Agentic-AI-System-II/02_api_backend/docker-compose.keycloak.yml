@@ -1,0 +1,18 @@
+# Verify real Keycloak tokens instead of dev tokens (D-101, identity/README.md at the repo root).
+#
+#   docker compose -f docker-compose.yml -f docker-compose.keycloak.yml up -d
+#
+# Needs the shared Keycloak running first: `docker compose up -d keycloak` at the repo root.
+services:
+  api:
+    environment:
+      # An empty key switches the verifier from the dev key to the issuer's JWKS.
+      DEV_JWT_SIGNING_KEY: ""
+      JWT_ISSUER: ${KEYCLOAK_ISSUER:-http://localhost:8180/realms/travel-safety}
+      JWT_AUDIENCE: travel-safety-api
+      JWT_ALGORITHMS: RS256
+      # The issuer URL is localhost from the browser's point of view; inside this
+      # container the same Keycloak is reached through the host.
+      JWKS_URL: ${KEYCLOAK_JWKS_URL:-http://host.docker.internal:8180/realms/travel-safety/protocol/openid-connect/certs}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

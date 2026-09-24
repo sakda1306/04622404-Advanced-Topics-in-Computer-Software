@@ -1,0 +1,23 @@
+# Response API
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+jsonschema
+
+# Storage and live updates
+sqlalchemy[asyncio]
+asyncpg
+redis
+
+# Notification clients (install a provider SDK separately once a provider is chosen)
+httpx
+
+# Monitoring
+structlog
+opentelemetry-sdk
+prometheus-client
+
+# Testing
+pytest
+pytest-asyncio
