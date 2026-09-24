@@ -1,0 +1,280 @@
+name: tsa-integration
+
+x-backend-env: &backend-env
+  APP_ENV: dev
+  LOG_LEVEL: INFO
+  LOG_JSON: "true"
+  DATABASE_URL: postgresql+asyncpg://tsa:tsa@postgres:5432/tsa
+  REDIS_URL: redis://redis-core:6379/0
+  REDIS_CACHE_URL: redis://redis-cache:6379/0
+  CELERY_BROKER_URL: redis://redis-core:6379/2
+  AGENT_SERVICE_URL: http://travel-agent:8010
+  AGENT_SERVICE_TOKEN: dev-agent-token
+  CORS_ALLOWED_ORIGINS: http://localhost:3000
+  DEV_JWT_SIGNING_KEY: ""
+  JWT_ISSUER: http://localhost:8180/realms/travel-safety
+  JWT_AUDIENCE: travel-safety-api
+  JWT_ALGORITHMS: RS256
+  JWKS_URL: http://host.docker.internal:8180/realms/travel-safety/protocol/openid-connect/certs
+  OBJECT_STORAGE_ENDPOINT: minio:9000
+  OBJECT_STORAGE_PUBLIC_URL: http://localhost:9001
+  OBJECT_STORAGE_ACCESS_KEY: tsa-dev
+  OBJECT_STORAGE_SECRET_KEY: tsa-dev-secret
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.7.4
+    command: ["start-dev", "--import-realm"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin-dev-change-me
+      KC_HOSTNAME: http://localhost:8180
+      KC_HOSTNAME_BACKCHANNEL_DYNAMIC: "true"
+      KC_HTTP_ENABLED: "true"
+      KC_HEALTH_ENABLED: "true"
+      KC_DEV_USER_PASSWORD: dev-password-change-me
+      KC_OPS_ADMIN_SECRET: ops-admin-dev-secret-change-me
+    ports:
+      - "127.0.0.1:8180:8080"
+    volumes:
+      - keycloak-integration-data:/opt/keycloak/data
+      - ./identity/keycloak:/opt/keycloak/data/import:ro
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          exec 3<>/dev/tcp/127.0.0.1/9000 &&
+          printf 'GET /health/ready HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n' >&3 &&
+          grep -q '"UP"' <&3
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  postgres:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: tsa
+      POSTGRES_PASSWORD: tsa
+      POSTGRES_DB: tsa
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - pg-integration-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tsa -d tsa"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis-core:
+    image: redis:7-alpine
+    ports:
+      - "127.0.0.1:6380:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis-cache:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  minio:
+    image: quay.io/minio/minio:latest
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: tsa-dev
+      MINIO_ROOT_PASSWORD: tsa-dev-secret
+    ports:
+      - "127.0.0.1:9001:9000"
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  decision-engine:
+    build:
+      context: ./DL-07-Agentic-AI-System-II/07_decision_llm_engine
+      target: runtime
+    ports:
+      - "127.0.0.1:8050:8050"
+    environment:
+      DECISION_POLICY_VERSION: prototype-v3
+      AUDIT_LOG_PATH: /app/data/audit.jsonl
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      LLM_MODEL_EXPLAINER: ${LLM_MODEL_EXPLAINER:-disabled}
+      GEMINI_API_BASE: ${GEMINI_API_BASE:-https://generativelanguage.googleapis.com/v1beta}
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8050/health', timeout=2)"
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  recommendation-postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: reco_user
+      POSTGRES_PASSWORD: reco-dev-password
+      POSTGRES_DB: reco_db
+    volumes:
+      - reco-integration-data:/var/lib/postgresql/data
+      - ./DL-07-Agentic-AI-System-II/08_recommendation_feedback/db_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U reco_user -d reco_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  recommendation-redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  recommendation-feedback:
+    build:
+      context: ./DL-07-Agentic-AI-System-II/08_recommendation_feedback
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://reco_user:reco-dev-password@recommendation-postgres:5432/reco_db
+      REDIS_URL: redis://recommendation-redis:6379/0
+      DECISION_ENGINE_URL: http://decision-engine:8050
+    depends_on:
+      recommendation-postgres:
+        condition: service_healthy
+      recommendation-redis:
+        condition: service_healthy
+      decision-engine:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=2)"
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  travel-agent:
+    build:
+      context: ./DL-07-Agentic-AI-System-II
+      dockerfile: 03_travel_ai_agent/Dockerfile
+      target: runtime
+    ports:
+      - "127.0.0.1:8010:8010"
+    environment:
+      DECISION_SERVICE_URL: http://decision-engine:8050
+      USE_MOCK_TOOLS: "false"
+      AGENT_SERVICE_TOKEN: dev-agent-token
+      TOOL_TIMEOUT_SECONDS: "15"
+      TRANSPORT_PROVIDER: "longdo"
+    depends_on:
+      decision-engine:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8010/health', timeout=2)"
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  migrate:
+    build:
+      context: ./DL-07-Agentic-AI-System-II/02_api_backend
+      target: dev
+    command:
+      [
+        "sh",
+        "-c",
+        "alembic upgrade head && python -m scripts.seed_reference_data",
+      ]
+    environment:
+      <<: *backend-env
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  worker:
+    build:
+      context: ./DL-07-Agentic-AI-System-II/02_api_backend
+      target: dev
+    command:
+      [
+        "celery",
+        "-A",
+        "app.workers.celery_app:celery_app",
+        "worker",
+        "-Q",
+        "recommendations,alerts,maintenance",
+        "--concurrency",
+        "2",
+        "--loglevel",
+        "INFO",
+      ]
+    environment:
+      <<: *backend-env
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      travel-agent:
+        condition: service_healthy
+      redis-core:
+        condition: service_healthy
+      redis-cache:
+        condition: service_healthy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  api:
+    build:
+      context: ./DL-07-Agentic-AI-System-II/02_api_backend
+      target: dev
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      <<: *backend-env
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      travel-agent:
+        condition: service_healthy
+      redis-core:
+        condition: service_healthy
+      redis-cache:
+        condition: service_healthy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import sys, urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2).status == 200 else 1)"
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  keycloak-integration-data:
+  pg-integration-data:
+  reco-integration-data:

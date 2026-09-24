@@ -1,0 +1,20 @@
+{
+  "version": "emergency-v1",
+  "procedures": [],
+  "fallback": {
+    "th-TH": {
+      "what_to_do_now": "ยังไม่มีคำแนะนำฉุกเฉินเฉพาะพื้นที่และประเภทภัยที่ตรวจสอบได้ กรุณาตรวจสอบประกาศและคำแนะนำจากหน่วยงานทางการในพื้นที่ก่อนดำเนินการ",
+      "safety_steps": [
+        "ตรวจสอบข้อมูลล่าสุดจากช่องทางทางการของพื้นที่",
+        "ผลแนะนำให้งดเดินทางอาจเกิดจากข้อมูลไม่เพียงพอ ไม่ใช่การยืนยันว่าเกิดเหตุฉุกเฉินแล้ว"
+      ]
+    },
+    "en-US": {
+      "what_to_do_now": "Verified emergency guidance for this location and hazard is unavailable. Check current instructions from the relevant local authority before acting.",
+      "safety_steps": [
+        "Check current information through official local channels.",
+        "An avoid-travel decision can reflect insufficient data; it does not confirm an emergency."
+      ]
+    }
+  }
+}

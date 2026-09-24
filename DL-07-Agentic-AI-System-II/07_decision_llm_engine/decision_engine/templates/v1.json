@@ -1,0 +1,44 @@
+{
+  "th-TH": {
+    "summaries": {
+      "NORMAL": "ตามข้อมูลที่ได้รับ สามารถเดินทางตามแผนได้ โดยติดตามประกาศล่าสุดก่อนออกเดินทาง",
+      "CHANGE_ROUTE": "แนะนำให้เปลี่ยนไปใช้เส้นทางทางเลือกที่ข้อมูลระบุว่าปลอดภัยกว่า",
+      "DELAY": "แนะนำให้เลื่อนเวลาเดินทางตามผลประเมินช่วงเวลาที่ได้รับ",
+      "AVOID": "แนะนำให้งดการเดินทางตามแผนนี้ในขณะนี้ และตรวจสอบข้อมูลเพิ่มเติมก่อนตัดสินใจ"
+    },
+    "reasons": {
+      "OFFICIAL_RESTRICTION": "ข้อมูลที่ได้รับระบุว่ามีประกาศให้งดเดินทางหรือปิดเส้นทาง",
+      "HIGH_RISK": "ผลประเมินที่ได้รับจัดความเสี่ยงเป็นระดับสูง",
+      "NO_SAFE_ROUTE": "ข้อมูลเส้นทางที่ได้รับระบุว่าไม่มีเส้นทางที่ปลอดภัยให้ใช้",
+      "INSUFFICIENT_EVIDENCE": "ข้อมูลยังไม่ครบถ้วน เป็นปัจจุบัน หรือสอดคล้องกันเพียงพอที่จะให้คำแนะนำที่มั่นใจได้",
+      "SAFER_ROUTE": "มีเส้นทางทางเลือกที่ใช้ได้และมีระดับความเสี่ยงต่ำกว่าเส้นทางเดิม",
+      "SAFER_TIME": "มีหลักฐานประกอบผลประเมินว่าการเดินทางในเวลาถัดไปมีความเสี่ยงลดลง",
+      "LOW_RISK_CLEAR": "ผลประเมินระบุความเสี่ยงต่ำและไม่มีข้อจำกัดที่มีผลอยู่ในข้อมูลที่ได้รับ",
+      "UNRESOLVED": "กรณีนี้ยังไม่มีนโยบายที่ตกลงไว้เพียงพอ จึงต้องตรวจสอบเพิ่มเติม"
+    },
+    "instruction": "ตรวจสอบประกาศจากหน่วยงานทางการและความพร้อมของเส้นทางก่อนออกเดินทาง",
+    "review_instruction": "ให้ผู้รับผิดชอบตรวจสอบข้อมูลที่ขาดหรือขัดแย้งก่อนนำผลไปใช้",
+    "uncertainty": "ผลนี้มีข้อจำกัดด้านข้อมูล โปรดอ่านสถานะข้อมูลและเหตุผลที่ต้องตรวจสอบต่อ"
+  },
+  "en-US": {
+    "summaries": {
+      "NORMAL": "The supplied assessment supports the planned trip; check current official notices before departure.",
+      "CHANGE_ROUTE": "Use the available alternative identified as safer by the supplied assessment.",
+      "DELAY": "Delay departure according to the supplied assessment of a safer later time.",
+      "AVOID": "Avoid the planned trip for now and verify the available information before proceeding."
+    },
+    "reasons": {
+      "OFFICIAL_RESTRICTION": "The supplied information reports an avoid-travel notice or route closure.",
+      "HIGH_RISK": "The supplied risk assessment classifies the risk as HIGH.",
+      "NO_SAFE_ROUTE": "The supplied route assessment reports no safe usable route.",
+      "INSUFFICIENT_EVIDENCE": "The evidence is not sufficiently complete, current, or consistent for a confident recommendation.",
+      "SAFER_ROUTE": "A usable alternative is supported by evidence and has a lower assessed risk level.",
+      "SAFER_TIME": "The supplied evidence supports a lower-risk departure at a later time.",
+      "LOW_RISK_CLEAR": "The supplied assessment reports LOW risk and no active restriction.",
+      "UNRESOLVED": "This case needs further review because the provisional policy does not resolve it."
+    },
+    "instruction": "Check official notices and route availability before departure.",
+    "review_instruction": "Ask the responsible reviewer to resolve missing or conflicting information before using this result.",
+    "uncertainty": "This result has evidence limitations; review the data status and escalation reasons."
+  }
+}

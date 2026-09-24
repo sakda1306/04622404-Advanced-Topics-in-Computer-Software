@@ -1,0 +1,70 @@
+# 01_web_app — frontend stack. Runs standalone, or joins the backend network.
+name: tsa-webapp
+
+x-web-env: &web-env
+  # Browser-side URLs: resolved by the user's browser on the host, never inside Docker.
+  NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8000}
+  NEXT_PUBLIC_KEYCLOAK_URL: ${NEXT_PUBLIC_KEYCLOAK_URL:-http://localhost:8180}
+  NEXT_PUBLIC_KEYCLOAK_REALM: ${NEXT_PUBLIC_KEYCLOAK_REALM:-travel-safety}
+  NEXT_PUBLIC_KEYCLOAK_CLIENT_ID: ${NEXT_PUBLIC_KEYCLOAK_CLIENT_ID:-travel-safety-web}
+  NEXT_PUBLIC_DEFAULT_LOCALE: ${NEXT_PUBLIC_DEFAULT_LOCALE:-th}
+  # Server-side URL: used by Server Components / Route Handlers only.
+  # Inside a container `localhost` is the container itself, so use the service name.
+  API_INTERNAL_URL: ${API_INTERNAL_URL:-http://api:8000}
+  ROUTING_API_URL: ${ROUTING_API_URL:-https://valhalla1.openstreetmap.de/route}
+
+services:
+  # Development: hot reload against the source tree.
+  #   docker compose up web
+  web:
+    build:
+      context: .
+      target: dev
+    env_file:
+      - .env
+    environment:
+      <<: *web-env
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      LLM_MODEL_EXPLAINER: ${LLM_MODEL_EXPLAINER:-gemini-3.6-flash}
+    ports:
+      - "${WEB_HOST_PORT:-3000}:3000"
+    volumes:
+      - ./:/app
+      # Anonymous volumes keep the container's own node_modules/.next,
+      # so a Windows/macOS host tree never overwrites the Linux install.
+      - /app/node_modules
+      - /app/.next
+    networks: [backend]
+
+  # Production-like: what integration and the demo should run.
+  #   docker compose --profile prod up --build web-prod
+  web-prod:
+    profiles: [prod]
+    build:
+      context: .
+      target: runner
+      args:
+        # Build args, not env: NEXT_PUBLIC_* is baked into the bundle at build time.
+        NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8000}
+        NEXT_PUBLIC_KEYCLOAK_URL: ${NEXT_PUBLIC_KEYCLOAK_URL:-http://localhost:8180}
+        NEXT_PUBLIC_KEYCLOAK_REALM: ${NEXT_PUBLIC_KEYCLOAK_REALM:-travel-safety}
+        NEXT_PUBLIC_KEYCLOAK_CLIENT_ID: ${NEXT_PUBLIC_KEYCLOAK_CLIENT_ID:-travel-safety-web}
+        NEXT_PUBLIC_DEFAULT_LOCALE: ${NEXT_PUBLIC_DEFAULT_LOCALE:-th}
+    image: tsa-webapp:prod
+    environment:
+      API_INTERNAL_URL: ${API_INTERNAL_URL:-http://api:8000}
+      ROUTING_API_URL: ${ROUTING_API_URL:-https://valhalla1.openstreetmap.de/route}
+    ports:
+      - "${WEB_HOST_PORT:-3000}:3000"
+    networks: [backend]
+
+networks:
+  backend:
+    # Default: this stack gets its own network. The browser still reaches the API
+    # through the published host port, so plain development needs nothing more.
+    #
+    # To let server-side code reach the API container directly, start the backend
+    # stack first and switch to its network by uncommenting these two lines
+    # (`docker network ls` confirms the exact name):
+    # external: true
+    # name: tsa-backend_backend

@@ -1,0 +1,5 @@
+{
+  "description": "The agent returns a body that breaks the contract.",
+  "raw_body": "{\"status\": \"done\", \"risk\": {\"level\": \"EXTREME\"}, \"recommendation\": \"go\"}",
+  "response": {}
+}

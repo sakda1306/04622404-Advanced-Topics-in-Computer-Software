@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Live Alert — Backend-Initiated Push</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:   #f5f5f5;
+      --color-ink:     #2d3142;
+      --color-muted:   #4f5d75;
+      --color-accent:  #eb6c36;
+      --font-sans:     'Geist', system-ui, sans-serif;
+      --font-serif:    'Instrument Serif', 'Noto Serif', serif;
+      --font-mono:     'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+    .frame { max-width: 1320px; width: 100%; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+    svg { width: 100%; min-width: 1040px; display: block; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">Sequence · 02_api_backend</p>
+    <h1>Trip live alert — the backend re-checks on its own; Web App only polls</h1>
+
+    <svg viewBox="0 0 1280 860" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="trip-live-alert-flow-title trip-live-alert-flow-desc">
+      <title id="trip-live-alert-flow-title">Trip live alert, a backend-initiated push</title>
+      <desc id="trip-live-alert-flow-desc">Sequence diagram showing Celery beat waking a worker on a schedule to re-check trips with live alerts on; the worker re-assesses through the Travel AI Agent and, only if the risk level or recommendation type changed, appends a message to the trip's conversation; the Web App has no push channel yet, so it only learns about the alert the next time it polls the conversation.</desc>
+
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/>
+        </marker>
+        <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#eb6c36"/>
+        </marker>
+        <marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#2e5aa8"/>
+        </marker>
+        <marker id="arrow-open" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polyline points="0 0, 8 3, 0 6" fill="none" stroke="#4f5d75" stroke-width="1.2"/>
+        </marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+      <!-- ================= PRECONDITION NOTE (sits in the Web App/API gap, clear of both lifelines) ================= -->
+      <rect x="168" y="116" width="204" height="36" rx="4" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.20)" stroke-width="0.8" stroke-dasharray="3,2"/>
+      <text x="180" y="132" fill="#4f5d75" font-size="8" font-family="'Geist', sans-serif">Precondition: trip exists,</text>
+      <text x="180" y="144" fill="#4f5d75" font-size="8" font-family="'Geist', sans-serif">live alerts on (consent_at set)</text>
+
+      <!-- ================= LIFELINES ================= -->
+      <line x1="150" y1="104" x2="150" y2="700" stroke="rgba(45,49,66,0.22)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="390" y1="104" x2="390" y2="700" stroke="rgba(45,49,66,0.22)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="630" y1="104" x2="630" y2="700" stroke="rgba(45,49,66,0.22)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="870" y1="104" x2="870" y2="700" stroke="rgba(45,49,66,0.22)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="1110" y1="104" x2="1110" y2="700" stroke="rgba(45,49,66,0.22)" stroke-width="1" stroke-dasharray="3,3"/>
+
+      <!-- ================= ACTIVATION BAR =================
+           Worker is "alive" from the scan task through the opt fragment. -->
+      <rect x="866" y="176" width="8" height="320" fill="rgba(45,49,66,0.06)" stroke="#4f5d75" stroke-width="0.8"/>
+
+      <!-- ================= OPT FRAGMENT (drawn before its inner arrow, after the activation bar) ================= -->
+      <rect x="796" y="416" width="230" height="92" rx="4" fill="rgba(45,49,66,0.02)" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <rect x="796" y="416" width="40" height="16" rx="2" fill="#f5f5f5" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <text x="816" y="428" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.12em">OPT</text>
+      <text x="808" y="448" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.02em">[risk level or type changed]</text>
+
+      <!-- ================= MESSAGE ARROWS ================= -->
+      <!-- M1: Beat -> Worker (async task via broker, open head) -->
+      <line x1="630" y1="176" x2="870" y2="176" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow-open)"/>
+
+      <!-- M2: Worker self-message — find trips due for re-check -->
+      <path d="M 874 216 L 918 216 L 918 252 L 874 252" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+      <!-- M3: Worker -> Agent (call, link-blue) -->
+      <line x1="870" y1="304" x2="1110" y2="304" stroke="#2e5aa8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+
+      <!-- M4: Agent -> Worker (return, muted dashed) -->
+      <line x1="1110" y1="360" x2="870" y2="360" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+
+      <!-- M5: Worker self-message (inside opt) — append message -->
+      <path d="M 874 460 L 934 460 L 934 480 L 874 480" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+      <!-- M6: Web App -> API (call, link-blue) — polls later -->
+      <line x1="150" y1="592" x2="390" y2="592" stroke="#2e5aa8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+
+      <!-- M7: API -> Web App (headline return, coral) -->
+      <line x1="390" y1="648" x2="150" y2="648" stroke="#eb6c36" stroke-width="1.4" marker-end="url(#arrow-accent)"/>
+
+      <!-- ================= MESSAGE LABELS ================= -->
+      <!-- M1 -->
+      <rect x="676" y="156" width="168" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="760" y="165" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">TASK: SCAN_TRIP_ALERTS</text>
+
+      <!-- M2 (beside the loop) -->
+      <rect x="926" y="226" width="112" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="982" y="235" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">FIND DUE TRIPS</text>
+
+      <!-- M3 -->
+      <rect x="908" y="284" width="164" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="990" y="293" fill="#2e5aa8" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">POST /V1/AGENT/RUNS</text>
+
+      <!-- M4 -->
+      <rect x="898" y="340" width="184" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="990" y="349" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">RISK + RECOMMENDATION</text>
+
+      <!-- M5 (beside the loop, inside opt) -->
+      <rect x="942" y="464" width="72" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="978" y="473" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.04em">APPEND MSG</text>
+
+      <!-- M6 -->
+      <rect x="176" y="572" width="188" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="270" y="581" fill="#2e5aa8" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">GET .../MESSAGES</text>
+
+      <!-- M7 (headline) -->
+      <rect x="150" y="628" width="240" height="12" rx="2" fill="#f5f5f5"/>
+      <text x="270" y="637" fill="#eb6c36" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">200 · NEW ASSISTANT MESSAGE</text>
+
+      <!-- ================= ANNOTATION CALLOUTS (bottom margin) ================= -->
+      <!-- Callout 1: no push yet -->
+      <text x="70" y="748" fill="#eb6c36" font-size="14" font-style="italic" font-family="'Instrument Serif', serif" text-anchor="start">no push channel —</text>
+      <text x="70" y="766" fill="#eb6c36" font-size="14" font-style="italic" font-family="'Instrument Serif', serif" text-anchor="start">Web App must poll</text>
+      <path d="M 175 736 Q 200 700 220 660" fill="none" stroke="rgba(235,108,54,0.50)" stroke-width="1" stroke-dasharray="4,3"/>
+      <circle cx="220" cy="660" r="2" fill="#eb6c36"/>
+
+      <!-- Callout 2: scan cadence — stays inside the Beat/Worker gap, clear of every lifeline -->
+      <text x="844" y="132" fill="#2d3142" font-size="14" font-style="italic" font-family="'Instrument Serif', serif" text-anchor="end">beat wakes it</text>
+      <text x="844" y="150" fill="#2d3142" font-size="14" font-style="italic" font-family="'Instrument Serif', serif" text-anchor="end">every P-56 min</text>
+      <path d="M 800 156 Q 740 168 700 180" fill="none" stroke="rgba(45,49,66,0.40)" stroke-width="1" stroke-dasharray="4,3"/>
+      <circle cx="700" cy="180" r="2" fill="#2d3142"/>
+
+      <!-- ================= ACTOR BOXES ================= -->
+      <!-- Web App (client / soft) -->
+      <rect x="60" y="40" width="180" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="60" y="40" width="180" height="64" rx="6" fill="rgba(79,93,117,0.10)" stroke="#7a8399" stroke-width="1"/>
+      <rect x="68" y="46" width="32" height="12" rx="2" fill="transparent" stroke="rgba(122,131,153,0.40)" stroke-width="0.8"/>
+      <text x="84" y="55" fill="#7a8399" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">USER</text>
+      <text x="150" y="76" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Web App</text>
+      <text x="150" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">module 01</text>
+
+      <!-- Backend API (plain backend service) -->
+      <rect x="300" y="40" width="180" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="300" y="40" width="180" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <rect x="308" y="46" width="28" height="12" rx="2" fill="transparent" stroke="rgba(45,49,66,0.40)" stroke-width="0.8"/>
+      <text x="322" y="55" fill="rgba(45,49,66,0.8)" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">API</text>
+      <text x="390" y="76" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Backend API</text>
+      <text x="390" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">FastAPI · /v1</text>
+
+      <!-- Celery beat (plain backend service, matches backend-architecture.html) -->
+      <rect x="540" y="40" width="180" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="540" y="40" width="180" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+      <rect x="548" y="46" width="32" height="12" rx="2" fill="transparent" stroke="rgba(45,49,66,0.40)" stroke-width="0.8"/>
+      <text x="564" y="55" fill="rgba(45,49,66,0.8)" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">CRON</text>
+      <text x="630" y="76" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Celery beat</text>
+      <text x="630" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">scheduler</text>
+
+      <!-- Celery worker (focal / coral, matches backend-architecture.html) -->
+      <rect x="780" y="40" width="180" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="780" y="40" width="180" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.2"/>
+      <rect x="788" y="46" width="44" height="12" rx="2" fill="transparent" stroke="rgba(235,108,54,0.45)" stroke-width="0.8"/>
+      <text x="810" y="55" fill="rgba(235,108,54,0.9)" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">WORKER</text>
+      <text x="870" y="76" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Celery worker</text>
+      <text x="870" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">queue: alerts</text>
+
+      <!-- Travel AI Agent (external, matches backend-architecture.html) -->
+      <rect x="1020" y="40" width="180" height="64" rx="6" fill="#f5f5f5"/>
+      <rect x="1020" y="40" width="180" height="64" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
+      <rect x="1028" y="46" width="28" height="12" rx="2" fill="transparent" stroke="rgba(45,49,66,0.25)" stroke-width="0.8"/>
+      <text x="1042" y="55" fill="rgba(45,49,66,0.6)" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">EXT</text>
+      <text x="1110" y="76" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Travel AI Agent</text>
+      <text x="1110" y="92" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">module 03</text>
+
+      <!-- ================= LEGEND ================= -->
+      <line x1="60" y1="792" x2="1220" y2="792" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>
+      <text x="60" y="808" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.18em">LEGEND</text>
+
+      <line x1="60" y1="827" x2="88" y2="827" stroke="#2e5aa8" stroke-width="1.2" marker-end="url(#arrow-link)"/>
+      <text x="96" y="832" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">HTTP request</text>
+
+      <line x1="270" y1="827" x2="298" y2="827" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <text x="306" y="832" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Return</text>
+
+      <line x1="450" y1="827" x2="478" y2="827" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow-open)"/>
+      <text x="486" y="832" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Async task (broker)</text>
+
+      <rect x="670" y="820" width="14" height="14" rx="2" fill="rgba(45,49,66,0.02)" stroke="rgba(45,49,66,0.22)" stroke-width="1"/>
+      <text x="692" y="832" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Conditional step</text>
+
+      <rect x="850" y="822" width="14" height="10" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1"/>
+      <text x="872" y="832" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Focal (worker)</text>
+
+      <line x1="1030" y1="827" x2="1058" y2="827" stroke="#eb6c36" stroke-width="1.4" marker-end="url(#arrow-accent)"/>
+      <text x="1066" y="832" fill="#4f5d75" font-size="8.5" font-family="'Geist', sans-serif">Alert delivered</text>
+    </svg>
+  </div>
+</body>
+</html>

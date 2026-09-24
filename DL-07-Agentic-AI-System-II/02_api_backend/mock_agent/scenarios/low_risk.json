@@ -1,0 +1,116 @@
+{
+  "description": "Everything fresh and available; travel normally.",
+  "valid_for_seconds": 3600,
+  "freshness_age_seconds": {
+    "WEATHER": 1200,
+    "TRANSPORT": 120,
+    "DISASTER": 180
+  },
+  "response": {
+    "status": "completed",
+    "risk": {
+      "level": "LOW",
+      "score": 0.12,
+      "confidence": 0.9,
+      "factors": [
+        {
+          "type": "WEATHER",
+          "level": "LOW",
+          "description": "Light clouds, no rain expected."
+        }
+      ]
+    },
+    "recommendation": {
+      "type": "TRAVEL_NORMALLY",
+      "summary": "Conditions are safe for your trip.",
+      "reasons": [
+        "No active warnings on the route.",
+        "Trains are running on time."
+      ]
+    },
+    "routes": {
+      "primary": {
+        "route_id": "r-primary",
+        "label": "Train via Phitsanulok",
+        "travel_modes": [
+          "TRAIN"
+        ],
+        "distance_km": 661,
+        "duration_minutes": 690,
+        "risk_level": "LOW",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.5018,
+              13.7563
+            ],
+            [
+              99.5,
+              16.0
+            ],
+            [
+              98.9853,
+              18.7883
+            ]
+          ]
+        },
+        "legs": [
+          {
+            "mode": "TRAIN",
+            "from": "Krung Thep Aphiwat",
+            "to": "Chiang Mai",
+            "operator": "State Railway of Thailand",
+            "service_status": "on_time"
+          }
+        ],
+        "restrictions": [],
+        "tips": [
+          "Book a sleeper seat in advance."
+        ]
+      },
+      "alternatives": []
+    },
+    "hazards": [],
+    "emergency_instructions": null,
+    "sources": [
+      {
+        "source_id": "src-weather",
+        "name": "Thai Meteorological Department",
+        "category": "WEATHER",
+        "url": "https://www.tmd.go.th"
+      },
+      {
+        "source_id": "src-disaster",
+        "name": "Department of Disaster Prevention and Mitigation",
+        "category": "DISASTER",
+        "url": "https://www.disaster.go.th"
+      },
+      {
+        "source_id": "src-rail",
+        "name": "State Railway of Thailand",
+        "category": "TRANSPORT",
+        "url": "https://www.railway.co.th"
+      }
+    ],
+    "service_status": {
+      "weather": "ok",
+      "transport": "ok",
+      "disaster": "ok",
+      "risk_model": "ok",
+      "rag": "ok",
+      "llm": "ok"
+    },
+    "clarification": null,
+    "versions": {
+      "agent": "mock-0.1.0",
+      "risk_model": "mock-risk-2026.09",
+      "prompt": "mock-advice-v1"
+    },
+    "diagnostics": {
+      "tool_calls": 6,
+      "duration_ms": 1400,
+      "trace_id": "mock-trace-low"
+    }
+  }
+}

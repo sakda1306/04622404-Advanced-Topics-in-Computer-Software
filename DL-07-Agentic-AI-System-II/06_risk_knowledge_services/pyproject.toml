@@ -1,0 +1,16 @@
+[project]
+name = "team-d-risk-knowledge-services"
+version = "0.1.2"
+description = "Explainable risk, disaster knowledge retrieval, and route analysis for Module 06"
+requires-python = ">=3.12"
+dependencies = ["pydantic>=2.10,<3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

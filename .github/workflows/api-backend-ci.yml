@@ -1,0 +1,129 @@
+# CI for the API & Backend module (docs/04_project_structure.md section 11).
+#
+# Scoped to DL-07-Agentic-AI-System-II/02_api_backend via the paths filter below so it
+# stays silent for the other 7 modules in this monorepo. Ownership of a shared/root CI
+# setup is still open (04_project_structure.md section 13, item 3) — until the team
+# decides otherwise, this file only speaks for the backend module.
+name: api-backend-ci
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "DL-07-Agentic-AI-System-II/02_api_backend/**"
+      - ".github/workflows/api-backend-ci.yml"
+  pull_request:
+    paths:
+      - "DL-07-Agentic-AI-System-II/02_api_backend/**"
+      - ".github/workflows/api-backend-ci.yml"
+
+concurrency:
+  group: api-backend-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  MODULE_DIR: DL-07-Agentic-AI-System-II/02_api_backend
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/DL-07-Agentic-AI-System-II/02_api_backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: ${{ env.MODULE_DIR }}/uv.lock
+      - run: uv sync --group dev
+      - run: uv run ruff format --check .
+      - run: uv run ruff check .
+      - run: uv run mypy app tests migrations scripts
+
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/DL-07-Agentic-AI-System-II/02_api_backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: ${{ env.MODULE_DIR }}/uv.lock
+      - run: uv sync --group dev
+      # Integration tests start their own PostGIS container via Testcontainers, using
+      # the runner's Docker daemon directly (no docker compose here).
+      - run: uv run pytest tests/unit tests/api tests/integration tests/contract --cov --cov-report=xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-xml
+          path: ${{ env.MODULE_DIR }}/coverage.xml
+
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/DL-07-Agentic-AI-System-II/02_api_backend
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build --target runtime -t tsa-backend:ci .
+      - uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: tsa-backend:ci
+          format: table
+          exit-code: "1"
+          severity: CRITICAL,HIGH
+          ignore-unfixed: true
+
+  # Flags a breaking change in the exported contract (openapi.json) against the PR's
+  # base branch, per docs/04_project_structure.md section 11 item 4. PR-only: there is
+  # nothing to diff a plain push against.
+  openapi-diff:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/DL-07-Agentic-AI-System-II/02_api_backend
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: curl -fsSL https://raw.githubusercontent.com/oasdiff/oasdiff/main/install.sh | sh
+      - name: Diff against ${{ github.base_ref }}
+        run: |
+          git show "origin/${{ github.base_ref }}:${MODULE_DIR}/openapi.json" > /tmp/base-openapi.json 2>/dev/null \
+            || echo "{}" > /tmp/base-openapi.json  # first time openapi.json exists on this branch
+          oasdiff breaking /tmp/base-openapi.json openapi.json --fail-on ERR
+
+  # Only for a PR into develop: the compose stack (api, worker, beat, mock-agent, ...)
+  # takes real setup time, so pushes to a feature branch skip it (docs section 11 item 5).
+  e2e:
+    if: github.event_name == 'pull_request' && github.base_ref == 'develop'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/DL-07-Agentic-AI-System-II/02_api_backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: ${{ env.MODULE_DIR }}/uv.lock
+      - run: uv sync --group dev
+      - run: docker compose up -d --build --wait
+      - run: |
+          E2E_BASE_URL=http://localhost:8000 E2E_MOCK_AGENT_URL=http://localhost:8010 \
+            uv run pytest -m e2e tests/e2e
+      - if: always()
+        run: docker compose logs --no-color > compose-logs.txt
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-compose-logs
+          path: ${{ env.MODULE_DIR }}/compose-logs.txt
+      - if: always()
+        run: docker compose down -v

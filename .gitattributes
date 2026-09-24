@@ -1,0 +1,27 @@
+# ปกติ: normalize เป็น LF ใน repo, checkout ตาม OS ของแต่ละคน
+* text=auto eol=lf
+
+# ไฟล์ที่ต้องเป็น LF เสมอ (เข้า container / shell)
+*.sh            text eol=lf
+Dockerfile      text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+
+# ไฟล์ Windows-only
+*.bat           text eol=crlf
+*.ps1           text eol=crlf
+
+# binary — ห้าม normalize
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+
+# lock file — ยุบ diff ใน PR ให้อ่านง่าย
+package-lock.json  -diff linguist-generated
+uv.lock            -diff linguist-generated
+poetry.lock        -diff linguist-generated

@@ -1,0 +1,27 @@
+{
+  "version": "prototype-v3",
+  "status": "prototype",
+  "approval": null,
+  "note": "Draft policy: partial/unknown-freshness data requires review. Not an approved operational safety policy.",
+  "rules": [
+    {"id": "OFFICIAL_RESTRICTION", "action": "AVOID"},
+    {"id": "HIGH_RISK", "action": "AVOID"},
+    {"id": "NO_SAFE_ROUTE", "action": "AVOID"},
+    {"id": "INSUFFICIENT_EVIDENCE", "action": "AVOID"},
+    {"id": "SAFER_ROUTE", "action": "CHANGE_ROUTE"},
+    {"id": "SAFER_TIME", "action": "DELAY"},
+    {"id": "LOW_RISK_CLEAR", "action": "NORMAL"},
+    {"id": "UNRESOLVED", "action": "AVOID"}
+  ],
+  "quality_flag_issues": {
+    "partial": "incomplete",
+    "freshness_unknown": "freshness_requires_review"
+  },
+  "confidence": {
+    "ordinal_mapping": {"LOW": 0.25, "MEDIUM": 0.65, "HIGH": 0.9},
+    "escalation_threshold": 0.5,
+    "issue_cap": 0.25,
+    "conflict_cap": 0.1,
+    "meaning": "Uncalibrated decision-support score, not disaster probability."
+  }
+}

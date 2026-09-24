@@ -1,0 +1,194 @@
+{
+  "context": {
+    "request_id": "00000000-0000-4000-8000-000000000007",
+    "route_id": "mock-primary",
+    "departure_time": "2026-09-19T17:52:31.701812+00:00"
+  },
+  "locale": "th-TH",
+  "risk": {
+    "context": {
+      "request_id": "00000000-0000-4000-8000-000000000007",
+      "route_id": "mock-primary",
+      "departure_time": "2026-09-19T17:52:31.701812+00:00"
+    },
+    "level": "LOW",
+    "confidence": "HIGH",
+    "model_version": "mock-risk-v1",
+    "evidence_ids": [
+      "mock-risk"
+    ]
+  },
+  "weather": {
+    "context": {
+      "request_id": "00000000-0000-4000-8000-000000000007",
+      "route_id": "mock-primary",
+      "departure_time": "2026-09-19T17:52:31.701812+00:00"
+    },
+    "text": "Synthetic weather summary",
+    "evidence_ids": [
+      "mock-weather"
+    ]
+  },
+  "transport": {
+    "context": {
+      "request_id": "00000000-0000-4000-8000-000000000007",
+      "route_id": "mock-primary",
+      "departure_time": "2026-09-19T17:52:31.701812+00:00"
+    },
+    "text": "Synthetic transport summary",
+    "evidence_ids": [
+      "mock-transport"
+    ]
+  },
+  "routes": {
+    "context": {
+      "request_id": "00000000-0000-4000-8000-000000000007",
+      "route_id": "mock-primary",
+      "departure_time": "2026-09-19T17:52:31.701812+00:00"
+    },
+    "no_safe_route": false,
+    "alternatives": [],
+    "evidence_ids": [
+      "mock-route"
+    ]
+  },
+  "quality": {
+    "context": {
+      "request_id": "00000000-0000-4000-8000-000000000007",
+      "route_id": "mock-primary",
+      "departure_time": "2026-09-19T17:52:31.701812+00:00"
+    },
+    "confidence": "HIGH",
+    "flags": [],
+    "active_restriction": true,
+    "data_version": "mock-data-v1"
+  },
+  "alerts": [
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "level": "CLOSURE",
+      "active": true,
+      "evidence_ids": [
+        "mock-official"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-risk",
+      "source_name": "SYNTHETIC risk fixture",
+      "url": "https://example.org/mock/risk",
+      "kind": "risk",
+      "official_source": false,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    },
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-weather",
+      "source_name": "SYNTHETIC weather fixture",
+      "url": "https://example.org/mock/weather",
+      "kind": "weather",
+      "official_source": false,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    },
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-transport",
+      "source_name": "SYNTHETIC transport fixture",
+      "url": "https://example.org/mock/transport",
+      "kind": "transport",
+      "official_source": false,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    },
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-route",
+      "source_name": "SYNTHETIC route fixture",
+      "url": "https://example.org/mock/route",
+      "kind": "route",
+      "official_source": false,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    },
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-knowledge",
+      "source_name": "SYNTHETIC knowledge fixture",
+      "url": "https://example.org/mock/knowledge",
+      "kind": "knowledge",
+      "official_source": false,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    },
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-official",
+      "source_name": "SYNTHETIC official fixture",
+      "url": "https://example.org/mock/official",
+      "kind": "official",
+      "official_source": true,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    },
+    {
+      "context": {
+        "request_id": "00000000-0000-4000-8000-000000000007",
+        "route_id": "mock-primary",
+        "departure_time": "2026-09-19T17:52:31.701812+00:00"
+      },
+      "evidence_id": "mock-time",
+      "source_name": "SYNTHETIC time fixture",
+      "url": "https://example.org/mock/time",
+      "kind": "time",
+      "official_source": false,
+      "observed_at": "2026-09-19T15:42:31.701812+00:00",
+      "fetched_at": "2026-09-19T15:47:31.701812+00:00",
+      "expires_at": "2026-09-19T16:52:31.701812+00:00",
+      "excerpt": "MOCK DATA ONLY. Not an actual alert or travel assessment."
+    }
+  ]
+}
