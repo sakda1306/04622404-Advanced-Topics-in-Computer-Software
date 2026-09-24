@@ -21,3 +21,4 @@ The course follows the official course description and extends it with modern AI
 |---|---|---|
 | 1 | Vector Database + Retrieval/LLM (LLM data pipeline, stage 6) | [`week1/`](week1/) |
 | 2 | RAG retrieval system built from scratch: chunking, embeddings, FAISS vector database, semantic search | [`week2/`](week2/) |
+| 6 | Team D project (Travel Safety Assistant): API Backend (module 02), team coordination, integration of all modules | [`week6/`](week6/) |

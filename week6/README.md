@@ -1,3 +1,33 @@
+# Week 6 — Team D: AI-Powered Real-Time Travel Safety & Advisory Assistant
+
+> **Team repository (source of truth):** https://github.com/sakda1306/Advanced-Topic-in-Computer-Software-Course-Team-D
+>
+> This folder is a `git subtree` copy of the team repository (squashed, `main` @ `874b8e8`). It is kept here for submission. Full history and all contributors are in the team repository.
+
+## My part (Sakda Baokham)
+
+Team D has 7 members and 8 modules (DL-07: Agentic AI System II). My roles were **API Backend owner (module 02)**, **team coordinator**, and **integrator of all modules**.
+
+### 1. API Backend — module 02 (`DL-07-Agentic-AI-System-II/02_api_backend`)
+- FastAPI service that acts as the trust boundary between the Web App and the Travel AI Agent: authentication (Keycloak / JWT), CORS, request validation, error responses (RFC 7807 style `ProblemResponse`).
+- Recommendations, conversations (follow-up questions, cursor-paginated history), trips, live alerts (Celery beat), feedback and safety review queue, audit log.
+- Background workers (Celery + Redis), PostgreSQL models and Alembic migrations, data export / retention purge on MinIO, AES-GCM column encryption, admin endpoints.
+- Observability: `/ready`, `/metrics`, service status, OpenTelemetry tracing.
+- Contract-first design: OpenAPI contract (`openapi.json`), contract and schemathesis tests, a mock Agent so the backend did not wait for module 03, CI workflow, and the Web App handoff document with sequence diagrams (`02_api_backend/docs/`).
+- Verification: 1029 non-e2e tests with 96% coverage and 45/45 e2e tests passing (2026-09-19).
+
+### 2. Coordination
+- Wrote the team workflow in the root [README](#team-d--dl-07-agentic-ai-system-ii): module assignment table, one personal branch per member, PR into `develop`, merge into `main` at milestones, and commit message rules.
+- Wrote the contract register and finalised the 02/08 architecture scope (D-12) so that every module agreed on the same interfaces.
+- Reviewed and merged teammates' branches (modules 01, 03, 04, 05, 07, 08) into `develop` and resolved conflicts.
+
+### 3. Integration of all modules
+- Connected the modules end to end: Web App → API Backend → Travel AI Agent → external data / data integration / risk knowledge → decision LLM engine → recommendation & feedback.
+- Shared infrastructure: `docker-compose.yml`, `docker-compose.integration.yml`, Keycloak identity provider and realm (`identity/`).
+- Cross-module contract tests and end-to-end tests (`tests/integration/`), plus fixes across modules found during integration (for example passing emergency instructions from module 07 through 03 to 02, and feedback retention in module 08).
+
+---
+
 # Team D — DL-07: Agentic AI System II
 
 โปรเจกต์กลุ่มวิชา Advanced Topics in Computer Software (04622404)
