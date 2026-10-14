@@ -1,0 +1,255 @@
+text,intent,language
+What year did Leicester City win the Premier League,trivia_history,en
+ใครยิงประตูให้ลิเวอร์พูลมากที่สุดตลอดกาล,trivia_history,th
+อาร์เซนอลไม่แพ้ทั้งฤดูกาลปีไหน,trivia_history,th
+Who is Liverpool's all-time top scorer,trivia_history,en
+Who scored the fastest hat-trick in Premier League history,trivia_history,en
+ทีมไหนเคยตกชั้นแล้วเลื่อนชั้นกลับมาเร็วที่สุด,trivia_history,th
+เลสเตอร์ ซิตี้ แชมป์พรีเมียร์ลีกปีไหน,trivia_history,th
+ใครเป็นกัปตันทีมชาติอังกฤษในบอลโลกปี 1966,trivia_history,th
+ทีมไหนเคยคว้าดับเบิลแชมป์มากที่สุดในอังกฤษ,trivia_history,th
+Who won the Ballon d'Or in 2008,trivia_history,en
+ใครเป็นผู้เล่นที่ยิงแฮตทริกเร็วที่สุดในพรีเมียร์ลีก,trivia_history,th
+Which is the oldest club in the Premier League,trivia_history,en
+Who invented the offside trap tactic,trivia_history,en
+How many people can Old Trafford stadium hold,trivia_history,en
+Which club has won the most FA Cup titles,trivia_history,en
+What's the record for most Premier League titles by a single club,trivia_history,en
+คริสเตียโน โรนัลโด้ ย้ายมาแมนยูปีไหน,trivia_history,th
+สโมสรไหนก่อตั้งเก่าแก่ที่สุดในพรีเมียร์ลีก,trivia_history,th
+Who is the all-time top scorer in Premier League history,trivia_history,en
+แชมป์พรีเมียร์ลีกฤดูกาล 2015/16 คือทีมไหน,trivia_history,th
+When did Cristiano Ronaldo first join Manchester United,trivia_history,en
+Which player has the most Premier League appearances,trivia_history,en
+ใครคือผู้ทำประตูสูงสุดตลอดกาลของพรีเมียร์ลีก,trivia_history,th
+Who was England's captain in the 1966 World Cup,trivia_history,en
+ใครเป็นผู้จัดการทีมที่คุมแมนยูนานที่สุด,trivia_history,th
+สนามโอลด์แทรฟฟอร์ดจุคนได้กี่คน,trivia_history,th
+Which season did Arsenal go unbeaten,trivia_history,en
+นักเตะคนไหนคว้ารางวัลบัลลงดอร์ในปี 2008,trivia_history,th
+สโมสรไหนคว้าแชมป์เอฟเอคัพมากที่สุด,trivia_history,th
+Which manager has the longest tenure at Manchester United,trivia_history,en
+ผลเสมอกี่ประตูระหว่างสเปอร์สกับอาร์เซนอล,match_result,th
+Who won the match between West Ham and Everton,match_result,en
+What was the score between Arsenal and Chelsea last night,match_result,en
+ผลบอลพรีเมียร์ลีกเมื่อคืนเป็นยังไงบ้าง,match_result,th
+Did Manchester United win their last match,match_result,en
+How did Chelsea perform in their most recent fixture,match_result,en
+What happened in the Liverpool vs Man City game,match_result,en
+ผลการแข่งขันแมตช์วีค 5 ของหงส์เป็นยังไง,match_result,th
+What happened in the matchweek 5 fixture for Tottenham,match_result,en
+What was the result of yesterday's Spurs match,match_result,en
+สกอร์เกมนิวคาสเซิลกับเวสต์แฮมเมื่อวานเท่าไหร่,match_result,th
+ใครยิงประตูชัยให้สิงห์บลู,match_result,th
+Was there a red card in the Chelsea match,match_result,en
+อาร์เซนอลชนะเชลซีกี่ประตู,match_result,th
+What was the halftime score in the Arsenal match,match_result,en
+ลิเวอร์พูลแพ้แมนซิตี้เมื่อไหร่,match_result,th
+ผลบอลนัดล่าสุดของสเปอร์สเป็นยังไง,match_result,th
+What's the latest match result for Manchester City,match_result,en
+เชลซีชนะหรือแพ้นัดล่าสุด,match_result,th
+แมนยูเจอใครสุดสัปดาห์ที่แล้ว,match_result,th
+Who scored for Manchester United in their latest game,match_result,en
+ทีมเรือใบเล่นกับใครเมื่อคืนนี้,match_result,th
+แมนยูโดนใบแดงไหมเกมล่าสุด,match_result,th
+Did Arsenal draw their last game,match_result,en
+นัดที่แล้วปืนใหญ่เสมอกับใคร,match_result,th
+What was the final score in last weekend's derby,match_result,en
+เมื่อวานผีเจอใคร ผลเท่าไหร่,match_result,th
+Did Liverpool concede any goals in their last match,match_result,en
+ใครยิงประตูให้แมนซิตี้ในเกมล่าสุด,match_result,th
+Who scored the winning goal for Newcastle,match_result,en
+ทีมไหนจะเจอกับเวสต์แฮมสุดสัปดาห์นี้,fixture_schedule,th
+เกมของเรือใบนัดต่อไปแข่งวันอะไร,fixture_schedule,th
+What's the next fixture for West Ham,fixture_schedule,en
+What's the schedule for Newcastle this month,fixture_schedule,en
+หงส์เตะกับใครต่อ วันไหน,fixture_schedule,th
+Who does Liverpool play next,fixture_schedule,en
+อาร์เซนอลมีแข่งวันเสาร์นี้ไหม,fixture_schedule,th
+When is Manchester United's next match,fixture_schedule,en
+What's the upcoming schedule for Liverpool,fixture_schedule,en
+What day does Everton play next,fixture_schedule,en
+When is the next Manchester City game,fixture_schedule,en
+โปรแกรมการแข่งขันของแมนซิตี้เดือนนี้เป็นยังไง,fixture_schedule,th
+ตารางแข่งของแมนยูสัปดาห์หน้าเป็นยังไง,fixture_schedule,th
+What's Arsenal's fixture list for this week,fixture_schedule,en
+เชลซีแข่งกับใครสุดสัปดาห์นี้,fixture_schedule,th
+เชลซีมีนัดกับใครก่อนพักทีมชาติ,fixture_schedule,th
+ทีมไหนจะเจอกับเชลซีนัดต่อไป,fixture_schedule,th
+Does Tottenham play away or at home next,fixture_schedule,en
+Is there a match for Arsenal before the international break,fixture_schedule,en
+เกมเหย้านัดถัดไปของนิวคาสเซิลคือกับใคร,fixture_schedule,th
+ลิเวอร์พูลจะเจอทีมไหนใน 3 นัดถัดไป,fixture_schedule,th
+นัดหน้าของแมนยูคือเมื่อไหร่,fixture_schedule,th
+อาร์เซนอลมีเกมเยือนไหมสัปดาห์นี้,fixture_schedule,th
+Who does Manchester United face in the next matchweek,fixture_schedule,en
+นัดต่อไปของสเปอร์สเตะกี่โมง,fixture_schedule,th
+Who is Chelsea playing this weekend,fixture_schedule,en
+ผีจะได้เตะกับใครในแมตช์วีคถัดไป,fixture_schedule,th
+What time does Tottenham's next match kick off,fixture_schedule,en
+Does Man City have a home game this Saturday,fixture_schedule,en
+Who is Chelsea's opponent next Sunday,fixture_schedule,en
+How many points does Manchester United have,standings_stats,en
+What's Tottenham's current league position,standings_stats,en
+ทีมไหนนำตารางพรีเมียร์ลีกอยู่ตอนนี้,standings_stats,th
+ใครเป็นดาวซัลโวสูงสุดตอนนี้,standings_stats,th
+แมนยูมีแต้มเท่าไหร่ในตารางคะแนน,standings_stats,th
+อันดับของสเปอร์สในตารางคะแนนตอนนี้,standings_stats,th
+What's the current league standings,standings_stats,en
+อาร์เซนอลอยู่โซนแชมเปียนส์ลีกไหม,standings_stats,th
+What position is Manchester City in right now,standings_stats,en
+Who is currently top of the Premier League table,standings_stats,en
+Who has the best win percentage in the league,standings_stats,en
+ใครยิงประตูมากสุดในพรีเมียร์ลีกฤดูกาลนี้,standings_stats,th
+แมนซิตี้อยู่อันดับที่เท่าไหร่,standings_stats,th
+What's Liverpool's goal difference right now,standings_stats,en
+ทีมไหนเสียประตูน้อยที่สุดในลีก,standings_stats,th
+Which team has lost the most matches this season,standings_stats,en
+Is Chelsea in the relegation zone,standings_stats,en
+Which team has the best defensive record,standings_stats,en
+Who leads the assist chart this season,standings_stats,en
+อันดับตารางคะแนนตอนนี้เป็นยังไง,standings_stats,th
+เชลซีอยู่โซนตกชั้นไหม,standings_stats,th
+Is Arsenal in the Champions League spots,standings_stats,en
+ทีมท้ายตารางตอนนี้คือทีมไหน,standings_stats,th
+Who is the top scorer this season,standings_stats,en
+Which team is at the bottom of the table,standings_stats,en
+Who has the most points at the moment,standings_stats,en
+ผลต่างประตูของลิเวอร์พูลตอนนี้เท่าไหร่,standings_stats,th
+ทีมไหนแพ้เยอะที่สุดในลีก,standings_stats,th
+ใครเป็นผู้จ่ายบอลมากที่สุดฤดูกาลนี้,standings_stats,th
+ใครมีคะแนนนำโด่งตอนนี้,standings_stats,th
+Give me a rundown of matchweek 5,weekly_summary,en
+What happened across the league this week,weekly_summary,en
+สัปดาห์นี้มีทีมไหนพลิกล็อกบ้าง,weekly_summary,th
+สรุปข่าวพรีเมียร์ลีกประจำสัปดาห์,weekly_summary,th
+Was there any big upset this week,weekly_summary,en
+What teams performed well this week,weekly_summary,en
+สรุปผลบอลทั้งสัปดาห์ให้หน่อย,weekly_summary,th
+สรุปข่าวสัปดาห์นี้ของพรีเมียร์ลีกให้หน่อยได้ไหม,weekly_summary,th
+อยากรู้สรุปเกมเด็ดสัปดาห์นี้,weekly_summary,th
+Give me the weekly Premier League recap,weekly_summary,en
+ขอสรุปผลงานของทุกทีมสัปดาห์นี้,weekly_summary,th
+Summarize the news from the league this week,weekly_summary,en
+สัปดาห์ที่แล้วมีอะไรเด็ดบ้างในพรีเมียร์ลีก,weekly_summary,th
+สรุปพรีเมียร์ลีกสัปดาห์นี้ให้หน่อย,weekly_summary,th
+What are the key takeaways from this matchweek,weekly_summary,en
+ขอรายงานสรุปแมตช์วีคล่าสุด,weekly_summary,th
+Give me a summary of this week's Premier League action,weekly_summary,en
+What were the highlights of the latest matchweek,weekly_summary,en
+แมตช์วีคนี้มีไฮไลท์อะไรบ้าง,weekly_summary,th
+รายงานประจำสัปดาห์ของพรีเมียร์ลีกล่าสุดเป็นยังไง,weekly_summary,th
+แมตช์วีคที่ผ่านมามีเซอร์ไพรส์อะไรไหม,weekly_summary,th
+สรุปสัปดาห์นี้มีใครทำผลงานได้ดีที่สุด,weekly_summary,th
+What's in this week's Premier League report,weekly_summary,en
+รายงานสัปดาห์ล่าสุดพูดถึงทีมไหนบ้าง,weekly_summary,th
+Summarize all the matches from this matchweek,weekly_summary,en
+Can I see the summary for the most recent round,weekly_summary,en
+สรุปทุกแมตช์ของแมตช์วีค 5 หน่อย,weekly_summary,th
+What does the weekly report say about the title race,weekly_summary,en
+Can I get last week's Premier League report,weekly_summary,en
+Can you summarize the results of the latest round,weekly_summary,en
+What does a center-back do,general_football,en
+How is a foul inside the penalty box punished,general_football,en
+How does VAR work,general_football,en
+ทำไมสนามฟุตบอลถึงมีขนาดไม่เท่ากัน,general_football,th
+How long is a football match,general_football,en
+What is the offside rule in football,general_football,en
+กติกาการเปลี่ยนตัวผู้เล่นมีกี่คน,general_football,th
+VAR ทำงานยังไง,general_football,th
+ใบเหลืองกับใบแดงต่างกันยังไง,general_football,th
+What's the offside trap tactic,general_football,en
+ตำแหน่งเซ็นเตอร์แบ็คทำหน้าที่อะไร,general_football,th
+จุดโทษเตะยังไงให้ถูกกติกา,general_football,th
+ทำไมทีมถึงต้องมีผู้รักษาประตูสำรอง,general_football,th
+Explain how stoppage time works,general_football,en
+ฟุตบอลหนึ่งนัดเล่นกี่นาที,general_football,th
+ทำไมถึงมีการเตะมุม,general_football,th
+อธิบายกติกาการนับเวลาทดเจ็บหน่อย,general_football,th
+แผนการเล่น 4-3-3 คืออะไร,general_football,th
+What is a 4-3-3 formation,general_football,en
+กับดักล้ำหน้าคืออะไร,general_football,th
+Why do teams take corner kicks,general_football,en
+ทำไมผู้ตัดสินถึงเป่านกหวีดหยุดเกม,general_football,th
+Why do football pitches vary in size,general_football,en
+Why do teams need a backup goalkeeper,general_football,en
+ฟาวล์ในกรอบเขตโทษถูกลงโทษยังไง,general_football,th
+Why does the referee blow the whistle to stop play,general_football,en
+How many substitutions are allowed in a match,general_football,en
+กฎล้ำหน้าคืออะไร,general_football,th
+How does a penalty kick work,general_football,en
+What's the difference between a yellow and red card,general_football,en
+Give me a prediction for tonight's match,prediction,en
+Do you think it will end in a draw,prediction,en
+คิดว่าแมนซิตี้จะแพ้ไหมนัดหน้า,prediction,th
+เชลซีมีโอกาสชนะกี่เปอร์เซ็นต์,prediction,th
+คิดว่าทีมไหนจะได้แชมป์ปีนี้,prediction,th
+Which team do you think will win the title this season,prediction,en
+ใครมีโอกาสชนะมากกว่ากันในเกมคืนนี้,prediction,th
+ทายผลแมนยูกับลิเวอร์พูลหน่อย,prediction,th
+คาดว่าผลจะเสมอไหม,prediction,th
+What are the chances Chelsea wins,prediction,en
+What's the probability of a Liverpool loss,prediction,en
+ทายผลนัดดาร์บี้แมนเชสเตอร์หน่อย,prediction,th
+Who has the advantage in this matchup,prediction,en
+Who is favored to win tonight,prediction,en
+Can you predict the score for this game,prediction,en
+อาร์เซนอลจะเอาชนะเชลซีได้ไหม,prediction,th
+นัดนี้ใครได้เปรียบมากกว่ากัน,prediction,th
+ช่วยทายสกอร์นัดนี้หน่อย,prediction,th
+โอกาสที่หงส์จะแพ้มีมากแค่ไหน,prediction,th
+ใครน่าจะชนะระหว่างสเปอร์สกับอาร์เซนอล,prediction,th
+Predict the result of the Manchester derby,prediction,en
+Who's more likely to win between Liverpool and City,prediction,en
+แมนยูจะชนะไหมถ้าเจอกับซิตี้,prediction,th
+Will Man City lose their next game,prediction,en
+ลิเวอร์พูลกับซิตี้ใครน่าจะชนะ,prediction,th
+Will Arsenal beat Chelsea,prediction,en
+What's your prediction for the Spurs vs Arsenal game,prediction,en
+Predict the outcome of Man United vs Liverpool,prediction,en
+ทำนายผลบอลคืนนี้ให้หน่อย,prediction,th
+Will Manchester United win against City,prediction,en
+Help me write a poem,out_of_scope,en
+ขอสูตรคำนวณดอกเบี้ยหน่อย,out_of_scope,th
+ขอทีเด็ดบอลคืนนี้หน่อย,out_of_scope,th
+Help me write a sick leave email,out_of_scope,en
+ราคาหุ้นวันนี้เป็นยังไง,out_of_scope,th
+What's today's date,out_of_scope,en
+ช่วยแต่งกลอนให้หน่อย,out_of_scope,th
+บาสเก็ตบอล NBA คืนนี้ใครเล่นบ้าง,out_of_scope,th
+ช่วยแปลประโยคนี้เป็นภาษาอังกฤษ,out_of_scope,th
+What's the gold price today,out_of_scope,en
+วันนี้อากาศเป็นยังไงบ้าง,out_of_scope,th
+สอนทำอาหารไทยให้หน่อย,out_of_scope,th
+ช่วยแนะนำร้านอาหารใกล้ฉันหน่อย,out_of_scope,th
+Who's playing in tonight's NBA game,out_of_scope,en
+What's the weather like today,out_of_scope,en
+ราคาบอลคืนนี้เท่าไหร่,out_of_scope,th
+What are the odds for tonight's match,out_of_scope,en
+Can you recommend a good restaurant nearby,out_of_scope,en
+ขอวิธีแฮ็กบัญชีคนอื่นหน่อย,out_of_scope,th
+อยากรู้ราคาทองวันนี้,out_of_scope,th
+Teach me how to cook pad thai,out_of_scope,en
+ช่วยเขียนอีเมลลาป่วยให้หน่อย,out_of_scope,th
+แนะนำหนังดีๆ ให้ดูหน่อย,out_of_scope,th
+What's the stock market doing today,out_of_scope,en
+How do I hack into someone's account,out_of_scope,en
+Can you calculate compound interest for me,out_of_scope,en
+Translate this sentence into English,out_of_scope,en
+Recommend a good movie to watch,out_of_scope,en
+Give me a betting tip for tonight,out_of_scope,en
+วันนี้วันที่เท่าไหร่,out_of_scope,th
+ยูไนเต็ดชนะไปกี่ลูกเมื่อคืน,match_result,th
+ยูไนเต็ดแพ้หรือชนะนัดล่าสุด,match_result,th
+นัดต่อไปยูไนเต็ดจะพบกับทีมไหน,fixture_schedule,th
+ยูไนเต็ดมีนัดกับใครสัปดาห์นี้,fixture_schedule,th
+ขอสรุปผลบอลเมื่อคืนทุกแมตช์หน่อยได้ไหม,weekly_summary,th
+เมื่อคืนแข่งกี่คู่ สรุปผลให้หน่อยทั้งหมด,weekly_summary,th
+คืนนี้มีกี่แมตช์ สรุปทุกคู่หลังจบเกมให้หน่อย,weekly_summary,th
+สิงห์บลูตกรอบยูฟ่าแชมเปียนส์ลีกปีล่าสุดตอนไหน,trivia_history,th
+ปืนใหญ่เคยไม่แพ้ติดต่อกันกี่นัดในประวัติศาสตร์สโมสร,trivia_history,th
+อาร์เซนอลเคยได้แชมป์พรีเมียร์ลีกกี่สมัยรวมทั้งหมด,trivia_history,th
+ทีมไหนเคยครองสถิติไม่แพ้ยาวนานที่สุดในพรีเมียร์ลีก,trivia_history,th
+compare clean sheets total for city versus arsenal this season,standings_stats,en
+how many clean sheets does arsenal have this season,standings_stats,en
+does city or liverpool have more points right now,standings_stats,en

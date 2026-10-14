@@ -1,0 +1,110 @@
+# 02 API Backend: lint + unit tests (SQLite), then migrate + smoke on Postgres and Redis.
+name: 02-api
+
+on:
+  pull_request:
+    branches: [develop, main]
+    paths:
+      - "services/02_api_backend/**"
+      - ".github/workflows/api-02.yml"
+  push:
+    branches: [develop, main]
+    paths:
+      - "services/02_api_backend/**"
+      - ".github/workflows/api-02.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: api-02-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: services/02_api_backend
+
+jobs:
+  test:
+    name: ruff + pytest
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/02_api_backend/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+
+  postgres:
+    name: migrate + smoke (Postgres, Redis)
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: app
+          POSTGRES_PASSWORD: app
+          POSTGRES_DB: football
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U app -d football"
+          --health-interval 2s --health-timeout 5s --health-retries 30
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 2s --health-timeout 5s --health-retries 30
+    env:
+      DATABASE_URL: postgresql+asyncpg://app:app@localhost:5432/football
+      REDIS_URL: redis://localhost:6379/0
+      # Throwaway values for this job only; nothing here is a real secret.
+      JWT_SECRET_KEY: ci-only-secret-key-that-is-at-least-32-chars
+      SEED_ADMIN_PASSWORD: ci-admin-pass
+      SEED_DEMO_PASSWORD: ci-demo-pass
+      AI_ROUTER_SERVICE_URL: http://localhost:8003
+      FOOTBALL_DATA_URL: http://localhost:8007
+      RETRIEVAL_URL: http://localhost:8007
+      API_URL: http://localhost:8000
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/02_api_backend/requirements*.txt
+      - run: pip install -r requirements.txt
+      - name: migrations run up, down and up again
+        run: |
+          alembic upgrade head
+          alembic downgrade base
+          alembic upgrade head
+      - name: seed is idempotent
+        run: |
+          python -m app.seed
+          python -m app.seed
+      - name: start stubs and api
+        run: |
+          nohup uvicorn stubs.router_stub:app --port 8003 > router.log 2>&1 &
+          nohup uvicorn stubs.football_data_stub:app --port 8007 > football.log 2>&1 &
+          nohup uvicorn app.main:app --port 8000 > api.log 2>&1 &
+          for _ in $(seq 1 30); do
+            curl -fsS http://localhost:8000/health && exit 0
+            sleep 1
+          done
+          echo "api did not start"; cat api.log; exit 1
+      - run: python scripts/smoke.py
+      - name: celery app loads with the beat timetable
+        run: python -c "from app.workers.celery_app import celery_app as c; assert len(c.conf.beat_schedule) == 9"
+      - name: api log on failure
+        if: failure()
+        run: tail -n 200 api.log router.log football.log

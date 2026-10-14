@@ -1,0 +1,102 @@
+[
+  {
+    "team_id": 57,
+    "name": "Arsenal FC",
+    "crest_url": "https://crests.football-data.org/57.png"
+  },
+  {
+    "team_id": 58,
+    "name": "Aston Villa FC",
+    "crest_url": "https://crests.football-data.org/58.png"
+  },
+  {
+    "team_id": 61,
+    "name": "Chelsea FC",
+    "crest_url": "https://crests.football-data.org/61.png"
+  },
+  {
+    "team_id": 62,
+    "name": "Everton FC",
+    "crest_url": "https://crests.football-data.org/62.png"
+  },
+  {
+    "team_id": 63,
+    "name": "Fulham FC",
+    "crest_url": "https://crests.football-data.org/63.png"
+  },
+  {
+    "team_id": 64,
+    "name": "Liverpool FC",
+    "crest_url": "https://crests.football-data.org/64.png"
+  },
+  {
+    "team_id": 65,
+    "name": "Manchester City FC",
+    "crest_url": "https://crests.football-data.org/65.png"
+  },
+  {
+    "team_id": 66,
+    "name": "Manchester United FC",
+    "crest_url": "https://crests.football-data.org/66.png"
+  },
+  {
+    "team_id": 67,
+    "name": "Newcastle United FC",
+    "crest_url": "https://crests.football-data.org/67.png"
+  },
+  {
+    "team_id": 71,
+    "name": "Sunderland AFC",
+    "crest_url": "https://crests.football-data.org/71.png"
+  },
+  {
+    "team_id": 73,
+    "name": "Tottenham Hotspur FC",
+    "crest_url": "https://crests.football-data.org/73.png"
+  },
+  {
+    "team_id": 322,
+    "name": "Hull City AFC",
+    "crest_url": "https://crests.football-data.org/322.png"
+  },
+  {
+    "team_id": 341,
+    "name": "Leeds United FC",
+    "crest_url": "https://crests.football-data.org/341.png"
+  },
+  {
+    "team_id": 349,
+    "name": "Ipswich Town FC",
+    "crest_url": "https://crests.football-data.org/349.png"
+  },
+  {
+    "team_id": 351,
+    "name": "Nottingham Forest FC",
+    "crest_url": "https://crests.football-data.org/351.png"
+  },
+  {
+    "team_id": 354,
+    "name": "Crystal Palace FC",
+    "crest_url": "https://crests.football-data.org/354.png"
+  },
+  {
+    "team_id": 397,
+    "name": "Brighton & Hove Albion FC",
+    "crest_url": "https://crests.football-data.org/397.png"
+  },
+  {
+    "team_id": 402,
+    "name": "Brentford FC",
+    "crest_url": "https://crests.football-data.org/402.png"
+  },
+  {
+    "team_id": 1044,
+    "name": "AFC Bournemouth",
+    "crest_url": "https://crests.football-data.org/bournemouth.png"
+  },
+  {
+    "team_id": 1076,
+    "name": "Coventry City FC",
+    "crest_url": "https://crests.football-data.org/1076.png"
+  }
+]

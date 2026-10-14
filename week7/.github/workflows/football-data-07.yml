@@ -1,0 +1,32 @@
+name: 07-football-data
+on:
+  pull_request:
+    branches: [develop, main]
+    paths: ["services/07_football_data/**", ".github/workflows/football-data-07.yml"]
+  push:
+    branches: [develop, main]
+    paths: ["services/07_football_data/**", ".github/workflows/football-data-07.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: football-data-07-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: services/07_football_data
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/07_football_data/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q

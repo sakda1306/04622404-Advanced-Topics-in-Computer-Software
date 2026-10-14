@@ -1,0 +1,25 @@
+{
+  "request_id": "22222222-2222-2222-2222-222222222222",
+  "mode": "grounded",
+  "query": "เมื่อวานปืนใหญ่ชนะไหม",
+  "language": "th",
+  "contexts": [
+    {
+      "ref": 1,
+      "text": "Arsenal beat Chelsea 2-1 at home. Saka scored in the 12th minute.",
+      "source": {
+        "ref": 1,
+        "doc_id": "match-2026-mw05-57-61",
+        "title": "Arsenal 2-1 Chelsea · PL 2026/27 นัดที่ 5",
+        "category": "match_report",
+        "origin": "football-data.org",
+        "season": "2026",
+        "matchweek": 5,
+        "team_ids": [57, 61],
+        "fetched_at": "2026-09-21T09:00:00+07:00",
+        "url": null
+      }
+    }
+  ],
+  "history": []
+}

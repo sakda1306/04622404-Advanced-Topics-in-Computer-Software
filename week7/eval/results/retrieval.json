@@ -1,0 +1,544 @@
+{
+  "generated_at": "2026-09-27T17:41:42.079+07:00",
+  "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "depth": 20,
+  "candidate_k": 20,
+  "rrf_k": 60,
+  "knowledge_base": {
+    "chunks": 1999,
+    "documents": 1967
+  },
+  "live_fixture_synthetic": true,
+  "questions": {
+    "trivia/verbatim": 60,
+    "trivia/partial": 60,
+    "trivia/natural": 60,
+    "trivia/slang": 33,
+    "match/match": 20,
+    "out_of_kb/other": 10,
+    "out_of_kb/football": 10
+  },
+  "measured_on": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "cpu_count": 8,
+    "python": "3.12.10",
+    "versions": {
+      "torch": "2.14.0+cpu",
+      "sentence-transformers": "6.1.0",
+      "faiss-cpu": "1.15.1",
+      "rank-bm25": "0.2.2",
+      "numpy": "2.5.3"
+    },
+    "conditions": "one process, CPU only, models loaded and warmed up before timing; latency is Searcher.search in process: no HTTP, no model loading, no other load on the machine"
+  },
+  "results": [
+    {
+      "set": "match",
+      "variant": "match",
+      "mode": "bm25",
+      "n": 20,
+      "hit@1": 0.9,
+      "hit@5": 0.95,
+      "mrr": 0.9305555555555556,
+      "p50_ms": 6.468449952080846,
+      "p95_ms": 8.772889955434948
+    },
+    {
+      "set": "match",
+      "variant": "match",
+      "mode": "hybrid",
+      "n": 20,
+      "hit@1": 0.9,
+      "hit@5": 1.0,
+      "mrr": 0.95,
+      "p50_ms": 31.952850054949522,
+      "p95_ms": 35.514229990076274
+    },
+    {
+      "set": "match",
+      "variant": "match",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 20,
+      "hit@1": 0.95,
+      "hit@5": 1.0,
+      "mrr": 0.975,
+      "p50_ms": 1633.979799982626,
+      "p95_ms": 4920.281999983128
+    },
+    {
+      "set": "match",
+      "variant": "match",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 20,
+      "hit@1": 0.95,
+      "hit@5": 1.0,
+      "mrr": 0.9666666666666666,
+      "p50_ms": 116.87154998071492,
+      "p95_ms": 302.00629990431486
+    },
+    {
+      "set": "match",
+      "variant": "match",
+      "mode": "vector",
+      "n": 20,
+      "hit@1": 0.9,
+      "hit@5": 0.95,
+      "mrr": 0.9321428571428572,
+      "p50_ms": 25.866599928122014,
+      "p95_ms": 27.90571501245722
+    },
+    {
+      "set": "trivia",
+      "variant": "natural",
+      "mode": "bm25",
+      "n": 60,
+      "hit@1": 0.9333333333333333,
+      "hit@5": 1.0,
+      "mrr": 0.9666666666666667,
+      "p50_ms": 6.49035006063059,
+      "p95_ms": 18.62652998534031
+    },
+    {
+      "set": "trivia",
+      "variant": "natural",
+      "mode": "hybrid",
+      "n": 60,
+      "hit@1": 0.9833333333333333,
+      "hit@5": 1.0,
+      "mrr": 0.9916666666666667,
+      "p50_ms": 34.42304994678125,
+      "p95_ms": 61.27434999216347
+    },
+    {
+      "set": "trivia",
+      "variant": "natural",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 60,
+      "hit@1": 0.9833333333333333,
+      "hit@5": 1.0,
+      "mrr": 0.9916666666666667,
+      "p50_ms": 4930.775750020985,
+      "p95_ms": 12324.813204986272
+    },
+    {
+      "set": "trivia",
+      "variant": "natural",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 60,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 251.62790005560964,
+      "p95_ms": 606.5830900566652
+    },
+    {
+      "set": "trivia",
+      "variant": "natural",
+      "mode": "vector",
+      "n": 60,
+      "hit@1": 0.9,
+      "hit@5": 0.9833333333333333,
+      "mrr": 0.9363888888888888,
+      "p50_ms": 29.567349993158132,
+      "p95_ms": 45.4140099289361
+    },
+    {
+      "set": "trivia",
+      "variant": "partial",
+      "mode": "bm25",
+      "n": 60,
+      "hit@1": 0.9666666666666667,
+      "hit@5": 1.0,
+      "mrr": 0.9783333333333334,
+      "p50_ms": 3.0748500139452517,
+      "p95_ms": 4.156839969800785
+    },
+    {
+      "set": "trivia",
+      "variant": "partial",
+      "mode": "hybrid",
+      "n": 60,
+      "hit@1": 0.8333333333333334,
+      "hit@5": 1.0,
+      "mrr": 0.9088888888888889,
+      "p50_ms": 25.083750020712614,
+      "p95_ms": 31.717465043766417
+    },
+    {
+      "set": "trivia",
+      "variant": "partial",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 60,
+      "hit@1": 0.95,
+      "hit@5": 1.0,
+      "mrr": 0.975,
+      "p50_ms": 4498.388549953233,
+      "p95_ms": 11242.007119976915
+    },
+    {
+      "set": "trivia",
+      "variant": "partial",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 60,
+      "hit@1": 0.9666666666666667,
+      "hit@5": 1.0,
+      "mrr": 0.9833333333333333,
+      "p50_ms": 208.14715005690232,
+      "p95_ms": 473.41699506505364
+    },
+    {
+      "set": "trivia",
+      "variant": "partial",
+      "mode": "vector",
+      "n": 60,
+      "hit@1": 0.8,
+      "hit@5": 0.9,
+      "mrr": 0.8539814814814815,
+      "p50_ms": 22.669649973977357,
+      "p95_ms": 28.7768600624986
+    },
+    {
+      "set": "trivia",
+      "variant": "slang",
+      "mode": "bm25",
+      "n": 33,
+      "hit@1": 0.8787878787878788,
+      "hit@5": 0.9696969696969697,
+      "mrr": 0.9285714285714286,
+      "p50_ms": 4.388400004245341,
+      "p95_ms": 20.754199987277364
+    },
+    {
+      "set": "trivia",
+      "variant": "slang",
+      "mode": "hybrid",
+      "n": 33,
+      "hit@1": 0.8484848484848485,
+      "hit@5": 1.0,
+      "mrr": 0.9191919191919191,
+      "p50_ms": 30.04850004799664,
+      "p95_ms": 69.17924003209912
+    },
+    {
+      "set": "trivia",
+      "variant": "slang",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 33,
+      "hit@1": 0.9393939393939394,
+      "hit@5": 1.0,
+      "mrr": 0.9696969696969697,
+      "p50_ms": 3829.406899982132,
+      "p95_ms": 11840.593539993275
+    },
+    {
+      "set": "trivia",
+      "variant": "slang",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 33,
+      "hit@1": 0.9393939393939394,
+      "hit@5": 1.0,
+      "mrr": 0.9696969696969697,
+      "p50_ms": 199.4786000577733,
+      "p95_ms": 551.6648200573399
+    },
+    {
+      "set": "trivia",
+      "variant": "slang",
+      "mode": "vector",
+      "n": 33,
+      "hit@1": 0.7272727272727273,
+      "hit@5": 1.0,
+      "mrr": 0.8494949494949495,
+      "p50_ms": 25.550799909979105,
+      "p95_ms": 43.91997994389382
+    },
+    {
+      "set": "trivia",
+      "variant": "verbatim",
+      "mode": "bm25",
+      "n": 60,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 5.47149998601526,
+      "p95_ms": 16.565065004397177
+    },
+    {
+      "set": "trivia",
+      "variant": "verbatim",
+      "mode": "hybrid",
+      "n": 60,
+      "hit@1": 0.9833333333333333,
+      "hit@5": 1.0,
+      "mrr": 0.9916666666666667,
+      "p50_ms": 32.68529998604208,
+      "p95_ms": 57.80108507024124
+    },
+    {
+      "set": "trivia",
+      "variant": "verbatim",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 60,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 4426.452949992381,
+      "p95_ms": 12513.61352505628
+    },
+    {
+      "set": "trivia",
+      "variant": "verbatim",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 60,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 224.08359998371452,
+      "p95_ms": 585.1872649043797
+    },
+    {
+      "set": "trivia",
+      "variant": "verbatim",
+      "mode": "vector",
+      "n": 60,
+      "hit@1": 0.95,
+      "hit@5": 1.0,
+      "mrr": 0.9722222222222222,
+      "p50_ms": 26.5999500406906,
+      "p95_ms": 40.76363003114238
+    }
+  ],
+  "unanswerable_returned_chunks": [
+    {
+      "kind": "football",
+      "mode": "bm25",
+      "n": 10,
+      "returned_chunks": 0.7
+    },
+    {
+      "kind": "football",
+      "mode": "hybrid",
+      "n": 10,
+      "returned_chunks": 0.7
+    },
+    {
+      "kind": "football",
+      "mode": "vector",
+      "n": 10,
+      "returned_chunks": 0.7
+    },
+    {
+      "kind": "other",
+      "mode": "bm25",
+      "n": 10,
+      "returned_chunks": 1.0
+    },
+    {
+      "kind": "other",
+      "mode": "hybrid",
+      "n": 10,
+      "returned_chunks": 1.0
+    },
+    {
+      "kind": "other",
+      "mode": "vector",
+      "n": 10,
+      "returned_chunks": 1.0
+    },
+    {
+      "kind": "football",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 10,
+      "returned_chunks": 0.7
+    },
+    {
+      "kind": "other",
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "n": 10,
+      "returned_chunks": 1.0
+    },
+    {
+      "kind": "football",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 10,
+      "returned_chunks": 0.7
+    },
+    {
+      "kind": "other",
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "n": 10,
+      "returned_chunks": 1.0
+    }
+  ],
+  "rerank_abstention": [
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": -8.0,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9785407725321889,
+      "unanswerable_answered_football": 0.7,
+      "unanswerable_answered_other": 0.4
+    },
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": -6.0,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9785407725321889,
+      "unanswerable_answered_football": 0.7,
+      "unanswerable_answered_other": 0.4
+    },
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": -4.0,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9785407725321889,
+      "unanswerable_answered_football": 0.6,
+      "unanswerable_answered_other": 0.4
+    },
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": -2.0,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9785407725321889,
+      "unanswerable_answered_football": 0.5,
+      "unanswerable_answered_other": 0.4
+    },
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": 0.0,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9785407725321889,
+      "unanswerable_answered_football": 0.2,
+      "unanswerable_answered_other": 0.3
+    },
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": 2.0,
+      "answerable_refused": 0.004291845493562232,
+      "answerable_kept_right": 0.9742489270386266,
+      "unanswerable_answered_football": 0.2,
+      "unanswerable_answered_other": 0.1
+    },
+    {
+      "mode": "hybrid+rerank:ms-marco-MiniLM-L-6-v2",
+      "threshold": 4.0,
+      "answerable_refused": 0.004291845493562232,
+      "answerable_kept_right": 0.9742489270386266,
+      "unanswerable_answered_football": 0.0,
+      "unanswerable_answered_other": 0.0
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.01,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9699570815450643,
+      "unanswerable_answered_football": 0.4,
+      "unanswerable_answered_other": 0.5
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.05,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9699570815450643,
+      "unanswerable_answered_football": 0.1,
+      "unanswerable_answered_other": 0.4
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.1,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9699570815450643,
+      "unanswerable_answered_football": 0.1,
+      "unanswerable_answered_other": 0.2
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.25,
+      "answerable_refused": 0.0,
+      "answerable_kept_right": 0.9699570815450643,
+      "unanswerable_answered_football": 0.1,
+      "unanswerable_answered_other": 0.1
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.5,
+      "answerable_refused": 0.004291845493562232,
+      "answerable_kept_right": 0.9656652360515021,
+      "unanswerable_answered_football": 0.1,
+      "unanswerable_answered_other": 0.0
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.75,
+      "answerable_refused": 0.008583690987124463,
+      "answerable_kept_right": 0.9656652360515021,
+      "unanswerable_answered_football": 0.0,
+      "unanswerable_answered_other": 0.0
+    },
+    {
+      "mode": "hybrid+rerank:bge-reranker-v2-m3",
+      "threshold": 0.9,
+      "answerable_refused": 0.012875536480686695,
+      "answerable_kept_right": 0.9613733905579399,
+      "unanswerable_answered_football": 0.0,
+      "unanswerable_answered_other": 0.0
+    }
+  ],
+  "min_vector_score": [
+    {
+      "threshold": 0.0,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.15,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.1,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.15,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.2,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.15,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.25,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.2,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.3,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.3,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.35,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.3,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.4,
+      "in_kb_lost": 0.0,
+      "out_of_kb_empty_vector": 0.4,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.5,
+      "in_kb_lost": 0.004291845493562232,
+      "out_of_kb_empty_vector": 0.5,
+      "out_of_kb_empty_hybrid": 0.15
+    },
+    {
+      "threshold": 0.6,
+      "in_kb_lost": 0.04721030042918455,
+      "out_of_kb_empty_vector": 0.75,
+      "out_of_kb_empty_hybrid": 0.15
+    }
+  ]
+}

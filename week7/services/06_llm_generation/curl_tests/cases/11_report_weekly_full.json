@@ -1,0 +1,23 @@
+{
+  "request_id": "55555555-5555-5555-5555-555555555555",
+  "season": "2026",
+  "matchweek": 5,
+  "language": "th",
+  "matches": [{
+    "match_id": "aaaaaaaa-0000-0000-0000-000000000001",
+    "season": "2026", "matchweek": 5,
+    "kickoff": "2026-09-20T18:30:00+07:00",
+    "status": "FINISHED",
+    "home": {"team_id": 57, "name": "Arsenal"},
+    "away": {"team_id": 61, "name": "Chelsea"},
+    "score": {"home": 2, "away": 1, "half_time": {"home": 1, "away": 0}},
+    "events": [],
+    "detail_source": "none"
+  }],
+  "standings": [{
+    "position": 1, "team_id": 57, "name": "Arsenal", "played": 5, "won": 4,
+    "draw": 1, "lost": 0, "goals_for": 12, "goals_against": 4,
+    "goal_difference": 8, "points": 13, "form": "WWDWW"
+  }],
+  "top_scorers": [{"player": "E. Haaland", "team_id": 65, "goals": 7, "assists": 1}]
+}

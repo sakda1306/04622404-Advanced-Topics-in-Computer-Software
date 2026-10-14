@@ -1,0 +1,84 @@
+# 05 Retrieval: lint + tests with a fake embedder, then the real model on the real trivia file.
+name: 05-retrieval
+
+on:
+  pull_request:
+    branches: [develop, main]
+    paths:
+      - "services/05_retrieval_knowledge/**"
+      - ".github/workflows/retrieval-05.yml"
+  push:
+    branches: [develop, main]
+    paths:
+      - "services/05_retrieval_knowledge/**"
+      - ".github/workflows/retrieval-05.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: retrieval-05-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: services/05_retrieval_knowledge
+
+jobs:
+  test:
+    name: ruff + pytest
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/05_retrieval_knowledge/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+
+  model:
+    name: real model + ingest + smoke
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HF_HOME: ${{ github.workspace }}/.hf-cache
+      KB_DB_PATH: ${{ github.workspace }}/kb/kb.sqlite
+      RETRIEVAL_URL: http://localhost:8000
+      # No 07 here: nicknames come from the bundled file.
+      FOOTBALL_DATA_URL: ""
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/05_retrieval_knowledge/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - uses: actions/cache@v6
+        with:
+          path: ${{ github.workspace }}/.hf-cache
+          key: hf-minilm-${{ hashFiles('services/05_retrieval_knowledge/requirements.txt') }}
+      - run: pytest -q -m model
+      - name: ingest twice (the second run must skip every entry)
+        run: |
+          python -m scripts.ingest_trivia
+          python -m scripts.ingest_trivia
+      - name: start the service
+        run: |
+          nohup uvicorn app.main:app --port 8000 --workers 1 > retrieval.log 2>&1 &
+          for _ in $(seq 1 90); do
+            curl -fsS http://localhost:8000/ready && exit 0
+            sleep 2
+          done
+          echo "retrieval did not become ready"; cat retrieval.log; exit 1
+      - run: python scripts/smoke.py
+      - name: service log on failure
+        if: failure()
+        run: tail -n 200 retrieval.log

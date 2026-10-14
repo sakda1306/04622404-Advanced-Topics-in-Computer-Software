@@ -1,0 +1,5 @@
+# local knowledge base and model cache
+*.sqlite
+*.sqlite-*
+*.db
+.hf-cache/

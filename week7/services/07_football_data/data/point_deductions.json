@@ -1,0 +1,22 @@
+{
+  "2024": {
+    "adjustments": {},
+    "official_table_verified": true,
+    "verified_at": "2026-09-27",
+    "evidence": [
+      "https://www.premierleague.com/en/tables/premier-league?competition=8&season=2024",
+      "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v5/competitions/8/seasons/2024/standings"
+    ],
+    "note": "All 20 positions, P/W/D/L, GF/GA and points match the official final MW38 table; no points adjustment."
+  },
+  "2025": {
+    "adjustments": {},
+    "official_table_verified": true,
+    "verified_at": "2026-09-27",
+    "evidence": [
+      "https://www.premierleague.com/en/tables/premier-league?competition=8&season=2025",
+      "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v5/competitions/8/seasons/2025/standings"
+    ],
+    "note": "All 20 positions, P/W/D/L, GF/GA and points match the official final MW38 table; no points adjustment."
+  }
+}

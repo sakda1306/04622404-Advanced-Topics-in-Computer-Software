@@ -1,0 +1,38 @@
+name: 08-deploy-config
+on:
+  pull_request:
+    branches: [develop, main]
+    paths:
+      - "docker-compose.yml"
+      - ".dockerignore"
+      - ".env.example"
+      - "Makefile"
+      - "deploy/**"
+      - ".github/workflows/**"
+  push:
+    branches: [develop, main]
+    paths:
+      - "docker-compose.yml"
+      - ".dockerignore"
+      - ".env.example"
+      - "Makefile"
+      - "deploy/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: deploy-08-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  config:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: cp .env.example .env
+      - run: docker compose --env-file .env -f docker-compose.yml config --quiet
+      - run: python -m py_compile deploy/smoke.py deploy/warmup.py

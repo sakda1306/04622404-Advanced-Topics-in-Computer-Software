@@ -1,0 +1,24 @@
+{"query": "ยูไนเต็ดเจอใครนัดหน้า", "expected_intent": "fixture_schedule"}
+{"query": "ปืนใหญ่ชนะกี่ลูก", "expected_intent": "match_result"}
+{"query": "สรุปเกมเมื่อคืนให้หน่อยทุกคู่เลย", "expected_intent": "weekly_summary"}
+{"query": "แข้งเบอร์ 9 ของซิตี้คือใคร ยิงไปกี่ลูกแล้ว", "expected_intent": "standings_stats"}
+{"query": "ทำไมกรรมการเป่าล้ำหน้าบ่อยจัง อธิบายหน่อย", "expected_intent": "general_football"}
+{"query": "เดาสิว่าใครจะแชมป์ปีนี้", "expected_intent": "prediction"}
+{"query": "ขอสูตรต้มยำกุ้งหน่อย", "expected_intent": "out_of_scope"}
+{"query": "หงส์แดงจะได้เล่นแชมเปียนส์ลีกไหมปีนี้", "expected_intent": "standings_stats"}
+{"query": "who scored twice for city last night", "expected_intent": "match_result"}
+{"query": "kickoff time for the next spurs game", "expected_intent": "fixture_schedule"}
+{"query": "explain what a hat trick means", "expected_intent": "general_football"}
+{"query": "give me this week's roundup of all PL games", "expected_intent": "weekly_summary"}
+{"query": "who's top of the table right now", "expected_intent": "standings_stats"}
+{"query": "will city beat liverpool tonight you think", "expected_intent": "prediction"}
+{"query": "can you help me plan my workout routine", "expected_intent": "out_of_scope"}
+{"query": "อาร์เซนอลเคยได้แชมป์พรีเมียร์ลีกกี่สมัย", "expected_intent": "trivia_history"}
+{"query": "ทีมสิงห์บลูตกรอบยูฟ่าตั้งแต่เมื่อไหร่", "expected_intent": "trivia_history"}
+{"query": "อยากรู้ว่าปืนใหญ่เคยไม่แพ้กี่นัดติดสถิติ", "expected_intent": "trivia_history"}
+{"query": "ราคาต่อรองคืนนี้เท่าไหร่บอกหน่อย", "expected_intent": "out_of_scope"}
+{"query": "ช่วยเขียนโค้ดเว็บพนันบอลให้หน่อย", "expected_intent": "out_of_scope"}
+{"query": "matchday 5 คือวันไหนของหงส์", "expected_intent": "fixture_schedule"}
+{"query": "ทีมไหนยิงจุดโทษพลาดเยอะสุดฤดูกาลนี้", "expected_intent": "standings_stats"}
+{"query": "นัดต่อไปเรือใบเจอทีมไหนเวลาไหน", "expected_intent": "fixture_schedule"}
+{"query": "who has more clean sheets city or arsenal", "expected_intent": "standings_stats"}

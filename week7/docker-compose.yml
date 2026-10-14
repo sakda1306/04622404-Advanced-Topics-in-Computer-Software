@@ -1,0 +1,211 @@
+name: football-assistant
+
+x-python-build: &python-build
+  context: .
+  dockerfile: deploy/Dockerfile.python
+x-python-health: &python-health
+  test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)"]
+  interval: 10s
+  timeout: 5s
+  retries: 12
+  start_period: 30s
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?copy .env.example to .env and set POSTGRES_PASSWORD}
+      POSTGRES_DB: football
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d football"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  api:
+    image: football-assistant-api:local
+    build:
+      <<: *python-build
+      args:
+        SERVICE_PATH: services/02_api_backend
+    command: ["sh", "scripts/entrypoint.sh"]
+    environment: &api-env
+      DATABASE_URL: postgresql+asyncpg://app:${POSTGRES_PASSWORD}@postgres:5432/football
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?set JWT_SECRET_KEY in .env}
+      SEED_ADMIN_PASSWORD: ${SEED_ADMIN_PASSWORD:-}
+      SEED_DEMO_PASSWORD: ${SEED_DEMO_PASSWORD:-}
+      AI_ROUTER_SERVICE_URL: http://router:8000
+      FOOTBALL_DATA_URL: http://football-data:8000
+      RETRIEVAL_URL: http://retrieval:8000
+      CORS_ALLOWED_ORIGINS: '["http://localhost:3000"]'
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      router: {condition: service_started}
+      football-data: {condition: service_started}
+    healthcheck: *python-health
+    restart: unless-stopped
+
+  worker:
+    image: football-assistant-api:local
+    command: ["celery", "-A", "app.workers.celery_app", "worker", "--loglevel=INFO"]
+    environment: *api-env
+    depends_on:
+      api: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    restart: unless-stopped
+
+  beat:
+    image: football-assistant-api:local
+    command: ["celery", "-A", "app.workers.celery_app", "beat", "--loglevel=INFO"]
+    environment: *api-env
+    depends_on:
+      api: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    restart: unless-stopped
+
+  retrieval:
+    build:
+      <<: *python-build
+      args:
+        SERVICE_PATH: services/05_retrieval_knowledge
+    command: ["sh", "scripts/entrypoint.sh"]
+    environment:
+      KB_DB_PATH: /data/kb.sqlite
+      HF_HOME: /models
+      FOOTBALL_DATA_URL: http://football-data:8000
+    volumes:
+      - retrieval_data:/data
+      - model_cache:/models
+    healthcheck:
+      <<: *python-health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=4)"]
+      start_period: 180s
+    restart: unless-stopped
+
+  engines:
+    build:
+      <<: *python-build
+      args:
+        SERVICE_PATH: services/04_ai_engines
+    environment: &provider-env
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.0-flash}
+    healthcheck: *python-health
+    restart: unless-stopped
+
+  generation:
+    build:
+      <<: *python-build
+      args:
+        SERVICE_PATH: services/06_llm_generation
+    environment:
+      <<: *provider-env
+      LLM_MOCK: ${LLM_MOCK:-false}
+    healthcheck: *python-health
+    restart: unless-stopped
+
+  football-data:
+    build:
+      <<: *python-build
+      args:
+        SERVICE_PATH: services/07_football_data
+    environment:
+      DATABASE_URL: postgresql+asyncpg://app:${POSTGRES_PASSWORD}@postgres:5432/football
+      FOOTBALL_DATA_API_KEY: ${FOOTBALL_DATA_API_KEY:-}
+      API_FOOTBALL_KEY: ${API_FOOTBALL_KEY:-}
+      API_FOOTBALL_DAILY_LIMIT: ${API_FOOTBALL_DAILY_LIMIT:-90}
+      RETRIEVAL_URL: http://retrieval:8000
+      GENERATION_URL: http://generation:8000
+      ENGINES_URL: http://engines:8000
+      REPORT_AUTO_PUBLISH: ${REPORT_AUTO_PUBLISH:-false}
+      PLAYER_INDEX_ENABLED: ${PLAYER_INDEX_ENABLED:-false}
+      COACH_INDEX_ENABLED: ${COACH_INDEX_ENABLED:-false}
+    depends_on:
+      postgres: {condition: service_healthy}
+      retrieval: {condition: service_started}
+      generation: {condition: service_started}
+    healthcheck:
+      <<: *python-health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=4)"]
+    restart: unless-stopped
+
+  router:
+    build:
+      <<: *python-build
+      args:
+        SERVICE_PATH: services/03_ai_router_agent
+    environment:
+      <<: *provider-env
+      RETRIEVAL_URL: http://retrieval:8000
+      ENGINES_URL: http://engines:8000
+      GENERATION_URL: http://generation:8000
+      FOOTBALL_DATA_URL: http://football-data:8000
+      ROUTER_CONDENSE_ENABLED: ${ROUTER_CONDENSE_ENABLED:-true}
+      GROQ_CONDENSE_MODEL: ${GROQ_CONDENSE_MODEL:-qwen/qwen3.8-27b}
+      GEMINI_CONDENSE_MODEL: ${GEMINI_CONDENSE_MODEL:-}
+      ROUTER_MULTI_QUERY_ENABLED: ${ROUTER_MULTI_QUERY_ENABLED:-true}
+      ROUTER_CHAT_ENABLED: ${ROUTER_CHAT_ENABLED:-true}
+      ROUTER_CHAT_TIMEOUT: ${ROUTER_CHAT_TIMEOUT:-6}
+    depends_on:
+      engines: {condition: service_started}
+      generation: {condition: service_started}
+      retrieval: {condition: service_started}
+      football-data: {condition: service_started}
+    healthcheck: *python-health
+    restart: unless-stopped
+
+  web:
+    build:
+      context: services/01_web_app
+      args:
+        NEXT_PUBLIC_DEMO_MODE: "false"
+    environment:
+      API_INTERNAL_URL: http://api:8000
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      api: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+
+  checks:
+    image: python:3.12-alpine
+    profiles: [tools]
+    volumes:
+      - ./deploy:/tools:ro
+    environment:
+      FOOTBALL_DATA_URL: http://football-data:8000
+      FOOTBALL_DATA_API_KEY: ${FOOTBALL_DATA_API_KEY:-}
+      SEED_ADMIN_PASSWORD: ${SEED_ADMIN_PASSWORD:-}
+      SEED_DEMO_PASSWORD: ${SEED_DEMO_PASSWORD:-}
+    working_dir: /tools
+
+volumes:
+  postgres_data:
+  retrieval_data:
+  model_cache:

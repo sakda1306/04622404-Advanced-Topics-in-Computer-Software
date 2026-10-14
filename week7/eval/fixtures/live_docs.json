@@ -1,0 +1,254 @@
+{
+  "synthetic": true,
+  "note": "Invented Premier League 2026/27 documents in the CONTRACT §6 upsert shape, frozen so retrieval scores can be re-run. Not real results. Replace with documents produced by 07 football-data when they exist.",
+  "documents": [
+    {
+      "doc_id": "match-2026-mw04-64-66",
+      "title": "Liverpool 2–0 Manchester United · PL 2026/27 นัดที่ 4",
+      "text": "Premier League 2026/27, matchweek 4, 13 Sep 2026 18:30 (+07:00) at Anfield. Liverpool 2-0 Manchester United.\n## Goals\nSalah 23', Gakpo 67' for Liverpool.\n## Match notes\nLiverpool kept a clean sheet; Manchester United had one shot on target.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 4,
+      "team_ids": [
+        64,
+        66
+      ],
+      "date": "2026-09-13",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw04-65-73",
+      "title": "Manchester City 3–1 Tottenham Hotspur · PL 2026/27 นัดที่ 4",
+      "text": "Premier League 2026/27, matchweek 4, 13 Sep 2026 21:00 (+07:00) at Etihad Stadium. Manchester City 3-1 Tottenham Hotspur.\n## Goals\nHaaland 11', Haaland 58', Foden 80' for Manchester City; Solanke 40' for Tottenham Hotspur.\n## Match notes\nHaaland scored twice; Tottenham lost for the second time this season.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 4,
+      "team_ids": [
+        65,
+        73
+      ],
+      "date": "2026-09-13",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw04-58-57",
+      "title": "Aston Villa 1–1 Arsenal · PL 2026/27 นัดที่ 4",
+      "text": "Premier League 2026/27, matchweek 4, 14 Sep 2026 20:00 (+07:00) at Villa Park. Aston Villa 1-1 Arsenal.\n## Goals\nWatkins 35' for Aston Villa; Saka 77' for Arsenal.\n## Match notes\nArsenal came from behind to draw away at Aston Villa.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 4,
+      "team_ids": [
+        58,
+        57
+      ],
+      "date": "2026-09-14",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw04-61-67",
+      "title": "Chelsea 2–1 Newcastle United · PL 2026/27 นัดที่ 4",
+      "text": "Premier League 2026/27, matchweek 4, 14 Sep 2026 22:30 (+07:00) at Stamford Bridge. Chelsea 2-1 Newcastle United.\n## Goals\nPalmer 30' (pen), Jackson 64' for Chelsea; Gordon 71' for Newcastle United.\n## Match notes\nChelsea beat Newcastle with a Palmer penalty and a Jackson header.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 4,
+      "team_ids": [
+        61,
+        67
+      ],
+      "date": "2026-09-14",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw05-57-61",
+      "title": "Arsenal 2–1 Chelsea · PL 2026/27 นัดที่ 5",
+      "text": "Premier League 2026/27, matchweek 5, 20 Sep 2026 18:30 (+07:00) at Emirates Stadium. Arsenal 2-1 Chelsea.\n## Goals\nSaka 12', Havertz 55' for Arsenal; Palmer 70' for Chelsea.\n## Match notes\nArsenal moved up the table after beating Chelsea in the London derby.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 5,
+      "team_ids": [
+        57,
+        61
+      ],
+      "date": "2026-09-20",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw05-66-65",
+      "title": "Manchester United 1–2 Manchester City · PL 2026/27 นัดที่ 5",
+      "text": "Premier League 2026/27, matchweek 5, 20 Sep 2026 23:30 (+07:00) at Old Trafford. Manchester United 1-2 Manchester City.\n## Goals\nFernandes 44' for Manchester United; Haaland 52', Foden 88' for Manchester City.\n## Match notes\nManchester City won the Manchester derby with a late Foden goal.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 5,
+      "team_ids": [
+        66,
+        65
+      ],
+      "date": "2026-09-20",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw05-73-64",
+      "title": "Tottenham Hotspur 0–3 Liverpool · PL 2026/27 นัดที่ 5",
+      "text": "Premier League 2026/27, matchweek 5, 21 Sep 2026 19:00 (+07:00) at Tottenham Hotspur Stadium. Tottenham Hotspur 0-3 Liverpool.\n## Goals\nSalah 18', Wirtz 49', Salah 83' for Liverpool.\n## Match notes\nLiverpool won comfortably away; Tottenham lost their third match in a row.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 5,
+      "team_ids": [
+        73,
+        64
+      ],
+      "date": "2026-09-21",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "match-2026-mw05-67-58",
+      "title": "Newcastle United 2–2 Aston Villa · PL 2026/27 นัดที่ 5",
+      "text": "Premier League 2026/27, matchweek 5, 21 Sep 2026 21:30 (+07:00) at St James' Park. Newcastle United 2-2 Aston Villa.\n## Goals\nGordon 20', Barnes 66' for Newcastle United; Watkins 45', Rogers 90' for Aston Villa.\n## Match notes\nAston Villa equalised in stoppage time at St James' Park.",
+      "category": "match_report",
+      "origin": "api-football",
+      "season": "2026",
+      "matchweek": 5,
+      "team_ids": [
+        67,
+        58
+      ],
+      "date": "2026-09-21",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "standings-2026-mw04",
+      "title": "Premier League table after matchweek 4",
+      "text": "Premier League 2026/27 standings after matchweek 4.\n## Top\n1. Liverpool 12 points\n2. Manchester City 10 points\n3. Arsenal 10 points\n4. Chelsea 9 points\n## Middle\n9. Aston Villa 6 points\n10. Newcastle United 5 points\n## Bottom\n15. Tottenham Hotspur 3 points\n16. Manchester United 3 points",
+      "category": "standings",
+      "origin": "football-data.org",
+      "season": "2026",
+      "matchweek": 4,
+      "team_ids": [
+        64,
+        65,
+        57,
+        61,
+        58,
+        67,
+        73,
+        66
+      ],
+      "date": "2026-09-15",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "standings-2026-mw05",
+      "title": "Premier League table after matchweek 5",
+      "text": "Premier League 2026/27 standings after matchweek 5.\n## Top\n1. Liverpool 15 points\n2. Arsenal 13 points\n3. Manchester City 13 points\n4. Chelsea 9 points\n## Middle\n9. Aston Villa 7 points\n11. Newcastle United 6 points\n## Bottom\n17. Manchester United 3 points\n18. Tottenham Hotspur 3 points",
+      "category": "standings",
+      "origin": "football-data.org",
+      "season": "2026",
+      "matchweek": 5,
+      "team_ids": [
+        64,
+        57,
+        65,
+        61,
+        58,
+        67,
+        66,
+        73
+      ],
+      "date": "2026-09-22",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "fixtures-2026-team-57",
+      "title": "Arsenal remaining fixtures 2026/27",
+      "text": "Arsenal next Premier League matches.\n## Matchweek 6\nArsenal vs Tottenham Hotspur, 27 Sep 2026 22:30 (+07:00) at Emirates Stadium\n## Matchweek 7\nLiverpool vs Arsenal, 4 Oct 2026 22:30 (+07:00) at Anfield",
+      "category": "fixtures",
+      "origin": "football-data.org",
+      "season": "2026",
+      "matchweek": null,
+      "team_ids": [
+        57,
+        73,
+        64
+      ],
+      "date": "2026-09-27",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "fixtures-2026-team-66",
+      "title": "Manchester United remaining fixtures 2026/27",
+      "text": "Manchester United next Premier League matches.\n## Matchweek 6\nNewcastle United vs Manchester United, 28 Sep 2026 20:00 (+07:00) at St James' Park\n## Matchweek 7\nManchester United vs Chelsea, 5 Oct 2026 21:00 (+07:00) at Old Trafford",
+      "category": "fixtures",
+      "origin": "football-data.org",
+      "season": "2026",
+      "matchweek": null,
+      "team_ids": [
+        66,
+        67,
+        61
+      ],
+      "date": "2026-09-28",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "weekly-2026-mw04",
+      "title": "Premier League weekly report · matchweek 4",
+      "text": "Weekly report for Premier League 2026/27 matchweek 4.\n## Summary\nLiverpool stayed top with a 2-0 win over Manchester United. Manchester City beat Tottenham 3-1.\n## Top scorers so far\nHaaland 7 goals, Salah 5 goals, Palmer 4 goals\n## Talking points\nManchester United have one win in four; Arsenal drew at Villa Park.",
+      "category": "weekly_report",
+      "origin": "generated",
+      "season": "2026",
+      "matchweek": 4,
+      "team_ids": [
+        64,
+        66,
+        65,
+        73,
+        57,
+        58
+      ],
+      "date": "2026-09-15",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    },
+    {
+      "doc_id": "weekly-2026-mw05",
+      "title": "Premier League weekly report · matchweek 5",
+      "text": "Weekly report for Premier League 2026/27 matchweek 5.\n## Summary\nLiverpool won 3-0 at Tottenham to stay top. Arsenal beat Chelsea 2-1 and Manchester City won the derby 2-1.\n## Top scorers so far\nHaaland 8 goals, Salah 7 goals, Palmer 5 goals, Saka 4 goals\n## Talking points\nTottenham have lost three in a row; Aston Villa rescued a late draw at Newcastle.",
+      "category": "weekly_report",
+      "origin": "generated",
+      "season": "2026",
+      "matchweek": 5,
+      "team_ids": [
+        64,
+        73,
+        57,
+        61,
+        65,
+        66,
+        58,
+        67
+      ],
+      "date": "2026-09-22",
+      "fetched_at": "2026-09-22T09:00:00+07:00",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "teams": [
+    {"team_id": 57, "name": "Arsenal FC", "short_name": "Arsenal", "tla": "ARS",
+     "aliases": ["ปืนใหญ่", "ปืน", "the gunners", "gunners"]},
+    {"team_id": 66, "name": "Manchester United FC", "short_name": "Man United", "tla": "MUN",
+     "aliases": ["ผีแดง", "ผี", "แมนยู", "man utd"]},
+    {"team_id": 64, "name": "Liverpool FC", "short_name": "Liverpool", "tla": "LIV",
+     "aliases": ["หงส์แดง", "หงส์", "the reds"]},
+    {"team_id": 65, "name": "Manchester City FC", "short_name": "Man City", "tla": "MCI",
+     "aliases": ["เรือใบ", "ซิตี้", "man city"]},
+    {"team_id": 73, "name": "Tottenham Hotspur FC", "short_name": "Tottenham", "tla": "TOT",
+     "aliases": ["ไก่เดือยทอง", "spurs"]}
+  ]
+}

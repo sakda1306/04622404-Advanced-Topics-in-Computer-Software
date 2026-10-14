@@ -1,0 +1,18 @@
+{
+  "season": "2026",
+  "matchweek": 6,
+  "language": "th",
+  "matches": [{
+    "match_id": "aaaaaaaa-0000-0000-0000-000000000002",
+    "season": "2026", "matchweek": 6,
+    "kickoff": "2026-09-27T18:30:00+07:00",
+    "status": "POSTPONED",
+    "home": {"team_id": 57, "name": "Arsenal"},
+    "away": {"team_id": 61, "name": "Chelsea"},
+    "score": null,
+    "events": [],
+    "detail_source": "none"
+  }],
+  "standings": [],
+  "top_scorers": []
+}

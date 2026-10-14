@@ -1,0 +1,4 @@
+# ใช้เฉพาะตอนรัน eval/compare_methods.py วิธีที่ 2 (embeddings)
+# ไม่ต้องลงใน production image ของ engines — ใส่แยกจาก requirements.txt เพราะ
+# sentence-transformers + torch หนักและ /local/classify ตัวจริงใช้ TF-IDF เท่านั้น
+sentence-transformers==3.1.1

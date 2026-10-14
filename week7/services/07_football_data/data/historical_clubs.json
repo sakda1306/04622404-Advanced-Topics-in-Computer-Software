@@ -1,0 +1,417 @@
+{
+  "arsenal": {
+    "name": "Arsenal FC",
+    "team_id": 57,
+    "aliases": [
+      "Arsenal",
+      "Arsenal FC"
+    ]
+  },
+  "aston-villa": {
+    "name": "Aston Villa FC",
+    "team_id": 58,
+    "aliases": [
+      "Aston Villa",
+      "Aston Villa FC"
+    ]
+  },
+  "barnsley": {
+    "name": "Barnsley FC",
+    "team_id": null,
+    "aliases": [
+      "Barnsley",
+      "Barnsley FC"
+    ]
+  },
+  "birmingham-city": {
+    "name": "Birmingham City FC",
+    "team_id": null,
+    "aliases": [
+      "Birmingham City"
+    ]
+  },
+  "blackburn-rovers": {
+    "name": "Blackburn Rovers FC",
+    "team_id": null,
+    "aliases": [
+      "Blackburn Rovers",
+      "Blackburn Rovers FC"
+    ]
+  },
+  "blackpool": {
+    "name": "Blackpool FC",
+    "team_id": null,
+    "aliases": [
+      "Blackpool",
+      "Blackpool FC"
+    ]
+  },
+  "bolton-wanderers": {
+    "name": "Bolton Wanderers FC",
+    "team_id": null,
+    "aliases": [
+      "Bolton Wanderers",
+      "Bolton Wanderers FC"
+    ]
+  },
+  "bournemouth": {
+    "name": "AFC Bournemouth",
+    "team_id": 1044,
+    "aliases": [
+      "AFC Bournemouth",
+      "Bournemouth"
+    ]
+  },
+  "bradford-city": {
+    "name": "Bradford City AFC",
+    "team_id": null,
+    "aliases": [
+      "Bradford",
+      "Bradford City"
+    ]
+  },
+  "brentford": {
+    "name": "Brentford FC",
+    "team_id": 402,
+    "aliases": [
+      "Brentford",
+      "Brentford FC"
+    ]
+  },
+  "brighton": {
+    "name": "Brighton & Hove Albion FC",
+    "team_id": 397,
+    "aliases": [
+      "Brighton & Hove Albion",
+      "Brighton and Hove Albion",
+      "Brighton",
+      "Brighton & Hove Albion FC"
+    ]
+  },
+  "burnley": {
+    "name": "Burnley FC",
+    "team_id": 328,
+    "aliases": [
+      "Burnley",
+      "Burnley FC"
+    ]
+  },
+  "cardiff-city": {
+    "name": "Cardiff City FC",
+    "team_id": null,
+    "aliases": [
+      "Cardiff City"
+    ]
+  },
+  "charlton-athletic": {
+    "name": "Charlton Athletic FC",
+    "team_id": null,
+    "aliases": [
+      "Charlton Athletic",
+      "Charlton Athletic FC"
+    ]
+  },
+  "chelsea": {
+    "name": "Chelsea FC",
+    "team_id": 61,
+    "aliases": [
+      "Chelsea",
+      "Chelsea FC"
+    ]
+  },
+  "coventry-city": {
+    "name": "Coventry City FC",
+    "team_id": 1076,
+    "aliases": [
+      "Coventry",
+      "Coventry City",
+      "Coventry City FC"
+    ]
+  },
+  "crystal-palace": {
+    "name": "Crystal Palace FC",
+    "team_id": 354,
+    "aliases": [
+      "Crystal Palace",
+      "Crystal Palace FC"
+    ]
+  },
+  "derby-county": {
+    "name": "Derby County FC",
+    "team_id": null,
+    "aliases": [
+      "Derby",
+      "Derby County",
+      "Derby County FC"
+    ]
+  },
+  "everton": {
+    "name": "Everton FC",
+    "team_id": 62,
+    "aliases": [
+      "Everton",
+      "Everton FC"
+    ]
+  },
+  "fulham": {
+    "name": "Fulham FC",
+    "team_id": 63,
+    "aliases": [
+      "Fulham",
+      "Fulham FC"
+    ]
+  },
+  "huddersfield-town": {
+    "name": "Huddersfield Town AFC",
+    "team_id": null,
+    "aliases": [
+      "Huddersfield Town"
+    ]
+  },
+  "hull-city": {
+    "name": "Hull City AFC",
+    "team_id": 322,
+    "aliases": [
+      "Hull City",
+      "Hull City AFC"
+    ]
+  },
+  "ipswich-town": {
+    "name": "Ipswich Town FC",
+    "team_id": 349,
+    "aliases": [
+      "Ipswich Town",
+      "Ipswich",
+      "Ipswich Town FC"
+    ]
+  },
+  "leeds": {
+    "name": "Leeds United FC",
+    "team_id": 341,
+    "aliases": [
+      "Leeds",
+      "Leeds United",
+      "Leeds United FC"
+    ]
+  },
+  "leicester-city": {
+    "name": "Leicester City FC",
+    "team_id": null,
+    "aliases": [
+      "Leicester",
+      "Leicester City",
+      "Leicester City FC"
+    ]
+  },
+  "liverpool": {
+    "name": "Liverpool FC",
+    "team_id": 64,
+    "aliases": [
+      "Liverpool",
+      "Liverpool FC"
+    ]
+  },
+  "luton-town": {
+    "name": "Luton Town FC",
+    "team_id": null,
+    "aliases": [
+      "Luton Town",
+      "Luton Town FC"
+    ]
+  },
+  "manchester-city": {
+    "name": "Manchester City FC",
+    "team_id": 65,
+    "aliases": [
+      "Manchester City",
+      "Manchester City FC"
+    ]
+  },
+  "manchester-united": {
+    "name": "Manchester United FC",
+    "team_id": 66,
+    "aliases": [
+      "Manchester United",
+      "Manchester United FC"
+    ]
+  },
+  "middlesbrough": {
+    "name": "Middlesbrough FC",
+    "team_id": null,
+    "aliases": [
+      "Middlesbrough",
+      "Middlesbrough FC"
+    ]
+  },
+  "newcastle": {
+    "name": "Newcastle United FC",
+    "team_id": 67,
+    "aliases": [
+      "Newcastle United",
+      "Newcastle United FC",
+      "Newcastle Utd",
+      "Newcastle"
+    ]
+  },
+  "norwich-city": {
+    "name": "Norwich City FC",
+    "team_id": null,
+    "aliases": [
+      "Norwich City",
+      "Norwich City FC"
+    ]
+  },
+  "nottm-forest": {
+    "name": "Nottingham Forest FC",
+    "team_id": 351,
+    "aliases": [
+      "Nottingham Forest",
+      "Nottingham Forest FC"
+    ]
+  },
+  "oldham-athletic": {
+    "name": "Oldham Athletic AFC",
+    "team_id": null,
+    "aliases": [
+      "Oldham Athletic",
+      "Oldham Athletic AFC"
+    ]
+  },
+  "portsmouth": {
+    "name": "Portsmouth FC",
+    "team_id": null,
+    "aliases": [
+      "Portsmouth",
+      "Portsmouth FC"
+    ]
+  },
+  "qpr": {
+    "name": "Queens Park Rangers FC",
+    "team_id": null,
+    "aliases": [
+      "Queens Park Rangers",
+      "Queens Park Rangers FC"
+    ]
+  },
+  "reading": {
+    "name": "Reading FC",
+    "team_id": null,
+    "aliases": [
+      "Reading",
+      "Reading FC"
+    ]
+  },
+  "sheffield-united": {
+    "name": "Sheffield United FC",
+    "team_id": null,
+    "aliases": [
+      "Sheffield United",
+      "Sheffield United FC"
+    ]
+  },
+  "sheffield-wednesday": {
+    "name": "Sheffield Wednesday FC",
+    "team_id": null,
+    "aliases": [
+      "Sheffield Wed",
+      "Sheffield Wednesday",
+      "Sheffield Wednesday FC"
+    ]
+  },
+  "southampton": {
+    "name": "Southampton FC",
+    "team_id": null,
+    "aliases": [
+      "Southampton",
+      "Southampton FC"
+    ]
+  },
+  "stoke-city": {
+    "name": "Stoke City FC",
+    "team_id": null,
+    "aliases": [
+      "Stoke City"
+    ]
+  },
+  "sunderland": {
+    "name": "Sunderland AFC",
+    "team_id": 71,
+    "aliases": [
+      "Sunderland",
+      "Sunderland AFC"
+    ]
+  },
+  "swansea-city": {
+    "name": "Swansea City AFC",
+    "team_id": null,
+    "aliases": [
+      "Swansea City"
+    ]
+  },
+  "swindon-town": {
+    "name": "Swindon Town FC",
+    "team_id": null,
+    "aliases": [
+      "Swindon Town",
+      "Swindon Town FC"
+    ]
+  },
+  "tottenham": {
+    "name": "Tottenham Hotspur FC",
+    "team_id": 73,
+    "aliases": [
+      "Tottenham",
+      "Tottenham Hotspur",
+      "Tottenham Hotspur FC"
+    ]
+  },
+  "watford": {
+    "name": "Watford FC",
+    "team_id": null,
+    "aliases": [
+      "Watford",
+      "Watford FC"
+    ]
+  },
+  "west-brom": {
+    "name": "West Bromwich Albion FC",
+    "team_id": null,
+    "aliases": [
+      "West Bromwich Albion",
+      "West Bromwich Albion FC"
+    ]
+  },
+  "west-ham": {
+    "name": "West Ham United FC",
+    "team_id": 563,
+    "aliases": [
+      "West Ham",
+      "West Ham United",
+      "West Ham United FC"
+    ]
+  },
+  "wigan-athletic": {
+    "name": "Wigan Athletic FC",
+    "team_id": null,
+    "aliases": [
+      "Wigan Athletic"
+    ]
+  },
+  "wimbledon": {
+    "name": "Wimbledon FC",
+    "team_id": null,
+    "aliases": [
+      "Wimbledon",
+      "Wimbledon FC"
+    ]
+  },
+  "wolves": {
+    "name": "Wolverhampton Wanderers FC",
+    "team_id": 76,
+    "aliases": [
+      "Wolverhampton Wanderers",
+      "Wolves",
+      "Wolverhampton Wanderers FC"
+    ]
+  }
+}

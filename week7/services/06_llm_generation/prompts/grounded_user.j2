@@ -1,0 +1,16 @@
+<references>
+{% for c in contexts -%}
+<ref n="{{ c.ref }}" category="{{ c.source.category or '' }}" origin="{{ c.source.origin or '' }}" season="{{ c.source.season or '' }}" matchweek="{{ c.source.matchweek or '' }}" fetched_at="{{ c.source.fetched_at or '' }}">
+title: {{ c.source.title or '' }}
+text: {{ c.text }}
+</ref>
+{% endfor -%}
+</references>
+<history>
+{% for h in history -%}
+{{ h.role }}: {{ h.content }}
+{% endfor -%}
+</history>
+<question>
+{{ query }}
+</question>

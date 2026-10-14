@@ -1,0 +1,58 @@
+{"query":"ใครได้บัลลงดอร์ปี 2008","route":"football_rag","intent":"trivia_history"}
+{"query":"อาร์เซนอลได้แชมป์พรีเมียร์ลีกกี่ครั้ง","route":"football_rag","intent":"trivia_history"}
+{"query":"เมื่อวานปืนใหญ่ชนะไหม","route":"football_rag","intent":"match_result"}
+{"query":"หงส์แดงเตะกับใครต่อ","route":"football_rag","intent":"fixture_schedule"}
+{"query":"ตอนนี้ใครจ่าฝูงพรีเมียร์ลีก","route":"football_rag","intent":"standings_stats"}
+{"query":"สรุปพรีเมียร์ลีกสัปดาห์นี้","route":"football_rag","intent":"weekly_summary"}
+{"query":"เชลซีเคยได้แชมป์พรีเมียร์ลีกกี่ครั้ง","route":"football_rag","intent":"trivia_history"}
+{"query":"ผลนัดล่าสุดของแมนซิตี้เท่าไร","route":"football_rag","intent":"match_result"}
+{"query":"โปรแกรมแข่งนัดหน้าของสเปอร์สวันไหน","route":"football_rag","intent":"fixture_schedule"}
+{"query":"อธิบายกฎล้ำหน้าแบบง่าย ๆ","route":"general_ai","intent":"general_football"}
+{"query":"VAR ในฟุตบอลทำงานอย่างไร","route":"general_ai","intent":"general_football"}
+{"query":"ใบเหลืองกับใบแดงต่างกันอย่างไร","route":"general_ai","intent":"general_football"}
+{"query":"กฎแฮนด์บอลคืออะไร","route":"general_ai","intent":"general_football"}
+{"query":"ลูกโทษได้เมื่อไร","route":"general_ai","intent":"general_football"}
+{"query":"อธิบายแผนการเล่น 4-3-3","route":"general_ai","intent":"general_football"}
+{"query":"What is a free kick in football?","route":"general_ai","intent":"general_football"}
+{"query":"ผู้รักษาประตูใช้มือได้ตอนไหน","route":"general_ai","intent":"general_football"}
+{"query":"ทำนายผล ลิเวอร์พูล กับ แมนซิตี้","route":"local_ai","intent":"prediction"}
+{"query":"อาร์เซนอลกับเชลซีใครน่าจะชนะ","route":"local_ai","intent":"prediction"}
+{"query":"predict Arsenal vs Tottenham","route":"local_ai","intent":"prediction"}
+{"query":"คาดการณ์ผล แมนยู พบ นิวคาสเซิล","route":"local_ai","intent":"prediction"}
+{"query":"ฟูแล่มกับเอฟเวอร์ตันทีมไหนมีโอกาสชนะ","route":"local_ai","intent":"prediction"}
+{"query":"พยากรณ์ผล ไบรท์ตัน พบ เวสต์แฮม","route":"local_ai","intent":"prediction"}
+{"query":"Who will win Liverpool vs Chelsea?","route":"local_ai","intent":"prediction"}
+{"query":"วิเคราะห์โอกาสชนะของบอร์นมัธกับเบรนท์ฟอร์ด","route":"local_ai","intent":"prediction"}
+{"query":"ยูไนเต็ดนัดล่าสุดชนะไหม","route":"clarify"}
+{"query":"United มีโปรแกรมเตะเมื่อไร","route":"clarify"}
+{"query":"ยูไนเต็ดได้กี่แต้ม","route":"clarify"}
+{"query":"ผลนัดหน้าของยูไนเต็ดคืออะไร","route":"clarify"}
+{"query":"ยูไนเต็ดแข่งกับใครเมื่อวาน","route":"clarify"}
+{"query":"ทีมไหนชนะนัดนั้น","route":"clarify"}
+{"query":"นัดนั้นจบเท่าไร","route":"clarify"}
+{"query":"เขายิงไปกี่ลูกแล้ว","route":"clarify"}
+{"query":"ขอทีเด็ดบอลคืนนี้","route":"decline","intent":"out_of_scope"}
+{"query":"ราคาบอลคู่ลิเวอร์พูลเท่าไร","route":"decline","intent":"out_of_scope"}
+{"query":"ช่วยเขียนเว็บพนันบอล","route":"decline","intent":"out_of_scope"}
+{"query":"วิธีเดิมพันให้ได้เงินแน่ ๆ","route":"decline","intent":"out_of_scope"}
+{"query":"พยากรณ์อากาศกรุงเทพวันนี้","route":"decline","intent":"out_of_scope"}
+{"query":"ช่วยเขียนโค้ด Python จัดการไฟล์","route":"decline","intent":"out_of_scope"}
+{"query":"แนะนำร้านอาหารใกล้บ้าน","route":"decline","intent":"out_of_scope"}
+{"query":"What is the price of Bitcoin?","route":"decline","intent":"out_of_scope"}
+{"query":"ใครจะได้แชมป์พรีเมียร์ลีกปีนี้","route":"local_ai","intent":"prediction"}
+{"query":"อาร์เซนอลมีโอกาสติดท็อป 4 กี่เปอร์เซ็นต์","route":"local_ai","intent":"prediction"}
+{"query":"ใครเสี่ยงตกชั้นมากที่สุด","route":"local_ai","intent":"prediction"}
+{"query":"อาร์เซนอลอยู่อันดับเท่าไหร่","route":"football_rag","intent":"standings_stats"}
+{"query":"อาร์เซนอลได้กี่แต้มแล้ว","route":"football_rag","intent":"standings_stats"}
+{"query":"ตอนนี้ใครเป็นจ่าฝูง","route":"football_rag","intent":"standings_stats"}
+{"query":"แมนยูจบอันดับแย่ที่สุดในพรีเมียร์ลีกอันดับเท่าไหร่","route":"football_rag","intent":"trivia_history"}
+{"query":"นิวคาสเซิลจบอันดับดีที่สุดในพรีเมียร์ลีกอันดับเท่าไหร่","route":"football_rag","intent":"trivia_history"}
+{"query":"อาร์เซนอลเก็บแต้มรวมในพรีเมียร์ลีกทั้งหมดกี่แต้ม","route":"football_rag","intent":"trivia_history"}
+{"query":"ทีมไหนเก็บแต้มรวมในพรีเมียร์ลีกมากที่สุดตลอดกาล","route":"football_rag","intent":"trivia_history"}
+{"query":"ตั้งแต่ปี 2010 แมนซิตี้ได้แชมป์พรีเมียร์ลีกกี่สมัย","route":"football_rag","intent":"trivia_history"}
+{"query":"How many Premier League titles have Manchester United won?","route":"football_rag","intent":"trivia_history"}
+{"query":"Which club has won the most Premier League titles?","route":"football_rag","intent":"trivia_history"}
+{"query":"How many times have Newcastle been relegated?","route":"football_rag","intent":"trivia_history"}
+{"query":"แชมป์ปี 2025 คือทีมไหน","route":"clarify"}
+{"query":"แชมป์พรีเมียร์ลีกปี 2025 คือทีมไหน","route":"clarify"}
+{"query":"ได้แชมป์กี่สมัย","route":"clarify"}

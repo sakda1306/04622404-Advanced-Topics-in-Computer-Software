@@ -1,0 +1,85 @@
+# ชุดข้อมูลถาม-ตอบ: ฉายาภาษาไทยของสโมสรพรีเมียร์ลีก และที่มาของฉายา
+# วัตถุประสงค์: ให้ระบบ RAG ตอบคำถามแบบ "ผีแดงคือทีมอะไร / ทำไมเรียกว่า..." ได้จากคลัง
+# รูปแบบเดียวกับ football_trivia_qa.txt: [หมวด] + Q: + A: แต่ละชุดคั่นด้วยบรรทัดว่าง
+# doc_id เริ่มที่ trivia-2001 (ต่อจากคลัง trivia เดิม) ดู app/kb/trivia.py
+# ================================================================
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ผีแดง (also แมนยู), and why is it called that?
+A: Manchester United. ผีแดง means "Red Devils" in Thai. Manchester United took the nickname "Red Devils" in the 1960s under manager Matt Busby, borrowing it from Salford rugby league club, whom the French press called "Les Diables Rouges" on a 1934 tour of France. A red devil appears on the club crest.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call หงส์แดง, and why is it called that?
+A: Liverpool. หงส์แดง means "red swan" in Thai: Thai fans named the club after the Liver bird on its crest, the symbol of the city of Liverpool, and its red shirts. In English Liverpool are called "The Reds". Rival fans sometimes tease them as เป็ดแดง ("red duck").
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call เรือใบ or เรือใบสีฟ้า, and why is it called that?
+A: Manchester City. เรือใบสีฟ้า means "sky-blue sailing ship" in Thai: the club crest shows a ship, a symbol of Manchester and its Ship Canal, and the team plays in sky blue. In English Manchester City are called "The Citizens" (or "Cityzens") and "The Sky Blues".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call สิงห์บลู, and why is it called that?
+A: Chelsea. สิงห์บลู means "blue lion" in Thai: the Chelsea crest shows a lion holding a staff, and the team plays in blue. In English Chelsea are called "The Blues".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ปืนใหญ่, and why is it called that?
+A: Arsenal. ปืนใหญ่ means "cannon" in Thai. Arsenal were founded in 1886 by workers at the Royal Arsenal, an armaments factory in Woolwich, and a cannon is on the club crest. In English Arsenal are called "The Gunners".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ไก่เดือยทอง, and why is it called that?
+A: Tottenham Hotspur. ไก่เดือยทอง means "cockerel with golden spurs" in Thai: the Tottenham crest shows a cockerel standing on a football. The name Hotspur comes from Sir Henry Percy, known as Harry Hotspur, whose family owned land in Tottenham, and fighting cockerels wore spurs. In English the club is called "Spurs".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call สาลิกาดง, and why is it called that?
+A: Newcastle United. สาลิกาดง is the Thai fans' name for "The Magpies", Newcastle's English nickname, which comes from the club's black-and-white striped shirts. Newcastle play at St James' Park.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ขุนค้อน, and why is it called that?
+A: West Ham United. ขุนค้อน means "lords of the hammer" in Thai. West Ham began in 1895 as Thames Ironworks FC, the works team of a shipbuilding company, and two crossed hammers are on the club crest. In English West Ham are called "The Hammers" or "The Irons".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ทอฟฟี่สีน้ำเงิน, and why is it called that?
+A: Everton. ทอฟฟี่สีน้ำเงิน means "blue toffees" in Thai. Everton's English nickname "The Toffees" comes from toffee shops near the club's early grounds, such as Mother Noblett's toffee shop, and the team plays in royal blue. Everton and Liverpool contest the Merseyside derby.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call สิงห์ผงาด, and why is it called that?
+A: Aston Villa. สิงห์ผงาด means "rearing lion" in Thai: a rampant lion is on the Aston Villa crest. In English the club is called "Villa" or "The Villans".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ผึ้งแดง, and why is it called that?
+A: Brentford. ผึ้งแดง means "red bees" in Thai: Brentford are called "The Bees" in English and play in red-and-white stripes. The nickname is said to come from students of Borough Road College who shouted "Buck up Bs" at an early match, which was heard as "Bees".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call แมวดำ, and why is it called that?
+A: Sunderland. แมวดำ means "black cats" in Thai, from Sunderland's English nickname "The Black Cats". It recalls the Black Cat gun battery on the River Wear in the 1800s, and supporters voted to make it the club's official nickname in 2000.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call หมาป่า, and why is it called that?
+A: Wolverhampton Wanderers. หมาป่า means "wolves" in Thai: "Wolves" is the short form of the club's name, and a wolf's head is on its crest. The team plays in old gold and black.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ยูงทอง, and why is it called that?
+A: Leeds United. ยูงทอง means "golden peacock" in Thai. Leeds' old English nickname "The Peacocks" comes from the Old Peacock pub opposite their Elland Road ground; the club is also called "The Whites" after its all-white kit.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call เจ้าป่า, and why is it called that?
+A: Nottingham Forest. เจ้าป่า means "lord of the forest" in Thai. The club was founded in 1865 and took its name from the Forest Recreation Ground where it first played; a tree is on its crest. Nottingham Forest won the European Cup in 1979 and 1980.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call ปราสาทเรือนแก้ว, and why is it called that?
+A: Crystal Palace. ปราสาทเรือนแก้ว means "glass palace" in Thai: the club is named after the Crystal Palace, the huge glass exhibition building in south London, which also gave its old English nickname "The Glaziers". Since the 1970s the club has been called "The Eagles".
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call นกนางนวล, and why is it called that?
+A: Brighton & Hove Albion. นกนางนวล means "seagull" in Thai: Brighton is a seaside town on the south coast of England, and the club, called "The Seagulls" in English, has a seagull on its crest. Brighton play at the American Express Stadium (Falmer Stadium).
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call เจ้าสัวน้อย?
+A: Fulham. Thai fans call Fulham เจ้าสัวน้อย. In English Fulham are called "The Cottagers" after Craven Cottage, their home ground beside the River Thames.
+
+[หมวด: Premier League Club Nicknames]
+Q: Which Premier League club do Thai fans call เชอร์รี่, and why is it called that?
+A: AFC Bournemouth. เชอร์รี่ comes from Bournemouth's English nickname "The Cherries", usually explained by the club's cherry-red striped shirts or by the cherry orchards that once stood near its Dean Court ground.
+
+[หมวด: Premier League Club Nicknames]
+Q: What is the nickname of Burnley, which Thai fans write as เบิร์นลีย์?
+A: Burnley. Thai fans write the club's name as เบิร์นลีย์. In English Burnley are called "The Clarets" after the claret colour of their shirts.

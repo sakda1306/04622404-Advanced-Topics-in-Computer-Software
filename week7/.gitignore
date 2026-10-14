@@ -1,0 +1,51 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# node
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# models, indexes and generated data
+vector_db/
+*.index
+*.faiss
+*.pkl
+*.npy
+*.pt
+*.bin
+*.safetensors
+.cache/
+data/raw/
+outputs/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# logs
+*.log
+logs/
+.venv/
+__pycache__/
+*.pyc
+eval/golden_thai.draft.jsonl

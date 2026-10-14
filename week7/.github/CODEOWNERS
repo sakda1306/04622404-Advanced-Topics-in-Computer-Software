@@ -1,0 +1,30 @@
+# ใครต้อง approve PR ที่แก้ไฟล์ไหน · ตาม docs/GIT_FLOW.md หัวข้อ 6
+# บรรทัดล่างทับบรรทัดบน · หัวหน้า (sakda1306) อยู่ทุกบรรทัดเพราะแก้ได้ทุกอย่าง
+
+# ค่าเริ่มต้น: README ราก, docs/ และไฟล์ที่ไม่มีเจ้าของ
+*                                   @sakda1306
+
+# service ของแต่ละคน
+/services/01_web_app/               @Mekmai4234 @sakda1306
+/services/02_api_backend/           @sakda1306
+/services/03_ai_router_agent/       @mahawongsupawit125-coder @sakda1306
+/services/04_ai_engines/            @PhonlakritTH @sakda1306
+/services/04_ai_model_selection/    @PhonlakritTH @sakda1306
+/services/05_retrieval_knowledge/   @sakda1306
+/services/06_llm_generation/        @cira1234 @sakda1306
+/services/07_football_data/         @Notnrxth @sakda1306
+
+# Deploy & Monitoring (รวม Dockerfile ของทุก service)
+/services/*/Dockerfile              @Peem-Atikorn @sakda1306
+/docker-compose*.yml                @Peem-Atikorn @sakda1306
+/.env.example                       @Peem-Atikorn @sakda1306
+/Makefile                           @Peem-Atikorn @sakda1306
+/deploy/                            @Peem-Atikorn @sakda1306
+/eval/                              @Peem-Atikorn @sakda1306
+/.github/workflows/                 @Peem-Atikorn @sakda1306
+
+# หัวหน้าเท่านั้น
+/.github/CODEOWNERS                 @sakda1306
+
+# CONTRACT ต้องได้ approve จากหัวหน้า + เจ้าของ service ทั้งสองฝั่ง (CODEOWNERS บังคับได้แค่คนใดคนหนึ่ง ส่วนที่เหลือตรวจใน PR)
+/docs/CONTRACT.md                   @sakda1306

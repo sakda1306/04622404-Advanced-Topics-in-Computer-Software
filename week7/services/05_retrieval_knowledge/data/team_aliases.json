@@ -1,0 +1,24 @@
+{
+  "teams": [
+    {"team_id": 57, "name": "Arsenal FC", "short_name": "Arsenal", "tla": "ARS", "aliases": ["ปืนใหญ่", "ปืน", "อาร์เซนอล", "the gunners", "gunners"]},
+    {"team_id": 58, "name": "Aston Villa FC", "short_name": "Aston Villa", "tla": "AVL", "aliases": ["สิงห์ผงาด", "วิลล่า", "แอสตันวิลล่า", "villa"]},
+    {"team_id": 61, "name": "Chelsea FC", "short_name": "Chelsea", "tla": "CHE", "aliases": ["สิงห์บลู", "สิงโตน้ำเงินคราม", "เชลซี", "the blues"]},
+    {"team_id": 62, "name": "Everton FC", "short_name": "Everton", "tla": "EVE", "aliases": ["ทอฟฟี่สีน้ำเงิน", "เอฟเวอร์ตัน", "the toffees", "toffees"]},
+    {"team_id": 63, "name": "Fulham FC", "short_name": "Fulham", "tla": "FUL", "aliases": ["เจ้าสัวน้อย", "ฟูแล่ม", "cottagers"]},
+    {"team_id": 64, "name": "Liverpool FC", "short_name": "Liverpool", "tla": "LIV", "aliases": ["หงส์แดง", "หงส์", "ลิเวอร์พูล", "the reds"]},
+    {"team_id": 65, "name": "Manchester City FC", "short_name": "Man City", "tla": "MCI", "aliases": ["เรือใบสีฟ้า", "เรือใบ", "แมนซิตี้", "ซิตี้", "man city", "citizens"]},
+    {"team_id": 66, "name": "Manchester United FC", "short_name": "Man United", "tla": "MUN", "aliases": ["ผีแดง", "ผี", "แมนยู", "แมนเชสเตอร์ยูไนเต็ด", "man utd", "red devils"]},
+    {"team_id": 67, "name": "Newcastle United FC", "short_name": "Newcastle", "tla": "NEW", "aliases": ["สาลิกาดง", "นิวคาสเซิล", "the magpies", "magpies"]},
+    {"team_id": 71, "name": "Sunderland AFC", "short_name": "Sunderland", "tla": "SUN", "aliases": ["แมวดำ", "ซันเดอร์แลนด์", "black cats"]},
+    {"team_id": 73, "name": "Tottenham Hotspur FC", "short_name": "Tottenham", "tla": "TOT", "aliases": ["ไก่เดือยทอง", "สเปอร์ส", "ท็อตแนม", "spurs"]},
+    {"team_id": 76, "name": "Wolverhampton Wanderers FC", "short_name": "Wolverhampton", "tla": "WOL", "aliases": ["หมาป่า", "วูล์ฟส์", "wolves"]},
+    {"team_id": 328, "name": "Burnley FC", "short_name": "Burnley", "tla": "BUR", "aliases": ["เบิร์นลีย์", "clarets"]},
+    {"team_id": 341, "name": "Leeds United FC", "short_name": "Leeds United", "tla": "LEE", "aliases": ["ยูงทอง", "ลีดส์", "leeds"]},
+    {"team_id": 351, "name": "Nottingham Forest FC", "short_name": "Nottingham", "tla": "NOT", "aliases": ["เจ้าป่า", "ฟอเรสต์", "forest"]},
+    {"team_id": 354, "name": "Crystal Palace FC", "short_name": "Crystal Palace", "tla": "CRY", "aliases": ["ปราสาทเรือนแก้ว", "พาเลซ", "palace", "eagles"]},
+    {"team_id": 397, "name": "Brighton & Hove Albion FC", "short_name": "Brighton Hove", "tla": "BHA", "aliases": ["นกนางนวล", "ไบรท์ตัน", "brighton", "seagulls"]},
+    {"team_id": 402, "name": "Brentford FC", "short_name": "Brentford", "tla": "BRE", "aliases": ["ผึ้งแดง", "เบรนท์ฟอร์ด", "the bees"]},
+    {"team_id": 563, "name": "West Ham United FC", "short_name": "West Ham", "tla": "WHU", "aliases": ["ขุนค้อน", "เวสต์แฮม", "hammers"]},
+    {"team_id": 1044, "name": "AFC Bournemouth", "short_name": "Bournemouth", "tla": "BOU", "aliases": ["เชอร์รี่", "บอร์นมัธ", "cherries"]}
+  ]
+}

@@ -1,0 +1,30 @@
+name: 01-web
+on:
+  pull_request:
+    branches: [develop, main]
+    paths: ["services/01_web_app/**"]
+  push:
+    branches: [develop, main]
+    paths: ["services/01_web_app/**"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: web-01-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: services/01_web_app
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+      - run: corepack enable
+      - run: corepack prepare pnpm@11.25.0 --activate
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check

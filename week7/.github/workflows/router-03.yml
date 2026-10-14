@@ -1,0 +1,31 @@
+name: 03-router
+on:
+  pull_request:
+    branches: [develop, main]
+    paths: ["services/03_ai_router_agent/**"]
+  push:
+    branches: [develop, main]
+    paths: ["services/03_ai_router_agent/**"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: router-03-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: services/03_ai_router_agent
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/03_ai_router_agent/requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python eval_routes.py

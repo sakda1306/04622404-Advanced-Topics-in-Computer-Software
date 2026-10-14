@@ -1,0 +1,20 @@
+{"id": "oo01", "query": "Who won the 2023 NBA Finals?", "query_original": null, "kind": "other"}
+{"id": "oo02", "query": "How do I cook pad thai at home?", "query_original": "ทำผัดไทยยังไง", "kind": "other"}
+{"id": "oo03", "query": "What is the capital city of Australia?", "query_original": null, "kind": "other"}
+{"id": "oo04", "query": "Who won the Wimbledon men's singles title in 2019?", "query_original": null, "kind": "other"}
+{"id": "oo05", "query": "What will the weather be in Bangkok tomorrow?", "query_original": "พรุ่งนี้กรุงเทพฝนตกไหม", "kind": "other"}
+{"id": "oo06", "query": "Who is the chief executive of Tesla?", "query_original": null, "kind": "other"}
+{"id": "oo07", "query": "How many players are on a rugby union team?", "query_original": null, "kind": "other"}
+{"id": "oo08", "query": "What is the price of gold today?", "query_original": "ราคาทองวันนี้เท่าไหร่", "kind": "other"}
+{"id": "oo09", "query": "Who won the 2022 Formula 1 drivers championship?", "query_original": null, "kind": "other"}
+{"id": "oo10", "query": "How do I reset my iPhone password?", "query_original": "ลืมรหัส iphone ทำยังไง", "kind": "other"}
+{"id": "fo01", "kind": "football", "query": "Chelsea vs Manchester United result matchweek 7", "query_original": "เชลซีเจอแมนยูนัดที่ 7 ผลเป็นไง", "filters": {"category": ["match_report"], "matchweek": 7}}
+{"id": "fo02", "kind": "football", "query": "Premier League table after matchweek 10", "query_original": "ตารางคะแนนหลังนัดที่ 10", "filters": {"category": ["standings"], "matchweek": 10}}
+{"id": "fo03", "kind": "football", "query": "Newcastle vs Manchester United result matchweek 6", "query_original": "นิวคาสเซิลเจอแมนยูนัดที่ 6 ผลเป็นไง", "filters": {"category": ["match_report"], "matchweek": 6}}
+{"id": "fo04", "kind": "football", "query": "Brighton vs Fulham score", "query_original": "ไบรท์ตันเจอฟูแล่มกี่ลูก", "filters": {}}
+{"id": "fo05", "kind": "football", "query": "Liverpool new signing January 2027", "query_original": "ลิเวอร์พูลซื้อใครเข้ามาเดือนมกราคม", "filters": {}}
+{"id": "fo06", "kind": "football", "query": "Arsenal injury news before the Tottenham match", "query_original": "ปืนใหญ่มีใครเจ็บก่อนเกมสเปอร์ส", "filters": {}}
+{"id": "fo07", "kind": "football", "query": "Manchester City manager press conference today", "query_original": "เป๊ปแถลงข่าววันนี้ว่ายังไง", "filters": {}}
+{"id": "fo08", "kind": "football", "query": "Who won the 2026/27 FA Cup final", "query_original": "ใครได้แชมป์เอฟเอคัพฤดูกาลนี้", "filters": {}}
+{"id": "fo09", "kind": "football", "query": "How long is Erling Haaland's contract", "query_original": "สัญญาฮาแลนด์เหลือกี่ปี", "filters": {}}
+{"id": "fo10", "kind": "football", "query": "Tottenham next manager rumours", "query_original": "ข่าวลือโค้ชคนใหม่ของสเปอร์ส", "filters": {}}

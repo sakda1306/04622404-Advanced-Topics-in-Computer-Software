@@ -1,0 +1,24 @@
+{
+  "mode": "grounded",
+  "query": "How many members does the Premier League trivia collection have?",
+  "language": "en",
+  "contexts": [
+    {
+      "ref": 1,
+      "text": "The Premier League trivia collection used by this assistant contains 1,996 curated facts.",
+      "source": {
+        "ref": 1, "doc_id": "trivia-0450", "title": "About the trivia collection",
+        "category": "trivia", "origin": "kb", "fetched_at": null
+      }
+    },
+    {
+      "ref": 2,
+      "text": "The FA Cup was first played in the 1871-72 season.",
+      "source": {
+        "ref": 2, "doc_id": "trivia-0002", "title": "FA Cup history",
+        "category": "trivia", "origin": "kb", "fetched_at": null
+      }
+    }
+  ],
+  "history": []
+}

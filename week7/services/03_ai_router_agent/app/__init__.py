@@ -1,0 +1,1 @@
+"""Football assistant router service."""

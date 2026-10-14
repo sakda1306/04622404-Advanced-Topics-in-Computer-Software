@@ -1,0 +1,9 @@
+{
+  "mode": "grounded",
+  "query": "test",
+  "language": "th",
+  "contexts": [
+    {"ref": 1, "text": "a", "source": {"ref": 1}},
+    {"ref": 1, "text": "b", "source": {"ref": 1}}
+  ]
+}

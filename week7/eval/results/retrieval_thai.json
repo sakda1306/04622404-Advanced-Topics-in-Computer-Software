@@ -1,0 +1,885 @@
+{
+  "generated_at": "2026-10-05T01:21:24.648+07:00",
+  "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "golden_file": "eval/golden_thai.jsonl",
+  "questions": {
+    "historical_th": 32,
+    "match_th": 20,
+    "multi_doc": 10,
+    "out_of_kb_th": 20,
+    "trivia_th": 39
+  },
+  "metric_note": "multi_doc hit@5 needs every expected document in the top 5; routed questions the rules cannot decide are searched as raw Thai, so their misses and returned chunks stand in for the classifier/LLM path",
+  "measured_on": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "cpu_count": 8,
+    "python": "3.12.10",
+    "versions": {
+      "torch": "2.14.0+cpu",
+      "sentence-transformers": "6.1.0",
+      "faiss-cpu": "1.15.1",
+      "rank-bm25": "0.2.2",
+      "numpy": "2.5.3"
+    },
+    "conditions": "one process, CPU only, models loaded and warmed up before timing; latency is Searcher.search in process: no HTTP, no model loading, no other load on the machine"
+  },
+  "results": [
+    {
+      "kind": "historical_th",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 32,
+      "hit@1": 0.4375,
+      "hit@5": 0.6875,
+      "mrr": 0.5572916666666666,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "historical_th",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 32,
+      "hit@1": 0.15625,
+      "hit@5": 0.625,
+      "mrr": 0.37653882575757575,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "historical_th",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 32,
+      "hit@1": 0.03125,
+      "hit@5": 0.15625,
+      "mrr": 0.09623927696078431,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "historical_th",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 32,
+      "hit@1": 0.78125,
+      "hit@5": 0.90625,
+      "mrr": 0.8461538461538461,
+      "router_miss": 0,
+      "rules_undecided": 1
+    },
+    {
+      "kind": "historical_th",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 32,
+      "hit@1": 0.78125,
+      "hit@5": 0.96875,
+      "mrr": 0.8669871794871795,
+      "router_miss": 0,
+      "rules_undecided": 1
+    },
+    {
+      "kind": "historical_th",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 32,
+      "hit@1": 0.5625,
+      "hit@5": 0.8125,
+      "mrr": 0.6698288690476191,
+      "router_miss": 0,
+      "rules_undecided": 1
+    },
+    {
+      "kind": "match_th",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 20,
+      "hit@1": 0.4,
+      "hit@5": 0.5,
+      "mrr": 0.4375,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "match_th",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 20,
+      "hit@1": 0.0,
+      "hit@5": 0.4,
+      "mrr": 0.21958333333333332,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "match_th",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 20,
+      "hit@1": 0.0,
+      "hit@5": 0.05,
+      "mrr": 0.014545454545454545,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "match_th",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 20,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "router_miss": 0,
+      "rules_undecided": 6
+    },
+    {
+      "kind": "match_th",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 20,
+      "hit@1": 0.7,
+      "hit@5": 1.0,
+      "mrr": 0.85,
+      "router_miss": 0,
+      "rules_undecided": 6
+    },
+    {
+      "kind": "match_th",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 20,
+      "hit@1": 0.7,
+      "hit@5": 0.7,
+      "mrr": 0.7,
+      "router_miss": 0,
+      "rules_undecided": 6
+    },
+    {
+      "kind": "multi_doc",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 10,
+      "hit@1": 0.0,
+      "hit@5": 0.5,
+      "mrr": 0.225,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "multi_doc",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 10,
+      "hit@1": 0.0,
+      "hit@5": 0.4,
+      "mrr": 0.11083333333333334,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "multi_doc",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 10,
+      "hit@1": 0.0,
+      "hit@5": 0.0,
+      "mrr": 0.007142857142857143,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "multi_doc",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 10,
+      "hit@1": 0.0,
+      "hit@5": 0.4,
+      "mrr": 0.2,
+      "router_miss": 1,
+      "rules_undecided": 3
+    },
+    {
+      "kind": "multi_doc",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 10,
+      "hit@1": 0.0,
+      "hit@5": 0.4,
+      "mrr": 0.15833333333333333,
+      "router_miss": 1,
+      "rules_undecided": 3
+    },
+    {
+      "kind": "multi_doc",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 10,
+      "hit@1": 0.0,
+      "hit@5": 0.2,
+      "mrr": 0.10714285714285714,
+      "router_miss": 1,
+      "rules_undecided": 3
+    },
+    {
+      "kind": "trivia_th",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 39,
+      "hit@1": 0.07692307692307693,
+      "hit@5": 0.20512820512820512,
+      "mrr": 0.13103221564760026,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "trivia_th",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 39,
+      "hit@1": 0.38461538461538464,
+      "hit@5": 0.7692307692307693,
+      "mrr": 0.5298519144672991,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "trivia_th",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 39,
+      "hit@1": 0.4358974358974359,
+      "hit@5": 0.8205128205128205,
+      "mrr": 0.5909349909349909,
+      "router_miss": 0,
+      "rules_undecided": 0
+    },
+    {
+      "kind": "trivia_th",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 39,
+      "hit@1": 0.15384615384615385,
+      "hit@5": 0.3333333333333333,
+      "mrr": 0.21737891737891737,
+      "router_miss": 0,
+      "rules_undecided": 13
+    },
+    {
+      "kind": "trivia_th",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 39,
+      "hit@1": 0.358974358974359,
+      "hit@5": 0.717948717948718,
+      "mrr": 0.5033968880122727,
+      "router_miss": 0,
+      "rules_undecided": 13
+    },
+    {
+      "kind": "trivia_th",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 39,
+      "hit@1": 0.41025641025641024,
+      "hit@5": 0.7948717948717948,
+      "mrr": 0.5766899766899767,
+      "router_miss": 0,
+      "rules_undecided": 13
+    }
+  ],
+  "unanswerable_returned_chunks": [
+    {
+      "group": "football",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 6,
+      "returned_chunks": 0.3333333333333333
+    },
+    {
+      "group": "football",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 6,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "football",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 6,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "football",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 6,
+      "returned_chunks": 0.3333333333333333
+    },
+    {
+      "group": "football",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 6,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "football",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 6,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "meta",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 5,
+      "returned_chunks": 0.4
+    },
+    {
+      "group": "meta",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 5,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "meta",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 5,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "meta",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 5,
+      "returned_chunks": 0.0
+    },
+    {
+      "group": "meta",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 5,
+      "returned_chunks": 0.2
+    },
+    {
+      "group": "meta",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 5,
+      "returned_chunks": 0.2
+    },
+    {
+      "group": "other",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 4,
+      "returned_chunks": 0.25
+    },
+    {
+      "group": "other",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 4,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "other",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 4,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "other",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 4,
+      "returned_chunks": 0.25
+    },
+    {
+      "group": "other",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 4,
+      "returned_chunks": 0.5
+    },
+    {
+      "group": "other",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 4,
+      "returned_chunks": 0.5
+    },
+    {
+      "group": "vague",
+      "variant": "raw",
+      "mode": "bm25",
+      "n": 5,
+      "returned_chunks": 0.2
+    },
+    {
+      "group": "vague",
+      "variant": "raw",
+      "mode": "hybrid",
+      "n": 5,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "vague",
+      "variant": "raw",
+      "mode": "vector",
+      "n": 5,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "vague",
+      "variant": "routed",
+      "mode": "bm25",
+      "n": 5,
+      "returned_chunks": 0.2
+    },
+    {
+      "group": "vague",
+      "variant": "routed",
+      "mode": "hybrid",
+      "n": 5,
+      "returned_chunks": 1.0
+    },
+    {
+      "group": "vague",
+      "variant": "routed",
+      "mode": "vector",
+      "n": 5,
+      "returned_chunks": 1.0
+    }
+  ],
+  "miss_labels": {
+    "decided": {
+      "multi_doc_partial": 2,
+      "rewrite": 1,
+      "router_filter": 3,
+      "router_route": 1,
+      "vocabulary": 5
+    },
+    "undecided": {
+      "multi_doc_partial": 1,
+      "vocabulary": 5
+    }
+  },
+  "misses": [
+    {
+      "id": "th-hist-007",
+      "kind": "historical_th",
+      "label": "vocabulary",
+      "undecided": false,
+      "query_th": "ฤดูกาล 2003/04 ทีมไหนได้แชมป์แบบไม่แพ้ใคร",
+      "routed_query": "2003 ฤดูกาล 2003/04 ทีมไหนได้แชมป์แบบไม่แพ้ใคร",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "hist-season-2003",
+        "hist-team-2003-arsenal"
+      ],
+      "top5": [
+        "trivia-0386",
+        "hist-records",
+        "trivia-1212",
+        "trivia-1452",
+        "hist-team-2002-arsenal"
+      ]
+    },
+    {
+      "id": "th-multi_doc-001",
+      "kind": "multi_doc",
+      "label": "router_route",
+      "undecided": false,
+      "query_th": "ปืนใหญ่สองนัดหลังสุด เจอสิงห์ผงาดกับสิงห์บลู ผลเป็นยังไงบ้าง",
+      "routed_query": "ปืนใหญ่สองนัดหลังสุด เจอสิงห์ผงาดกับสิงห์บลู ผลเป็นยังไงบ้าง",
+      "filters": {},
+      "routed_away": "clarify",
+      "expected": [
+        "match-2026-mw04-58-57",
+        "match-2026-mw05-57-61"
+      ],
+      "top5": []
+    },
+    {
+      "id": "th-multi_doc-003",
+      "kind": "multi_doc",
+      "label": "router_filter",
+      "undecided": false,
+      "query_th": "สิงห์บลูนัดที่ 4 กับนัดที่ 5 ใครยิงให้บ้าง",
+      "routed_query": "Chelsea latest match result 2026 matchweek 4 สิงห์บลูนัดที่ 4 กับนัดที่ 5 ใครยิงให้บ้าง",
+      "filters": {
+        "category": [
+          "match_report"
+        ],
+        "team_ids": [
+          61
+        ],
+        "season": "2026",
+        "matchweek": 4
+      },
+      "routed_away": null,
+      "expected": [
+        "match-2026-mw04-61-67",
+        "match-2026-mw05-57-61"
+      ],
+      "top5": [
+        "match-2026-mw04-61-67"
+      ]
+    },
+    {
+      "id": "th-multi_doc-007",
+      "kind": "multi_doc",
+      "label": "multi_doc_partial",
+      "undecided": false,
+      "query_th": "คนนอกยุโรปคนแรกที่ได้รองเท้าทองคำพรีเมียร์ลีกคือใคร แล้วทีมแรกที่ได้แชมป์โดยไม่ได้มาจากแมนเชสเตอร์หรือลอนดอนคือทีมไหน",
+      "routed_query": "คนนอกยุโรปคนแรกที่ได้รองเท้าทองคำพรีเมียร์ลีกคือใคร แล้วทีมแรกที่ได้แชมป์โดยไม่ได้มาจากแมนเชสเตอร์หรือลอนดอนคือทีมไหน",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-0574",
+        "trivia-0586"
+      ],
+      "top5": [
+        "trivia-0574",
+        "hist-records",
+        "trivia-1885",
+        "trivia-1818",
+        "trivia-0732"
+      ]
+    },
+    {
+      "id": "th-multi_doc-008",
+      "kind": "multi_doc",
+      "label": "multi_doc_partial",
+      "undecided": false,
+      "query_th": "ใครคือคนที่ทำ 100 ลูกแรกในพรีเมียร์ลีก แล้วใครทำประตูเร็วที่สุดในลีก?",
+      "routed_query": "ใครคือคนที่ทำ 100 ลูกแรกในพรีเมียร์ลีก แล้วใครทำประตูเร็วที่สุดในลีก?",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-0591",
+        "trivia-1849"
+      ],
+      "top5": [
+        "trivia-0573",
+        "trivia-1832",
+        "trivia-0591",
+        "trivia-0655",
+        "trivia-0062"
+      ]
+    },
+    {
+      "id": "th-multi_doc-009",
+      "kind": "multi_doc",
+      "label": "multi_doc_partial",
+      "undecided": true,
+      "query_th": "ใครลงเล่นพรีเมียร์ลีกติดต่อกันมากที่สุด แล้วใครทำเข้าประตูตัวเองเยอะสุด",
+      "routed_query": "ใครลงเล่นพรีเมียร์ลีกติดต่อกันมากที่สุด แล้วใครทำเข้าประตูตัวเองเยอะสุด",
+      "filters": {},
+      "routed_away": null,
+      "expected": [
+        "trivia-1380",
+        "trivia-1387"
+      ],
+      "top5": [
+        "trivia-1385",
+        "hist-records",
+        "trivia-1390",
+        "trivia-0329",
+        "trivia-1380"
+      ]
+    },
+    {
+      "id": "th-multi_doc-010",
+      "kind": "multi_doc",
+      "label": "vocabulary",
+      "undecided": false,
+      "query_th": "กองหน้าอังกฤษที่เคยจับคู่ฟาวเลอร์กับรัชที่หงส์แดงช่วงปี 95-97 คือใคร แล้วก่อนเปลี่ยนเป็นพรีเมียร์ลีก ดิวิชั่น 1 เดิมมีกี่ทีมที่เคยได้แชมป์",
+      "routed_query": "Liverpool Premier League title กองหน้าอังกฤษที่เคยจับคู่ฟาวเลอร์กับรัชที่หงส์แดงช่วงปี 95-97 คือใคร แล้วก่อนเปลี่ยนเป็นพรีเมียร์ลีก ดิวิชั่น 1 เดิมมีกี่ทีมที่เคยได้แชมป์",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-1453",
+        "trivia-1775"
+      ],
+      "top5": [
+        "hist-club-liverpool",
+        "hist-records",
+        "trivia-0034",
+        "trivia-0294",
+        "hist-team-1996-liverpool"
+      ]
+    },
+    {
+      "id": "th-trivia-001",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": false,
+      "query_th": "ประเทศไหนเข้าร่วมบอลโลกหลายครั้งที่สุดแล้วก็ยังไม่เคยแชมป์?",
+      "routed_query": "FIFA World Cup ประเทศไหนเข้าร่วมบอลโลกหลายครั้งที่สุดแล้วก็ยังไม่เคยแชมป์?",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-0075"
+      ],
+      "top5": [
+        "trivia-0618",
+        "hist-records",
+        "trivia-0566",
+        "trivia-1397",
+        "trivia-0668"
+      ]
+    },
+    {
+      "id": "th-trivia-003",
+      "kind": "trivia_th",
+      "label": "router_filter",
+      "undecided": false,
+      "query_th": "อุ๊ย Modrić นักเตะโครเอเชีย มีชื่อเล่นว่าอะไรนะ",
+      "routed_query": "Premier League squad players position nationality coach 2026 อุ๊ย Modrić นักเตะโครเอเชีย มีชื่อเล่นว่าอะไรนะ",
+      "filters": {
+        "category": [
+          "player"
+        ],
+        "season": "2026"
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-0140"
+      ],
+      "top5": []
+    },
+    {
+      "id": "th-trivia-009",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": true,
+      "query_th": "ซิซูย้ายจากทีมอิตาเลียนไปทีมสเปนเมื่อไหร่?",
+      "routed_query": "ซิซูย้ายจากทีมอิตาเลียนไปทีมสเปนเมื่อไหร่?",
+      "filters": {},
+      "routed_away": null,
+      "expected": [
+        "trivia-0403"
+      ],
+      "top5": [
+        "trivia-1903",
+        "hist-records",
+        "trivia-0970",
+        "trivia-1654",
+        "trivia-0318"
+      ]
+    },
+    {
+      "id": "th-trivia-010",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": false,
+      "query_th": "ทีมแรกที่ได้แชมป์พรีเมียร์ลีกโดยไม่ได้มาจากแมนเชสเตอร์หรือลอนดอนคือทีมไหน",
+      "routed_query": "ทีมแรกที่ได้แชมป์พรีเมียร์ลีกโดยไม่ได้มาจากแมนเชสเตอร์หรือลอนดอนคือทีมไหน",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-0586"
+      ],
+      "top5": [
+        "trivia-0241",
+        "hist-records",
+        "trivia-1885",
+        "trivia-0589",
+        "trivia-0994"
+      ]
+    },
+    {
+      "id": "th-trivia-023",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": true,
+      "query_th": "ไก่เดือยทองไปเยือนอิปสวิชปี 1993 ครึ่งแรกเกิดอะไรขึ้นจนเป็นข่าว",
+      "routed_query": "ไก่เดือยทองไปเยือนอิปสวิชปี 1993 ครึ่งแรกเกิดอะไรขึ้นจนเป็นข่าว",
+      "filters": {},
+      "routed_away": null,
+      "expected": [
+        "trivia-1057"
+      ],
+      "top5": [
+        "trivia-0870",
+        "hist-team-1993-tottenham",
+        "trivia-1019",
+        "trivia-1109",
+        "trivia-1447"
+      ]
+    },
+    {
+      "id": "th-trivia-025",
+      "kind": "trivia_th",
+      "label": "rewrite",
+      "undecided": false,
+      "query_th": "ทีมอิตาลีที่ชนะแชมป์ยุโรปในปี 69 คือทีมไหน?",
+      "routed_query": "UEFA European Championship Euro Champions League Cup ทีมอิตาลีที่ชนะแชมป์ยุโรปในปี 69 คือทีมไหน?",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-1178"
+      ],
+      "top5": [
+        "trivia-0782",
+        "trivia-0781",
+        "trivia-0880",
+        "trivia-0787",
+        "trivia-0783"
+      ]
+    },
+    {
+      "id": "th-trivia-029",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": true,
+      "query_th": "เปเล่ค้าแข้งกับสโมสรไหนนานที่สุด",
+      "routed_query": "เปเล่ค้าแข้งกับสโมสรไหนนานที่สุด",
+      "filters": {},
+      "routed_away": null,
+      "expected": [
+        "trivia-1475"
+      ],
+      "top5": [
+        "trivia-1366",
+        "hist-records",
+        "trivia-1383",
+        "trivia-1518",
+        "trivia-0027"
+      ]
+    },
+    {
+      "id": "th-trivia-031",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": true,
+      "query_th": "ทีมโฟลาดที่เล่นสนามทัคตีเมืองอาห์วาซอยู่ประเทศอะไร",
+      "routed_query": "ทีมโฟลาดที่เล่นสนามทัคตีเมืองอาห์วาซอยู่ประเทศอะไร",
+      "filters": {},
+      "routed_away": null,
+      "expected": [
+        "trivia-1572"
+      ],
+      "top5": [
+        "trivia-0170",
+        "hist-records",
+        "trivia-0179",
+        "match-2026-mw04-64-66",
+        "trivia-0172"
+      ]
+    },
+    {
+      "id": "th-trivia-036",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": true,
+      "query_th": "ในบอลอังกฤษ มีคนทำประตูเร็วที่สุดคนไหน?",
+      "routed_query": "ในบอลอังกฤษ มีคนทำประตูเร็วที่สุดคนไหน?",
+      "filters": {},
+      "routed_away": null,
+      "expected": [
+        "trivia-1849"
+      ],
+      "top5": [
+        "trivia-0027",
+        "hist-records",
+        "trivia-0049",
+        "match-2026-mw04-64-66",
+        "trivia-1381"
+      ]
+    },
+    {
+      "id": "th-trivia-037",
+      "kind": "trivia_th",
+      "label": "router_filter",
+      "undecided": false,
+      "query_th": "ใครทำประตูได้เยอะที่สุดในหนึ่งปี?",
+      "routed_query": "Premier League top scorer 2026 matchweek 5 ใครทำประตูได้เยอะที่สุดในหนึ่งปี?",
+      "filters": {
+        "category": [
+          "standings"
+        ],
+        "season": "2026",
+        "matchweek": 5
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-1865"
+      ],
+      "top5": [
+        "standings-2026-mw05"
+      ]
+    },
+    {
+      "id": "th-trivia-039",
+      "kind": "trivia_th",
+      "label": "vocabulary",
+      "undecided": false,
+      "query_th": "นอกจากเปญาโรลกับนาซิอองนาล ทีมแรกที่ได้แชมป์ลีกอุรุกวัยคือทีมไหน",
+      "routed_query": "นอกจากเปญาโรลกับนาซิอองนาล ทีมแรกที่ได้แชมป์ลีกอุรุกวัยคือทีมไหน",
+      "filters": {
+        "category": [
+          "trivia",
+          "historical"
+        ]
+      },
+      "routed_away": null,
+      "expected": [
+        "trivia-1935"
+      ],
+      "top5": [
+        "trivia-0736",
+        "hist-records",
+        "trivia-0390",
+        "trivia-0389",
+        "trivia-0386"
+      ]
+    }
+  ]
+}

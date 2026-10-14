@@ -1,0 +1,16 @@
+{
+  "mode": "grounded",
+  "query": "เลสเตอร์เคยแชมป์พรีเมียร์ลีกด้วยราคาต่อรองเท่าไหร่",
+  "language": "th",
+  "contexts": [
+    {
+      "ref": 1,
+      "text": "Before the 2015-16 season, Leicester City were given odds of 5000/1 to win the Premier League title by bookmakers, before famously winning it.",
+      "source": {
+        "ref": 1, "doc_id": "trivia-0777", "title": "Leicester 5000/1 miracle",
+        "category": "trivia", "origin": "kb", "fetched_at": null
+      }
+    }
+  ],
+  "history": []
+}

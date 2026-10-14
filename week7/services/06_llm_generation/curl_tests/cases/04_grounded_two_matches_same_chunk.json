@@ -1,0 +1,14 @@
+{
+  "mode": "grounded",
+  "query": "ลิเวอร์พูลเจออีฟเวอร์ตันผลเป็นยังไง",
+  "language": "th",
+  "contexts": [{
+    "ref": 1,
+    "text": "Arsenal beat Chelsea 2-1 at the Emirates on matchweek 5. Later that day, Liverpool beat Everton 3-0 at Anfield.",
+    "source": {"ref": 1, "doc_id": "weekly-2026-mw05",
+      "title": "Premier League 2026/27 Matchweek 5", "category": "weekly_report",
+      "origin": "football-data.org", "season": "2026", "matchweek": 5,
+      "fetched_at": "2026-09-21T09:00:00+07:00"}
+  }],
+  "history": []
+}
