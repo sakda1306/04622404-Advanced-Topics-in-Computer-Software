@@ -1,0 +1,117 @@
+{
+  "role_id": "database-administrator",
+  "title_th": "ผู้ดูแลระบบฐานข้อมูล",
+  "title_en": "Database Administrator",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "sql",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/06-database-administrator.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "mysql",
+        "postgresql",
+        "sql-server",
+        "oracle-db"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/06-database-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "backup-recovery",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/06-database-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "performance-tuning",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/69-coursera-database-administrator.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "linux",
+        "windows-server"
+      ],
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/06-database-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "database-design",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/06-database-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "cybersecurity",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/06-database-administrator.pdf",
+        "pdf/69-coursera-database-administrator.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "bash",
+    "capacity-planning",
+    "nosql",
+    "cloud-computing",
+    "big-data"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "analytical-thinking",
+    "organization",
+    "communication"
+  ],
+  "work_style": {
+    "teamwork": 0.5,
+    "structure": 0.8,
+    "ambiguity": 0.3,
+    "pressure": 0.7,
+    "innovation": 0.3,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/06-database-administrator.pdf",
+      "url": "https://www.indeed.com/career-advice/careers/what-does-a-database-administrator-do",
+      "language": "en"
+    },
+    {
+      "file": "pdf/69-coursera-database-administrator.pdf",
+      "url": "https://www.coursera.org/articles/database-administrator",
+      "language": "en"
+    }
+  ]
+}

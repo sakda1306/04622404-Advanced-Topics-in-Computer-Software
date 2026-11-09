@@ -1,0 +1,129 @@
+{
+  "role_id": "systems-administrator",
+  "title_th": "ผู้ดูแลระบบ",
+  "title_en": "Systems Administrator",
+  "career_stage": "entry",
+  "required": [
+    {
+      "any_of": [
+        "linux",
+        "windows-server"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/58-coursera-system-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "server-administration",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/03-systems-administrator.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "operating-systems",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/03-systems-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "networking",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/03-systems-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "virtualization",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/03-systems-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "backup-recovery",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/75-onet-systems-administrators.pdf"
+      ]
+    },
+    {
+      "skill_id": "bash",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/03-systems-administrator.pdf",
+        "pdf/72-onet-network-admins-hot-technologies.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "active-directory",
+    "cloud-computing",
+    "monitoring",
+    "automation",
+    "device-management",
+    "cybersecurity",
+    "hardware-troubleshooting"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "strategic-thinking",
+    "communication"
+  ],
+  "work_style": {
+    "teamwork": 0.5,
+    "structure": 0.7,
+    "ambiguity": 0.3,
+    "pressure": 0.7,
+    "innovation": 0.3,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/03-systems-administrator.pdf",
+      "url": "https://www.indeed.com/career-advice/finding-a-job/system-administrator-vs-network-administrator",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/58-coursera-system-administrator.pdf",
+      "url": "https://www.coursera.org/articles/what-is-a-system-administrator-a-career-guide",
+      "language": "en"
+    },
+    {
+      "file": "pdf/72-onet-network-admins-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1244.00",
+      "language": "en"
+    },
+    {
+      "file": "pdf/75-onet-systems-administrators.pdf",
+      "url": "https://www.onetonline.org/link/details/15-1244.00",
+      "language": "en"
+    }
+  ]
+}

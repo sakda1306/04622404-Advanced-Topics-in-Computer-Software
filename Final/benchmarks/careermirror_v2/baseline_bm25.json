@@ -1,0 +1,129 @@
+{
+  "dataset_version": "2.0.0",
+  "prediction_count": 134,
+  "retrieval": {
+    "case_count": 134,
+    "output_coverage": 1.0,
+    "hit_at_1": 0.7014925373134329,
+    "hit_at_3": 0.9029850746268657,
+    "mrr_at_3": 0.7910447761194028,
+    "by_category": {
+      "role_description": {
+        "count": 26,
+        "hit_at_3": 1.0
+      },
+      "learning_path": {
+        "count": 26,
+        "hit_at_3": 0.7307692307692307
+      },
+      "soft_skill": {
+        "count": 21,
+        "hit_at_3": 0.9047619047619048
+      },
+      "work_style": {
+        "count": 7,
+        "hit_at_3": 1.0
+      },
+      "learning_sequence": {
+        "count": 26,
+        "hit_at_3": 1.0
+      },
+      "applied_soft_skills": {
+        "count": 21,
+        "hit_at_3": 0.8095238095238095
+      },
+      "applied_work_style": {
+        "count": 7,
+        "hit_at_3": 1.0
+      }
+    }
+  },
+  "routing": {
+    "status": "not_evaluated",
+    "case_count": 66,
+    "output_coverage": 0.0,
+    "accuracy": 0.0,
+    "confusion": [
+      {
+        "expected": "blind_spots",
+        "predicted": "MISSING",
+        "count": 2
+      },
+      {
+        "expected": "clarify",
+        "predicted": "MISSING",
+        "count": 2
+      },
+      {
+        "expected": "decline",
+        "predicted": "MISSING",
+        "count": 6
+      },
+      {
+        "expected": "experience",
+        "predicted": "MISSING",
+        "count": 2
+      },
+      {
+        "expected": "gap_question",
+        "predicted": "MISSING",
+        "count": 4
+      },
+      {
+        "expected": "job_matching",
+        "predicted": "MISSING",
+        "count": 27
+      },
+      {
+        "expected": "market",
+        "predicted": "MISSING",
+        "count": 2
+      },
+      {
+        "expected": "profile_edit",
+        "predicted": "MISSING",
+        "count": 4
+      },
+      {
+        "expected": "salary",
+        "predicted": "MISSING",
+        "count": 11
+      },
+      {
+        "expected": "skill_assessment",
+        "predicted": "MISSING",
+        "count": 3
+      },
+      {
+        "expected": "small_talk",
+        "predicted": "MISSING",
+        "count": 1
+      },
+      {
+        "expected": "work_style",
+        "predicted": "MISSING",
+        "count": 2
+      }
+    ]
+  },
+  "answer_review": {
+    "criteria_total": 549,
+    "criteria_graded": 0,
+    "coverage": 0.0,
+    "pass_rate_on_graded": null,
+    "passed_fraction_of_all_criteria": 0.0
+  },
+  "run": {
+    "retrieval_mode": "bm25",
+    "embedding_model": null,
+    "timestamp_utc": "2026-11-05T20:20:46.236160+00:00",
+    "python": "3.12.10",
+    "dataset_sha256": "08329af0d0d7cd25bfdc58c5f8ce8d9b095cdde81ab54e7791173481c4645289",
+    "packages": {
+      "numpy": "2.5.4",
+      "rank-bm25": "0.2.2",
+      "pythainlp": "5.4.0",
+      "faiss-cpu": "1.15.1"
+    }
+  }
+}

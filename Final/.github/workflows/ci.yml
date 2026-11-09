@@ -1,0 +1,129 @@
+# CI for every PR and push to develop and main.
+# No `paths` filter on purpose: these jobs are required checks for merging,
+# and a filtered workflow would leave docs-only PRs waiting forever.
+# Web checks are added here when web/ exists.
+name: ci
+
+on:
+  pull_request:
+    branches: [develop, main]
+  push:
+    branches: [develop, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  api-test:
+    name: api (ruff + pytest)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: api
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: api/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+
+  api-postgres:
+    name: api (migrations + smoke on Postgres)
+    needs: api-test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: api
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: careermirror
+          POSTGRES_PASSWORD: ci-only
+          POSTGRES_DB: careermirror
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U careermirror -d careermirror"
+          --health-interval 2s --health-timeout 5s --health-retries 30
+    env:
+      DATABASE_URL: postgresql+asyncpg://careermirror:ci-only@localhost:5432/careermirror
+      # Throwaway value for this job only; not a real secret.
+      JWT_SECRET: ci-only-secret-key-that-is-at-least-32-chars
+      DATA_DIR: ../data
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: api/requirements*.txt
+      - run: pip install -r requirements.txt
+      - name: migrations run up, down and up again
+        run: |
+          alembic upgrade head
+          alembic downgrade base
+          alembic upgrade head
+      - name: start api
+        run: |
+          mkdir -p var
+          nohup uvicorn app.main:app --port 8000 > api.log 2>&1 &
+          for _ in $(seq 1 30); do
+            curl -fsS http://localhost:8000/api/health && exit 0
+            sleep 1
+          done
+          echo "api did not start"; exit 1
+      - name: register, me, logout
+        run: |
+          set -e
+          base=http://localhost:8000/api
+          curl -fsS -c jar -H 'content-type: application/json' \
+            -d '{"email":"ci@example.com","password":"ci-password-1","display_name":"CI","consent":true}' \
+            "$base/auth/register"
+          curl -fsS -b jar "$base/auth/me" | grep -q '"is_admin":false'
+          curl -fsS -b jar -D headers "$base/quota" | grep -q '"exhausted":false'
+          grep -qi '^x-quota-requests-remaining: 40' headers
+          # The NUL is on purpose: some Thai fonts produce it, and Postgres JSONB refuses it.
+          PYTHONPATH=. python -c "from tests.pdf_fixtures import make_pdf; import sys; sys.stdout.buffer.write(make_pdf(['Skills', 'Python' + chr(0) + ' 3 years, Docker, SQL', 'Experience', 'Developer at Acme Jan 2022 - Present']))" > cv.pdf
+          curl -fsS -b jar -F "file=@cv.pdf;type=application/pdf" "$base/cv" | grep -q '"status":"draft"'
+          curl -fsS -b jar -X PUT -H 'content-type: application/json'             -d '{"skills":[{"name":"Python","skill_id":"python","level":3,"line_no":2}],"education":[],"experience":[{"title":"Developer"}]}'             "$base/cv/confirm" | grep -q '"status":"confirmed"'
+          curl -fsS -b jar -X DELETE "$base/cv" | grep -q '"deleted":true'
+          curl -fsS -b jar -c jar -X POST "$base/auth/logout"
+          test "$(curl -s -o /dev/null -w '%{http_code}' -b jar "$base/auth/me")" = 401
+      - name: quota guard on Postgres (parallel reserves, tokens, refund)
+        run: PYTHONPATH=. python scripts/check_quota_postgres.py
+      - name: api log on failure
+        if: failure()
+        run: tail -n 200 api.log
+
+  compose:
+    name: docker compose (build + health)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - name: .env from .env.example with throwaway secrets
+        run: |
+          cp .env.example .env
+          sed -i 's/^JWT_SECRET=.*/JWT_SECRET=ci-only-secret-key-that-is-at-least-32-chars/' .env
+          sed -i 's/^POSTGRES_PASSWORD=.*/POSTGRES_PASSWORD=ci-only/' .env
+      - run: docker compose config --quiet
+      - run: docker compose up --build --detach --wait --wait-timeout 180
+      - run: curl -fsS http://localhost:8000/api/health
+      - name: compose logs on failure
+        if: failure()
+        run: docker compose logs --no-color --tail 200
+      - name: stop
+        if: always()
+        run: docker compose down --volumes

@@ -1,0 +1,122 @@
+{
+  "role_id": "software-engineer",
+  "title_th": "วิศวกรซอฟต์แวร์",
+  "title_en": "Software Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "any_of": [
+        "python",
+        "java",
+        "javascript",
+        "csharp",
+        "cpp"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/40-software-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-structures-algorithms",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/41-software-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "oop",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/64-coursera-software-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/41-software-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "unit-testing",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/41-software-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "sql",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/41-software-developer-skills.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "system-design",
+    "rest-api",
+    "agile",
+    "sdlc",
+    "debugging",
+    "typescript",
+    "docker"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "teamwork",
+    "communication",
+    "adaptability"
+  ],
+  "work_style": {
+    "teamwork": 0.7,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.5,
+    "innovation": 0.5,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/04-software-developer.pdf",
+      "url": "https://www.indeed.com/career-advice/finding-a-job/qualifications-for-software-developer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/40-software-engineer-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/software-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/41-software-developer-skills.pdf",
+      "url": "https://www.indeed.com/career-advice/career-development/software-developer-skills",
+      "language": "en"
+    },
+    {
+      "file": "pdf/64-coursera-software-engineer-job-description.pdf",
+      "url": "https://www.coursera.org/articles/software-engineer-job-description",
+      "language": "en"
+    }
+  ]
+}

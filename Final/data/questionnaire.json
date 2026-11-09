@@ -1,0 +1,506 @@
+{
+  "version": "0.2-draft",
+  "status": "DRAFT: question set and wording to be confirmed by both members",
+  "notes": "Served by GET /api/questionnaire (Contract.md 2.3). File-only fields not sent to web: slot, trait, skill_id, source_ids, options_source, max_choices (the api resolves options_source into options and enforces max_choices; adding max_choices to the Question type needs a Contract change). Scale answers are 1-5. A soft-skill answer of 4 or 5 adds that skill_id (from data/skills.json) to the profile as self-reported. Work-style items are self-reported preferences, not a personality diagnosis (PRD FR-7, FR-17). Question wording is the team's own; no item is copied from a source. All dimensions come from one source family: O*NET OnLine (USDOL/ETA, CC BY 4.0).",
+  "sources": [
+    {
+      "source_id": "onet_work_styles",
+      "title": "O*NET OnLine: Browse by Work Styles",
+      "publisher": "U.S. Department of Labor, Employment and Training Administration (USDOL/ETA)",
+      "url": "https://www.onetonline.org/find/descriptor/browse/1.D",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "retrieved_at": "2026-11-01",
+      "used_for": "Work-style and soft-skill dimensions: Social Orientation, Cooperation, Attention to Detail, Cautiousness, Tolerance for Ambiguity, Stress Tolerance, Innovation, Leadership Orientation, Adaptability, Perseverance, Achievement Orientation, Intellectual Curiosity.",
+      "attribution": "This questionnaire includes information adapted from O*NET OnLine by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. The CareerMirror team has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these modifications. O*NET® is a trademark of USDOL/ETA."
+    },
+    {
+      "source_id": "onet_skills",
+      "title": "O*NET OnLine: Browse by Essential Skills and Browse by Transferable Skills",
+      "publisher": "U.S. Department of Labor, Employment and Training Administration (USDOL/ETA)",
+      "url": "https://www.onetonline.org/find/descriptor/browse/2.A",
+      "url_2": "https://www.onetonline.org/find/descriptor/browse/2.B",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "retrieved_at": "2026-11-01",
+      "used_for": "Soft-skill dimensions: Critical Thinking, Speaking, Writing, Active Listening, Active Learning, Monitoring, Coordination, Negotiation, Time Management, Complex Problem Solving.",
+      "attribution": "This questionnaire includes information adapted from O*NET OnLine by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. The CareerMirror team has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these modifications. O*NET® is a trademark of USDOL/ETA."
+    },
+    {
+      "source_id": "team",
+      "title": "Written by the CareerMirror team",
+      "used_for": "Skills checklist, experience, education, motivation options, career goals and the open example question, based on the PRD (FR-5) and the completeness slots in Design.md 4.1."
+    }
+  ],
+  "sections": [
+    {
+      "id": "skills",
+      "title_th": "ทักษะและพื้นฐาน",
+      "questions": [
+        {
+          "question_id": "sk_tech_stack",
+          "type": "skill_checklist",
+          "text_th": "เลือกทักษะด้านเทคนิคที่คุณมี และระบุระดับของแต่ละทักษะ",
+          "options_source": "skills.json",
+          "optional": false,
+          "slot": "hard_skills",
+          "source_ids": [
+            "team"
+          ]
+        },
+        {
+          "question_id": "ex_it_experience",
+          "type": "single",
+          "text_th": "คุณมีประสบการณ์ทำงานด้าน IT มากแค่ไหน",
+          "options": [
+            {
+              "value": "none",
+              "label_th": "ยังไม่มีประสบการณ์"
+            },
+            {
+              "value": "projects",
+              "label_th": "มีจากโปรเจกต์หรือฝึกงาน"
+            },
+            {
+              "value": "lt_1y",
+              "label_th": "ทำงานจริงน้อยกว่า 1 ปี"
+            },
+            {
+              "value": "1_3y",
+              "label_th": "ทำงานจริง 1–3 ปี"
+            },
+            {
+              "value": "gt_3y",
+              "label_th": "ทำงานจริงมากกว่า 3 ปี"
+            }
+          ],
+          "optional": false,
+          "slot": "experience",
+          "source_ids": [
+            "team"
+          ]
+        },
+        {
+          "question_id": "ed_level",
+          "type": "single",
+          "text_th": "ระดับการศึกษาสูงสุดของคุณ",
+          "options": [
+            {
+              "value": "secondary",
+              "label_th": "มัธยมศึกษาหรือ ปวช."
+            },
+            {
+              "value": "diploma",
+              "label_th": "ปวส. หรือเทียบเท่า"
+            },
+            {
+              "value": "bachelor_studying",
+              "label_th": "กำลังศึกษาปริญญาตรี"
+            },
+            {
+              "value": "bachelor",
+              "label_th": "ปริญญาตรี"
+            },
+            {
+              "value": "postgraduate",
+              "label_th": "ปริญญาโทขึ้นไป"
+            }
+          ],
+          "optional": false,
+          "slot": "education",
+          "source_ids": [
+            "team"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work_style",
+      "title_th": "รูปแบบการทำงานที่คุณชอบ",
+      "questions": [
+        {
+          "question_id": "ws_teamwork",
+          "type": "scale",
+          "text_th": "คุณชอบทำงานแบบไหนมากกว่ากัน",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ทำงานคนเดียวเป็นหลัก",
+            "max_label_th": "ทำงานร่วมกับทีมตลอด"
+          },
+          "optional": false,
+          "slot": "work_style",
+          "trait": "teamwork",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ws_structure",
+          "type": "scale",
+          "text_th": "คุณชอบงานที่มีขั้นตอนชัดเจนแค่ไหน",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ชอบคิดวิธีทำเองอย่างยืดหยุ่น",
+            "max_label_th": "ชอบมีขั้นตอนและมาตรฐานชัดเจน"
+          },
+          "optional": false,
+          "slot": "work_style",
+          "trait": "structure",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ws_ambiguity",
+          "type": "scale",
+          "text_th": "เมื่อโจทย์หรือความต้องการของงานยังไม่ชัดเจน คุณรู้สึกอย่างไร",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "อยากได้โจทย์ชัดก่อนเริ่ม",
+            "max_label_th": "สนุกกับการค้นหาคำตอบเอง"
+          },
+          "optional": false,
+          "slot": "work_style",
+          "trait": "ambiguity",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ws_pressure",
+          "type": "scale",
+          "text_th": "คุณทำงานได้ดีในจังหวะแบบไหน",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "จังหวะสม่ำเสมอ วางแผนล่วงหน้าได้",
+            "max_label_th": "งานเร่งด่วน เดดไลน์กระชั้น"
+          },
+          "optional": false,
+          "slot": "work_style",
+          "trait": "pressure",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ws_innovation",
+          "type": "scale",
+          "text_th": "เวลาแก้ปัญหา คุณชอบแนวทางแบบไหน",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ใช้วิธีที่พิสูจน์แล้วว่าได้ผล",
+            "max_label_th": "ลองวิธีหรือเครื่องมือใหม่ ๆ"
+          },
+          "optional": false,
+          "slot": "work_style",
+          "trait": "innovation",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ws_leadership",
+          "type": "scale",
+          "text_th": "บทบาทในทีมแบบไหนที่คุณชอบ",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "รับผิดชอบงานส่วนของตัวเอง",
+            "max_label_th": "นำทีมและประสานงานกับคนอื่น"
+          },
+          "optional": false,
+          "slot": "work_style",
+          "trait": "leadership",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "mo_drivers",
+          "type": "multi",
+          "text_th": "อะไรทำให้คุณอยากทำงานสาย IT (เลือกได้ไม่เกิน 3 ข้อ)",
+          "options": [
+            {
+              "value": "learning",
+              "label_th": "ได้เรียนรู้เทคโนโลยีใหม่อยู่เสมอ"
+            },
+            {
+              "value": "challenge",
+              "label_th": "ได้ทำงานที่ท้าทายและตั้งเป้าหมายสูง"
+            },
+            {
+              "value": "impact",
+              "label_th": "ได้สร้างสิ่งที่คนใช้งานจริง"
+            },
+            {
+              "value": "income",
+              "label_th": "รายได้และโอกาสเติบโต"
+            },
+            {
+              "value": "stability",
+              "label_th": "ความมั่นคงของงาน"
+            },
+            {
+              "value": "balance",
+              "label_th": "สมดุลระหว่างงานและชีวิต"
+            }
+          ],
+          "max_choices": 3,
+          "optional": false,
+          "slot": "work_style",
+          "source_ids": [
+            "team",
+            "onet_work_styles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft_skills",
+      "title_th": "ทักษะการทำงานร่วมกับผู้อื่น",
+      "questions": [
+        {
+          "question_id": "ss_adaptability",
+          "type": "scale",
+          "text_th": "เมื่อแผนงานหรือเทคโนโลยีที่ใช้เปลี่ยนกะทันหัน ฉันปรับตัวและเรียนรู้ได้เร็ว",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "adaptability",
+          "skill_id": "adaptability",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ss_collaboration",
+          "type": "scale",
+          "text_th": "เมื่อเห็นต่างกับเพื่อนร่วมทีม ฉันพูดคุยจนหาข้อสรุปร่วมกันได้",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "collaboration",
+          "skill_id": "teamwork",
+          "source_ids": [
+            "onet_work_styles",
+            "onet_skills"
+          ]
+        },
+        {
+          "question_id": "ss_communication",
+          "type": "scale",
+          "text_th": "ฉันอธิบายเรื่องเทคนิคให้คนที่ไม่ได้อยู่สาย IT เข้าใจได้ ทั้งการพูดและการเขียน",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "communication",
+          "skill_id": "communication",
+          "source_ids": [
+            "onet_skills"
+          ]
+        },
+        {
+          "question_id": "ss_growth",
+          "type": "scale",
+          "text_th": "ฉันขอคำติชมจากผู้อื่น และนำมาปรับปรุงงานของตัวเองอยู่เสมอ",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "growth",
+          "skill_id": "self-motivation",
+          "source_ids": [
+            "onet_skills"
+          ]
+        },
+        {
+          "question_id": "ss_prioritization",
+          "type": "scale",
+          "text_th": "เมื่อมีหลายงานพร้อมกัน ฉันจัดลำดับความสำคัญและประเมินเวลาที่ต้องใช้ได้ดี",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "prioritization",
+          "skill_id": "time-management",
+          "source_ids": [
+            "onet_skills"
+          ]
+        },
+        {
+          "question_id": "ss_perseverance",
+          "type": "scale",
+          "text_th": "เมื่อเจอบั๊กหรือปัญหายาก ฉันไล่หาสาเหตุต่อจนเจอ ไม่ยอมแพ้ง่าย",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "perseverance",
+          "skill_id": "problem-solving",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ss_attention_to_detail",
+          "type": "scale",
+          "text_th": "ก่อนส่งงาน ฉันตรวจทานรายละเอียดซ้ำ เช่น ตัวเลข ข้อความ หรือโค้ด จนมั่นใจว่าไม่มีจุดผิด",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "attention_to_detail",
+          "skill_id": "attention-to-detail",
+          "source_ids": [
+            "onet_work_styles"
+          ]
+        },
+        {
+          "question_id": "ss_analytical_thinking",
+          "type": "scale",
+          "text_th": "เมื่อต้องแก้ปัญหาหรือตัดสินใจ ฉันแยกปัญหาเป็นส่วนย่อย แล้วใช้ข้อมูลและเหตุผลเปรียบเทียบทางเลือกก่อนเลือก",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label_th": "ไม่ตรงกับฉันเลย",
+            "max_label_th": "ตรงกับฉันมาก"
+          },
+          "optional": false,
+          "slot": "soft_skills",
+          "trait": "analytical_thinking",
+          "skill_id": "analytical-thinking",
+          "source_ids": [
+            "onet_skills"
+          ]
+        },
+        {
+          "question_id": "ss_example",
+          "type": "text",
+          "text_th": "เล่าตัวอย่างสั้น ๆ จากงาน โปรเจกต์ หรือการเรียน ที่แสดงทักษะข้อใดข้อหนึ่งข้างบน",
+          "optional": true,
+          "slot": "soft_skills",
+          "source_ids": [
+            "team"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goals",
+      "title_th": "เป้าหมายของคุณ",
+      "questions": [
+        {
+          "question_id": "go_interested_roles",
+          "type": "multi",
+          "text_th": "สายงาน IT ที่คุณสนใจ (ถ้ามี)",
+          "options_source": "roles.json",
+          "optional": true,
+          "slot": "goals",
+          "source_ids": [
+            "team"
+          ]
+        },
+        {
+          "question_id": "go_salary",
+          "type": "single",
+          "text_th": "เงินเดือนที่คาดหวัง (ฐานเงินเดือนต่อเดือน)",
+          "options": [
+            {
+              "value": "lt_20k",
+              "label_th": "ต่ำกว่า ฿20,000"
+            },
+            {
+              "value": "20k_30k",
+              "label_th": "฿20,000 – ฿30,000"
+            },
+            {
+              "value": "30k_45k",
+              "label_th": "฿30,000 – ฿45,000"
+            },
+            {
+              "value": "45k_60k",
+              "label_th": "฿45,000 – ฿60,000"
+            },
+            {
+              "value": "gt_60k",
+              "label_th": "มากกว่า ฿60,000"
+            },
+            {
+              "value": "unsure",
+              "label_th": "ยังไม่แน่ใจ"
+            }
+          ],
+          "optional": false,
+          "slot": "goals",
+          "source_ids": [
+            "team"
+          ]
+        },
+        {
+          "question_id": "go_location",
+          "type": "single",
+          "text_th": "พื้นที่ที่คุณอยากทำงาน",
+          "options": [
+            {
+              "value": "bangkok",
+              "label_th": "กรุงเทพฯ และปริมณฑล"
+            },
+            {
+              "value": "regional",
+              "label_th": "ต่างจังหวัด"
+            },
+            {
+              "value": "remote",
+              "label_th": "ทำงานทางไกลเป็นหลัก"
+            },
+            {
+              "value": "any",
+              "label_th": "ที่ไหนก็ได้"
+            }
+          ],
+          "optional": false,
+          "slot": "goals",
+          "source_ids": [
+            "team"
+          ]
+        }
+      ]
+    }
+  ]
+}

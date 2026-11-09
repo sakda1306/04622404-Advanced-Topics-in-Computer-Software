@@ -1,0 +1,1862 @@
+{
+  "mode": "offline",
+  "cases": 200,
+  "correct": 87,
+  "outputs": 88,
+  "accuracy": null,
+  "macro_f1": null,
+  "jev_calls": 0,
+  "jev_outputs": 0,
+  "jev_correct_before_fallback": 0,
+  "groq_fallback_calls": 0,
+  "confusion": {
+    "blind_spots": {
+      "blind_spots": 3,
+      "NO_OUTPUT": 10
+    },
+    "clarify": {
+      "NO_OUTPUT": 13
+    },
+    "decline": {
+      "decline": 12,
+      "NO_OUTPUT": 5
+    },
+    "experience": {
+      "experience": 2,
+      "NO_OUTPUT": 11
+    },
+    "gap_question": {
+      "gap_question": 15
+    },
+    "job_matching": {
+      "job_matching": 27,
+      "NO_OUTPUT": 11
+    },
+    "market": {
+      "market": 3,
+      "NO_OUTPUT": 10,
+      "skill_assessment": 1
+    },
+    "profile_edit": {
+      "profile_edit": 9,
+      "NO_OUTPUT": 6
+    },
+    "salary": {
+      "salary": 10,
+      "NO_OUTPUT": 13
+    },
+    "skill_assessment": {
+      "skill_assessment": 4,
+      "NO_OUTPUT": 10
+    },
+    "small_talk": {
+      "NO_OUTPUT": 12
+    },
+    "work_style": {
+      "work_style": 2,
+      "NO_OUTPUT": 11
+    }
+  },
+  "rows": [
+    {
+      "id": "JRT-001",
+      "expected": "skill_assessment",
+      "predicted": "skill_assessment",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-002",
+      "expected": "work_style",
+      "predicted": "work_style",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-003",
+      "expected": "blind_spots",
+      "predicted": "blind_spots",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-004",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-005",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-006",
+      "expected": "market",
+      "predicted": "market",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-007",
+      "expected": "experience",
+      "predicted": "experience",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-008",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-009",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-010",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-011",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-012",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-013",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-014",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-015",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-016",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-017",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-018",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-019",
+      "expected": "decline",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-020",
+      "expected": "skill_assessment",
+      "predicted": "skill_assessment",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-021",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-022",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-023",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-024",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-025",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-026",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-027",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-028",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-029",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-030",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-031",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-032",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-033",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-034",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-035",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-036",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-037",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-038",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-039",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-040",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-041",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-042",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-043",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-044",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-045",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-046",
+      "expected": "job_matching",
+      "predicted": "job_matching",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-047",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-048",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-049",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-050",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-051",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-052",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-053",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-054",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-055",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-056",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-057",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-058",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-059",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-060",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-061",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-062",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-063",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-064",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-065",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-066",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-067",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-068",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-069",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-070",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-071",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-072",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-073",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-074",
+      "expected": "skill_assessment",
+      "predicted": "skill_assessment",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-075",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-076",
+      "expected": "skill_assessment",
+      "predicted": "skill_assessment",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-077",
+      "expected": "skill_assessment",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-078",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-079",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-080",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-081",
+      "expected": "work_style",
+      "predicted": "work_style",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-082",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-083",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-084",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-085",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-086",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-087",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-088",
+      "expected": "work_style",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-089",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-090",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-091",
+      "expected": "blind_spots",
+      "predicted": "blind_spots",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-092",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-093",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-094",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-095",
+      "expected": "blind_spots",
+      "predicted": "blind_spots",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-096",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-097",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-098",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-099",
+      "expected": "blind_spots",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-100",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-101",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-102",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-103",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-104",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-105",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-106",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-107",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-108",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-109",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-110",
+      "expected": "job_matching",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-111",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-112",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-113",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-114",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-115",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-116",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-117",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-118",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-119",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-120",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-121",
+      "expected": "salary",
+      "predicted": "salary",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-122",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-123",
+      "expected": "market",
+      "predicted": "market",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-124",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-125",
+      "expected": "market",
+      "predicted": "market",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-126",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-127",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-128",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-129",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-130",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-131",
+      "expected": "market",
+      "predicted": "skill_assessment",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-132",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-133",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-134",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-135",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-136",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-137",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-138",
+      "expected": "experience",
+      "predicted": "experience",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-139",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-140",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-141",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-142",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-143",
+      "expected": "experience",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-144",
+      "expected": "profile_edit",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-145",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-146",
+      "expected": "profile_edit",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-147",
+      "expected": "profile_edit",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-148",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-149",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-150",
+      "expected": "profile_edit",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-151",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-152",
+      "expected": "profile_edit",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-153",
+      "expected": "profile_edit",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-154",
+      "expected": "profile_edit",
+      "predicted": "profile_edit",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-155",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-156",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-157",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-158",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-159",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-160",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-161",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-162",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-163",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-164",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-165",
+      "expected": "gap_question",
+      "predicted": "gap_question",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "rules"
+    },
+    {
+      "id": "JRT-166",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-167",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-168",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-169",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-170",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-171",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-172",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-173",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-174",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-175",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-176",
+      "expected": "clarify",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-177",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-178",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-179",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-180",
+      "expected": "decline",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-181",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-182",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-183",
+      "expected": "decline",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-184",
+      "expected": "decline",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-185",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-186",
+      "expected": "decline",
+      "predicted": "decline",
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "layer": "guard"
+    },
+    {
+      "id": "JRT-187",
+      "expected": "decline",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-188",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-189",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-190",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-191",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-192",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-193",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-194",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-195",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-196",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-197",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-198",
+      "expected": "small_talk",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-199",
+      "expected": "salary",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    },
+    {
+      "id": "JRT-200",
+      "expected": "market",
+      "predicted": null,
+      "jev_called": false,
+      "jev_route": null,
+      "groq_called": false,
+      "status": "needs_provider"
+    }
+  ]
+}

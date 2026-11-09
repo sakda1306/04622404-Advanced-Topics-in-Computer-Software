@@ -1,0 +1,115 @@
+{
+  "role_id": "it-project-manager",
+  "title_th": "ผู้จัดการโครงการไอที",
+  "title_en": "IT Project Manager",
+  "career_stage": "mid",
+  "required": [
+    {
+      "skill_id": "project-management",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/10-it-project-manager.pdf"
+      ]
+    },
+    {
+      "skill_id": "agile",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/51-coursera-it-project-manager-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "stakeholder-management",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/10-it-project-manager.pdf"
+      ]
+    },
+    {
+      "skill_id": "sdlc",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/51-coursera-it-project-manager-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "risk-compliance",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/10-it-project-manager.pdf"
+      ]
+    },
+    {
+      "skill_id": "budgeting",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/10-it-project-manager.pdf"
+      ]
+    },
+    {
+      "skill_id": "technical-documentation",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/10-it-project-manager.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "pmp",
+    "requirements-analysis",
+    "bug-tracking",
+    "vendor-management",
+    "sql",
+    "programming"
+  ],
+  "soft_skills": [
+    "leadership",
+    "communication",
+    "organization",
+    "time-management",
+    "negotiation"
+  ],
+  "work_style": {
+    "teamwork": 0.9,
+    "structure": 0.6,
+    "ambiguity": 0.6,
+    "pressure": 0.7,
+    "innovation": 0.4,
+    "leadership": 0.9
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/10-it-project-manager.pdf",
+      "url": "https://www.indeed.com/career-advice/careers/what-does-an-it-project-manager-do",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/51-coursera-it-project-manager-skills.pdf",
+      "url": "https://www.coursera.org/articles/it-project-manager-skills",
+      "language": "en"
+    }
+  ]
+}

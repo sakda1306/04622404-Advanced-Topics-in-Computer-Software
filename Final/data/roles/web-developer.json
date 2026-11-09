@@ -1,0 +1,113 @@
+{
+  "role_id": "web-developer",
+  "title_th": "นักพัฒนาเว็บไซต์",
+  "title_en": "Web Developer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "html",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/05-web-developer.pdf"
+      ]
+    },
+    {
+      "skill_id": "css",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/05-web-developer.pdf"
+      ]
+    },
+    {
+      "skill_id": "javascript",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/05-web-developer.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "php",
+        "python",
+        "ruby",
+        "java",
+        "nodejs"
+      ],
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/05-web-developer.pdf",
+        "pdf/30-onet-web-developers-hot-technologies.pdf"
+      ]
+    },
+    {
+      "skill_id": "responsive-design",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/56-roadmap-frontend-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/30-onet-web-developers-hot-technologies.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "react",
+    "rest-api",
+    "cms",
+    "seo",
+    "web-design",
+    "ui-design",
+    "sql",
+    "bash"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "communication",
+    "attention-to-detail"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.6,
+    "ambiguity": 0.4,
+    "pressure": 0.5,
+    "innovation": 0.5,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/05-web-developer.pdf",
+      "url": "https://www.indeed.com/career-advice/finding-a-job/web-developer-vs-software-developer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/30-onet-web-developers-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1254.00",
+      "language": "en"
+    },
+    {
+      "file": "pdf/56-roadmap-frontend-developer-skills.pdf",
+      "url": "https://roadmap.sh/frontend/developer-skills",
+      "language": "en"
+    }
+  ]
+}

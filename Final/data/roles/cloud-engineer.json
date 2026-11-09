@@ -1,0 +1,115 @@
+{
+  "role_id": "cloud-engineer",
+  "title_th": "วิศวกรคลาวด์",
+  "title_en": "Cloud Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "cloud-computing",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/08-cloud-engineer.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/54-coursera-entry-level-cloud-jobs.pdf"
+      ]
+    },
+    {
+      "skill_id": "networking",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/54-coursera-entry-level-cloud-jobs.pdf"
+      ]
+    },
+    {
+      "skill_id": "linux",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/55-coursera-cloud-architect.pdf"
+      ]
+    },
+    {
+      "skill_id": "deployment",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/08-cloud-engineer.pdf"
+      ]
+    },
+    {
+      "skill_id": "cybersecurity",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/54-coursera-entry-level-cloud-jobs.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "docker",
+    "kubernetes",
+    "terraform",
+    "ci-cd",
+    "system-design",
+    "python"
+  ],
+  "soft_skills": [
+    "teamwork",
+    "communication",
+    "problem-solving",
+    "customer-service"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.6,
+    "innovation": 0.6,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/08-cloud-engineer.pdf",
+      "url": "https://www.indeed.com/career-advice/finding-a-job/cloud-engineer-vs-cloud-architect",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/54-coursera-entry-level-cloud-jobs.pdf",
+      "url": "https://www.coursera.org/articles/entry-level-cloud-computing-jobs",
+      "language": "en"
+    },
+    {
+      "file": "pdf/55-coursera-cloud-architect.pdf",
+      "url": "https://www.coursera.org/articles/how-to-become-a-cloud-architect",
+      "language": "en"
+    }
+  ]
+}

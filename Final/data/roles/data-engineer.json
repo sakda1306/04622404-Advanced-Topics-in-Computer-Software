@@ -1,0 +1,124 @@
+{
+  "role_id": "data-engineer",
+  "title_th": "วิศวกรข้อมูล",
+  "title_en": "Data Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "sql",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/20-data-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "python",
+        "java",
+        "scala"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/20-data-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "etl",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/20-data-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-modeling",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/20-data-engineer-job-description.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "pdf/48-coursera-data-engineering-roadmap.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-warehouse",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/20-data-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/20-data-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/48-coursera-data-engineering-roadmap.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "airflow",
+    "big-data",
+    "nosql",
+    "postgresql",
+    "message-queue",
+    "docker",
+    "data-governance"
+  ],
+  "soft_skills": [
+    "analytical-thinking",
+    "communication",
+    "problem-solving"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.5,
+    "innovation": 0.5,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/20-data-engineer-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/data-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/48-coursera-data-engineering-roadmap.pdf",
+      "url": "https://www.coursera.org/resources/data-engineering-learning-roadmap",
+      "language": "en"
+    }
+  ]
+}

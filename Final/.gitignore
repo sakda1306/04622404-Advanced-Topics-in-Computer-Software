@@ -1,0 +1,36 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# local data written by the api (SQLite, index snapshot, model cache)
+api/var/
+*.db
+*.db-wal
+*.db-shm
+
+# node
+node_modules/
+.next/
+out/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# user uploads
+*.pdf
+!data/**/*.pdf
+!docs/brand/*.pdf

@@ -1,0 +1,2896 @@
+{
+  "status": "superseded",
+  "generated": "2026-10-31",
+  "author": "Phanlop Boonleua",
+  "reviewer": "Phanlop Boonleua",
+  "how": "Superseded on 2026-11-01 by data/roles/<role_id>.json, which adds weights, levels and work-style. Kept as the record of which skills came from which source. Skills read from each role's source PDFs (numbers refer to files in pdf/). 'suggested' skills are common for the role but not stated in the sources; confirm them with Bangkok postings (step 2) before use. Weights are not set yet.",
+  "roles": {
+    "software-engineer": {
+      "hard": [
+        {
+          "skill": "programming",
+          "evidence": [
+            "04"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "04"
+          ]
+        },
+        {
+          "skill": "empathy",
+          "evidence": [
+            "04"
+          ]
+        },
+        {
+          "skill": "patience",
+          "evidence": [
+            "04"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "04"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "04"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "04"
+          ]
+        }
+      ],
+      "suggested": [
+        "python",
+        "java",
+        "javascript",
+        "git",
+        "data-structures-algorithms",
+        "oop",
+        "sdlc",
+        "unit-testing",
+        "system-design",
+        "sql",
+        "agile",
+        "rest-api"
+      ],
+      "note": "Source 04 covers education and soft skills only; technical skills need a source (postings in step 2)."
+    },
+    "web-developer": {
+      "hard": [
+        {
+          "skill": "html",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "css",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "javascript",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "ruby",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "java",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "bash",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "05"
+          ]
+        },
+        {
+          "skill": "ui-design",
+          "evidence": [
+            "05"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "05"
+          ]
+        }
+      ],
+      "suggested": [
+        "php",
+        "react",
+        "responsive-design",
+        "web-design",
+        "git",
+        "rest-api",
+        "cms",
+        "seo"
+      ],
+      "note": "Source 05 compares web vs software developers; few soft skills listed."
+    },
+    "frontend-developer": {
+      "hard": [
+        {
+          "skill": "html",
+          "evidence": [
+            "22",
+            "27"
+          ]
+        },
+        {
+          "skill": "css",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "javascript",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "csharp",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "cpp",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "sql",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "jquery",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "cms",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "web-design",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "seo",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "responsive-design",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "web-performance",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "debugging",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "ux-design",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "ui-design",
+          "evidence": [
+            "22",
+            "27"
+          ]
+        },
+        {
+          "skill": "graphic-design",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "figma",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "wireframing",
+          "evidence": [
+            "22"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "creativity",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "22"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "22"
+          ]
+        }
+      ],
+      "suggested": [
+        "react",
+        "typescript",
+        "vue",
+        "nextjs",
+        "git",
+        "web-accessibility",
+        "rest-api"
+      ]
+    },
+    "backend-developer": {
+      "hard": [
+        {
+          "skill": "server-side",
+          "evidence": [
+            "23",
+            "27"
+          ]
+        },
+        {
+          "skill": "dotnet",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "java",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "ruby",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "php",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "sql-server",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "oracle-db",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "mysql",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "nosql",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "caching",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "web-servers",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "linux",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "database-design",
+          "evidence": [
+            "27"
+          ]
+        }
+      ],
+      "soft": [],
+      "suggested": [
+        "nodejs",
+        "rest-api",
+        "microservices",
+        "sql",
+        "postgresql",
+        "docker",
+        "git",
+        "unit-testing",
+        "system-design",
+        "message-queue"
+      ],
+      "note": "Evidence taken from the back-end section of 23 (Full-Stack Developer JD); 23 added to this role's sources in roles.json. No source lists soft skills yet."
+    },
+    "fullstack-developer": {
+      "hard": [
+        {
+          "skill": "html",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "css",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "javascript",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "csharp",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "react",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "angular",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "jquery",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "dotnet",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "java",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "ruby",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "php",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "sql-server",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "oracle-db",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "mysql",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "nosql",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "caching",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "ui-design",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "ux-design",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "wireframing",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "web-servers",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "linux",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "system-design",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "deployment",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "virtualization",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "project-management",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "client-side",
+          "evidence": [
+            "23",
+            "27"
+          ]
+        },
+        {
+          "skill": "server-side",
+          "evidence": [
+            "23",
+            "27"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "23"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "23"
+          ]
+        }
+      ],
+      "suggested": [
+        "nodejs",
+        "typescript",
+        "rest-api",
+        "git",
+        "docker",
+        "postgresql"
+      ]
+    },
+    "mobile-developer": {
+      "hard": [
+        {
+          "skill": "programming",
+          "evidence": [
+            "26"
+          ]
+        },
+        {
+          "skill": "android",
+          "evidence": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "skill": "ios",
+          "evidence": [
+            "27"
+          ]
+        },
+        {
+          "skill": "debugging",
+          "evidence": [
+            "26"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "26"
+          ]
+        },
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "26"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "26"
+          ]
+        },
+        {
+          "skill": "creativity",
+          "evidence": [
+            "26"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "26"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "26"
+          ]
+        }
+      ],
+      "suggested": [
+        "kotlin",
+        "swift",
+        "flutter",
+        "react-native",
+        "rest-api",
+        "git",
+        "mobile-ui",
+        "app-store"
+      ],
+      "note": "Source 26 lists soft skills only; platform tools need a source."
+    },
+    "computer-engineer": {
+      "hard": [
+        {
+          "skill": "python",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "ruby",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "java",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "csharp",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "html",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "css",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "database-design",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "cms",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "erp-crm",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "api-integration",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "electronics",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "computer-architecture",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "hardware-troubleshooting",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "networking",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "debugging",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "project-management",
+          "evidence": [
+            "17"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "time-management",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "organization",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "17"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "17"
+          ]
+        }
+      ],
+      "suggested": [
+        "embedded-systems",
+        "c",
+        "cpp",
+        "iot",
+        "linux"
+      ]
+    },
+    "integration-engineer": {
+      "hard": [
+        {
+          "skill": "api-integration",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "javascript",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "aws",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "technical-documentation",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "requirements-analysis",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "manual-testing",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "system-design",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "hardware-troubleshooting",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "deployment",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "24"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "self-motivation",
+          "evidence": [
+            "24"
+          ]
+        },
+        {
+          "skill": "organization",
+          "evidence": [
+            "24"
+          ]
+        }
+      ],
+      "suggested": [
+        "rest-api",
+        "soap-xml",
+        "json",
+        "message-queue",
+        "mulesoft",
+        "sql",
+        "etl"
+      ]
+    },
+    "qa-engineer": {
+      "hard": [
+        {
+          "skill": "manual-testing",
+          "evidence": [
+            "14",
+            "27"
+          ]
+        },
+        {
+          "skill": "performance-testing",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "regression-testing",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "test-automation",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "ux-research",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "vulnerability-assessment",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "bug-tracking",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "sdlc",
+          "evidence": [
+            "14"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "critical-thinking",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "time-management",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "organization",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "14"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "14"
+          ]
+        }
+      ],
+      "suggested": [
+        "istqb",
+        "sql",
+        "agile",
+        "rest-api",
+        "unit-testing"
+      ]
+    },
+    "devops-engineer": {
+      "hard": [
+        {
+          "skill": "linux",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "windows-server",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "operating-systems",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "aws",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "azure",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "gcp",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "cloud-computing",
+          "evidence": [
+            "11",
+            "27"
+          ]
+        },
+        {
+          "skill": "monitoring",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "deployment",
+          "evidence": [
+            "11",
+            "27"
+          ]
+        },
+        {
+          "skill": "automation",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "sdlc",
+          "evidence": [
+            "11"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "11"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "11"
+          ]
+        }
+      ],
+      "suggested": [
+        "docker",
+        "kubernetes",
+        "ci-cd",
+        "terraform",
+        "git",
+        "bash"
+      ]
+    },
+    "cloud-engineer": {
+      "hard": [
+        {
+          "skill": "cloud-computing",
+          "evidence": [
+            "08",
+            "27"
+          ]
+        },
+        {
+          "skill": "system-design",
+          "evidence": [
+            "08"
+          ]
+        },
+        {
+          "skill": "deployment",
+          "evidence": [
+            "08"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "08"
+          ]
+        },
+        {
+          "skill": "manual-testing",
+          "evidence": [
+            "08"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "08"
+          ]
+        },
+        {
+          "skill": "leadership",
+          "evidence": [
+            "08"
+          ]
+        },
+        {
+          "skill": "customer-service",
+          "evidence": [
+            "08"
+          ]
+        }
+      ],
+      "suggested": [
+        "aws",
+        "azure",
+        "gcp",
+        "docker",
+        "kubernetes",
+        "terraform",
+        "linux",
+        "networking",
+        "cybersecurity",
+        "ci-cd"
+      ],
+      "note": "Source 08 compares cloud engineer vs architect; provider names (AWS, Azure, GCP) come from 11 and should be confirmed for this role."
+    },
+    "data-analyst": {
+      "hard": [
+        {
+          "skill": "excel",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "sql",
+          "evidence": [
+            "09",
+            "18"
+          ]
+        },
+        {
+          "skill": "data-visualization",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "tableau",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "statistics",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "data-cleaning",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "kpi-metrics",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "reporting",
+          "evidence": [
+            "18",
+            "27"
+          ]
+        },
+        {
+          "skill": "data-analysis",
+          "evidence": [
+            "09",
+            "18",
+            "27"
+          ]
+        },
+        {
+          "skill": "mathematics",
+          "evidence": [
+            "09"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "presentation",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "18"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "09",
+            "18"
+          ]
+        },
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "09",
+            "18"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "09"
+          ]
+        },
+        {
+          "skill": "critical-thinking",
+          "evidence": [
+            "09"
+          ]
+        }
+      ],
+      "suggested": [
+        "power-bi",
+        "pandas"
+      ]
+    },
+    "bi-analyst": {
+      "hard": [
+        {
+          "skill": "sql",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "oracle-db",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "statistics",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "business-analysis",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "reporting",
+          "evidence": [
+            "12",
+            "27"
+          ]
+        },
+        {
+          "skill": "data-analysis",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "data-visualization",
+          "evidence": [
+            "27"
+          ]
+        },
+        {
+          "skill": "automation",
+          "evidence": [
+            "12"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "12"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "12"
+          ]
+        }
+      ],
+      "suggested": [
+        "power-bi",
+        "tableau",
+        "data-warehouse",
+        "data-modeling",
+        "excel",
+        "etl"
+      ]
+    },
+    "data-scientist": {
+      "hard": [
+        {
+          "skill": "machine-learning",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "artificial-intelligence",
+          "evidence": [
+            "21",
+            "27"
+          ]
+        },
+        {
+          "skill": "data-visualization",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "technical-documentation",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "data-management",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "statistics",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "mathematics",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "data-analysis",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "reporting",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "predictive-modeling",
+          "evidence": [
+            "21"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "self-motivation",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "21"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "21"
+          ]
+        }
+      ],
+      "suggested": [
+        "python",
+        "r",
+        "sql",
+        "pandas",
+        "scikit-learn",
+        "deep-learning"
+      ]
+    },
+    "data-engineer": {
+      "hard": [
+        {
+          "skill": "etl",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "aws",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "sql",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "big-data",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "message-queue",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "nosql",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "postgresql",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "airflow",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "data-warehouse",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "data-modeling",
+          "evidence": [
+            "20",
+            "27"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "java",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "scala",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "cpp",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "oop",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "gcp",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "automation",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "debugging",
+          "evidence": [
+            "20"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "20"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "20"
+          ]
+        }
+      ],
+      "suggested": [
+        "docker",
+        "git",
+        "data-governance"
+      ]
+    },
+    "data-architect": {
+      "hard": [
+        {
+          "skill": "database-design",
+          "evidence": [
+            "19",
+            "27"
+          ]
+        },
+        {
+          "skill": "data-modeling",
+          "evidence": [
+            "19",
+            "27"
+          ]
+        },
+        {
+          "skill": "data-management",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "sql",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "statistics",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "mathematics",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "data-governance",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "reporting",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "cloud-computing",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "19"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "presentation",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "leadership",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "multitasking",
+          "evidence": [
+            "19"
+          ]
+        },
+        {
+          "skill": "interpersonal",
+          "evidence": [
+            "19"
+          ]
+        }
+      ],
+      "suggested": [
+        "data-warehouse",
+        "big-data",
+        "etl",
+        "nosql",
+        "aws"
+      ]
+    },
+    "ml-engineer": {
+      "hard": [
+        {
+          "skill": "r",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "java",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "python",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "machine-learning",
+          "evidence": [
+            "25",
+            "27"
+          ]
+        },
+        {
+          "skill": "data-modeling",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "system-design",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "mathematics",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "statistics",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "data-structures-algorithms",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "technical-documentation",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "aws",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "artificial-intelligence",
+          "evidence": [
+            "25",
+            "27"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "creativity",
+          "evidence": [
+            "25"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "25"
+          ]
+        }
+      ],
+      "suggested": [
+        "tensorflow",
+        "pytorch",
+        "scikit-learn",
+        "mlops",
+        "deep-learning",
+        "docker",
+        "sql"
+      ]
+    },
+    "ai-engineer": {
+      "hard": [
+        {
+          "skill": "artificial-intelligence",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "machine-learning",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "data-science",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "mathematics",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "statistics",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "data-structures-algorithms",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "automation",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "manual-testing",
+          "evidence": [
+            "16"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "self-motivation",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "critical-thinking",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "creativity",
+          "evidence": [
+            "16"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "16"
+          ]
+        }
+      ],
+      "suggested": [
+        "python",
+        "llm",
+        "deep-learning",
+        "nlp",
+        "pytorch",
+        "tensorflow",
+        "mlops",
+        "rest-api"
+      ]
+    },
+    "database-administrator": {
+      "hard": [
+        {
+          "skill": "sql",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "mysql",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "oracle-db",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "erp-crm",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "windows-server",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "linux",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "macos",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "operating-systems",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "hardware-troubleshooting",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "backup-recovery",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "capacity-planning",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "database-design",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "cloud-computing",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "big-data",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "06"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "communication",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "06"
+          ]
+        },
+        {
+          "skill": "organization",
+          "evidence": [
+            "06"
+          ]
+        }
+      ],
+      "suggested": [
+        "sql-server",
+        "postgresql",
+        "performance-tuning",
+        "nosql",
+        "bash"
+      ]
+    },
+    "information-security-analyst": {
+      "hard": [
+        {
+          "skill": "networking",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "tcp-ip",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "routing-switching",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "firewall",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "07",
+            "27"
+          ]
+        },
+        {
+          "skill": "vulnerability-assessment",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "monitoring",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "network-security",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "business-acumen",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "risk-compliance",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "encryption",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "incident-response",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "reporting",
+          "evidence": [
+            "07"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "decision-making",
+          "evidence": [
+            "07"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "07"
+          ]
+        }
+      ],
+      "suggested": [
+        "siem",
+        "security-certs",
+        "linux",
+        "cloud-computing",
+        "identity-access"
+      ]
+    },
+    "network-administrator": {
+      "hard": [
+        {
+          "skill": "networking",
+          "evidence": [
+            "02",
+            "27"
+          ]
+        },
+        {
+          "skill": "monitoring",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "identity-access",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "firewall",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "routing-switching",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "tcp-ip",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "active-directory",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "server-administration",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "cisco",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "comptia",
+          "evidence": [
+            "02"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "02"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "02"
+          ]
+        }
+      ],
+      "suggested": [
+        "lan-wan",
+        "network-security",
+        "windows-server",
+        "linux",
+        "troubleshooting"
+      ],
+      "note": "Source 02 is an interview-question article; skills are inferred from the questions asked."
+    },
+    "systems-administrator": {
+      "hard": [
+        {
+          "skill": "networking",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "server-administration",
+          "evidence": [
+            "03",
+            "27"
+          ]
+        },
+        {
+          "skill": "hardware-troubleshooting",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "bash",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "device-management",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "cloud-computing",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "virtualization",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "operating-systems",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "data-analysis",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "database-design",
+          "evidence": [
+            "03"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "03"
+          ]
+        },
+        {
+          "skill": "strategic-thinking",
+          "evidence": [
+            "03"
+          ]
+        }
+      ],
+      "suggested": [
+        "linux",
+        "windows-server",
+        "active-directory",
+        "backup-recovery",
+        "monitoring",
+        "automation"
+      ]
+    },
+    "it-support": {
+      "hard": [
+        {
+          "skill": "hardware-troubleshooting",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "software-installation",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "networking",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "troubleshooting",
+          "evidence": [
+            "01",
+            "27"
+          ]
+        },
+        {
+          "skill": "help-desk",
+          "evidence": [
+            "01",
+            "27"
+          ]
+        },
+        {
+          "skill": "technical-documentation",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "comptia",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "cisco",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "azure",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "user-training",
+          "evidence": [
+            "01"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "organization",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "patience",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "01"
+          ]
+        },
+        {
+          "skill": "customer-service",
+          "evidence": [
+            "01"
+          ]
+        }
+      ],
+      "suggested": [
+        "windows-server",
+        "active-directory",
+        "operating-systems",
+        "itil",
+        "macos"
+      ]
+    },
+    "ux-ui-designer": {
+      "hard": [
+        {
+          "skill": "ux-design",
+          "evidence": [
+            "13",
+            "27"
+          ]
+        },
+        {
+          "skill": "ui-design",
+          "evidence": [
+            "13",
+            "27"
+          ]
+        },
+        {
+          "skill": "ux-research",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "wireframing",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "figma",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "html",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "javascript",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "web-design",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "graphic-design",
+          "evidence": [
+            "13"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "self-motivation",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "teamwork",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "creativity",
+          "evidence": [
+            "13"
+          ]
+        },
+        {
+          "skill": "analytical-thinking",
+          "evidence": [
+            "13"
+          ]
+        }
+      ],
+      "suggested": [
+        "web-accessibility",
+        "responsive-design",
+        "css",
+        "mobile-ui"
+      ]
+    },
+    "it-project-manager": {
+      "hard": [
+        {
+          "skill": "project-management",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "pmp",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "comptia",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "network-security",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "sql",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "programming",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "operating-systems",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "virtualization",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "budgeting",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "stakeholder-management",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "risk-compliance",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "technical-documentation",
+          "evidence": [
+            "10"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "organization",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "time-management",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "strategic-thinking",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "leadership",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "10"
+          ]
+        },
+        {
+          "skill": "negotiation",
+          "evidence": [
+            "10"
+          ]
+        }
+      ],
+      "suggested": [
+        "agile",
+        "bug-tracking",
+        "vendor-management",
+        "requirements-analysis"
+      ]
+    },
+    "it-consultant": {
+      "hard": [
+        {
+          "skill": "it-strategy",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "hardware-troubleshooting",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "cybersecurity",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "pmp",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "erp-crm",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "project-management",
+          "evidence": [
+            "15"
+          ]
+        }
+      ],
+      "soft": [
+        {
+          "skill": "attention-to-detail",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "problem-solving",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "critical-thinking",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "time-management",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "interpersonal",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "communication",
+          "evidence": [
+            "15"
+          ]
+        },
+        {
+          "skill": "adaptability",
+          "evidence": [
+            "15"
+          ]
+        }
+      ],
+      "suggested": [
+        "requirements-analysis",
+        "business-analysis",
+        "cloud-computing",
+        "stakeholder-management",
+        "presentation"
+      ]
+    }
+  }
+}

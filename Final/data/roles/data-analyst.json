@@ -1,0 +1,109 @@
+{
+  "role_id": "data-analyst",
+  "title_th": "นักวิเคราะห์ข้อมูล",
+  "title_en": "Data Analyst",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "sql",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/09-data-analyst.pdf",
+        "pdf/18-data-analyst-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "excel",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/18-data-analyst-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-visualization",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/18-data-analyst-job-description.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "tableau",
+        "power-bi"
+      ],
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/18-data-analyst-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "statistics",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/18-data-analyst-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-cleaning",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/18-data-analyst-job-description.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "python",
+    "pandas",
+    "kpi-metrics",
+    "reporting",
+    "data-analysis",
+    "mathematics"
+  ],
+  "soft_skills": [
+    "analytical-thinking",
+    "communication",
+    "presentation",
+    "attention-to-detail"
+  ],
+  "work_style": {
+    "teamwork": 0.5,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.5,
+    "innovation": 0.4,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/09-data-analyst.pdf",
+      "url": "https://www.indeed.com/career-advice/resumes-cover-letters/data-analyst-entry-level-resume",
+      "language": "en"
+    },
+    {
+      "file": "pdf/18-data-analyst-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/data-analyst",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    }
+  ]
+}

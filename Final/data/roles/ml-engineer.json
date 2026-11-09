@@ -1,0 +1,133 @@
+{
+  "role_id": "ml-engineer",
+  "title_th": "วิศวกรแมชชีนเลิร์นนิง",
+  "title_en": "Machine Learning Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "python",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/25-ml-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "machine-learning",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/25-ml-engineer-job-description.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "pytorch",
+        "tensorflow",
+        "scikit-learn"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/59-coursera-machine-learning-interview-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-structures-algorithms",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/25-ml-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "mathematics",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/25-ml-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "statistics",
+      "min_level": 2,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/25-ml-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/32-onet-research-scientists-hot-technologies.pdf"
+      ]
+    },
+    {
+      "skill_id": "sql",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/59-coursera-machine-learning-interview-guide.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "mlops",
+    "docker",
+    "deep-learning",
+    "aws",
+    "system-design",
+    "data-modeling"
+  ],
+  "soft_skills": [
+    "analytical-thinking",
+    "problem-solving",
+    "communication",
+    "creativity"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.4,
+    "ambiguity": 0.7,
+    "pressure": 0.5,
+    "innovation": 0.7,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/25-ml-engineer-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/machine-learning-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/59-coursera-machine-learning-interview-guide.pdf",
+      "url": "https://www.coursera.org/resources/machine-learning-interview-prep-guide",
+      "language": "en"
+    },
+    {
+      "file": "pdf/32-onet-research-scientists-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1221.00",
+      "language": "en"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "role_id": "frontend-developer",
+  "title_th": "นักพัฒนาฟรอนต์เอนด์",
+  "title_en": "Frontend Developer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "html",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/22-frontend-developer-job-description.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "css",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/22-frontend-developer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "javascript",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/22-frontend-developer-job-description.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "react",
+        "vue",
+        "angular"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/56-roadmap-frontend-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "responsive-design",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/22-frontend-developer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/56-roadmap-frontend-developer-skills.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "typescript",
+    "nextjs",
+    "web-accessibility",
+    "web-performance",
+    "rest-api",
+    "figma",
+    "ui-design",
+    "debugging",
+    "seo"
+  ],
+  "soft_skills": [
+    "attention-to-detail",
+    "communication",
+    "creativity",
+    "teamwork",
+    "problem-solving"
+  ],
+  "work_style": {
+    "teamwork": 0.7,
+    "structure": 0.6,
+    "ambiguity": 0.4,
+    "pressure": 0.5,
+    "innovation": 0.6,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/22-frontend-developer-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/front-end-developer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/56-roadmap-frontend-developer-skills.pdf",
+      "url": "https://roadmap.sh/frontend/developer-skills",
+      "language": "en"
+    }
+  ]
+}

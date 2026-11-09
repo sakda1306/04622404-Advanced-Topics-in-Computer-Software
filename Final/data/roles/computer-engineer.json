@@ -1,0 +1,106 @@
+{
+  "role_id": "computer-engineer",
+  "title_th": "วิศวกรคอมพิวเตอร์",
+  "title_en": "Computer Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "any_of": [
+        "c",
+        "cpp",
+        "python",
+        "java"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/17-computer-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "computer-architecture",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/17-computer-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "electronics",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/17-computer-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "networking",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/17-computer-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "debugging",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/17-computer-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "hardware-troubleshooting",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/17-computer-engineer-job-description.pdf",
+        "pdf/68-coursera-computer-engineer.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "embedded-systems",
+    "iot",
+    "linux",
+    "database-design",
+    "api-integration",
+    "project-management"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "teamwork",
+    "time-management",
+    "communication"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.4,
+    "innovation": 0.5,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/17-computer-engineer-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/computer-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/68-coursera-computer-engineer.pdf",
+      "url": "https://www.coursera.org/articles/computer-engineer",
+      "language": "en"
+    }
+  ]
+}

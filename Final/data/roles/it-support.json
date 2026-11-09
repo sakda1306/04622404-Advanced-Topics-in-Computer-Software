@@ -1,0 +1,105 @@
+{
+  "role_id": "it-support",
+  "title_th": "เจ้าหน้าที่สนับสนุนด้านไอที",
+  "title_en": "IT Support Specialist",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "hardware-troubleshooting",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/01-it-support-specialist.pdf"
+      ]
+    },
+    {
+      "skill_id": "troubleshooting",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/01-it-support-specialist.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "operating-systems",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/01-it-support-specialist.pdf"
+      ]
+    },
+    {
+      "skill_id": "software-installation",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/01-it-support-specialist.pdf"
+      ]
+    },
+    {
+      "skill_id": "help-desk",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/01-it-support-specialist.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "networking",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/01-it-support-specialist.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "active-directory",
+    "windows-server",
+    "macos",
+    "itil",
+    "comptia",
+    "user-training",
+    "technical-documentation",
+    "cybersecurity"
+  ],
+  "soft_skills": [
+    "customer-service",
+    "communication",
+    "patience",
+    "problem-solving",
+    "organization"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.7,
+    "ambiguity": 0.3,
+    "pressure": 0.7,
+    "innovation": 0.2,
+    "leadership": 0.1
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/01-it-support-specialist.pdf",
+      "url": "https://www.indeed.com/career-advice/finding-a-job/it-support-specialists",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    }
+  ]
+}

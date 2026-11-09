@@ -1,0 +1,127 @@
+{
+  "role_id": "information-security-analyst",
+  "title_th": "นักวิเคราะห์ความปลอดภัยสารสนเทศ",
+  "title_en": "Information Security Analyst",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "cybersecurity",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "networking",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf"
+      ]
+    },
+    {
+      "skill_id": "tcp-ip",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf"
+      ]
+    },
+    {
+      "skill_id": "vulnerability-assessment",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf"
+      ]
+    },
+    {
+      "skill_id": "firewall",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf"
+      ]
+    },
+    {
+      "skill_id": "incident-response",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf"
+      ]
+    },
+    {
+      "skill_id": "linux",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/61-coursera-cybersecurity-analyst-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "monitoring",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/07-information-security-analyst.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "siem",
+    "security-certs",
+    "encryption",
+    "risk-compliance",
+    "identity-access",
+    "network-security",
+    "cloud-computing",
+    "routing-switching"
+  ],
+  "soft_skills": [
+    "analytical-thinking",
+    "problem-solving",
+    "decision-making",
+    "communication",
+    "adaptability"
+  ],
+  "work_style": {
+    "teamwork": 0.5,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.8,
+    "innovation": 0.5,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/07-information-security-analyst.pdf",
+      "url": "https://www.indeed.com/career-advice/career-development/information-security-analyst-skills",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/61-coursera-cybersecurity-analyst-skills.pdf",
+      "url": "https://www.coursera.org/articles/cybersecurity-analyst-skills",
+      "language": "en"
+    }
+  ]
+}

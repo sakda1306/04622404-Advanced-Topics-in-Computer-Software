@@ -1,0 +1,127 @@
+{
+  "role_id": "data-architect",
+  "title_th": "สถาปนิกข้อมูล",
+  "title_en": "Data Architect",
+  "career_stage": "senior",
+  "required": [
+    {
+      "skill_id": "data-modeling",
+      "min_level": 3,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/19-data-architect-job-description.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "pdf/42-how-to-become-data-architect.pdf"
+      ]
+    },
+    {
+      "skill_id": "database-design",
+      "min_level": 3,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/19-data-architect-job-description.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "sql",
+      "min_level": 3,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/19-data-architect-job-description.pdf",
+        "pdf/42-how-to-become-data-architect.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-governance",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/19-data-architect-job-description.pdf",
+        "pdf/73-coursera-data-architect-vs-data-engineer.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-warehouse",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/35-onet-database-architects.pdf"
+      ]
+    },
+    {
+      "skill_id": "cloud-computing",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/19-data-architect-job-description.pdf",
+        "pdf/34-onet-database-architects-hot-technologies.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "big-data",
+    "etl",
+    "nosql",
+    "aws",
+    "data-management",
+    "reporting"
+  ],
+  "soft_skills": [
+    "communication",
+    "leadership",
+    "presentation",
+    "attention-to-detail",
+    "interpersonal"
+  ],
+  "work_style": {
+    "teamwork": 0.7,
+    "structure": 0.4,
+    "ambiguity": 0.7,
+    "pressure": 0.4,
+    "innovation": 0.6,
+    "leadership": 0.7
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/19-data-architect-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/data-architect",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/42-how-to-become-data-architect.pdf",
+      "url": "https://ca.indeed.com/career-advice/finding-a-job/how-to-become-data-architect",
+      "language": "en"
+    },
+    {
+      "file": "pdf/73-coursera-data-architect-vs-data-engineer.pdf",
+      "url": "https://www.coursera.org/articles/data-architect-vs-data-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/35-onet-database-architects.pdf",
+      "url": "https://www.onetonline.org/link/details/15-1243.00",
+      "language": "en"
+    },
+    {
+      "file": "pdf/34-onet-database-architects-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1243.00",
+      "language": "en"
+    }
+  ]
+}

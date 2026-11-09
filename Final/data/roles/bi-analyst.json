@@ -1,0 +1,114 @@
+{
+  "role_id": "bi-analyst",
+  "title_th": "นักวิเคราะห์ระบบธุรกิจอัจฉริยะ",
+  "title_en": "Business Intelligence Analyst",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "sql",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/12-business-intelligence-analyst.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "power-bi",
+        "tableau"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/49-microsoft-pl-300-study-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "reporting",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/12-business-intelligence-analyst.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "data-modeling",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/49-microsoft-pl-300-study-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "business-analysis",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/12-business-intelligence-analyst.pdf"
+      ]
+    },
+    {
+      "skill_id": "excel",
+      "min_level": 2,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/74-onet-bi-analysts-hot-technologies.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "data-warehouse",
+    "etl",
+    "python",
+    "statistics",
+    "automation",
+    "oracle-db"
+  ],
+  "soft_skills": [
+    "communication",
+    "problem-solving",
+    "analytical-thinking",
+    "presentation"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.6,
+    "ambiguity": 0.4,
+    "pressure": 0.5,
+    "innovation": 0.4,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/12-business-intelligence-analyst.pdf",
+      "url": "https://www.indeed.com/career-advice/careers/what-does-a-business-intelligence-analyst-do",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/49-microsoft-pl-300-study-guide.pdf",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "language": "en"
+    },
+    {
+      "file": "pdf/74-onet-bi-analysts-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-2051.01",
+      "language": "en"
+    }
+  ]
+}

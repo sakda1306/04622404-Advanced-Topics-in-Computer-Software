@@ -1,0 +1,120 @@
+{
+  "role_id": "backend-developer",
+  "title_th": "นักพัฒนาแบ็กเอนด์",
+  "title_en": "Backend Developer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "any_of": [
+        "python",
+        "java",
+        "nodejs",
+        "php",
+        "dotnet",
+        "ruby"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/23-fullstack-developer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "sql",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/65-roadmap-backend-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "rest-api",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/39-backend-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "database-design",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/39-backend-developer-skills.pdf"
+      ]
+    },
+    {
+      "skill_id": "linux",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/23-fullstack-developer-job-description.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "docker",
+    "caching",
+    "nosql",
+    "microservices",
+    "message-queue",
+    "unit-testing",
+    "system-design",
+    "web-servers",
+    "postgresql"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "analytical-thinking",
+    "teamwork",
+    "communication"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.5,
+    "innovation": 0.5,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/23-fullstack-developer-job-description.pdf",
+      "url": "https://www.indeed.com/hire/job-description/full-stack-developer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/65-roadmap-backend-developer-skills.pdf",
+      "url": "https://roadmap.sh/backend/developer-skills",
+      "language": "en"
+    },
+    {
+      "file": "pdf/39-backend-developer-skills.pdf",
+      "url": "https://in.indeed.com/career-advice/career-development/backend-developer-skills",
+      "language": "en"
+    }
+  ]
+}

@@ -1,0 +1,1161 @@
+{
+ "version": "0.2-draft",
+ "sections": [
+  {
+   "id": "skills",
+   "title_th": "ทักษะและพื้นฐาน",
+   "questions": [
+    {
+     "question_id": "sk_tech_stack",
+     "type": "skill_checklist",
+     "text_th": "เลือกทักษะด้านเทคนิคที่คุณมี และระบุระดับของแต่ละทักษะ",
+     "optional": false,
+     "options": [
+      {
+       "value": "etl",
+       "label_th": "กระบวนการ ETL และไปป์ไลน์ข้อมูล"
+      },
+      {
+       "value": "it-strategy",
+       "label_th": "กลยุทธ์และการให้คำปรึกษาด้านไอที"
+      },
+      {
+       "value": "routing-switching",
+       "label_th": "การกำหนดเส้นทางและสวิตชิ่ง"
+      },
+      {
+       "value": "requirements-analysis",
+       "label_th": "การเก็บและวิเคราะห์ความต้องการ"
+      },
+      {
+       "value": "troubleshooting",
+       "label_th": "การแก้ไขปัญหาทางเทคนิค"
+      },
+      {
+       "value": "web-accessibility",
+       "label_th": "การเข้าถึงเว็บ (Accessibility)"
+      },
+      {
+       "value": "encryption",
+       "label_th": "การเข้ารหัสข้อมูล"
+      },
+      {
+       "value": "oop",
+       "label_th": "การเขียนโปรแกรมเชิงวัตถุ"
+      },
+      {
+       "value": "bash",
+       "label_th": "การเขียนสคริปต์เชลล์"
+      },
+      {
+       "value": "technical-documentation",
+       "label_th": "การเขียนเอกสารทางเทคนิค"
+      },
+      {
+       "value": "reporting",
+       "label_th": "การจัดทำรายงานธุรกิจ"
+      },
+      {
+       "value": "airflow",
+       "label_th": "การจัดลำดับงานข้อมูล (Airflow)"
+      },
+      {
+       "value": "api-integration",
+       "label_th": "การเชื่อมต่อระบบผ่าน API"
+      },
+      {
+       "value": "debugging",
+       "label_th": "การดีบักโปรแกรม"
+      },
+      {
+       "value": "server-administration",
+       "label_th": "การดูแลเซิร์ฟเวอร์"
+      },
+      {
+       "value": "incident-response",
+       "label_th": "การตอบสนองต่อเหตุการณ์ด้านความปลอดภัย"
+      },
+      {
+       "value": "hardware-troubleshooting",
+       "label_th": "การติดตั้งและแก้ไขปัญหาฮาร์ดแวร์"
+      },
+      {
+       "value": "software-installation",
+       "label_th": "การติดตั้งและตั้งค่าซอฟต์แวร์"
+      },
+      {
+       "value": "bug-tracking",
+       "label_th": "การติดตามบั๊ก (Jira)"
+      },
+      {
+       "value": "regression-testing",
+       "label_th": "การทดสอบการถดถอย"
+      },
+      {
+       "value": "manual-testing",
+       "label_th": "การทดสอบซอฟต์แวร์แบบแมนนวล"
+      },
+      {
+       "value": "performance-testing",
+       "label_th": "การทดสอบประสิทธิภาพและโหลด"
+      },
+      {
+       "value": "unit-testing",
+       "label_th": "การทดสอบหน่วยและการทดสอบรวม"
+      },
+      {
+       "value": "test-automation",
+       "label_th": "การทดสอบอัตโนมัติ"
+      },
+      {
+       "value": "data-cleaning",
+       "label_th": "การทำความสะอาดข้อมูล"
+      },
+      {
+       "value": "caching",
+       "label_th": "การทำแคช (Redis, Memcached)"
+      },
+      {
+       "value": "automation",
+       "label_th": "การทำงานอัตโนมัติ"
+      },
+      {
+       "value": "wireframing",
+       "label_th": "การทำ Wireframe และต้นแบบ"
+      },
+      {
+       "value": "deployment",
+       "label_th": "การนำซอฟต์แวร์ขึ้นใช้งานจริง"
+      },
+      {
+       "value": "data-visualization",
+       "label_th": "การนำเสนอข้อมูลด้วยภาพ"
+      },
+      {
+       "value": "risk-compliance",
+       "label_th": "การบริหารความเสี่ยงและการปฏิบัติตามข้อกำหนด"
+      },
+      {
+       "value": "project-management",
+       "label_th": "การบริหารโครงการ"
+      },
+      {
+       "value": "budgeting",
+       "label_th": "การบริหารงบประมาณ"
+      },
+      {
+       "value": "data-management",
+       "label_th": "การบริหารจัดการข้อมูล"
+      },
+      {
+       "value": "device-management",
+       "label_th": "การบริหารจัดการอุปกรณ์"
+      },
+      {
+       "value": "vendor-management",
+       "label_th": "การบริหารผู้ขายและผู้ให้บริการ"
+      },
+      {
+       "value": "stakeholder-management",
+       "label_th": "การบริหารผู้มีส่วนได้ส่วนเสีย"
+      },
+      {
+       "value": "nlp",
+       "label_th": "การประมวลผลภาษาธรรมชาติ"
+      },
+      {
+       "value": "vulnerability-assessment",
+       "label_th": "การประเมินช่องโหว่และทดสอบเจาะระบบ"
+      },
+      {
+       "value": "performance-tuning",
+       "label_th": "การปรับแต่งประสิทธิภาพฐานข้อมูล"
+      },
+      {
+       "value": "web-performance",
+       "label_th": "การปรับประสิทธิภาพเว็บ"
+      },
+      {
+       "value": "app-store",
+       "label_th": "การเผยแพร่แอปบน App Store / Google Play"
+      },
+      {
+       "value": "monitoring",
+       "label_th": "การเฝ้าระวังและบันทึกระบบ"
+      },
+      {
+       "value": "server-side",
+       "label_th": "การพัฒนาฝั่งเซิร์ฟเวอร์"
+      },
+      {
+       "value": "client-side",
+       "label_th": "การพัฒนาฝั่งผู้ใช้"
+      },
+      {
+       "value": "mobile-ui",
+       "label_th": "การพัฒนาส่วนติดต่อผู้ใช้บนมือถือ"
+      },
+      {
+       "value": "android",
+       "label_th": "การพัฒนาแอป Android"
+      },
+      {
+       "value": "ios",
+       "label_th": "การพัฒนาแอป iOS"
+      },
+      {
+       "value": "identity-access",
+       "label_th": "การยืนยันตัวตนและการควบคุมสิทธิ์"
+      },
+      {
+       "value": "capacity-planning",
+       "label_th": "การวางแผนขีดความสามารถของระบบ"
+      },
+      {
+       "value": "data-analysis",
+       "label_th": "การวิเคราะห์ข้อมูล"
+      },
+      {
+       "value": "business-analysis",
+       "label_th": "การวิเคราะห์ธุรกิจ"
+      },
+      {
+       "value": "ux-research",
+       "label_th": "การวิจัยผู้ใช้"
+      },
+      {
+       "value": "predictive-modeling",
+       "label_th": "การสร้างแบบจำลองเชิงพยากรณ์"
+      },
+      {
+       "value": "backup-recovery",
+       "label_th": "การสำรองและกู้คืนข้อมูล"
+      },
+      {
+       "value": "user-training",
+       "label_th": "การอบรมผู้ใช้งาน"
+      },
+      {
+       "value": "graphic-design",
+       "label_th": "การออกแบบกราฟิก"
+      },
+      {
+       "value": "database-design",
+       "label_th": "การออกแบบฐานข้อมูล"
+      },
+      {
+       "value": "data-modeling",
+       "label_th": "การออกแบบแบบจำลองข้อมูล"
+      },
+      {
+       "value": "ux-design",
+       "label_th": "การออกแบบประสบการณ์ผู้ใช้ (UX)"
+      },
+      {
+       "value": "responsive-design",
+       "label_th": "การออกแบบเว็บแบบ Responsive"
+      },
+      {
+       "value": "system-design",
+       "label_th": "การออกแบบสถาปัตยกรรมซอฟต์แวร์"
+      },
+      {
+       "value": "ui-design",
+       "label_th": "การออกแบบส่วนติดต่อผู้ใช้ (UI)"
+      },
+      {
+       "value": "rest-api",
+       "label_th": "การออกแบบ REST API"
+      },
+      {
+       "value": "mathematics",
+       "label_th": "คณิตศาสตร์ (พีชคณิตเชิงเส้น แคลคูลัส)"
+      },
+      {
+       "value": "data-warehouse",
+       "label_th": "คลังข้อมูล (Data Warehouse)"
+      },
+      {
+       "value": "cloud-computing",
+       "label_th": "คลาวด์คอมพิวติ้ง"
+      },
+      {
+       "value": "business-acumen",
+       "label_th": "ความเข้าใจธุรกิจ"
+      },
+      {
+       "value": "network-security",
+       "label_th": "ความปลอดภัยเครือข่าย"
+      },
+      {
+       "value": "cybersecurity",
+       "label_th": "ความมั่นคงปลอดภัยไซเบอร์"
+      },
+      {
+       "value": "networking",
+       "label_th": "เครือข่ายคอมพิวเตอร์"
+      },
+      {
+       "value": "data-structures-algorithms",
+       "label_th": "โครงสร้างข้อมูลและอัลกอริทึม"
+      },
+      {
+       "value": "help-desk",
+       "label_th": "งาน Help desk และระบบตั๋วแจ้งปัญหา"
+      },
+      {
+       "value": "nosql",
+       "label_th": "ฐานข้อมูล NoSQL"
+      },
+      {
+       "value": "dotnet",
+       "label_th": "ดอตเน็ต (.NET)"
+      },
+      {
+       "value": "deep-learning",
+       "label_th": "ดีปเลิร์นนิง"
+      },
+      {
+       "value": "kpi-metrics",
+       "label_th": "ตัวชี้วัดธุรกิจและ KPI"
+      },
+      {
+       "value": "data-governance",
+       "label_th": "ธรรมาภิบาลข้อมูล"
+      },
+      {
+       "value": "big-data",
+       "label_th": "บิ๊กดาต้า (Spark, Hadoop)"
+      },
+      {
+       "value": "security-certs",
+       "label_th": "ใบรับรองด้านความปลอดภัย"
+      },
+      {
+       "value": "istqb",
+       "label_th": "ใบรับรอง ISTQB"
+      },
+      {
+       "value": "pmp",
+       "label_th": "ใบรับรอง PMP / PRINCE2"
+      },
+      {
+       "value": "artificial-intelligence",
+       "label_th": "ปัญญาประดิษฐ์"
+      },
+      {
+       "value": "programming",
+       "label_th": "พื้นฐานการเขียนโปรแกรม"
+      },
+      {
+       "value": "firewall",
+       "label_th": "ไฟร์วอลล์"
+      },
+      {
+       "value": "machine-learning",
+       "label_th": "แมชชีนเลิร์นนิง"
+      },
+      {
+       "value": "llm",
+       "label_th": "โมเดลภาษาขนาดใหญ่ / Generative AI"
+      },
+      {
+       "value": "message-queue",
+       "label_th": "ระบบคิวข้อความ"
+      },
+      {
+       "value": "cms",
+       "label_th": "ระบบจัดการเนื้อหา (CMS)"
+      },
+      {
+       "value": "operating-systems",
+       "label_th": "ระบบปฏิบัติการ"
+      },
+      {
+       "value": "embedded-systems",
+       "label_th": "ระบบสมองกลฝังตัว"
+      },
+      {
+       "value": "erp-crm",
+       "label_th": "ระบบ ERP / CRM (SAP, Salesforce)"
+      },
+      {
+       "value": "sdlc",
+       "label_th": "วงจรการพัฒนาซอฟต์แวร์ (SDLC)"
+      },
+      {
+       "value": "data-science",
+       "label_th": "วิทยาการข้อมูล"
+      },
+      {
+       "value": "web-servers",
+       "label_th": "เว็บเซิร์ฟเวอร์ (Nginx, Apache)"
+      },
+      {
+       "value": "virtualization",
+       "label_th": "เวอร์ชวลไลเซชัน"
+      },
+      {
+       "value": "computer-architecture",
+       "label_th": "สถาปัตยกรรมคอมพิวเตอร์"
+      },
+      {
+       "value": "microservices",
+       "label_th": "สถาปัตยกรรมไมโครเซอร์วิส"
+      },
+      {
+       "value": "statistics",
+       "label_th": "สถิติ"
+      },
+      {
+       "value": "web-design",
+       "label_th": "หลักการออกแบบเว็บไซต์"
+      },
+      {
+       "value": "iot",
+       "label_th": "อินเทอร์เน็ตของสรรพสิ่ง (IoT)"
+      },
+      {
+       "value": "electronics",
+       "label_th": "อิเล็กทรอนิกส์และการออกแบบวงจร"
+      },
+      {
+       "value": "active-directory",
+       "label_th": "Active Directory"
+      },
+      {
+       "value": "agile",
+       "label_th": "Agile / Scrum"
+      },
+      {
+       "value": "angular",
+       "label_th": "Angular"
+      },
+      {
+       "value": "aws",
+       "label_th": "AWS"
+      },
+      {
+       "value": "c",
+       "label_th": "C"
+      },
+      {
+       "value": "csharp",
+       "label_th": "C#"
+      },
+      {
+       "value": "cpp",
+       "label_th": "C++"
+      },
+      {
+       "value": "ci-cd",
+       "label_th": "CI/CD"
+      },
+      {
+       "value": "cisco",
+       "label_th": "Cisco (CCNA)"
+      },
+      {
+       "value": "comptia",
+       "label_th": "CompTIA A+ / Network+"
+      },
+      {
+       "value": "css",
+       "label_th": "CSS"
+      },
+      {
+       "value": "docker",
+       "label_th": "Docker และคอนเทนเนอร์"
+      },
+      {
+       "value": "figma",
+       "label_th": "Figma และเครื่องมือออกแบบ"
+      },
+      {
+       "value": "flutter",
+       "label_th": "Flutter"
+      },
+      {
+       "value": "git",
+       "label_th": "Git และการควบคุมเวอร์ชัน"
+      },
+      {
+       "value": "gcp",
+       "label_th": "Google Cloud"
+      },
+      {
+       "value": "html",
+       "label_th": "HTML"
+      },
+      {
+       "value": "terraform",
+       "label_th": "Infrastructure as Code (Terraform)"
+      },
+      {
+       "value": "itil",
+       "label_th": "ITIL / การบริหารบริการไอที"
+      },
+      {
+       "value": "java",
+       "label_th": "Java"
+      },
+      {
+       "value": "javascript",
+       "label_th": "JavaScript"
+      },
+      {
+       "value": "jquery",
+       "label_th": "jQuery"
+      },
+      {
+       "value": "json",
+       "label_th": "JSON"
+      },
+      {
+       "value": "kotlin",
+       "label_th": "Kotlin"
+      },
+      {
+       "value": "kubernetes",
+       "label_th": "Kubernetes"
+      },
+      {
+       "value": "lan-wan",
+       "label_th": "LAN / WAN / Wi-Fi"
+      },
+      {
+       "value": "linux",
+       "label_th": "Linux"
+      },
+      {
+       "value": "macos",
+       "label_th": "macOS"
+      },
+      {
+       "value": "azure",
+       "label_th": "Microsoft Azure"
+      },
+      {
+       "value": "excel",
+       "label_th": "Microsoft Excel / สเปรดชีต"
+      },
+      {
+       "value": "sql-server",
+       "label_th": "Microsoft SQL Server"
+      },
+      {
+       "value": "mlops",
+       "label_th": "MLOps และการนำโมเดลไปใช้งาน"
+      },
+      {
+       "value": "mulesoft",
+       "label_th": "MuleSoft / iPaaS"
+      },
+      {
+       "value": "mysql",
+       "label_th": "MySQL"
+      },
+      {
+       "value": "nextjs",
+       "label_th": "Next.js"
+      },
+      {
+       "value": "nodejs",
+       "label_th": "Node.js"
+      },
+      {
+       "value": "oracle-db",
+       "label_th": "Oracle Database"
+      },
+      {
+       "value": "pandas",
+       "label_th": "pandas / NumPy"
+      },
+      {
+       "value": "php",
+       "label_th": "PHP"
+      },
+      {
+       "value": "postgresql",
+       "label_th": "PostgreSQL"
+      },
+      {
+       "value": "power-bi",
+       "label_th": "Power BI"
+      },
+      {
+       "value": "python",
+       "label_th": "Python"
+      },
+      {
+       "value": "pytorch",
+       "label_th": "PyTorch"
+      },
+      {
+       "value": "r",
+       "label_th": "R"
+      },
+      {
+       "value": "react",
+       "label_th": "React"
+      },
+      {
+       "value": "react-native",
+       "label_th": "React Native"
+      },
+      {
+       "value": "ruby",
+       "label_th": "Ruby"
+      },
+      {
+       "value": "scala",
+       "label_th": "Scala"
+      },
+      {
+       "value": "scikit-learn",
+       "label_th": "scikit-learn"
+      },
+      {
+       "value": "seo",
+       "label_th": "SEO"
+      },
+      {
+       "value": "siem",
+       "label_th": "SIEM และการเฝ้าระวังความปลอดภัย"
+      },
+      {
+       "value": "soap-xml",
+       "label_th": "SOAP / XML"
+      },
+      {
+       "value": "sql",
+       "label_th": "SQL"
+      },
+      {
+       "value": "swift",
+       "label_th": "Swift"
+      },
+      {
+       "value": "tableau",
+       "label_th": "Tableau"
+      },
+      {
+       "value": "tcp-ip",
+       "label_th": "TCP/IP, DNS, DHCP"
+      },
+      {
+       "value": "tensorflow",
+       "label_th": "TensorFlow"
+      },
+      {
+       "value": "typescript",
+       "label_th": "TypeScript"
+      },
+      {
+       "value": "vue",
+       "label_th": "Vue.js"
+      },
+      {
+       "value": "windows-server",
+       "label_th": "Windows Server"
+      }
+     ]
+    },
+    {
+     "question_id": "ex_it_experience",
+     "type": "single",
+     "text_th": "คุณมีประสบการณ์ทำงานด้าน IT มากแค่ไหน",
+     "options": [
+      {
+       "value": "none",
+       "label_th": "ยังไม่มีประสบการณ์"
+      },
+      {
+       "value": "projects",
+       "label_th": "มีจากโปรเจกต์หรือฝึกงาน"
+      },
+      {
+       "value": "lt_1y",
+       "label_th": "ทำงานจริงน้อยกว่า 1 ปี"
+      },
+      {
+       "value": "1_3y",
+       "label_th": "ทำงานจริง 1–3 ปี"
+      },
+      {
+       "value": "gt_3y",
+       "label_th": "ทำงานจริงมากกว่า 3 ปี"
+      }
+     ],
+     "optional": false
+    },
+    {
+     "question_id": "ed_level",
+     "type": "single",
+     "text_th": "ระดับการศึกษาสูงสุดของคุณ",
+     "options": [
+      {
+       "value": "secondary",
+       "label_th": "มัธยมศึกษาหรือ ปวช."
+      },
+      {
+       "value": "diploma",
+       "label_th": "ปวส. หรือเทียบเท่า"
+      },
+      {
+       "value": "bachelor_studying",
+       "label_th": "กำลังศึกษาปริญญาตรี"
+      },
+      {
+       "value": "bachelor",
+       "label_th": "ปริญญาตรี"
+      },
+      {
+       "value": "postgraduate",
+       "label_th": "ปริญญาโทขึ้นไป"
+      }
+     ],
+     "optional": false
+    }
+   ]
+  },
+  {
+   "id": "work_style",
+   "title_th": "รูปแบบการทำงานที่คุณชอบ",
+   "questions": [
+    {
+     "question_id": "ws_teamwork",
+     "type": "scale",
+     "text_th": "คุณชอบทำงานแบบไหนมากกว่ากัน",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ทำงานคนเดียวเป็นหลัก",
+      "max_label_th": "ทำงานร่วมกับทีมตลอด"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ws_structure",
+     "type": "scale",
+     "text_th": "คุณชอบงานที่มีขั้นตอนชัดเจนแค่ไหน",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ชอบคิดวิธีทำเองอย่างยืดหยุ่น",
+      "max_label_th": "ชอบมีขั้นตอนและมาตรฐานชัดเจน"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ws_ambiguity",
+     "type": "scale",
+     "text_th": "เมื่อโจทย์หรือความต้องการของงานยังไม่ชัดเจน คุณรู้สึกอย่างไร",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "อยากได้โจทย์ชัดก่อนเริ่ม",
+      "max_label_th": "สนุกกับการค้นหาคำตอบเอง"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ws_pressure",
+     "type": "scale",
+     "text_th": "คุณทำงานได้ดีในจังหวะแบบไหน",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "จังหวะสม่ำเสมอ วางแผนล่วงหน้าได้",
+      "max_label_th": "งานเร่งด่วน เดดไลน์กระชั้น"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ws_innovation",
+     "type": "scale",
+     "text_th": "เวลาแก้ปัญหา คุณชอบแนวทางแบบไหน",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ใช้วิธีที่พิสูจน์แล้วว่าได้ผล",
+      "max_label_th": "ลองวิธีหรือเครื่องมือใหม่ ๆ"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ws_leadership",
+     "type": "scale",
+     "text_th": "บทบาทในทีมแบบไหนที่คุณชอบ",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "รับผิดชอบงานส่วนของตัวเอง",
+      "max_label_th": "นำทีมและประสานงานกับคนอื่น"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "mo_drivers",
+     "type": "multi",
+     "text_th": "อะไรทำให้คุณอยากทำงานสาย IT (เลือกได้ไม่เกิน 3 ข้อ)",
+     "options": [
+      {
+       "value": "learning",
+       "label_th": "ได้เรียนรู้เทคโนโลยีใหม่อยู่เสมอ"
+      },
+      {
+       "value": "challenge",
+       "label_th": "ได้ทำงานที่ท้าทายและตั้งเป้าหมายสูง"
+      },
+      {
+       "value": "impact",
+       "label_th": "ได้สร้างสิ่งที่คนใช้งานจริง"
+      },
+      {
+       "value": "income",
+       "label_th": "รายได้และโอกาสเติบโต"
+      },
+      {
+       "value": "stability",
+       "label_th": "ความมั่นคงของงาน"
+      },
+      {
+       "value": "balance",
+       "label_th": "สมดุลระหว่างงานและชีวิต"
+      }
+     ],
+     "max_choices": 3,
+     "optional": false
+    }
+   ]
+  },
+  {
+   "id": "soft_skills",
+   "title_th": "ทักษะการทำงานร่วมกับผู้อื่น",
+   "questions": [
+    {
+     "question_id": "ss_adaptability",
+     "type": "scale",
+     "text_th": "เมื่อแผนงานหรือเทคโนโลยีที่ใช้เปลี่ยนกะทันหัน ฉันปรับตัวและเรียนรู้ได้เร็ว",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_collaboration",
+     "type": "scale",
+     "text_th": "เมื่อเห็นต่างกับเพื่อนร่วมทีม ฉันพูดคุยจนหาข้อสรุปร่วมกันได้",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_communication",
+     "type": "scale",
+     "text_th": "ฉันอธิบายเรื่องเทคนิคให้คนที่ไม่ได้อยู่สาย IT เข้าใจได้ ทั้งการพูดและการเขียน",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_growth",
+     "type": "scale",
+     "text_th": "ฉันขอคำติชมจากผู้อื่น และนำมาปรับปรุงงานของตัวเองอยู่เสมอ",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_prioritization",
+     "type": "scale",
+     "text_th": "เมื่อมีหลายงานพร้อมกัน ฉันจัดลำดับความสำคัญและประเมินเวลาที่ต้องใช้ได้ดี",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_perseverance",
+     "type": "scale",
+     "text_th": "เมื่อเจอบั๊กหรือปัญหายาก ฉันไล่หาสาเหตุต่อจนเจอ ไม่ยอมแพ้ง่าย",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_attention_to_detail",
+     "type": "scale",
+     "text_th": "ก่อนส่งงาน ฉันตรวจทานรายละเอียดซ้ำ เช่น ตัวเลข ข้อความ หรือโค้ด จนมั่นใจว่าไม่มีจุดผิด",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_analytical_thinking",
+     "type": "scale",
+     "text_th": "เมื่อต้องแก้ปัญหาหรือตัดสินใจ ฉันแยกปัญหาเป็นส่วนย่อย แล้วใช้ข้อมูลและเหตุผลเปรียบเทียบทางเลือกก่อนเลือก",
+     "scale": {
+      "min": 1,
+      "max": 5,
+      "min_label_th": "ไม่ตรงกับฉันเลย",
+      "max_label_th": "ตรงกับฉันมาก"
+     },
+     "optional": false
+    },
+    {
+     "question_id": "ss_example",
+     "type": "text",
+     "text_th": "เล่าตัวอย่างสั้น ๆ จากงาน โปรเจกต์ หรือการเรียน ที่แสดงทักษะข้อใดข้อหนึ่งข้างบน",
+     "optional": true
+    }
+   ]
+  },
+  {
+   "id": "goals",
+   "title_th": "เป้าหมายของคุณ",
+   "questions": [
+    {
+     "question_id": "go_interested_roles",
+     "type": "multi",
+     "text_th": "สายงาน IT ที่คุณสนใจ (ถ้ามี)",
+     "optional": true,
+     "options": [
+      {
+       "value": "software-engineer",
+       "label_th": "วิศวกรซอฟต์แวร์",
+       "label_en": "Software Engineer"
+      },
+      {
+       "value": "web-developer",
+       "label_th": "นักพัฒนาเว็บไซต์",
+       "label_en": "Web Developer"
+      },
+      {
+       "value": "frontend-developer",
+       "label_th": "นักพัฒนาฟรอนต์เอนด์",
+       "label_en": "Frontend Developer"
+      },
+      {
+       "value": "backend-developer",
+       "label_th": "นักพัฒนาแบ็กเอนด์",
+       "label_en": "Backend Developer"
+      },
+      {
+       "value": "fullstack-developer",
+       "label_th": "นักพัฒนาฟูลสแตก",
+       "label_en": "Full-stack Developer"
+      },
+      {
+       "value": "mobile-developer",
+       "label_th": "นักพัฒนาแอปพลิเคชันมือถือ",
+       "label_en": "Mobile Developer"
+      },
+      {
+       "value": "computer-engineer",
+       "label_th": "วิศวกรคอมพิวเตอร์",
+       "label_en": "Computer Engineer"
+      },
+      {
+       "value": "integration-engineer",
+       "label_th": "วิศวกรเชื่อมต่อระบบ",
+       "label_en": "Integration Engineer"
+      },
+      {
+       "value": "qa-engineer",
+       "label_th": "วิศวกรประกันคุณภาพซอฟต์แวร์",
+       "label_en": "QA Engineer / Tester"
+      },
+      {
+       "value": "devops-engineer",
+       "label_th": "วิศวกร DevOps",
+       "label_en": "DevOps Engineer"
+      },
+      {
+       "value": "cloud-engineer",
+       "label_th": "วิศวกรคลาวด์",
+       "label_en": "Cloud Engineer"
+      },
+      {
+       "value": "data-analyst",
+       "label_th": "นักวิเคราะห์ข้อมูล",
+       "label_en": "Data Analyst"
+      },
+      {
+       "value": "bi-analyst",
+       "label_th": "นักวิเคราะห์ระบบธุรกิจอัจฉริยะ",
+       "label_en": "Business Intelligence Analyst"
+      },
+      {
+       "value": "data-scientist",
+       "label_th": "นักวิทยาศาสตร์ข้อมูล",
+       "label_en": "Data Scientist"
+      },
+      {
+       "value": "data-engineer",
+       "label_th": "วิศวกรข้อมูล",
+       "label_en": "Data Engineer"
+      },
+      {
+       "value": "data-architect",
+       "label_th": "สถาปนิกข้อมูล",
+       "label_en": "Data Architect"
+      },
+      {
+       "value": "ml-engineer",
+       "label_th": "วิศวกรแมชชีนเลิร์นนิง",
+       "label_en": "Machine Learning Engineer"
+      },
+      {
+       "value": "ai-engineer",
+       "label_th": "วิศวกรปัญญาประดิษฐ์",
+       "label_en": "AI Engineer"
+      },
+      {
+       "value": "database-administrator",
+       "label_th": "ผู้ดูแลระบบฐานข้อมูล",
+       "label_en": "Database Administrator"
+      },
+      {
+       "value": "information-security-analyst",
+       "label_th": "นักวิเคราะห์ความปลอดภัยสารสนเทศ",
+       "label_en": "Information Security Analyst"
+      },
+      {
+       "value": "network-administrator",
+       "label_th": "ผู้ดูแลระบบเครือข่าย",
+       "label_en": "Network Administrator"
+      },
+      {
+       "value": "systems-administrator",
+       "label_th": "ผู้ดูแลระบบ",
+       "label_en": "Systems Administrator"
+      },
+      {
+       "value": "it-support",
+       "label_th": "เจ้าหน้าที่สนับสนุนด้านไอที",
+       "label_en": "IT Support Specialist"
+      },
+      {
+       "value": "ux-ui-designer",
+       "label_th": "นักออกแบบ UX/UI",
+       "label_en": "UX/UI Designer"
+      },
+      {
+       "value": "it-project-manager",
+       "label_th": "ผู้จัดการโครงการไอที",
+       "label_en": "IT Project Manager"
+      },
+      {
+       "value": "it-consultant",
+       "label_th": "ที่ปรึกษาด้านไอที",
+       "label_en": "IT Consultant"
+      }
+     ]
+    },
+    {
+     "question_id": "go_salary",
+     "type": "single",
+     "text_th": "เงินเดือนที่คาดหวัง (ฐานเงินเดือนต่อเดือน)",
+     "options": [
+      {
+       "value": "lt_20k",
+       "label_th": "ต่ำกว่า ฿20,000"
+      },
+      {
+       "value": "20k_30k",
+       "label_th": "฿20,000 – ฿30,000"
+      },
+      {
+       "value": "30k_45k",
+       "label_th": "฿30,000 – ฿45,000"
+      },
+      {
+       "value": "45k_60k",
+       "label_th": "฿45,000 – ฿60,000"
+      },
+      {
+       "value": "gt_60k",
+       "label_th": "มากกว่า ฿60,000"
+      },
+      {
+       "value": "unsure",
+       "label_th": "ยังไม่แน่ใจ"
+      }
+     ],
+     "optional": false
+    },
+    {
+     "question_id": "go_location",
+     "type": "single",
+     "text_th": "พื้นที่ที่คุณอยากทำงาน",
+     "options": [
+      {
+       "value": "bangkok",
+       "label_th": "กรุงเทพฯ และปริมณฑล"
+      },
+      {
+       "value": "regional",
+       "label_th": "ต่างจังหวัด"
+      },
+      {
+       "value": "remote",
+       "label_th": "ทำงานทางไกลเป็นหลัก"
+      },
+      {
+       "value": "any",
+       "label_th": "ที่ไหนก็ได้"
+      }
+     ],
+     "optional": false
+    }
+   ]
+  }
+ ],
+ "attribution": {
+  "text_th": "คำถามพัฒนาโดยทีมผู้พัฒนา โดยดัดแปลงจากมิติ Work Styles และ Skills ของ O*NET® (USDOL/ETA, CC BY 4.0) ซึ่ง USDOL/ETA ไม่ได้รับรองเนื้อหานี้",
+  "sources": [
+   {
+    "title": "O*NET OnLine: Browse by Work Styles",
+    "url": "https://www.onetonline.org/find/descriptor/browse/1.D",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "This questionnaire includes information adapted from O*NET OnLine by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. The CareerMirror team has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these modifications. O*NET® is a trademark of USDOL/ETA."
+   },
+   {
+    "title": "O*NET OnLine: Browse by Essential Skills and Browse by Transferable Skills",
+    "url": "https://www.onetonline.org/find/descriptor/browse/2.A",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "This questionnaire includes information adapted from O*NET OnLine by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. The CareerMirror team has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these modifications. O*NET® is a trademark of USDOL/ETA."
+   }
+  ]
+ }
+}

@@ -1,0 +1,131 @@
+{
+  "role_id": "devops-engineer",
+  "title_th": "วิศวกร DevOps",
+  "title_en": "DevOps Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "linux",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/11-devops-engineer.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/11-devops-engineer.pdf"
+      ]
+    },
+    {
+      "skill_id": "docker",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/53-coursera-devops-job-descriptions.pdf"
+      ]
+    },
+    {
+      "skill_id": "ci-cd",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/52-coursera-devops-engineer.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "python",
+        "bash"
+      ],
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/11-devops-engineer.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/33-onet-systems-engineers-hot-technologies.pdf"
+      ]
+    },
+    {
+      "skill_id": "monitoring",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/11-devops-engineer.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "kubernetes",
+    "terraform",
+    "automation",
+    "cybersecurity",
+    "windows-server",
+    "deployment",
+    "networking"
+  ],
+  "soft_skills": [
+    "communication",
+    "teamwork",
+    "problem-solving"
+  ],
+  "work_style": {
+    "teamwork": 0.7,
+    "structure": 0.6,
+    "ambiguity": 0.5,
+    "pressure": 0.8,
+    "innovation": 0.6,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/11-devops-engineer.pdf",
+      "url": "https://www.indeed.com/career-advice/careers/what-does-a-devops-engineer-do",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/53-coursera-devops-job-descriptions.pdf",
+      "url": "https://www.coursera.org/articles/devops-job-description",
+      "language": "en"
+    },
+    {
+      "file": "pdf/52-coursera-devops-engineer.pdf",
+      "url": "https://www.coursera.org/in/articles/devops-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/33-onet-systems-engineers-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1299.08",
+      "language": "en"
+    }
+  ]
+}

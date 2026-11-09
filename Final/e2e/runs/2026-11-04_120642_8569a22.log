@@ -1,0 +1,104 @@
+run started: 2026-11-04T12:06:42+0700 (file time of the first run's output)
+branch: feature/web-copy-Automatic28m  commit: 8569a22  uncommitted files: 7 (schedule + Thai copy changes)
+base: http://localhost:3000/api  admin: e2e-admin@example.com
+
+PASS A1 health ok
+PASS A2 register 200 + user
+PASS A2 duplicate email -> 409 EMAIL_TAKEN
+PASS A2 short password -> 422
+PASS A2 consent false -> 422
+PASS A2 error has Thai message_th
+PASS A3 wrong password -> 401 INVALID_CREDENTIALS
+PASS A3 6th failed login in a minute -> 429
+PASS A3 login 200
+PASS A4 me without cookie -> 401 UNAUTHENTICATED
+PASS A4 me with cookie -> 200, is_admin false
+PASS F16 X-Quota-* headers on authenticated response
+PASS B5 non-PDF -> 415 CV_INVALID_TYPE
+PASS B5 >5 MB -> 413 CV_TOO_LARGE
+PASS B5 PDF with no text -> 422 CV_UNREADABLE
+PASS B5 text PDF -> 200 draft
+PASS B5 parser found skills
+PASS B6 GET /cv returns the draft
+PASS B6 confirm -> 200 confirmed + completeness
+PASS C7 questionnaire sections
+PASS C7 attribution Thai text + O*NET sources
+PASS C8 save all 22 answers (every type)
+PASS C8 unknown question -> 404 QUESTION_NOT_FOUND
+PASS C8 too many choices -> 422
+PASS C8 resume: answered == total
+PASS D9 generate with no data -> 409 PROFILE_NOT_READY + details.missing
+PASS D9 GET /profile before generate -> null or 404
+PASS D9 completeness can_generate
+PASS D9 generate -> 200 profile + matches
+PASS D9 every skill has evidence
+PASS D9 work-style disclaimer text
+PASS D10 matches <= 5, threshold present
+PASS D10 match_pct are integers 0-100
+PASS D10 each next step is tied to a gap
+PASS D10 GET /profile
+PASS D10 GET /roles -> 26 roles
+PASS D10 GET /roles/matches
+PASS D10 GET /roles/{id} role + match
+PASS D10 unknown role -> 404 ROLE_NOT_FOUND
+PASS D11 remove skill python
+PASS D11 removed list has the skill
+PASS D11 restore skill
+PASS D11 removed list empty after restore
+PASS D11 PATCH preferences salary
+PASS D12 explain -> no stale roles
+PASS D13 market 200, bangkok, disclaimer
+PASS D13 listings have no contact fields
+PASS D13 listings <= 5
+PASS E14 chat salary -> 200 answer
+PASS E14 chat salary quota headers
+PASS E14 chat skill -> 200 answer
+PASS E14 chat skill quota headers
+PASS E14 chat off-topic -> 200 answer
+PASS E14 chat off-topic quota headers
+PASS E14 chat > 1000 chars -> 422
+PASS E14 chat history has user + assistant messages
+PASS E15 chat edit request -> proposal (เปลี่ยนระดับ Python เป็น 4)
+PASS E15 chat edit request -> proposal (เพิ่มทักษะ Kubernetes ระดับ 1)
+PASS E15 pending edits listed
+PASS E15 confirm edit -> profile updated
+PASS E15 confirm same edit again -> 4xx
+PASS E15 reject edit
+PASS E15 unknown edit -> 404 EDIT_NOT_FOUND
+PASS F16 GET /quota
+PASS F16 header remaining == limit - used
+PASS F17 admin as normal user -> 403 FORBIDDEN
+PASS F17 temp admin is_admin true
+PASS F17 admin overview window=today
+PASS F17 overview today has no emails
+PASS F17 admin overview window=7d
+PASS F17 overview 7d has no emails
+PASS F17 admin overview window=30d
+PASS F17 overview 30d has no emails
+PASS F18 logout
+PASS F18 me after logout -> 401
+PASS F18 delete with wrong word -> 422
+PASS F18 delete account
+PASS F18 login after delete -> 401
+
+--- notes
+* CV parse (0.0s): 10 skills ['Python', 'SQL', 'JavaScript', 'React', 'Docker / containers', 'Git / version control', 'Linux', 'REST API design', 'Server-side development', 'PostgreSQL'], 1 experience, 1 education, warnings ['ทักษะบางรายการยังไม่มีระดับ กรุณาเลือกระดับในขั้นตอนยืนยัน']
+* Completeness after CV: 60 can_generate=False missing_required=[] inputs={'cv': 'done', 'questionnaire': 'skipped', 'chat': 'needed'}
+* Questionnaire: 4 sections, 22 questions, types {'skill_checklist': 1, 'single': 4, 'scale': 14, 'multi': 2, 'text': 1}
+* Completeness before generate: 100 slots_filled=['hard_skills', 'experience', 'soft_skills', 'goals', 'work_style', 'education']
+* Profile generate took 3.5s
+* Profile: 14 hard skills, 8 soft skills, 0 blind spots, experience 7 months
+* Matches: backend-developer 80%, fullstack-developer 73%, software-engineer 67% (threshold 60, below_threshold=False)
+* After remove: stale roles = ['backend-developer', 'fullstack-developer', 'software-engineer']
+* Stale before explain: [] (stale right after remove: True)
+* Explain took 0.0s
+* Market backend-developer: available=False stale=False refreshing=False layers=['reference'] listings=0 postings=None
+* Chat salary (0.0s): route=salary sources=1 tokens=0 answer='วิศวกรซอฟต์แวร์ (Software Engineer): ฿25,000 – ฿45,000 / เดือน (ฐานเงินเดือน), ระดับเริ่มต้น [1]\nที่มา: Jobsdb ไทย, 8 มิ'
+* Chat skill (1.2s): route=skill_assessment sources=12 tokens=1251 answer='- คุณมีทักษะระดับสูงในหลายด้าน เช่น SQL, JavaScript, React, Docker, Git, Linux, การออกแบบ REST API, การพัฒนาฝั่งเซิร์ฟเว'
+* Chat off-topic (0.3s): route=decline sources=0 tokens=258 answer='ขอโทษครับ เรื่องนี้อยู่นอกขอบเขตที่ช่วยได้ ลองถามเรื่องทักษะ สายงาน เงินเดือน หรือตลาดงาน IT ได้เลยครับ'
+* Edit proposal: เปลี่ยนระดับ Python จาก 3 เป็น 4 changes=[{'op': 'set', 'field': 'skills.python.level', 'skill_id': 'python', 'old_value': 3, 'new_value': 4}]
+* Edit proposal: เพิ่มทักษะ Kubernetes ระดับ 1 changes=[{'op': 'add', 'field': 'skills', 'skill_id': 'kubernetes', 'old_value': None, 'new_value': {'name_th': 'Kubernetes', 'level': 1}}]
+* Quota after test: 6/40 requests, 6861/40000 tokens
+* Admin today: requests=79 error_rate=0.0 db=ok warnings=[] llm=[('openai/gpt-oss-120b', 3), ('qwen/qwen3.8-27b', 3)] cache_roles=26 router_messages=5 (0.1s)
+
+--- 78 passed, 0 failed

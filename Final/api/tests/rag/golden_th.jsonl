@@ -1,0 +1,30 @@
+{"query": "งานที่ดูแลเซิร์ฟเวอร์ Linux และระบบปฏิบัติการในองค์กรคือตำแหน่งอะไร", "expected": ["role-systems-administrator#role_description"]}
+{"query": "อยากทำงานออกแบบหน้าจอแอปให้ใช้ง่าย ควรเป็นสายไหน", "expected": ["role-ux-ui-designer#role_description"]}
+{"query": "ใครเป็นคนหาบั๊กก่อนปล่อยซอฟต์แวร์", "expected": ["role-qa-engineer#role_description"]}
+{"query": "ตำแหน่งไหนดูแลไฟร์วอลล์และ VLAN", "expected": ["role-network-administrator#role_description"]}
+{"query": "งานคุมงบและกำหนดส่งของโครงการไอที", "expected": ["role-it-project-manager#role_description"]}
+{"query": "งานเฝ้าระวังการโจมตีทางไซเบอร์ทำอะไรบ้าง", "expected": ["role-information-security-analyst#role_description"]}
+{"query": "คนที่เชื่อมระบบบัญชีกับระบบขายเข้าด้วยกัน", "expected": ["role-integration-engineer#role_description"]}
+{"query": "งานช่วยเหลือพนักงานเวลาคอมเสีย", "expected": ["role-it-support#role_description"]}
+{"query": "ทำแอปบนไอโฟนและแอนดรอยด์", "expected": ["role-mobile-developer#role_description"]}
+{"query": "สำรองข้อมูลและจูนความเร็วฐานข้อมูลเป็นหน้าที่ของใคร", "expected": ["role-database-administrator#role_description"]}
+{"query": "งานใช้สถิติสร้างโมเดลทำนายให้ธุรกิจ", "expected": ["role-data-scientist#role_description"]}
+{"query": "เอาโมเดลขึ้น production แล้วดูแลต่อ", "expected": ["role-ml-engineer#role_description"]}
+{"query": "ทำ dashboard และรายงานให้ผู้บริหารตัดสินใจ", "expected": ["role-bi-analyst#role_description", "role-data-analyst#role_description"]}
+{"query": "อยากเป็น DevOps ต้องเรียนอะไรบ้าง", "expected": ["role-devops-engineer#learning_path"]}
+{"query": "เริ่มต้นสาย Data Engineer ควรฝึกอะไรก่อน", "expected": ["role-data-engineer#learning_path"]}
+{"query": "โปรเจกต์ฝึกหัดสำหรับคนอยากเป็น AI Engineer", "expected": ["role-ai-engineer#learning_path"]}
+{"query": "ทักษะที่ต้องมีของ Frontend Developer", "expected": ["role-frontend-developer#learning_path"]}
+{"query": "Cloud Engineer ต้องรู้ AWS ด้วยไหม", "expected": ["role-cloud-engineer#learning_path"]}
+{"query": "เส้นทางเรียน QA Tester", "expected": ["role-qa-engineer#learning_path"]}
+{"query": "เตรียมตัวเป็นนักวิเคราะห์ข้อมูลยังไง", "expected": ["role-data-analyst#learning_path"]}
+{"query": "วิศวกรข้อมูลควรเรียนอะไร", "expected": ["role-data-engineer#learning_path"]}
+{"query": "อยากทำ Full-stack ต้องเรียน frontend กับ backend อะไรบ้าง", "expected": ["role-fullstack-developer#learning_path"]}
+{"query": "ความหมายของการชอบทำงานคนเดียวกับทำงานเป็นทีมต่างกันยังไง", "expected": ["work_style#1"]}
+{"query": "ชอบงานที่มี checklist และมาตรฐานชัดเจนหมายความว่าอะไร", "expected": ["work_style#2"]}
+{"query": "โจทย์ยังไม่ชัดเจนแล้วรู้สึกไม่สบายใจ แปลว่าอะไร", "expected": ["work_style#3"]}
+{"query": "ควรถามตอนสมัครงานยังไงถ้าอยากดูแลคนและประสานงานกับทีมอื่น", "expected": ["work_style#6"]}
+{"query": "สไตล์การทำงานเป็นการวินิจฉัยบุคลิกภาพไหม", "expected": ["work_style#0"]}
+{"query": "อธิบายปัญหาเทคนิคให้คนนอกสายเข้าใจเป็นทักษะอะไร", "expected": ["soft_skills#0"]}
+{"query": "ไล่หาสาเหตุบั๊กจาก log เป็นทักษะแบบไหน", "expected": ["soft_skills#1"]}
+{"query": "การแยกปัญหาเป็นส่วนย่อยแล้วใช้ข้อมูลเปรียบเทียบคือทักษะอะไร", "expected": ["soft_skills#2"]}

@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareerMirror · Work-style avatar studio</title>
+<style>
+  :root {
+    --ink: #1b1b1f; --text: #183a43; --muted: #556a75; --paper: #f4f7f6; --card: #ffffff;
+    --line: #d3dee1; --primary: #1b405b; --primary-subtle: #dff3eb; --focus: #1b405b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif; }
+  main { max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; color: var(--muted); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 6px 0 6px; }
+  h2 { font-size: 20px; margin: 40px 0 6px; }
+  p.lead { color: var(--muted); margin: 0 0 24px; max-width: 760px; }
+  .note { font-size: 13px; color: var(--muted); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+  /* studio */
+  .studio { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 0; background: var(--card); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; }
+  .stage { padding: 28px; display: flex; flex-direction: column; align-items: center; border-right: 1px solid var(--line); }
+  .stage .avatar { width: min(100%, 380px); }
+  .caption { margin: 8px 0 2px; font-weight: 600; text-align: center; }
+  .disclaimer { margin: 0; font-size: 13px; color: #2f6690; text-align: center; }
+  .explain { width: 100%; margin: 20px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .explain li { display: grid; grid-template-columns: 110px 1fr; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .explain b { font-weight: 600; }
+  .explain span.why { color: var(--muted); }
+  .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--ink); vertical-align: -1px; margin-right: 6px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; justify-content: center; }
+  button { min-height: 44px; padding: 8px 16px; border-radius: 12px; border: 1px solid var(--line); background: #fff; color: var(--text); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+  button:hover { border-color: var(--primary); }
+  button.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+  .controls { padding: 24px 28px; }
+  fieldset { border: 0; padding: 0; margin: 0 0 18px; }
+  legend { display: flex; justify-content: space-between; width: 100%; gap: 12px; font-weight: 700; padding: 0; }
+  legend .feature { font-weight: 500; color: var(--muted); font-size: 14px; }
+  legend .proposed { font-size: 11px; font-weight: 700; letter-spacing: .04em; color: #9a5b00; border: 1px solid #e9b44c; border-radius: 999px; padding: 1px 8px; margin-left: 6px; }
+  .seg { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-top: 8px; }
+  .seg label { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 4px 6px; border: 1px solid var(--line); border-radius: 12px; cursor: pointer; background: #fff; text-align: center; }
+  .seg label:hover { border-color: var(--primary); }
+  .seg input { position: absolute; opacity: 0; pointer-events: none; }
+  .seg label:has(input:checked) { border-color: var(--primary); background: var(--primary-subtle); box-shadow: inset 0 0 0 1px var(--primary); }
+  .seg label:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .seg svg { width: 100%; max-width: 64px; }
+  .seg .n { font-size: 12px; font-weight: 700; }
+  .seg .name { font-size: 11px; color: var(--muted); line-height: 1.25; min-height: 2.5em; }
+  .ends { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .toggle { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-top: 6px; }
+  .toggle input { width: 18px; height: 18px; accent-color: var(--primary); }
+
+  /* sheet + gallery */
+  .sheet { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 8px 20px; }
+  .row { display: grid; grid-template-columns: 170px repeat(5, 1fr); gap: 10px; align-items: center; padding: 14px 0; border-bottom: 1px dashed var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .row h3 { margin: 0; font-size: 15px; }
+  .row h3 small { display: block; font-weight: 500; color: var(--muted); font-size: 12px; }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px; border-radius: 14px; border: 1px solid transparent; background: none; min-height: 0; font-weight: 500; }
+  .cell[aria-pressed="true"] { border-color: var(--primary); background: var(--primary-subtle); }
+  .cell svg { width: 100%; max-width: 128px; }
+  .cell span { font-size: 12px; color: var(--muted); }
+  .gallery { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+  .gallery button { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 6px; border-radius: 16px; background: var(--card); font-weight: 500; }
+  .gallery span { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: .04em; }
+  .legend { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 10px; }
+  .legend div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; font-size: 13px; }
+  .legend b { display: block; }
+
+  @media (max-width: 900px) {
+    .studio { grid-template-columns: 1fr; }
+    .stage { border-right: 0; border-bottom: 1px solid var(--line); }
+    .row { grid-template-columns: repeat(5, 1fr); }
+    .row h3 { grid-column: 1 / -1; }
+    .gallery { grid-template-columns: repeat(3, 1fr); }
+    .legend { grid-template-columns: 1fr 1fr; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .stage .avatar svg * { transition: fill .25s ease; }
+
+    /* Idle motion, preview only (the sheet and gallery stay still so they are easy to compare).
+       The legs stay planted; body, hair, face and arms rise 2 px and settle. The eyes close
+       for about 150 ms every 4.5 s. Off with prefers-reduced-motion or the "Animate" toggle. */
+    .stage .avatar.animate .av-body {
+      transform-box: fill-box;
+      transform-origin: 50% 100%;
+      animation: av-breathe 3.2s ease-in-out infinite;
+    }
+    .stage .avatar.animate .av-eyes {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: av-blink 4.5s infinite;
+    }
+    /* Changing an answer redraws the SVG, which would restart the blink; a short delay
+       keeps the first blink from landing on the click. */
+    .stage .avatar.animate .av-eyes { animation-delay: 1.2s; }
+  }
+  @keyframes av-breathe {
+    0%, 100% { transform: translateY(0) scaleY(1); }
+    50%      { transform: translateY(-2px) scaleY(1.015); }
+  }
+  @keyframes av-blink {
+    0%, 92%, 100% { transform: scaleY(1); }
+    95%           { transform: scaleY(0.1); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">CAREERMIRROR · DESIGN · WORK-STYLE AVATAR</div>
+  <h1>A character that mirrors your work-style answers</h1>
+  <p class="lead">Each of the six work-style questions (answers 1–5) controls one part of the character. Pick answers on the right, compare every variant in the sheet below, or load a combination from the gallery. Every avatar has an outline and the same standing legs.</p>
+
+  <section class="studio" aria-label="Avatar studio">
+    <div class="stage">
+      <div class="avatar animate" id="preview"></div>
+      <p class="caption">ตัวละครจากความชอบในการทำงานของคุณ</p>
+      <p class="disclaimer">ผลนี้มาจากความชอบที่คุณระบุเอง ไม่ใช่การวินิจฉัยบุคลิกภาพ</p>
+      <ul class="explain" id="explain" aria-live="polite"></ul>
+      <div class="actions">
+        <button type="button" id="random">Random combination</button>
+        <button type="button" id="reset">Reset to 3 / 3 / 3</button>
+        <button type="button" class="primary" id="download">Download SVG</button>
+      </div>
+      <label class="toggle"><input type="checkbox" id="animate" checked> Animate (breathing and blinking)</label>
+    </div>
+    <form class="controls" id="controls" aria-label="Answers"></form>
+  </section>
+
+  <h2>Pressure colours and their meaning</h2>
+  <p class="note">Colour follows the pace the user prefers, from calm to fast. No colour is better than another, and none says anything about ability.</p>
+  <div class="legend" id="legend"></div>
+
+  <h2>Variant sheet</h2>
+  <p class="note">Each row changes one trait through answers 1 to 5 while the other traits keep your current answers. Click a variant to use it.</p>
+  <div class="sheet" id="sheet"></div>
+
+  <h2>Combinations</h2>
+  <p class="note">Numbers under each character are the answers in this order: teamwork · structure · ambiguity · pressure · innovation · leadership. Click to load.</p>
+  <div class="gallery" id="gallery"></div>
+  <div class="actions"><button type="button" id="shuffle">Show other combinations</button></div>
+
+  <p class="note" style="margin-top:32px">Design study for docs/WorkStyleAvatar.md. Innovation is not part of the current brief; the idea doodle is a proposal and can be switched off. This page changes no data.</p>
+</main>
+
+<script>
+"use strict";
+
+/* ---------------- traits ---------------- */
+
+const TRAITS = [
+  { key: "teamwork", label: "Teamwork", feature: "Body shape", ends: ["ทำงานคนเดียวเป็นหลัก", "ทำงานร่วมกับทีมตลอด"],
+    names: ["Circle", "Squircle", "Rounded rectangle", "Puffy top", "Cloud"] },
+  { key: "structure", label: "Structure", feature: "Hair style", ends: ["ชอบคิดวิธีทำเองอย่างยืดหยุ่น", "ชอบมีขั้นตอนและมาตรฐานชัดเจน"],
+    names: ["Wild swirl", "Messy tuft", "Single curl", "Side-swept fringe", "Neat bowl cut"] },
+  { key: "ambiguity", label: "Ambiguity", feature: "Face", ends: ["อยากได้โจทย์ชัดก่อนเริ่ม", "สนุกกับการค้นหาคำตอบเอง"],
+    names: ["Calm", "Happy", "Curious", "Surprised", "Goofy"] },
+  { key: "pressure", label: "Pressure", feature: "Colour", ends: ["จังหวะสม่ำเสมอ วางแผนล่วงหน้าได้", "งานเร่งด่วน เดดไลน์กระชั้น"],
+    names: ["Blue", "Green", "Yellow", "Orange", "Coral"] },
+  { key: "innovation", label: "Innovation", feature: "Idea doodle", proposed: true, ends: ["ใช้วิธีที่พิสูจน์แล้วว่าได้ผล", "ลองวิธีหรือเครื่องมือใหม่ ๆ"],
+    names: ["Open book", "Gear", "Light bulb", "Paper plane", "Sparkles"] },
+  { key: "leadership", label: "Leadership", feature: "Arms and hands", ends: ["รับผิดชอบงานส่วนของตัวเอง", "นำทีมและประสานงานกับคนอื่น"],
+    names: ["Arms at sides", "Hands together", "Open-hand gesture", "Pointing the way", "Arms up, rallying"] },
+];
+
+// Pressure colour: calm, cool colours for a steady planned pace; warm, energetic
+// colours for urgent work. main = body, shade = arms and legs, back = circle.
+// The body is a top-to-bottom gradient: light (highlight at the top) → main → shade
+// (bottom, so it meets the legs in the same colour). gradient() gives the CSS version.
+const COLOURS = [
+  { light: "#8CC0FB", main: "#3C8DF5", shade: "#1F6FD8", back: "#DCEAFB", name: "Blue", meaning: "calm, steady, a planned rhythm" },
+  { light: "#7FE3C1", main: "#2DC796", shade: "#13A37A", back: "#D5F2E7", name: "Green", meaning: "balanced, a sustainable pace" },
+  { light: "#FCE596", main: "#F7CB4D", shade: "#E5A936", back: "#FBF0D3", name: "Yellow", meaning: "alert, ready to switch gears" },
+  { light: "#FFC68E", main: "#FF9F45", shade: "#E97D2A", back: "#FDE5CF", name: "Orange", meaning: "energetic, quick to act" },
+  { light: "#FFABA8", main: "#FF7470", shade: "#E1504F", back: "#FDDFDD", name: "Coral", meaning: "high energy, enjoys a deadline rush" },
+];
+
+const gradient = (c) => `linear-gradient(180deg, ${c.light} 0%, ${c.main} 50%, ${c.shade} 100%)`;
+
+const INK = "#1b1b1f";
+const OUT = 3; // outline width in the 240 × 260 drawing
+
+/* ---------------- geometry ---------------- */
+
+// Body primitives per teamwork answer. Drawn twice (ink, then colour) so any
+// union of shapes gets one clean outline. `top` anchors the hair.
+function superellipse(cx, cy, a, b, n, steps = 72) {
+  let d = "";
+  for (let i = 0; i <= steps; i++) {
+    const t = (i / steps) * Math.PI * 2;
+    const c = Math.cos(t), s = Math.sin(t);
+    const x = cx + a * Math.sign(c) * Math.pow(Math.abs(c), 2 / n);
+    const y = cy + b * Math.sign(s) * Math.pow(Math.abs(s), 2 / n);
+    d += (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+  }
+  return d + "Z";
+}
+
+const BODIES = [
+  { top: 52, parts: [["circle", 120, 116, 63]] },
+  { top: 51, parts: [["path", superellipse(120, 115, 61, 64, 3.2)]] },
+  { top: 50, parts: [["rect", 58, 50, 124, 130, 30]] },
+  { top: 34, parts: [["rect", 60, 64, 120, 116, 28], ["circle", 86, 72, 24], ["circle", 120, 60, 27], ["circle", 155, 72, 24]] },
+  { top: 36, parts: [
+      ["circle", 120, 64, 29], ["circle", 85, 80, 27], ["circle", 155, 80, 27], ["circle", 66, 118, 27],
+      ["circle", 174, 118, 27], ["circle", 88, 152, 29], ["circle", 152, 152, 29], ["circle", 120, 114, 50]] },
+];
+// Every body ends at about y = 180 (179–181), where the legs start; the gradient runs from `top` to here.
+const BODY_BOTTOM = 180;
+
+function shapes(parts, attrs) {
+  return parts.map((p) => {
+    if (p[0] === "circle") return `<circle cx="${p[1]}" cy="${p[2]}" r="${p[3]}" ${attrs}/>`;
+    if (p[0] === "rect") return `<rect x="${p[1]}" y="${p[2]}" width="${p[3]}" height="${p[4]}" rx="${p[5]}" ${attrs}/>`;
+    return `<path d="${p[1]}" ${attrs}/>`;
+  }).join("");
+}
+
+// Legs: the same standing pose for every avatar.
+const LEGS = ["M104 166 L101 226 L88 229", "M136 166 L140 226 L153 229"];
+
+// Leadership: arm paths (shoulder → hand) and how each hand is drawn.
+const ARMS = [
+  { arms: [["M70 142 Q55 160 57 186", "down"], ["M170 142 Q185 160 183 186", "down"]] },
+  { arms: [["M72 148 Q72 178 112 179", "clasp"], ["M168 148 Q168 178 128 179", "clasp"]] },
+  { arms: [["M70 142 Q55 160 57 186", "down"], ["M170 140 Q208 138 208 104", "open"]] },
+  { arms: [["M70 142 Q44 156 66 172", "hip"], ["M170 138 Q202 118 220 90", "point"]] },
+  { arms: [["M70 138 Q44 116 38 80", "up"], ["M170 138 Q196 116 202 80", "up"]] },
+];
+
+function lastPoint(d) {
+  const nums = d.match(/-?\d+(\.\d+)?/g).map(Number);
+  return [nums[nums.length - 2], nums[nums.length - 1]];
+}
+
+function hand(d, kind) {
+  const [x, y] = lastPoint(d);
+  const r = 9;
+  let extra = "";
+  if (kind === "down") extra = `<path d="M${x - 4} ${y + 6} l-1 5 M${x + 1} ${y + 8} l0 5 M${x + 6} ${y + 6} l1 5"/>`;
+  if (kind === "up") extra = `<path d="M${x - 6} ${y - 5} l-3 -5 M${x} ${y - 8} l0 -6 M${x + 6} ${y - 5} l3 -5"/>`;
+  if (kind === "open") extra = `<path d="M${x - 6} ${y - 6} l-3 -6 M${x - 1} ${y - 9} l-1 -7 M${x + 5} ${y - 7} l2 -6 M${x + 9} ${y - 2} l5 -3"/>`;
+  if (kind === "point") extra = `<path d="M${x + 6} ${y - 6} l12 -12" stroke-width="7"/><path d="M${x + 6} ${y - 6} l12 -12" stroke="var(--fill)" stroke-width="2.5"/>`;
+  if (kind === "clasp") extra = "";
+  if (kind === "hip") extra = `<path d="M${x + 2} ${y - 7} l5 -3 M${x + 5} ${y - 1} l6 -1"/>`;
+  return { x, y, r, extra };
+}
+
+// Ambiguity: face poses after the reference sheet. Centre (120, 104).
+// Each face is split into `eyes` (the open eyes, which blink) and `rest`
+// (brows, mouth, and the closed eye of the wink, which never blink).
+const FACES = [
+  // 1 calm: dot eyes, small even smile
+  { eyes: `<ellipse cx="109" cy="99" rx="2.8" ry="4.2"/><ellipse cx="131" cy="99" rx="2.8" ry="4.2"/>`,
+    rest: `<path d="M105 113 Q119 118 135 111" fill="none" stroke-width="3.2"/>` },
+  // 2 happy: dot eyes, open smile with a light tongue
+  { eyes: `<ellipse cx="108" cy="97" rx="3" ry="4.5"/><ellipse cx="131" cy="97" rx="3" ry="4.5"/>`,
+    rest: `<path d="M104 107 Q119 110 135 105 Q133 124 119 124 Q106 123 104 107 Z"/>
+   <path d="M111 119 Q119 114 127 119 Q120 123 111 119 Z" fill="#fff"/>` },
+  // 3 curious: dot eyes, flat left brow, raised right brow, short smirk
+  { eyes: `<ellipse cx="109" cy="100" rx="2.8" ry="4.2"/><ellipse cx="131" cy="99" rx="3" ry="4.6"/>`,
+    rest: `<path d="M102 90 L114 91" fill="none" stroke-width="3"/>
+   <path d="M124 87 Q131 79 139 85" fill="none" stroke-width="3"/>
+   <path d="M111 114 Q121 118 130 110" fill="none" stroke-width="3.2"/>` },
+  // 4 surprised: tall eye strokes, small round open mouth
+  { eyes: `<path d="M112 89 l0 11 M126 89 l0 11" fill="none" stroke-width="3.4"/>`,
+    rest: `<ellipse cx="119" cy="114" rx="5" ry="7"/><ellipse cx="119" cy="117" rx="2" ry="2" fill="#fff"/>` },
+  // 5 goofy: wink, wide grin with a tooth (only the open eye blinks)
+  { eyes: `<ellipse cx="108" cy="98" rx="3" ry="4.5"/>`,
+    rest: `<path d="M126 95 L134 99 L126 103" fill="none" stroke-width="3.2"/>
+   <path d="M98 107 Q119 120 141 104" fill="none" stroke-width="3.4"/>
+   <path d="M116 112 L116 121 Q120 124 125 121 L125 112" fill="#fff" stroke-width="2.6"/>` },
+];
+
+// Structure: hair. 1–3 are ink lines on top of the head; 4–5 are clipped to the body.
+function hair(i, top, clipId) {
+  const t = `transform="translate(120 ${top})"`;
+  const line = `fill="none" stroke="${INK}" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"`;
+  switch (i) {
+    case 0: // wild swirl
+      return `<path ${t} ${line} d="M-4 2 C -6 -26, -40 -38, -50 -18 C -58 -2, -30 6, -28 -14 C -26 -34, -62 -48, -82 -30 C -94 -18, -88 -2, -76 -4 M2 2 C 6 -10, 16 -14, 22 -10"/>`;
+    case 1: // messy tuft
+      return `<g ${t} ${line}><path d="M-12 3 C -22 -10, -8 -18, -20 -32"/><path d="M-2 2 C -2 -14, 10 -18, 4 -36"/><path d="M8 2 C 18 -10, 26 -8, 30 -24"/><path d="M14 3 C 26 0, 34 4, 40 -6"/></g>`;
+    case 2: // single curl
+      return `<path ${t} ${line} d="M-2 3 C -8 -16, 4 -30, 16 -24 C 28 -18, 20 -2, 10 -8 C 2 -13, 8 -24, 20 -28"/>`;
+    case 3: // side-swept fringe with a part
+      return `<g clip-path="url(#${clipId})"><path fill="${INK}" d="M30 ${top - 20} H210 V${top + 18} C 186 ${top + 20}, 160 ${top + 6}, 138 ${top + 10} C 118 ${top + 14}, 106 ${top + 36}, 82 ${top + 40} C 64 ${top + 42}, 50 ${top + 34}, 30 ${top + 40} Z"/>
+        <path fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round" d="M150 ${top - 2} C 140 ${top + 2}, 128 ${top + 4}, 122 ${top + 10}"/></g>`;
+    case 4: // neat bowl cut
+      return `<g clip-path="url(#${clipId})"><path fill="${INK}" d="M30 ${top - 20} H210 V${top + 30} H30 Z"/>
+        <path fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" d="M70 ${top + 12} H170"/></g>`;
+  }
+  return "";
+}
+
+// Innovation (proposed): a small doodle beside the head.
+function doodle(i) {
+  const g = `transform="translate(204 30)" fill="none" stroke="${INK}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"`;
+  return [
+    // 1 open book: follows the tried recipe
+    `<g ${g}><path d="M0 -8 Q-7 -12 -14 -10 V10 Q-7 8 0 12 Q7 8 14 10 V-10 Q7 -12 0 -8 Z" fill="#fff"/><path d="M0 -8 V12"/><path d="M-10 -3 Q-7 -4.5 -4 -3 M-10 3 Q-7 1.5 -4 3 M4 -3 Q7 -4.5 10 -3 M4 3 Q7 1.5 10 3" stroke-width="2"/></g>`,
+    // 2 gear: keeps the known method and tunes it
+    `<g ${g}><path d="M-3.4 -9.9 L-2.9 -13.7 L2.9 -13.7 L3.4 -9.9 L4.6 -9.4 L7.6 -11.7 L11.7 -7.6 L9.4 -4.6 L9.9 -3.4 L13.7 -2.9 L13.7 2.9 L9.9 3.4 L9.4 4.6 L11.7 7.6 L7.6 11.7 L4.6 9.4 L3.4 9.9 L2.9 13.7 L-2.9 13.7 L-3.4 9.9 L-4.6 9.4 L-7.6 11.7 L-11.7 7.6 L-9.4 4.6 L-9.9 3.4 L-13.7 2.9 L-13.7 -2.9 L-9.9 -3.4 L-9.4 -4.6 L-11.7 -7.6 L-7.6 -11.7 L-4.6 -9.4 Z" fill="#fff"/><circle r="4"/></g>`,
+    `<g ${g}><path d="M-6 8 Q-14 -2 -10 -10 Q-4 -18 4 -16 Q12 -12 10 -2 Q8 4 6 8 Z" fill="#fff"/><path d="M-5 12 H5 M-3 16 H3"/><path d="M14 -14 l4 -4 M18 -2 h5 M-16 -18 l-3 -4"/></g>`,
+    `<g ${g}><path d="M-14 2 L16 -12 L4 14 L0 4 Z" fill="#fff"/><path d="M0 4 L16 -12"/><path d="M-18 14 q-6 4 -12 2" stroke-dasharray="2 5"/></g>`,
+    `<g ${g}><path d="M0 -14 Q2 -2 14 0 Q2 2 0 14 Q-2 2 -14 0 Q-2 -2 0 -14 Z" fill="#fff"/><path d="M16 -14 Q17 -10 21 -9 Q17 -8 16 -4 Q15 -8 11 -9 Q15 -10 16 -14 Z" fill="#fff" stroke-width="2.4"/></g>`,
+  ][i];
+}
+
+/* ---------------- render ---------------- */
+
+let uid = 0;
+
+function avatarSVG(v, { frame = true, doodles = true, label = true } = {}) {
+  const id = `av${++uid}`;
+  const col = COLOURS[v.pressure - 1];
+  const body = BODIES[v.teamwork - 1];
+  const pose = ARMS[v.leadership - 1];
+  const ink = `fill="${INK}" stroke="${INK}" stroke-width="${OUT * 2}" stroke-linejoin="round"`;
+
+  const legsInk = LEGS.map((d) => `<path d="${d}" fill="none" stroke="${INK}" stroke-width="${22 + OUT * 2}" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
+  const legsCol = LEGS.map((d) => `<path d="${d}" fill="none" stroke="${col.shade}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
+
+  const hands = pose.arms.map(([d, kind]) => hand(d, kind));
+  const armsInk = pose.arms.map(([d]) => `<path d="${d}" fill="none" stroke="${INK}" stroke-width="${15 + OUT * 2}" stroke-linecap="round"/>`).join("")
+    + hands.map((h) => `<circle cx="${h.x}" cy="${h.y}" r="${h.r + OUT}" fill="${INK}"/>`).join("");
+  const armsCol = pose.arms.map(([d]) => `<path d="${d}" fill="none" stroke="${col.shade}" stroke-width="15" stroke-linecap="round"/>`).join("")
+    + hands.map((h) => `<circle cx="${h.x}" cy="${h.y}" r="${h.r}" fill="${col.shade}"/>`).join("");
+  const fingers = `<g fill="none" stroke="${INK}" stroke-width="2.6" stroke-linecap="round" style="--fill:${col.shade}">${hands.map((h) => h.extra).join("")}</g>`;
+
+  const face = FACES[v.ambiguity - 1];
+  const aria = label ?TRAITS.map((t) => `${t.label}: ${t.names[v[t.key] - 1]}`).join(", ") : "";
+  return `<svg viewBox="0 0 240 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Work-style avatar. ${aria}">
+  <defs><clipPath id="${id}-clip">${shapes(body.parts, "")}</clipPath>
+    <linearGradient id="${id}-grad" x1="0" y1="${body.top}" x2="0" y2="${BODY_BOTTOM}" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="${col.light}"/><stop offset=".5" stop-color="${col.main}"/><stop offset="1" stop-color="${col.shade}"/>
+    </linearGradient></defs>
+  ${frame ? `<circle cx="120" cy="128" r="116" fill="${col.back}"/>` : ""}
+  <g>${legsInk}${legsCol}</g>
+  <g class="av-body">
+  <g>${shapes(body.parts, ink)}${shapes(body.parts, `fill="url(#${id}-grad)"`)}</g>
+  ${v.structure >= 4 ? hair(v.structure - 1, body.top, `${id}-clip`) : ""}
+  <g transform="translate(120 106) scale(1.35) translate(-120 -104)" fill="${INK}" stroke="${INK}" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"><g class="av-eyes">${face.eyes}</g>${face.rest}</g>
+  ${v.structure <= 3 ? hair(v.structure - 1, body.top, `${id}-clip`) : ""}
+  <g>${armsInk}${armsCol}${fingers}</g>
+  </g>
+  ${doodles ? doodle(v.innovation - 1) : ""}
+</svg>`;
+}
+
+/* ---------------- page ---------------- */
+
+const state = { teamwork: 3, structure: 3, ambiguity: 3, pressure: 3, innovation: 3, leadership: 3 };
+let showDoodle = true;
+
+const controls = document.getElementById("controls");
+controls.innerHTML = TRAITS.map((t) => `
+  <fieldset>
+    <legend><span>${t.label}${t.proposed ? '<span class="proposed">PROPOSED · NOT IN BRIEF</span>' : ""}</span><span class="feature">${t.feature}</span></legend>
+    <div class="seg" role="radiogroup" aria-label="${t.label}: ${t.feature}">
+      ${t.names.map((n, i) => `<label><input type="radio" name="${t.key}" value="${i + 1}"><span class="mini" data-trait="${t.key}" data-value="${i + 1}"></span><span class="n">${i + 1}</span><span class="name">${n}</span></label>`).join("")}
+    </div>
+    <div class="ends"><span>1 · ${t.ends[0]}</span><span>${t.ends[1]} · 5</span></div>
+    ${t.proposed ? '<label class="toggle"><input type="checkbox" id="doodle" checked> Show the idea doodle</label>' : ""}
+  </fieldset>`).join("");
+
+controls.addEventListener("change", (e) => {
+  if (e.target.id === "doodle") { showDoodle = e.target.checked; render(); return; }
+  if (e.target.name) { state[e.target.name] = Number(e.target.value); render(); }
+});
+
+document.getElementById("legend").innerHTML = COLOURS.map((c, i) =>
+  `<div><b><span class="swatch" style="background:${gradient(c)}"></span>${i + 1} · ${c.name}</b>${c.meaning}</div>`).join("");
+
+function explainList() {
+  return TRAITS.filter((t) => !t.proposed || showDoodle).map((t) => {
+    const v = state[t.key];
+    const end = v <= 2 ? t.ends[0] : v >= 4 ? t.ends[1] : "อยู่ระหว่างสองแบบ";
+    const sw = t.key === "pressure" ? `<span class="swatch" style="background:${gradient(COLOURS[v - 1])}"></span>` : "";
+    return `<li><b>${t.feature}</b><span>${sw}${t.names[v - 1]} <span class="why">· ${t.label} ${v}/5 · ${end}</span></span></li>`;
+  }).join("");
+}
+
+function renderSheet() {
+  document.getElementById("sheet").innerHTML = TRAITS.map((t) => `
+    <div class="row">
+      <h3>${t.label}<small>${t.feature}</small></h3>
+      ${t.names.map((n, i) => {
+        const v = { ...state, [t.key]: i + 1 };
+        const on = state[t.key] === i + 1;
+        return `<button type="button" class="cell" aria-pressed="${on}" data-trait="${t.key}" data-value="${i + 1}">${avatarSVG(v, { doodles: showDoodle || t.proposed })}<span>${i + 1} · ${n}</span></button>`;
+      }).join("")}
+    </div>`).join("");
+}
+
+function seeded(n) { let x = n * 9301 + 49297; return () => ((x = (x * 9301 + 49297) % 233280) / 233280); }
+let gallerySeed = 7;
+function renderGallery() {
+  const rnd = seeded(gallerySeed);
+  const combos = Array.from({ length: 12 }, () => Object.fromEntries(TRAITS.map((t) => [t.key, 1 + Math.floor(rnd() * 5)])));
+  document.getElementById("gallery").innerHTML = combos.map((c) =>
+    `<button type="button" data-combo='${JSON.stringify(c)}'>${avatarSVG(c, { doodles: showDoodle })}<span>${TRAITS.map((t) => c[t.key]).join(" · ")}</span></button>`).join("");
+}
+
+function render() {
+  document.getElementById("preview").innerHTML = avatarSVG(state, { doodles: showDoodle });
+  document.getElementById("explain").innerHTML = explainList();
+  for (const t of TRAITS) {
+    controls.querySelector(`input[name="${t.key}"][value="${state[t.key]}"]`).checked = true;
+  }
+  // Mini previews inside the segmented buttons: only that trait changes.
+  controls.querySelectorAll(".mini").forEach((el) => {
+    const v = { ...state, [el.dataset.trait]: Number(el.dataset.value) };
+    el.innerHTML = avatarSVG(v, { frame: false, doodles: el.dataset.trait === "innovation", label: false }).replace("<svg ", '<svg aria-hidden="true" ');
+  });
+  renderSheet();
+  renderGallery();
+}
+
+document.getElementById("sheet").addEventListener("click", (e) => {
+  const b = e.target.closest(".cell");
+  if (b) { state[b.dataset.trait] = Number(b.dataset.value); render(); }
+});
+document.getElementById("gallery").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-combo]");
+  if (b) { Object.assign(state, JSON.parse(b.dataset.combo)); render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+});
+document.getElementById("shuffle").addEventListener("click", () => { gallerySeed += 1; renderGallery(); });
+document.getElementById("random").addEventListener("click", () => {
+  for (const t of TRAITS) state[t.key] = 1 + Math.floor(Math.random() * 5);
+  render();
+});
+document.getElementById("reset").addEventListener("click", () => {
+  for (const t of TRAITS) state[t.key] = 3;
+  render();
+});
+document.getElementById("animate").addEventListener("change", (e) => {
+  document.getElementById("preview").classList.toggle("animate", e.target.checked);
+});
+document.getElementById("download").addEventListener("click", () => {
+  const svg = avatarSVG(state, { doodles: showDoodle });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
+  a.download = `avatar-${TRAITS.map((t) => state[t.key]).join("")}.svg`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+render();
+</script>
+</body>
+</html>

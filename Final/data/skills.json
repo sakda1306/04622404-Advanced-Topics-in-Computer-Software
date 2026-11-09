@@ -1,0 +1,2826 @@
+[
+  {
+    "id": "caching",
+    "name_en": "Caching (Redis, Memcached)",
+    "name_th": "การทำแคช (Redis, Memcached)",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "redis",
+      "memcached",
+      "varnish",
+      "caching"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "data-structures-algorithms",
+    "name_en": "Data structures and algorithms",
+    "name_th": "โครงสร้างข้อมูลและอัลกอริทึม",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "datastructures",
+      "algorithms"
+    ],
+    "sources": [
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "dotnet",
+    "name_en": ".NET",
+    "name_th": "ดอตเน็ต (.NET)",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "asp.net"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "microservices",
+    "name_en": "Microservices",
+    "name_th": "สถาปัตยกรรมไมโครเซอร์วิส",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "microservice"
+    ],
+    "sources": []
+  },
+  {
+    "id": "nodejs",
+    "name_en": "Node.js",
+    "name_th": "Node.js",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "nodejs"
+    ],
+    "sources": []
+  },
+  {
+    "id": "oop",
+    "name_en": "Object-oriented programming",
+    "name_th": "การเขียนโปรแกรมเชิงวัตถุ",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "object-oriented",
+      "objectoriented",
+      "oop"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "rest-api",
+    "name_en": "REST API design",
+    "name_th": "การออกแบบ REST API",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "restful",
+      "restapi",
+      "rest",
+      "api",
+      "apis"
+    ],
+    "sources": []
+  },
+  {
+    "id": "server-side",
+    "name_en": "Server-side development",
+    "name_th": "การพัฒนาฝั่งเซิร์ฟเวอร์",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "server-side",
+      "serverside",
+      "back-end",
+      "backend"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "system-design",
+    "name_en": "Software architecture / system design",
+    "name_th": "การออกแบบสถาปัตยกรรมซอฟต์แวร์",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "softwarearchitecture",
+      "systemdesign",
+      "systemsarchitecture",
+      "designpatterns"
+    ],
+    "sources": [
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "web-servers",
+    "name_en": "Web servers (Nginx, Apache)",
+    "name_th": "เว็บเซิร์ฟเวอร์ (Nginx, Apache)",
+    "type": "hard",
+    "category": "backend",
+    "aliases": [
+      "nginx",
+      "apache http server"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "business-acumen",
+    "name_en": "Business acumen",
+    "name_th": "ความเข้าใจธุรกิจ",
+    "type": "hard",
+    "category": "business",
+    "aliases": [
+      "businessacumen"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "business-analysis",
+    "name_en": "Business analysis",
+    "name_th": "การวิเคราะห์ธุรกิจ",
+    "type": "hard",
+    "category": "business",
+    "aliases": [
+      "businessprocess",
+      "businessintelligence",
+      "businessacumen",
+      "business strategy"
+    ],
+    "sources": [
+      "pdf/12-business-intelligence-analyst.pdf"
+    ]
+  },
+  {
+    "id": "erp-crm",
+    "name_en": "ERP / CRM systems (SAP, Salesforce)",
+    "name_th": "ระบบ ERP / CRM (SAP, Salesforce)",
+    "type": "hard",
+    "category": "business",
+    "aliases": [
+      "erp",
+      "crm",
+      "sap",
+      "salesforce"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/17-computer-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "it-strategy",
+    "name_en": "IT strategy and consulting",
+    "name_th": "กลยุทธ์และการให้คำปรึกษาด้านไอที",
+    "type": "hard",
+    "category": "business",
+    "aliases": [
+      "itstrategy",
+      "technology strategy",
+      "it consulting"
+    ],
+    "sources": [
+      "pdf/15-it-consultant.pdf"
+    ]
+  },
+  {
+    "id": "kpi-metrics",
+    "name_en": "Business metrics and KPIs",
+    "name_th": "ตัวชี้วัดธุรกิจและ KPI",
+    "type": "hard",
+    "category": "business",
+    "aliases": [
+      "kpi",
+      "kpis",
+      "businessmetrics",
+      "performancemetrics"
+    ],
+    "sources": [
+      "pdf/18-data-analyst-job-description.pdf"
+    ]
+  },
+  {
+    "id": "requirements-analysis",
+    "name_en": "Requirements gathering and analysis",
+    "name_th": "การเก็บและวิเคราะห์ความต้องการ",
+    "type": "hard",
+    "category": "business",
+    "aliases": [
+      "requirements gathering"
+    ],
+    "sources": [
+      "pdf/24-integration-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "automation",
+    "name_en": "Automation",
+    "name_th": "การทำงานอัตโนมัติ",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "automate"
+    ],
+    "sources": [
+      "pdf/11-devops-engineer.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "aws",
+    "name_en": "AWS",
+    "name_th": "AWS",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "amazonwebservices"
+    ],
+    "sources": [
+      "pdf/11-devops-engineer.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "azure",
+    "name_en": "Microsoft Azure",
+    "name_th": "Microsoft Azure",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "azure"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/11-devops-engineer.pdf"
+    ]
+  },
+  {
+    "id": "ci-cd",
+    "name_en": "CI/CD",
+    "name_th": "CI/CD",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "continuousintegration",
+      "continuousdelivery",
+      "continuousdeployment",
+      "jenkins",
+      "githubactions",
+      "gitlab"
+    ],
+    "sources": []
+  },
+  {
+    "id": "cloud-computing",
+    "name_en": "Cloud computing",
+    "name_th": "คลาวด์คอมพิวติ้ง",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "deployment",
+    "name_en": "Software deployment and release",
+    "name_th": "การนำซอฟต์แวร์ขึ้นใช้งานจริง",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "deployment"
+    ],
+    "sources": [
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "docker",
+    "name_en": "Docker / containers",
+    "name_th": "Docker และคอนเทนเนอร์",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "docker",
+      "containers",
+      "ด็อกเกอร์"
+    ],
+    "sources": []
+  },
+  {
+    "id": "gcp",
+    "name_en": "Google Cloud",
+    "name_th": "Google Cloud",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "googlecloud",
+      "gcp"
+    ],
+    "sources": [
+      "pdf/11-devops-engineer.pdf",
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "git",
+    "name_en": "Git / version control",
+    "name_th": "Git และการควบคุมเวอร์ชัน",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "git",
+      "github",
+      "versioncontrol",
+      "sourcecontrol"
+    ],
+    "sources": []
+  },
+  {
+    "id": "kubernetes",
+    "name_en": "Kubernetes",
+    "name_th": "Kubernetes",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "k8s"
+    ],
+    "sources": []
+  },
+  {
+    "id": "monitoring",
+    "name_en": "Monitoring and logging",
+    "name_th": "การเฝ้าระวังและบันทึกระบบ",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "monitoring",
+      "logging",
+      "prometheus",
+      "grafana",
+      "splunk"
+    ],
+    "sources": [
+      "pdf/02-network-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/11-devops-engineer.pdf"
+    ]
+  },
+  {
+    "id": "terraform",
+    "name_en": "Infrastructure as code (Terraform)",
+    "name_th": "Infrastructure as Code (Terraform)",
+    "type": "hard",
+    "category": "cloud-devops",
+    "aliases": [
+      "terraform",
+      "infrastructureascode",
+      "ansible",
+      "puppet",
+      "chef"
+    ],
+    "sources": []
+  },
+  {
+    "id": "airflow",
+    "name_en": "Workflow orchestration (Airflow)",
+    "name_th": "การจัดลำดับงานข้อมูล (Airflow)",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "airflow"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "big-data",
+    "name_en": "Big data (Spark, Hadoop)",
+    "name_th": "บิ๊กดาต้า (Spark, Hadoop)",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "big data",
+      "apache spark",
+      "hadoop",
+      "hive"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "data-analysis",
+    "name_en": "Data analysis",
+    "name_th": "การวิเคราะห์ข้อมูล",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "dataanalysis",
+      "analyzedata",
+      "dataanalytics",
+      "analyzingdata"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/09-data-analyst.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "data-cleaning",
+    "name_en": "Data cleaning",
+    "name_th": "การทำความสะอาดข้อมูล",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "datacleaning",
+      "cleandata",
+      "datacleansing",
+      "datawrangling",
+      "dataquality"
+    ],
+    "sources": [
+      "pdf/18-data-analyst-job-description.pdf"
+    ]
+  },
+  {
+    "id": "data-governance",
+    "name_en": "Data governance and security",
+    "name_th": "ธรรมาภิบาลข้อมูล",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "datagovernance",
+      "dataintegrity",
+      "datasecurity",
+      "dataprivacy"
+    ],
+    "sources": [
+      "pdf/19-data-architect-job-description.pdf"
+    ]
+  },
+  {
+    "id": "data-management",
+    "name_en": "Data management",
+    "name_th": "การบริหารจัดการข้อมูล",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "datamanagement"
+    ],
+    "sources": [
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf"
+    ]
+  },
+  {
+    "id": "data-modeling",
+    "name_en": "Data modeling",
+    "name_th": "การออกแบบแบบจำลองข้อมูล",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "datamodel"
+    ],
+    "sources": [
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "data-visualization",
+    "name_en": "Data visualization",
+    "name_th": "การนำเสนอข้อมูลด้วยภาพ",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "datavisualization",
+      "visualization",
+      "dashboards",
+      "looker"
+    ],
+    "sources": [
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "data-warehouse",
+    "name_en": "Data warehousing",
+    "name_th": "คลังข้อมูล (Data Warehouse)",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "data warehouse",
+      "snowflake",
+      "redshift",
+      "bigquery",
+      "datalake"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "etl",
+    "name_en": "ETL / data pipelines",
+    "name_th": "กระบวนการ ETL และไปป์ไลน์ข้อมูล",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "etl",
+      "datapipeline",
+      "extract,transform",
+      "elt"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "excel",
+    "name_en": "Microsoft Excel / spreadsheets",
+    "name_th": "Microsoft Excel / สเปรดชีต",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "excel",
+      "spreadsheet",
+      "pivottable",
+      "vlookup",
+      "เอ็กเซล"
+    ],
+    "sources": [
+      "pdf/18-data-analyst-job-description.pdf"
+    ]
+  },
+  {
+    "id": "mathematics",
+    "name_en": "Mathematics (linear algebra, calculus)",
+    "name_th": "คณิตศาสตร์ (พีชคณิตเชิงเส้น แคลคูลัส)",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "mathematics",
+      "math",
+      "linearalgebra",
+      "calculus"
+    ],
+    "sources": [
+      "pdf/09-data-analyst.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "pandas",
+    "name_en": "pandas / NumPy",
+    "name_th": "pandas / NumPy",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "pandas",
+      "numpy"
+    ],
+    "sources": []
+  },
+  {
+    "id": "power-bi",
+    "name_en": "Power BI",
+    "name_th": "Power BI",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "powerbi"
+    ],
+    "sources": []
+  },
+  {
+    "id": "reporting",
+    "name_en": "Business reporting",
+    "name_th": "การจัดทำรายงานธุรกิจ",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "reporting"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "statistics",
+    "name_en": "Statistics",
+    "name_th": "สถิติ",
+    "type": "hard",
+    "category": "data",
+    "aliases": [
+      "statistical analysis",
+      "probability",
+      "hypothesis"
+    ],
+    "sources": [
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "tableau",
+    "name_en": "Tableau",
+    "name_th": "Tableau",
+    "type": "hard",
+    "category": "data",
+    "aliases": [],
+    "sources": [
+      "pdf/18-data-analyst-job-description.pdf"
+    ]
+  },
+  {
+    "id": "backup-recovery",
+    "name_en": "Backup and disaster recovery",
+    "name_th": "การสำรองและกู้คืนข้อมูล",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "backup",
+      "disasterrecovery",
+      "datarecovery"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf"
+    ]
+  },
+  {
+    "id": "database-design",
+    "name_en": "Database design",
+    "name_th": "การออกแบบฐานข้อมูล",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "databasedesign",
+      "schema",
+      "normalization"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "mysql",
+    "name_en": "MySQL",
+    "name_th": "MySQL",
+    "type": "hard",
+    "category": "database",
+    "aliases": [],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "nosql",
+    "name_en": "NoSQL (MongoDB etc.)",
+    "name_th": "ฐานข้อมูล NoSQL",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "nosql",
+      "mongodb",
+      "cassandra",
+      "dynamodb",
+      "redis"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "oracle-db",
+    "name_en": "Oracle Database",
+    "name_th": "Oracle Database",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "oracle"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "performance-tuning",
+    "name_en": "Database performance tuning",
+    "name_th": "การปรับแต่งประสิทธิภาพฐานข้อมูล",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "performancetuning",
+      "queryoptimization"
+    ],
+    "sources": []
+  },
+  {
+    "id": "postgresql",
+    "name_en": "PostgreSQL",
+    "name_th": "PostgreSQL",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "postgres"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "sql",
+    "name_en": "SQL",
+    "name_th": "SQL",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "t-sql",
+      "pl/sql",
+      "เอสคิวแอล"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/09-data-analyst.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "sql-server",
+    "name_en": "Microsoft SQL Server",
+    "name_th": "Microsoft SQL Server",
+    "type": "hard",
+    "category": "database",
+    "aliases": [
+      "sqlserver",
+      "mssql"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "figma",
+    "name_en": "Figma / design tools",
+    "name_th": "Figma และเครื่องมือออกแบบ",
+    "type": "hard",
+    "category": "design",
+    "aliases": [
+      "figma",
+      "sketch",
+      "adobexd",
+      "invision",
+      "photoshop",
+      "illustrator"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "graphic-design",
+    "name_en": "Graphic design",
+    "name_th": "การออกแบบกราฟิก",
+    "type": "hard",
+    "category": "design",
+    "aliases": [
+      "graphicdesign"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "ui-design",
+    "name_en": "UI design",
+    "name_th": "การออกแบบส่วนติดต่อผู้ใช้ (UI)",
+    "type": "hard",
+    "category": "design",
+    "aliases": [
+      "userinterface",
+      "ui",
+      "visualdesign",
+      "interfacedesign"
+    ],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "ux-design",
+    "name_en": "UX design",
+    "name_th": "การออกแบบประสบการณ์ผู้ใช้ (UX)",
+    "type": "hard",
+    "category": "design",
+    "aliases": [
+      "userexperience",
+      "ux",
+      "usability",
+      "informationarchitecture",
+      "interactiondesign"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "ux-research",
+    "name_en": "User research",
+    "name_th": "การวิจัยผู้ใช้",
+    "type": "hard",
+    "category": "design",
+    "aliases": [
+      "userresearch",
+      "usability testing",
+      "userinterview",
+      "usertesting",
+      "user personas"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "wireframing",
+    "name_en": "Wireframing and prototyping",
+    "name_th": "การทำ Wireframe และต้นแบบ",
+    "type": "hard",
+    "category": "design",
+    "aliases": [
+      "wireframe",
+      "wireframing",
+      "prototype",
+      "prototyping",
+      "mockup"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "angular",
+    "name_en": "Angular",
+    "name_th": "Angular",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "client-side",
+    "name_en": "Client-side development",
+    "name_th": "การพัฒนาฝั่งผู้ใช้",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "client-side",
+      "clientside",
+      "front-end",
+      "frontend"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "cms",
+    "name_en": "CMS (WordPress etc.)",
+    "name_th": "ระบบจัดการเนื้อหา (CMS)",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "wordpress",
+      "contentmanagementsystem",
+      "cms"
+    ],
+    "sources": [
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "css",
+    "name_en": "CSS",
+    "name_th": "CSS",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "sass",
+      "tailwind",
+      "ซีเอสเอส"
+    ],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "html",
+    "name_en": "HTML",
+    "name_th": "HTML",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "เอชทีเอ็มแอล"
+    ],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/13-ux-designer.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "jquery",
+    "name_en": "jQuery",
+    "name_th": "jQuery",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [],
+    "sources": [
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "nextjs",
+    "name_en": "Next.js",
+    "name_th": "Next.js",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "nextjs"
+    ],
+    "sources": []
+  },
+  {
+    "id": "react",
+    "name_en": "React",
+    "name_th": "React",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "react.js",
+      "reactjs",
+      "รีแอค",
+      "รีแอคท์"
+    ],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "responsive-design",
+    "name_en": "Responsive design",
+    "name_th": "การออกแบบเว็บแบบ Responsive",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "cross-platform",
+      "mobilefriendly"
+    ],
+    "sources": [
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "seo",
+    "name_en": "SEO",
+    "name_th": "SEO",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "searchengineoptimization"
+    ],
+    "sources": [
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "vue",
+    "name_en": "Vue.js",
+    "name_th": "Vue.js",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "vuejs",
+      "vue"
+    ],
+    "sources": []
+  },
+  {
+    "id": "web-accessibility",
+    "name_en": "Web accessibility",
+    "name_th": "การเข้าถึงเว็บ (Accessibility)",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "accessibility",
+      "wcag"
+    ],
+    "sources": []
+  },
+  {
+    "id": "web-design",
+    "name_en": "Web design principles",
+    "name_th": "หลักการออกแบบเว็บไซต์",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "webdesign",
+      "websitedesign"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "web-performance",
+    "name_en": "Web performance optimization",
+    "name_th": "การปรับประสิทธิภาพเว็บ",
+    "type": "hard",
+    "category": "frontend",
+    "aliases": [
+      "pageload",
+      "websiteperformance",
+      "loadingspeed"
+    ],
+    "sources": [
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "computer-architecture",
+    "name_en": "Computer architecture",
+    "name_th": "สถาปัตยกรรมคอมพิวเตอร์",
+    "type": "hard",
+    "category": "hardware",
+    "aliases": [
+      "computerarchitecture",
+      "microprocessor",
+      "circuit design"
+    ],
+    "sources": [
+      "pdf/17-computer-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "electronics",
+    "name_en": "Electronics and circuit design",
+    "name_th": "อิเล็กทรอนิกส์และการออกแบบวงจร",
+    "type": "hard",
+    "category": "hardware",
+    "aliases": [
+      "electronics"
+    ],
+    "sources": [
+      "pdf/17-computer-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "embedded-systems",
+    "name_en": "Embedded systems",
+    "name_th": "ระบบสมองกลฝังตัว",
+    "type": "hard",
+    "category": "hardware",
+    "aliases": [
+      "embedded",
+      "firmware",
+      "microcontroller"
+    ],
+    "sources": []
+  },
+  {
+    "id": "iot",
+    "name_en": "IoT",
+    "name_th": "อินเทอร์เน็ตของสรรพสิ่ง (IoT)",
+    "type": "hard",
+    "category": "hardware",
+    "aliases": [
+      "internetofthings"
+    ],
+    "sources": []
+  },
+  {
+    "id": "api-integration",
+    "name_en": "API and system integration",
+    "name_th": "การเชื่อมต่อระบบผ่าน API",
+    "type": "hard",
+    "category": "integration",
+    "aliases": [
+      "system integration",
+      "middleware",
+      "esb",
+      "enterpriseservicebus"
+    ],
+    "sources": [
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "json",
+    "name_en": "JSON",
+    "name_th": "JSON",
+    "type": "hard",
+    "category": "integration",
+    "aliases": [],
+    "sources": []
+  },
+  {
+    "id": "message-queue",
+    "name_en": "Message queues (Kafka, RabbitMQ)",
+    "name_th": "ระบบคิวข้อความ",
+    "type": "hard",
+    "category": "integration",
+    "aliases": [
+      "kafka",
+      "rabbitmq",
+      "messagequeue"
+    ],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "mulesoft",
+    "name_en": "MuleSoft / iPaaS",
+    "name_th": "MuleSoft / iPaaS",
+    "type": "hard",
+    "category": "integration",
+    "aliases": [
+      "mulesoft",
+      "ipaas",
+      "boomi",
+      "informatica"
+    ],
+    "sources": []
+  },
+  {
+    "id": "soap-xml",
+    "name_en": "SOAP / XML",
+    "name_th": "SOAP / XML",
+    "type": "hard",
+    "category": "integration",
+    "aliases": [
+      "soap",
+      "xml"
+    ],
+    "sources": []
+  },
+  {
+    "id": "bash",
+    "name_en": "Shell scripting (Bash/PowerShell)",
+    "name_th": "การเขียนสคริปต์เชลล์",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "bash",
+      "powershell",
+      "shellscript",
+      "scripting"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/05-web-developer.pdf"
+    ]
+  },
+  {
+    "id": "c",
+    "name_en": "C",
+    "name_th": "C",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "c(?![#+])"
+    ],
+    "sources": []
+  },
+  {
+    "id": "cpp",
+    "name_en": "C++",
+    "name_th": "C++",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "csharp",
+    "name_en": "C#",
+    "name_th": "C#",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "csharp"
+    ],
+    "sources": [
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "java",
+    "name_en": "Java",
+    "name_th": "Java",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "javascript",
+    "name_en": "JavaScript",
+    "name_th": "JavaScript",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "js",
+      "จาวาสคริปต์",
+      "จาวาสคริปท์",
+      "จาวาสคริป"
+    ],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/13-ux-designer.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "kotlin",
+    "name_en": "Kotlin",
+    "name_th": "Kotlin",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": []
+  },
+  {
+    "id": "php",
+    "name_en": "PHP",
+    "name_th": "PHP",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": [
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "programming",
+    "name_en": "Programming fundamentals",
+    "name_th": "พื้นฐานการเขียนโปรแกรม",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "programming",
+      "coding"
+    ],
+    "sources": [
+      "pdf/04-software-developer.pdf",
+      "pdf/05-web-developer.pdf",
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "python",
+    "name_en": "Python",
+    "name_th": "Python",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "ไพท่อน",
+      "ไพธอน",
+      "ไพทอน"
+    ],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "r",
+    "name_en": "R",
+    "name_th": "R",
+    "type": "hard",
+    "category": "language",
+    "aliases": [
+      "r(?= programming| language|,| and python)",
+      "rstudio"
+    ],
+    "sources": [
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "ruby",
+    "name_en": "Ruby",
+    "name_th": "Ruby",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": [
+      "pdf/05-web-developer.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "scala",
+    "name_en": "Scala",
+    "name_th": "Scala",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": [
+      "pdf/20-data-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "swift",
+    "name_en": "Swift",
+    "name_th": "Swift",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": []
+  },
+  {
+    "id": "typescript",
+    "name_en": "TypeScript",
+    "name_th": "TypeScript",
+    "type": "hard",
+    "category": "language",
+    "aliases": [],
+    "sources": []
+  },
+  {
+    "id": "budgeting",
+    "name_en": "Budget management",
+    "name_th": "การบริหารงบประมาณ",
+    "type": "hard",
+    "category": "management",
+    "aliases": [
+      "budgeting",
+      "cost estimation"
+    ],
+    "sources": [
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "pmp",
+    "name_en": "PMP / PRINCE2 certification",
+    "name_th": "ใบรับรอง PMP / PRINCE2",
+    "type": "hard",
+    "category": "management",
+    "aliases": [
+      "pmp",
+      "prince2",
+      "capm"
+    ],
+    "sources": [
+      "pdf/10-it-project-manager.pdf",
+      "pdf/15-it-consultant.pdf"
+    ]
+  },
+  {
+    "id": "project-management",
+    "name_en": "Project management",
+    "name_th": "การบริหารโครงการ",
+    "type": "hard",
+    "category": "management",
+    "aliases": [
+      "projectmanagement",
+      "manageprojects",
+      "projectplan",
+      "projectmanager"
+    ],
+    "sources": [
+      "pdf/10-it-project-manager.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "stakeholder-management",
+    "name_en": "Stakeholder management",
+    "name_th": "การบริหารผู้มีส่วนได้ส่วนเสีย",
+    "type": "hard",
+    "category": "management",
+    "aliases": [
+      "stakeholder"
+    ],
+    "sources": [
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "vendor-management",
+    "name_en": "Vendor management",
+    "name_th": "การบริหารผู้ขายและผู้ให้บริการ",
+    "type": "hard",
+    "category": "management",
+    "aliases": [],
+    "sources": []
+  },
+  {
+    "id": "artificial-intelligence",
+    "name_en": "Artificial intelligence",
+    "name_th": "ปัญญาประดิษฐ์",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "artificialintelligence",
+      "ai"
+    ],
+    "sources": [
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "data-science",
+    "name_en": "Data science",
+    "name_th": "วิทยาการข้อมูล",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "datascience"
+    ],
+    "sources": [
+      "pdf/16-ai-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "deep-learning",
+    "name_en": "Deep learning",
+    "name_th": "ดีปเลิร์นนิง",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "deeplearning",
+      "neuralnetwork"
+    ],
+    "sources": []
+  },
+  {
+    "id": "llm",
+    "name_en": "Large language models / generative AI",
+    "name_th": "โมเดลภาษาขนาดใหญ่ / Generative AI",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "llm",
+      "largelanguage",
+      "generativeai",
+      "genai",
+      "gpt",
+      "promptengineering",
+      "rag"
+    ],
+    "sources": []
+  },
+  {
+    "id": "machine-learning",
+    "name_en": "Machine learning",
+    "name_th": "แมชชีนเลิร์นนิง",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "machinelearning",
+      "ml"
+    ],
+    "sources": [
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "mlops",
+    "name_en": "MLOps / model deployment",
+    "name_th": "MLOps และการนำโมเดลไปใช้งาน",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "mlops",
+      "modeldeployment",
+      "deploymodels",
+      "deployingmodels"
+    ],
+    "sources": []
+  },
+  {
+    "id": "nlp",
+    "name_en": "Natural language processing",
+    "name_th": "การประมวลผลภาษาธรรมชาติ",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "naturallanguage",
+      "nlp"
+    ],
+    "sources": []
+  },
+  {
+    "id": "predictive-modeling",
+    "name_en": "Predictive modeling",
+    "name_th": "การสร้างแบบจำลองเชิงพยากรณ์",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "predictiveanalytics",
+      "forecasting"
+    ],
+    "sources": [
+      "pdf/21-data-scientist-job-description.pdf"
+    ]
+  },
+  {
+    "id": "pytorch",
+    "name_en": "PyTorch",
+    "name_th": "PyTorch",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [],
+    "sources": []
+  },
+  {
+    "id": "scikit-learn",
+    "name_en": "scikit-learn",
+    "name_th": "scikit-learn",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "scikit",
+      "sklearn"
+    ],
+    "sources": []
+  },
+  {
+    "id": "tensorflow",
+    "name_en": "TensorFlow",
+    "name_th": "TensorFlow",
+    "type": "hard",
+    "category": "ml-ai",
+    "aliases": [
+      "keras"
+    ],
+    "sources": []
+  },
+  {
+    "id": "android",
+    "name_en": "Android development",
+    "name_th": "การพัฒนาแอป Android",
+    "type": "hard",
+    "category": "mobile",
+    "aliases": [
+      "android"
+    ],
+    "sources": [
+      "pdf/26-mobile-developer.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "app-store",
+    "name_en": "App store publishing",
+    "name_th": "การเผยแพร่แอปบน App Store / Google Play",
+    "type": "hard",
+    "category": "mobile",
+    "aliases": [
+      "appstore",
+      "googleplay",
+      "playstore"
+    ],
+    "sources": []
+  },
+  {
+    "id": "flutter",
+    "name_en": "Flutter",
+    "name_th": "Flutter",
+    "type": "hard",
+    "category": "mobile",
+    "aliases": [
+      "dart"
+    ],
+    "sources": []
+  },
+  {
+    "id": "ios",
+    "name_en": "iOS development",
+    "name_th": "การพัฒนาแอป iOS",
+    "type": "hard",
+    "category": "mobile",
+    "aliases": [
+      "ios",
+      "xcode"
+    ],
+    "sources": [
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "mobile-ui",
+    "name_en": "Mobile UI development",
+    "name_th": "การพัฒนาส่วนติดต่อผู้ใช้บนมือถือ",
+    "type": "hard",
+    "category": "mobile",
+    "aliases": [
+      "mobile app"
+    ],
+    "sources": []
+  },
+  {
+    "id": "react-native",
+    "name_en": "React Native",
+    "name_th": "React Native",
+    "type": "hard",
+    "category": "mobile",
+    "aliases": [
+      "reactnative"
+    ],
+    "sources": []
+  },
+  {
+    "id": "cisco",
+    "name_en": "Cisco (CCNA)",
+    "name_th": "Cisco (CCNA)",
+    "type": "hard",
+    "category": "networking",
+    "aliases": [
+      "cisco",
+      "ccna",
+      "ccnp"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/02-network-administrator.pdf"
+    ]
+  },
+  {
+    "id": "lan-wan",
+    "name_en": "LAN / WAN / Wi-Fi",
+    "name_th": "LAN / WAN / Wi-Fi",
+    "type": "hard",
+    "category": "networking",
+    "aliases": [
+      "lan",
+      "wan",
+      "wireless",
+      "wi-fi",
+      "wlan",
+      "vpn"
+    ],
+    "sources": []
+  },
+  {
+    "id": "networking",
+    "name_en": "Computer networking",
+    "name_th": "เครือข่ายคอมพิวเตอร์",
+    "type": "hard",
+    "category": "networking",
+    "aliases": [],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/02-network-administrator.pdf",
+      "pdf/03-systems-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "routing-switching",
+    "name_en": "Routing and switching",
+    "name_th": "การกำหนดเส้นทางและสวิตชิ่ง",
+    "type": "hard",
+    "category": "networking",
+    "aliases": [
+      "routers",
+      "routing",
+      "switching"
+    ],
+    "sources": [
+      "pdf/02-network-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "tcp-ip",
+    "name_en": "TCP/IP, DNS, DHCP",
+    "name_th": "TCP/IP, DNS, DHCP",
+    "type": "hard",
+    "category": "networking",
+    "aliases": [
+      "tcp/ip",
+      "dns",
+      "dhcp",
+      "ip address",
+      "ipaddress",
+      "subnet"
+    ],
+    "sources": [
+      "pdf/02-network-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "agile",
+    "name_en": "Agile / Scrum",
+    "name_th": "Agile / Scrum",
+    "type": "hard",
+    "category": "process",
+    "aliases": [
+      "agile",
+      "scrum",
+      "kanban"
+    ],
+    "sources": []
+  },
+  {
+    "id": "sdlc",
+    "name_en": "Software development life cycle",
+    "name_th": "วงจรการพัฒนาซอฟต์แวร์ (SDLC)",
+    "type": "hard",
+    "category": "process",
+    "aliases": [
+      "sdlc",
+      "developmentlifecycle"
+    ],
+    "sources": [
+      "pdf/11-devops-engineer.pdf",
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "technical-documentation",
+    "name_en": "Technical documentation",
+    "name_th": "การเขียนเอกสารทางเทคนิค",
+    "type": "hard",
+    "category": "process",
+    "aliases": [
+      "documentation"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "name_en": "Cybersecurity",
+    "name_th": "ความมั่นคงปลอดภัยไซเบอร์",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "informationsecurity",
+      "securitymeasures",
+      "securityprotocol"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/03-systems-administrator.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "encryption",
+    "name_en": "Encryption",
+    "name_th": "การเข้ารหัสข้อมูล",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "cryptography"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "firewall",
+    "name_en": "Firewalls",
+    "name_th": "ไฟร์วอลล์",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "firewall"
+    ],
+    "sources": [
+      "pdf/02-network-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "identity-access",
+    "name_en": "Authentication and access control",
+    "name_th": "การยืนยันตัวตนและการควบคุมสิทธิ์",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "authentication",
+      "two-factor",
+      "2fa",
+      "accesscontrol",
+      "iam"
+    ],
+    "sources": [
+      "pdf/02-network-administrator.pdf"
+    ]
+  },
+  {
+    "id": "incident-response",
+    "name_en": "Incident response",
+    "name_th": "การตอบสนองต่อเหตุการณ์ด้านความปลอดภัย",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "incidentresponse",
+      "breach",
+      "forensic"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "network-security",
+    "name_en": "Network security",
+    "name_th": "ความปลอดภัยเครือข่าย",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "networksecurity",
+      "mpls",
+      "software-definednetwork"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "risk-compliance",
+    "name_en": "Risk management and compliance",
+    "name_th": "การบริหารความเสี่ยงและการปฏิบัติตามข้อกำหนด",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "compliance",
+      "riskassessment",
+      "riskmanagement",
+      "iso27001",
+      "gdpr",
+      "pdpa",
+      "nist"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "security-certs",
+    "name_en": "Security certifications (CompTIA Security+, CISSP, CEH)",
+    "name_th": "ใบรับรองด้านความปลอดภัย",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "security+",
+      "cissp",
+      "ceh",
+      "cism"
+    ],
+    "sources": []
+  },
+  {
+    "id": "siem",
+    "name_en": "SIEM / security monitoring",
+    "name_th": "SIEM และการเฝ้าระวังความปลอดภัย",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "siem",
+      "intrusiondetection",
+      "ids"
+    ],
+    "sources": []
+  },
+  {
+    "id": "vulnerability-assessment",
+    "name_en": "Vulnerability assessment / penetration testing",
+    "name_th": "การประเมินช่องโหว่และทดสอบเจาะระบบ",
+    "type": "hard",
+    "category": "security",
+    "aliases": [
+      "vulnerability assessment",
+      "vulnerability scanning",
+      "penetration testing",
+      "pentest",
+      "ethicalhack"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "adaptability",
+    "name_en": "Adaptability and continuous learning",
+    "name_th": "การปรับตัวและเรียนรู้อย่างต่อเนื่อง",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "adaptability",
+      "flexibility",
+      "continuouslearning",
+      "keepupwith",
+      "up-to-date",
+      "uptodate",
+      "willingnesstolearn",
+      "open-minded",
+      "openminded",
+      "curiosity",
+      "dedicatedlearning"
+    ],
+    "sources": [
+      "pdf/04-software-developer.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "analytical-thinking",
+    "name_en": "Analytical thinking",
+    "name_th": "การคิดวิเคราะห์",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "analytical skills",
+      "logicalthinking"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/13-ux-designer.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "attention-to-detail",
+    "name_en": "Attention to detail",
+    "name_th": "ความละเอียดรอบคอบ",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "attentiontodetail",
+      "detail-oriented",
+      "detailoriented"
+    ],
+    "sources": [
+      "pdf/09-data-analyst.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "communication",
+    "name_en": "Communication",
+    "name_th": "การสื่อสาร",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "verbal communication",
+      "writtenandverbal",
+      "written communication"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/02-network-administrator.pdf",
+      "pdf/04-software-developer.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/09-data-analyst.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/13-ux-designer.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "creativity",
+    "name_en": "Creativity",
+    "name_th": "ความคิดสร้างสรรค์",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "innovation"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "critical-thinking",
+    "name_en": "Critical thinking",
+    "name_th": "การคิดเชิงวิพากษ์",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "criticalthinking",
+      "critical-thinking",
+      "deductivereasoning"
+    ],
+    "sources": [
+      "pdf/09-data-analyst.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/16-ai-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "customer-service",
+    "name_en": "Customer service",
+    "name_th": "การบริการลูกค้า",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "customerservice",
+      "customer-service",
+      "customersatisfaction"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/08-cloud-engineer.pdf"
+    ]
+  },
+  {
+    "id": "decision-making",
+    "name_en": "Decision-making",
+    "name_th": "การตัดสินใจ",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "decisionmaking",
+      "makedecisions"
+    ],
+    "sources": [
+      "pdf/07-information-security-analyst.pdf"
+    ]
+  },
+  {
+    "id": "empathy",
+    "name_en": "Empathy",
+    "name_th": "ความเข้าอกเข้าใจผู้อื่น",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [],
+    "sources": [
+      "pdf/04-software-developer.pdf"
+    ]
+  },
+  {
+    "id": "interpersonal",
+    "name_en": "Interpersonal skills",
+    "name_th": "ทักษะมนุษยสัมพันธ์",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "interpersonal"
+    ],
+    "sources": [
+      "pdf/15-it-consultant.pdf",
+      "pdf/19-data-architect-job-description.pdf"
+    ]
+  },
+  {
+    "id": "leadership",
+    "name_en": "Leadership",
+    "name_th": "ภาวะผู้นำ",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "leadateam",
+      "leadteams",
+      "mentor"
+    ],
+    "sources": [
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/19-data-architect-job-description.pdf"
+    ]
+  },
+  {
+    "id": "multitasking",
+    "name_en": "Multitasking",
+    "name_th": "การทำงานหลายอย่างพร้อมกัน",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [],
+    "sources": [
+      "pdf/19-data-architect-job-description.pdf"
+    ]
+  },
+  {
+    "id": "negotiation",
+    "name_en": "Negotiation",
+    "name_th": "การเจรจาต่อรอง",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [],
+    "sources": [
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "organization",
+    "name_en": "Organization",
+    "name_th": "การจัดระเบียบงาน",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "organizational skills",
+      "organization skills"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "patience",
+    "name_en": "Patience",
+    "name_th": "ความอดทน",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/04-software-developer.pdf"
+    ]
+  },
+  {
+    "id": "presentation",
+    "name_en": "Presentation skills",
+    "name_th": "ทักษะการนำเสนอ",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "presentation",
+      "present findings",
+      "presentfindings"
+    ],
+    "sources": [
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/19-data-architect-job-description.pdf"
+    ]
+  },
+  {
+    "id": "problem-solving",
+    "name_en": "Problem-solving",
+    "name_th": "การแก้ปัญหา",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "problemsolving",
+      "solveproblems",
+      "solvingproblems"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/02-network-administrator.pdf",
+      "pdf/03-systems-administrator.pdf",
+      "pdf/04-software-developer.pdf",
+      "pdf/05-web-developer.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/07-information-security-analyst.pdf",
+      "pdf/12-business-intelligence-analyst.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/18-data-analyst-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/25-ml-engineer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "self-motivation",
+    "name_en": "Self-motivation and independent work",
+    "name_th": "การทำงานได้ด้วยตนเองและมีแรงจูงใจ",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "self-motivated",
+      "self-motivation",
+      "self-directed",
+      "works independently",
+      "minimalsupervision"
+    ],
+    "sources": [
+      "pdf/13-ux-designer.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "strategic-thinking",
+    "name_en": "Strategic thinking",
+    "name_th": "การคิดเชิงกลยุทธ์",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "strategicthinking"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "teamwork",
+    "name_en": "Teamwork and collaboration",
+    "name_th": "การทำงานเป็นทีม",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "teamwork",
+      "collaboration",
+      "teamplayer",
+      "workwellwithothers"
+    ],
+    "sources": [
+      "pdf/04-software-developer.pdf",
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/09-data-analyst.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/13-ux-designer.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/21-data-scientist-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "time-management",
+    "name_en": "Time management",
+    "name_th": "การบริหารเวลา",
+    "type": "soft",
+    "category": "soft",
+    "aliases": [
+      "timemanagement",
+      "managetime",
+      "deadline",
+      "prioritization"
+    ],
+    "sources": [
+      "pdf/10-it-project-manager.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/17-computer-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "comptia",
+    "name_en": "CompTIA A+ / Network+",
+    "name_th": "CompTIA A+ / Network+",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "comptia",
+      "a+",
+      "network+"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/02-network-administrator.pdf",
+      "pdf/10-it-project-manager.pdf"
+    ]
+  },
+  {
+    "id": "hardware-troubleshooting",
+    "name_en": "Hardware installation and troubleshooting",
+    "name_th": "การติดตั้งและแก้ไขปัญหาฮาร์ดแวร์",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "hardware",
+      "printer",
+      "peripheral"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/03-systems-administrator.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/15-it-consultant.pdf",
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "help-desk",
+    "name_en": "Help desk / ticketing",
+    "name_th": "งาน Help desk และระบบตั๋วแจ้งปัญหา",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "helpdesk",
+      "ticketing",
+      "servicedesk"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "itil",
+    "name_en": "ITIL / IT service management",
+    "name_th": "ITIL / การบริหารบริการไอที",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "itil",
+      "servicemanagement",
+      "itsm",
+      "servicenow"
+    ],
+    "sources": []
+  },
+  {
+    "id": "software-installation",
+    "name_en": "Software installation and configuration",
+    "name_th": "การติดตั้งและตั้งค่าซอฟต์แวร์",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "installsoftware",
+      "softwareinstallation",
+      "configuration"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf"
+    ]
+  },
+  {
+    "id": "troubleshooting",
+    "name_en": "Technical troubleshooting",
+    "name_th": "การแก้ไขปัญหาทางเทคนิค",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "troubleshooting"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "user-training",
+    "name_en": "End-user training",
+    "name_th": "การอบรมผู้ใช้งาน",
+    "type": "hard",
+    "category": "support",
+    "aliases": [
+      "trainemployees",
+      "trainusers",
+      "trainingemployees",
+      "trainingusers",
+      "trainstaff",
+      "end-user support"
+    ],
+    "sources": [
+      "pdf/01-it-support-specialist.pdf"
+    ]
+  },
+  {
+    "id": "active-directory",
+    "name_en": "Active Directory",
+    "name_th": "Active Directory",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "activedirectory",
+      "ldap"
+    ],
+    "sources": [
+      "pdf/02-network-administrator.pdf"
+    ]
+  },
+  {
+    "id": "capacity-planning",
+    "name_en": "Capacity planning",
+    "name_th": "การวางแผนขีดความสามารถของระบบ",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "capacityplanning"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf"
+    ]
+  },
+  {
+    "id": "device-management",
+    "name_en": "Device management",
+    "name_th": "การบริหารจัดการอุปกรณ์",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "devicemanagement",
+      "mdm"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf"
+    ]
+  },
+  {
+    "id": "linux",
+    "name_en": "Linux",
+    "name_th": "Linux",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "unix"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/11-devops-engineer.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "macos",
+    "name_en": "macOS",
+    "name_th": "macOS",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "mac os",
+      "apple"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf"
+    ]
+  },
+  {
+    "id": "operating-systems",
+    "name_en": "Operating systems",
+    "name_th": "ระบบปฏิบัติการ",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "operatingsystem"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/06-database-administrator.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/11-devops-engineer.pdf"
+    ]
+  },
+  {
+    "id": "server-administration",
+    "name_en": "Server administration",
+    "name_th": "การดูแลเซิร์ฟเวอร์",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [],
+    "sources": [
+      "pdf/02-network-administrator.pdf",
+      "pdf/03-systems-administrator.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "virtualization",
+    "name_en": "Virtualization (VMware, Hyper-V)",
+    "name_th": "เวอร์ชวลไลเซชัน",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "virtualization",
+      "vmware",
+      "hyper-v",
+      "virtualmachine"
+    ],
+    "sources": [
+      "pdf/03-systems-administrator.pdf",
+      "pdf/10-it-project-manager.pdf",
+      "pdf/23-fullstack-developer-job-description.pdf"
+    ]
+  },
+  {
+    "id": "windows-server",
+    "name_en": "Windows Server",
+    "name_th": "Windows Server",
+    "type": "hard",
+    "category": "systems",
+    "aliases": [
+      "windowsserver",
+      "windows"
+    ],
+    "sources": [
+      "pdf/06-database-administrator.pdf",
+      "pdf/11-devops-engineer.pdf"
+    ]
+  },
+  {
+    "id": "bug-tracking",
+    "name_en": "Bug tracking (Jira)",
+    "name_th": "การติดตามบั๊ก (Jira)",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [
+      "bug tracking",
+      "jira",
+      "defect",
+      "bugreport",
+      "logbugs"
+    ],
+    "sources": [
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "debugging",
+    "name_en": "Debugging",
+    "name_th": "การดีบักโปรแกรม",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [],
+    "sources": [
+      "pdf/17-computer-engineer-job-description.pdf",
+      "pdf/20-data-engineer-job-description.pdf",
+      "pdf/22-frontend-developer-job-description.pdf",
+      "pdf/26-mobile-developer.pdf"
+    ]
+  },
+  {
+    "id": "istqb",
+    "name_en": "ISTQB certification",
+    "name_th": "ใบรับรอง ISTQB",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [
+      "istqb"
+    ],
+    "sources": []
+  },
+  {
+    "id": "manual-testing",
+    "name_en": "Manual testing",
+    "name_th": "การทดสอบซอฟต์แวร์แบบแมนนวล",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [
+      "testcase",
+      "testplan",
+      "testscript"
+    ],
+    "sources": [
+      "pdf/08-cloud-engineer.pdf",
+      "pdf/14-quality-assurance-tester.pdf",
+      "pdf/16-ai-engineer-job-description.pdf",
+      "pdf/24-integration-engineer-job-description.pdf",
+      "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+    ]
+  },
+  {
+    "id": "performance-testing",
+    "name_en": "Performance and load testing",
+    "name_th": "การทดสอบประสิทธิภาพและโหลด",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [
+      "load testing",
+      "performance testing",
+      "stress testing",
+      "jmeter"
+    ],
+    "sources": [
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "regression-testing",
+    "name_en": "Regression testing",
+    "name_th": "การทดสอบการถดถอย",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [],
+    "sources": [
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "test-automation",
+    "name_en": "Test automation (Selenium etc.)",
+    "name_th": "การทดสอบอัตโนมัติ",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [
+      "automated testing",
+      "testautomation",
+      "selenium",
+      "cypress",
+      "playwright",
+      "appium"
+    ],
+    "sources": [
+      "pdf/14-quality-assurance-tester.pdf"
+    ]
+  },
+  {
+    "id": "unit-testing",
+    "name_en": "Unit and integration testing",
+    "name_th": "การทดสอบหน่วยและการทดสอบรวม",
+    "type": "hard",
+    "category": "testing",
+    "aliases": [
+      "unit testing",
+      "junit",
+      "pytest",
+      "integration testing"
+    ],
+    "sources": []
+  }
+]

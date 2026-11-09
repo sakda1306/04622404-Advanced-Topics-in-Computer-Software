@@ -1,0 +1,419 @@
+[
+  {
+    "id": "software-engineer",
+    "name_th": "วิศวกรซอฟต์แวร์",
+    "name_en": "Software Engineer",
+    "sources": [
+      {
+        "file": "pdf/04-software-developer.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/qualifications-for-software-developer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "web-developer",
+    "name_th": "นักพัฒนาเว็บไซต์",
+    "name_en": "Web Developer",
+    "sources": [
+      {
+        "file": "pdf/05-web-developer.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/web-developer-vs-software-developer"
+      }
+    ]
+  },
+  {
+    "id": "frontend-developer",
+    "name_th": "นักพัฒนาฟรอนต์เอนด์",
+    "name_en": "Frontend Developer",
+    "sources": [
+      {
+        "file": "pdf/22-frontend-developer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/front-end-developer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "backend-developer",
+    "name_th": "นักพัฒนาแบ็กเอนด์",
+    "name_en": "Backend Developer",
+    "sources": [
+      {
+        "file": "pdf/23-fullstack-developer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/full-stack-developer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "fullstack-developer",
+    "name_th": "นักพัฒนาฟูลสแตก",
+    "name_en": "Full-stack Developer",
+    "sources": [
+      {
+        "file": "pdf/23-fullstack-developer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/full-stack-developer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "mobile-developer",
+    "name_th": "นักพัฒนาแอปพลิเคชันมือถือ",
+    "name_en": "Mobile Developer",
+    "sources": [
+      {
+        "file": "pdf/26-mobile-developer.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/what-is-mobile-app-developer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "computer-engineer",
+    "name_th": "วิศวกรคอมพิวเตอร์",
+    "name_en": "Computer Engineer",
+    "sources": [
+      {
+        "file": "pdf/17-computer-engineer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/computer-engineer"
+      }
+    ]
+  },
+  {
+    "id": "integration-engineer",
+    "name_th": "วิศวกรเชื่อมต่อระบบ",
+    "name_en": "Integration Engineer",
+    "sources": [
+      {
+        "file": "pdf/24-integration-engineer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/integration-engineer"
+      }
+    ]
+  },
+  {
+    "id": "qa-engineer",
+    "name_th": "วิศวกรประกันคุณภาพซอฟต์แวร์",
+    "name_en": "QA Engineer / Tester",
+    "sources": [
+      {
+        "file": "pdf/14-quality-assurance-tester.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/career-development/how-to-become-a-qa-tester"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "devops-engineer",
+    "name_th": "วิศวกร DevOps",
+    "name_en": "DevOps Engineer",
+    "sources": [
+      {
+        "file": "pdf/11-devops-engineer.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/careers/what-does-a-devops-engineer-do"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "cloud-engineer",
+    "name_th": "วิศวกรคลาวด์",
+    "name_en": "Cloud Engineer",
+    "sources": [
+      {
+        "file": "pdf/08-cloud-engineer.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/cloud-engineer-vs-cloud-architect"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "data-analyst",
+    "name_th": "นักวิเคราะห์ข้อมูล",
+    "name_en": "Data Analyst",
+    "sources": [
+      {
+        "file": "pdf/09-data-analyst.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/resumes-cover-letters/data-analyst-entry-level-resume"
+      },
+      {
+        "file": "pdf/18-data-analyst-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/data-analyst"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "bi-analyst",
+    "name_th": "นักวิเคราะห์ระบบธุรกิจอัจฉริยะ",
+    "name_en": "Business Intelligence Analyst",
+    "sources": [
+      {
+        "file": "pdf/12-business-intelligence-analyst.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/careers/what-does-a-business-intelligence-analyst-do"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "data-scientist",
+    "name_th": "นักวิทยาศาสตร์ข้อมูล",
+    "name_en": "Data Scientist",
+    "sources": [
+      {
+        "file": "pdf/21-data-scientist-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/data-scientist"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "data-engineer",
+    "name_th": "วิศวกรข้อมูล",
+    "name_en": "Data Engineer",
+    "sources": [
+      {
+        "file": "pdf/20-data-engineer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/data-engineer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "data-architect",
+    "name_th": "สถาปนิกข้อมูล",
+    "name_en": "Data Architect",
+    "sources": [
+      {
+        "file": "pdf/19-data-architect-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/data-architect"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "ml-engineer",
+    "name_th": "วิศวกรแมชชีนเลิร์นนิง",
+    "name_en": "Machine Learning Engineer",
+    "sources": [
+      {
+        "file": "pdf/25-ml-engineer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/hire/job-description/machine-learning-engineer"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "ai-engineer",
+    "name_th": "วิศวกรปัญญาประดิษฐ์",
+    "name_en": "AI Engineer",
+    "sources": [
+      {
+        "file": "pdf/16-ai-engineer-job-description.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/recruitment/job-description/ai-engineer"
+      }
+    ]
+  },
+  {
+    "id": "database-administrator",
+    "name_th": "ผู้ดูแลระบบฐานข้อมูล",
+    "name_en": "Database Administrator",
+    "sources": [
+      {
+        "file": "pdf/06-database-administrator.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/careers/what-does-a-database-administrator-do"
+      }
+    ]
+  },
+  {
+    "id": "information-security-analyst",
+    "name_th": "นักวิเคราะห์ความปลอดภัยสารสนเทศ",
+    "name_en": "Information Security Analyst",
+    "sources": [
+      {
+        "file": "pdf/07-information-security-analyst.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/career-development/information-security-analyst-skills"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "network-administrator",
+    "name_th": "ผู้ดูแลระบบเครือข่าย",
+    "name_en": "Network Administrator",
+    "sources": [
+      {
+        "file": "pdf/02-network-administrator.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/interviewing/network-administrator-interview-questions"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "systems-administrator",
+    "name_th": "ผู้ดูแลระบบ",
+    "name_en": "Systems Administrator",
+    "sources": [
+      {
+        "file": "pdf/03-systems-administrator.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/system-administrator-vs-network-administrator"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "it-support",
+    "name_th": "เจ้าหน้าที่สนับสนุนด้านไอที",
+    "name_en": "IT Support Specialist",
+    "sources": [
+      {
+        "file": "pdf/01-it-support-specialist.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/it-support-specialists"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "ux-ui-designer",
+    "name_th": "นักออกแบบ UX/UI",
+    "name_en": "UX/UI Designer",
+    "sources": [
+      {
+        "file": "pdf/13-ux-designer.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/careers/what-does-a-ux-designer-do"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "it-project-manager",
+    "name_th": "ผู้จัดการโครงการไอที",
+    "name_en": "IT Project Manager",
+    "sources": [
+      {
+        "file": "pdf/10-it-project-manager.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/careers/what-does-an-it-project-manager-do"
+      },
+      {
+        "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+        "language": "th",
+        "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide"
+      }
+    ]
+  },
+  {
+    "id": "it-consultant",
+    "name_th": "ที่ปรึกษาด้านไอที",
+    "name_en": "IT Consultant",
+    "sources": [
+      {
+        "file": "pdf/15-it-consultant.pdf",
+        "language": "en",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/what-is-an-it-consultant"
+      }
+    ]
+  }
+]

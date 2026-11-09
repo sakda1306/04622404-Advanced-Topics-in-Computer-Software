@@ -1,0 +1,2870 @@
+[
+ {
+  "role_id": "software-engineer",
+  "title_th": "วิศวกรซอฟต์แวร์",
+  "title_en": "Software Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "python",
+     "java",
+     "javascript",
+     "csharp",
+     "cpp"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "data-structures-algorithms"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "oop"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "unit-testing"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "system-design",
+   "rest-api",
+   "agile",
+   "sdlc",
+   "debugging",
+   "typescript",
+   "docker"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "teamwork",
+   "communication",
+   "adaptability"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.5,
+   "innovation": 0.5,
+   "leadership": 0.3
+  },
+  "description_th": "ออกแบบ เขียน ทดสอบ และดูแลซอฟต์แวร์ตลอดวงจรการพัฒนา ทำงานกับทีมเพื่อแปลงความต้องการเป็นระบบที่ทำงานได้จริงและดูแลรักษาง่าย\r\n\r\nงานที่ทำเป็นประจำ: เขียนโค้ดตาม requirement, รีวิวโค้ดของเพื่อนร่วมทีม, เขียน unit test, แก้บั๊ก และประชุมวางแผนงานแบบ sprint\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การทำงานเป็นทีม, การสื่อสาร, การปรับตัวและเรียนรู้อย่างต่อเนื่อง",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. อย่างน้อยหนึ่งอย่างจาก Python, Java, JavaScript, C#, C++: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Data structures and algorithms (โครงสร้างข้อมูลและอัลกอริทึม): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Object-oriented programming (การเขียนโปรแกรมเชิงวัตถุ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Unit and integration testing (การทดสอบหน่วยและการทดสอบรวม): ฝึกให้ถึงระดับพื้นฐาน\r\n6. SQL: ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: สร้างแอปเล็ก ๆ หนึ่งตัว (เช่น ระบบจัดการงาน) ที่มี unit test, ใช้ Git อย่างเป็นระบบ และเขียน README อธิบายการออกแบบ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Software architecture / system design, REST API design, Agile / Scrum, Software development life cycle, Debugging, TypeScript, Docker / containers",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/qualifications-for-software-developer",
+    "language": "en",
+    "file": "pdf/04-software-developer.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.indeed.com/hire/job-description/software-engineer",
+    "language": "en",
+    "file": "pdf/40-software-engineer-job-description.pdf"
+   },
+   {
+    "url": "https://www.indeed.com/career-advice/career-development/software-developer-skills",
+    "language": "en",
+    "file": "pdf/41-software-developer-skills.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/software-engineer-job-description",
+    "language": "en",
+    "file": "pdf/64-coursera-software-engineer-job-description.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 25000,
+   "max_thb": 45000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "web-developer",
+  "title_th": "นักพัฒนาเว็บไซต์",
+  "title_en": "Web Developer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "html"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "css"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "javascript"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "php",
+     "python",
+     "ruby",
+     "java",
+     "nodejs"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "responsive-design"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "react",
+   "rest-api",
+   "cms",
+   "seo",
+   "web-design",
+   "ui-design",
+   "sql",
+   "bash"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "communication",
+   "attention-to-detail"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.4,
+   "pressure": 0.5,
+   "innovation": 0.5,
+   "leadership": 0.2
+  },
+  "description_th": "สร้างและดูแลเว็บไซต์ทั้งส่วนที่ผู้ใช้เห็นและส่วนหลังบ้านเบื้องต้น ให้เว็บแสดงผลถูกต้องทุกอุปกรณ์และโหลดเร็ว\r\n\r\nงานที่ทำเป็นประจำ: พัฒนาหน้าเว็บจากแบบดีไซน์, เชื่อมต่อฟอร์มกับฝั่งเซิร์ฟเวอร์, ดูแล CMS และปรับเว็บให้รองรับมือถือและ SEO\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การสื่อสาร, ความละเอียดรอบคอบ",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. HTML: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. CSS: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. JavaScript: ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. อย่างน้อยหนึ่งอย่างจาก PHP, Python, Ruby, Java, Node.js: ฝึกให้ถึงระดับพื้นฐาน\r\n5. Responsive design (การออกแบบเว็บแบบ Responsive): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: ทำเว็บไซต์ร้านค้าหรือพอร์ตโฟลิโอที่ responsive มีฟอร์มติดต่อที่บันทึกข้อมูลลงฐานข้อมูล แล้ว deploy ขึ้นออนไลน์\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): React, REST API design, CMS (WordPress etc.), SEO, Web design principles, UI design, SQL, Shell scripting (Bash/PowerShell)",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/web-developer-vs-software-developer",
+    "language": "en",
+    "file": "pdf/05-web-developer.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1254.00",
+    "language": "en",
+    "file": "pdf/30-onet-web-developers-hot-technologies.pdf"
+   },
+   {
+    "url": "https://roadmap.sh/frontend/developer-skills",
+    "language": "en",
+    "file": "pdf/56-roadmap-frontend-developer-skills.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 25000,
+   "max_thb": 45000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "frontend-developer",
+  "title_th": "นักพัฒนาฟรอนต์เอนด์",
+  "title_en": "Frontend Developer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "html"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "css"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "javascript"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "react",
+     "vue",
+     "angular"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "responsive-design"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "typescript",
+   "nextjs",
+   "web-accessibility",
+   "web-performance",
+   "rest-api",
+   "figma",
+   "ui-design",
+   "debugging",
+   "seo"
+  ],
+  "soft_skills": [
+   "attention-to-detail",
+   "communication",
+   "creativity",
+   "teamwork",
+   "problem-solving"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.6,
+   "ambiguity": 0.4,
+   "pressure": 0.5,
+   "innovation": 0.6,
+   "leadership": 0.2
+  },
+  "description_th": "พัฒนาส่วนติดต่อผู้ใช้ของเว็บแอป ให้ใช้งานง่าย สวยงามตามดีไซน์ เข้าถึงได้ และทำงานเร็ว\r\n\r\nงานที่ทำเป็นประจำ: แปลงแบบ Figma เป็นคอมโพเนนต์, จัดการ state, เรียก API, ทดสอบการแสดงผลบนหลายเบราว์เซอร์ และปรับประสิทธิภาพหน้าเว็บ\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: ความละเอียดรอบคอบ, การสื่อสาร, ความคิดสร้างสรรค์, การทำงานเป็นทีม, การแก้ปัญหา",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. HTML: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. CSS: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. JavaScript: ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. อย่างน้อยหนึ่งอย่างจาก React, Vue.js, Angular: ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Responsive design (การออกแบบเว็บแบบ Responsive): ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: สร้าง dashboard ด้วย React หรือ Vue ที่ดึงข้อมูลจาก API สาธารณะ รองรับมือถือ และผ่านการตรวจ accessibility เบื้องต้น\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): TypeScript, Next.js, Web accessibility, Web performance optimization, REST API design, Figma / design tools, UI design, Debugging, SEO",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/front-end-developer",
+    "language": "en",
+    "file": "pdf/22-frontend-developer-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://roadmap.sh/frontend/developer-skills",
+    "language": "en",
+    "file": "pdf/56-roadmap-frontend-developer-skills.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 25000,
+   "max_thb": 45000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "backend-developer",
+  "title_th": "นักพัฒนาแบ็กเอนด์",
+  "title_en": "Backend Developer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "python",
+     "java",
+     "nodejs",
+     "php",
+     "dotnet",
+     "ruby"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "rest-api"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "database-design"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "linux"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "docker",
+   "caching",
+   "nosql",
+   "microservices",
+   "message-queue",
+   "unit-testing",
+   "system-design",
+   "web-servers",
+   "postgresql"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "analytical-thinking",
+   "teamwork",
+   "communication"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.5,
+   "innovation": 0.5,
+   "leadership": 0.3
+  },
+  "description_th": "พัฒนาระบบฝั่งเซิร์ฟเวอร์ ฐานข้อมูล และ API ที่แอปหรือเว็บเรียกใช้ ดูแลให้ระบบถูกต้อง ปลอดภัย และรองรับผู้ใช้จำนวนมาก\r\n\r\nงานที่ทำเป็นประจำ: ออกแบบ API และตารางฐานข้อมูล, เขียน business logic, จัดการสิทธิ์ผู้ใช้, ดู log และแก้ปัญหาระบบที่ใช้งานจริง\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การคิดวิเคราะห์, การทำงานเป็นทีม, การสื่อสาร",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. อย่างน้อยหนึ่งอย่างจาก Python, Java, Node.js, PHP, .NET, Ruby: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. REST API design (การออกแบบ REST API): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Database design (การออกแบบฐานข้อมูล): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Linux: ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: สร้าง REST API สำหรับระบบจองหรือร้านค้า มีการ login, เก็บข้อมูลใน PostgreSQL หรือ MySQL และรันใน Docker\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Docker / containers, Caching (Redis, Memcached), NoSQL (MongoDB etc.), Microservices, Message queues (Kafka, RabbitMQ), Unit and integration testing, Software architecture / system design, Web servers (Nginx, Apache), PostgreSQL",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/full-stack-developer",
+    "language": "en",
+    "file": "pdf/23-fullstack-developer-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://roadmap.sh/backend/developer-skills",
+    "language": "en",
+    "file": "pdf/65-roadmap-backend-developer-skills.pdf"
+   },
+   {
+    "url": "https://in.indeed.com/career-advice/career-development/backend-developer-skills",
+    "language": "en",
+    "file": "pdf/39-backend-developer-skills.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 25000,
+   "max_thb": 45000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "fullstack-developer",
+  "title_th": "นักพัฒนาฟูลสแตก",
+  "title_en": "Full-stack Developer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "html"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "css"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "javascript"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "react",
+     "angular",
+     "vue"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "nodejs",
+     "python",
+     "java",
+     "php",
+     "dotnet",
+     "ruby"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "rest-api"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "typescript",
+   "docker",
+   "deployment",
+   "nosql",
+   "caching",
+   "linux",
+   "system-design",
+   "ui-design"
+  ],
+  "soft_skills": [
+   "communication",
+   "teamwork",
+   "adaptability",
+   "problem-solving"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.5,
+   "ambiguity": 0.6,
+   "pressure": 0.6,
+   "innovation": 0.6,
+   "leadership": 0.3
+  },
+  "description_th": "พัฒนาได้ทั้งฝั่งหน้าเว็บและหลังบ้าน รับผิดชอบฟีเจอร์ได้ครบตั้งแต่หน้าจอจนถึงฐานข้อมูลและการ deploy\r\n\r\nงานที่ทำเป็นประจำ: ทำฟีเจอร์ตั้งแต่ UI ไปจนถึง API และฐานข้อมูล, แก้บั๊กข้ามทั้งสองฝั่ง และช่วยดูแลการ deploy\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การสื่อสาร, การทำงานเป็นทีม, การปรับตัวและเรียนรู้อย่างต่อเนื่อง, การแก้ปัญหา",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. JavaScript: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก Node.js, Python, Java, PHP, .NET, Ruby: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. HTML: ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. CSS: ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. อย่างน้อยหนึ่งอย่างจาก React, Angular, Vue.js: ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. REST API design (การออกแบบ REST API): ฝึกให้ถึงระดับใช้งานได้จริง\r\n8. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n9. ทำโปรเจกต์ฝึกหัด: สร้างเว็บแอปครบวงจร (เช่น ระบบโพสต์และคอมเมนต์) ที่มี frontend, backend, ฐานข้อมูล, ระบบ login และ deploy ขึ้น cloud\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): TypeScript, Docker / containers, Software deployment and release, NoSQL (MongoDB etc.), Caching (Redis, Memcached), Linux, Software architecture / system design, UI design",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/full-stack-developer",
+    "language": "en",
+    "file": "pdf/23-fullstack-developer-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/in/articles/full-stack-developer-skills",
+    "language": "en",
+    "file": "pdf/67-coursera-fullstack-developer-skills.pdf"
+   },
+   {
+    "url": "https://roadmap.sh/full-stack/developer-skills",
+    "language": "en",
+    "file": "pdf/66-roadmap-fullstack-developer-skills.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1254.00",
+    "language": "en",
+    "file": "pdf/30-onet-web-developers-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 35000,
+   "max_thb": 60000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "mobile-developer",
+  "title_th": "นักพัฒนาแอปพลิเคชันมือถือ",
+  "title_en": "Mobile Developer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "kotlin",
+     "swift",
+     "flutter",
+     "react-native"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "android",
+     "ios"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "mobile-ui"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "rest-api"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "debugging"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "app-store",
+   "unit-testing",
+   "ui-design",
+   "figma",
+   "java",
+   "javascript"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "creativity",
+   "teamwork",
+   "communication",
+   "adaptability"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.5,
+   "innovation": 0.6,
+   "leadership": 0.2
+  },
+  "description_th": "พัฒนาแอปบนมือถือ Android หรือ iOS ให้ใช้งานลื่นไหล เชื่อมต่อกับ API และผ่านเกณฑ์ของ app store\r\n\r\nงานที่ทำเป็นประจำ: พัฒนาหน้าจอแอป, เชื่อมต่อ API, ทดสอบบนอุปกรณ์จริงหลายรุ่น, แก้ crash และเตรียมเวอร์ชันเพื่อส่งขึ้น store\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, ความคิดสร้างสรรค์, การทำงานเป็นทีม, การสื่อสาร, การปรับตัวและเรียนรู้อย่างต่อเนื่อง",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. อย่างน้อยหนึ่งอย่างจาก Kotlin, Swift, Flutter, React Native: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก Android development, iOS development: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Mobile UI development (การพัฒนาส่วนติดต่อผู้ใช้บนมือถือ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. REST API design (การออกแบบ REST API): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Debugging (การดีบักโปรแกรม): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: สร้างแอปมือถือที่ดึงข้อมูลจาก API (เช่น แอปพยากรณ์อากาศ) ด้วย Flutter, Kotlin หรือ Swift และทดสอบบนเครื่องจริง\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): App store publishing, Unit and integration testing, UI design, Figma / design tools, Java, JavaScript",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/what-is-mobile-app-developer",
+    "language": "en",
+    "file": "pdf/26-mobile-developer.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/professional-certificates/ibm-ios-android-mobile-app-developer-pc",
+    "language": "en",
+    "file": "pdf/43-coursera-ibm-mobile-developer-certificate.pdf"
+   },
+   {
+    "url": "https://developer.android.com/kotlin/first",
+    "language": "en",
+    "file": "pdf/44-android-kotlin-first.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/specializations/mobile-app-development-ux-and-publishing",
+    "language": "en",
+    "file": "pdf/45-coursera-mobile-app-development-specialization.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "computer-engineer",
+  "title_th": "วิศวกรคอมพิวเตอร์",
+  "title_en": "Computer Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "c",
+     "cpp",
+     "python",
+     "java"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "computer-architecture"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "electronics"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "networking"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "debugging"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "hardware-troubleshooting"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "embedded-systems",
+   "iot",
+   "linux",
+   "database-design",
+   "api-integration",
+   "project-management"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "teamwork",
+   "time-management",
+   "communication"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.4,
+   "innovation": 0.5,
+   "leadership": 0.3
+  },
+  "description_th": "ทำงานคาบเกี่ยวระหว่างฮาร์ดแวร์และซอฟต์แวร์ ออกแบบ ทดสอบ และแก้ปัญหาระบบคอมพิวเตอร์ อุปกรณ์ และเครือข่าย\r\n\r\nงานที่ทำเป็นประจำ: เขียนโปรแกรมควบคุมอุปกรณ์, ทดสอบและแก้ปัญหาฮาร์ดแวร์, ดูแลเครือข่าย และทำเอกสารทางเทคนิค\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การทำงานเป็นทีม, การบริหารเวลา, การสื่อสาร",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. อย่างน้อยหนึ่งอย่างจาก C, C++, Python, Java: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Computer architecture (สถาปัตยกรรมคอมพิวเตอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Electronics and circuit design (อิเล็กทรอนิกส์และการออกแบบวงจร): ฝึกให้ถึงระดับพื้นฐาน\r\n4. Computer networking (เครือข่ายคอมพิวเตอร์): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Debugging (การดีบักโปรแกรม): ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. Hardware installation and troubleshooting (การติดตั้งและแก้ไขปัญหาฮาร์ดแวร์): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: ทำโปรเจกต์ IoT ด้วยบอร์ดอย่าง ESP32 หรือ Raspberry Pi ที่อ่านค่าเซนเซอร์และส่งข้อมูลผ่านเครือข่ายไปแสดงผล\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Embedded systems, IoT, Linux, Database design, API and system integration, Project management",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/computer-engineer",
+    "language": "en",
+    "file": "pdf/17-computer-engineer-job-description.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/computer-engineer",
+    "language": "en",
+    "file": "pdf/68-coursera-computer-engineer.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "integration-engineer",
+  "title_th": "วิศวกรเชื่อมต่อระบบ",
+  "title_en": "Integration Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "api-integration"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "rest-api"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "python",
+     "javascript",
+     "java"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "json"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "technical-documentation"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "requirements-analysis"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "soap-xml",
+   "message-queue",
+   "mulesoft",
+   "etl",
+   "aws",
+   "deployment",
+   "manual-testing",
+   "cybersecurity"
+  ],
+  "soft_skills": [
+   "communication",
+   "organization",
+   "problem-solving",
+   "self-motivation"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.5,
+   "ambiguity": 0.5,
+   "pressure": 0.5,
+   "innovation": 0.4,
+   "leadership": 0.3
+  },
+  "description_th": "เชื่อมระบบหลายระบบให้แลกเปลี่ยนข้อมูลกันได้ถูกต้อง เช่น เชื่อมระบบขาย ระบบบัญชี และระบบลูกค้าผ่าน API\r\n\r\nงานที่ทำเป็นประจำ: อ่านเอกสาร API ของระบบต่าง ๆ, เขียนตัวเชื่อมและแปลงข้อมูล, ทดสอบการรับส่งข้อมูล และคุยกับผู้ใช้เพื่อเก็บ requirement\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การสื่อสาร, การจัดระเบียบงาน, การแก้ปัญหา, การทำงานได้ด้วยตนเองและมีแรงจูงใจ",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. API and system integration (การเชื่อมต่อระบบผ่าน API): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. REST API design (การออกแบบ REST API): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. อย่างน้อยหนึ่งอย่างจาก Python, JavaScript, Java: ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. JSON: ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. SQL: ฝึกให้ถึงระดับพื้นฐาน\r\n6. Technical documentation (การเขียนเอกสารทางเทคนิค): ฝึกให้ถึงระดับพื้นฐาน\r\n7. Requirements gathering and analysis (การเก็บและวิเคราะห์ความต้องการ): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: เขียนสคริปต์ที่ดึงข้อมูลจาก API หนึ่ง แปลงรูปแบบ JSON แล้วส่งต่อเข้าอีกระบบ พร้อมจัดการ error และเขียนเอกสารการเชื่อมต่อ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): SOAP / XML, Message queues (Kafka, RabbitMQ), MuleSoft / iPaaS, ETL / data pipelines, AWS, Software deployment and release, Manual testing, Cybersecurity",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/integration-engineer",
+    "language": "en",
+    "file": "pdf/24-integration-engineer-job-description.pdf"
+   },
+   {
+    "url": "https://www.secondtalent.com/occupations/integration-engineer/",
+    "language": "en",
+    "file": "pdf/47-secondtalent-integration-engineer.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/details/15-1211.00",
+    "language": "en",
+    "file": "pdf/36-onet-computer-systems-analysts.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 35000,
+   "max_thb": 50000,
+   "measure": "monthly_base",
+   "source": "X10 IT Outsource",
+   "url": "https://www.x10-it.com/post/อัปเดตเงินเดือน-ตำแหน่งงานสายitสูงสุด-ปี-2026",
+   "as_of": "2026-02-02"
+  }
+ },
+ {
+  "role_id": "qa-engineer",
+  "title_th": "วิศวกรประกันคุณภาพซอฟต์แวร์",
+  "title_en": "QA Engineer / Tester",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "manual-testing"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "regression-testing"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "bug-tracking"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "test-automation"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "sdlc"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "performance-testing",
+   "rest-api",
+   "agile",
+   "istqb",
+   "unit-testing",
+   "python",
+   "javascript",
+   "vulnerability-assessment",
+   "ux-research"
+  ],
+  "soft_skills": [
+   "attention-to-detail",
+   "critical-thinking",
+   "communication",
+   "organization",
+   "problem-solving"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.8,
+   "ambiguity": 0.3,
+   "pressure": 0.6,
+   "innovation": 0.3,
+   "leadership": 0.2
+  },
+  "description_th": "ตรวจสอบคุณภาพซอฟต์แวร์ก่อนส่งถึงผู้ใช้ วางแผนการทดสอบ หาบั๊ก และช่วยทีมป้องกันปัญหาซ้ำ\r\n\r\nงานที่ทำเป็นประจำ: เขียน test case, ทดสอบด้วยมือและด้วยสคริปต์อัตโนมัติ, รายงานบั๊กในระบบติดตาม และทดสอบซ้ำหลังแก้ไข\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: ความละเอียดรอบคอบ, การคิดเชิงวิพากษ์, การสื่อสาร, การจัดระเบียบงาน, การแก้ปัญหา",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Manual testing (การทดสอบซอฟต์แวร์แบบแมนนวล): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Regression testing (การทดสอบการถดถอย): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Bug tracking (Jira) (การติดตามบั๊ก (Jira)): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Test automation (Selenium etc.) (การทดสอบอัตโนมัติ): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Software development life cycle (วงจรการพัฒนาซอฟต์แวร์ (SDLC)): ฝึกให้ถึงระดับพื้นฐาน\r\n6. SQL: ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: เลือกเว็บไซต์หนึ่งแห่ง เขียน test plan และ test case แล้วทำ automated test ด้วย Selenium หรือ Playwright พร้อมรายงานบั๊กที่พบ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Performance and load testing, REST API design, Agile / Scrum, ISTQB certification, Unit and integration testing, Python, JavaScript, Vulnerability assessment / penetration testing, User research",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/career-development/how-to-become-a-qa-tester",
+    "language": "en",
+    "file": "pdf/14-quality-assurance-tester.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/quality-assurance-engineer",
+    "language": "en",
+    "file": "pdf/60-coursera-qa-engineer.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 22000,
+   "max_thb": 40000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "devops-engineer",
+  "title_th": "วิศวกร DevOps",
+  "title_en": "DevOps Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "linux"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "aws",
+     "azure",
+     "gcp"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "docker"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "ci-cd"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "python",
+     "bash"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "monitoring"
+    ],
+    "min_level": 1,
+    "weight": 2
+   }
+  ],
+  "nice_to_have": [
+   "kubernetes",
+   "terraform",
+   "automation",
+   "cybersecurity",
+   "windows-server",
+   "deployment",
+   "networking"
+  ],
+  "soft_skills": [
+   "communication",
+   "teamwork",
+   "problem-solving"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.8,
+   "innovation": 0.6,
+   "leadership": 0.3
+  },
+  "description_th": "ทำให้การพัฒนาและ deploy ซอฟต์แวร์รวดเร็วและเสถียร ดูแล pipeline อัตโนมัติ โครงสร้างพื้นฐาน และการ monitor ระบบ\r\n\r\nงานที่ทำเป็นประจำ: ดูแล CI/CD pipeline, จัดการ container และ cloud, ตั้งค่า monitoring และ alert และช่วยแก้ปัญหาเมื่อระบบล่ม\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Linux: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก AWS, Microsoft Azure, Google Cloud: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Docker / containers (Docker และคอนเทนเนอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. CI/CD: ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. อย่างน้อยหนึ่งอย่างจาก Python, Shell scripting (Bash/PowerShell): ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. Monitoring and logging (การเฝ้าระวังและบันทึกระบบ): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: ตั้ง CI/CD ด้วย GitHub Actions ที่ build Docker image ทดสอบ และ deploy แอปขึ้น cloud อัตโนมัติ พร้อมหน้า monitoring\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Kubernetes, Infrastructure as code (Terraform), Automation, Cybersecurity, Windows Server, Software deployment and release, Computer networking",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/careers/what-does-a-devops-engineer-do",
+    "language": "en",
+    "file": "pdf/11-devops-engineer.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/devops-job-description",
+    "language": "en",
+    "file": "pdf/53-coursera-devops-job-descriptions.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/in/articles/devops-engineer",
+    "language": "en",
+    "file": "pdf/52-coursera-devops-engineer.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1299.08",
+    "language": "en",
+    "file": "pdf/33-onet-systems-engineers-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 45000,
+   "max_thb": 80000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "cloud-engineer",
+  "title_th": "วิศวกรคลาวด์",
+  "title_en": "Cloud Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "cloud-computing"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "aws",
+     "azure",
+     "gcp"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "networking"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "linux"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "deployment"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "cybersecurity"
+    ],
+    "min_level": 1,
+    "weight": 2
+   }
+  ],
+  "nice_to_have": [
+   "docker",
+   "kubernetes",
+   "terraform",
+   "ci-cd",
+   "system-design",
+   "python"
+  ],
+  "soft_skills": [
+   "teamwork",
+   "communication",
+   "problem-solving",
+   "customer-service"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.6,
+   "innovation": 0.6,
+   "leadership": 0.3
+  },
+  "description_th": "ออกแบบ ติดตั้ง และดูแลระบบบน cloud เช่น AWS, Azure หรือ GCP ให้ปลอดภัย พร้อมใช้งาน และคุ้มค่า\r\n\r\nงานที่ทำเป็นประจำ: สร้างและตั้งค่าเครื่อง เครือข่าย และสิทธิ์บน cloud, ย้ายระบบขึ้น cloud, ดูค่าใช้จ่าย และแก้ปัญหาการเชื่อมต่อ\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การทำงานเป็นทีม, การสื่อสาร, การแก้ปัญหา, การบริการลูกค้า",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Cloud computing (คลาวด์คอมพิวติ้ง): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก AWS, Microsoft Azure, Google Cloud: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Computer networking (เครือข่ายคอมพิวเตอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Linux: ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Software deployment and release (การนำซอฟต์แวร์ขึ้นใช้งานจริง): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Cybersecurity (ความมั่นคงปลอดภัยไซเบอร์): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: deploy เว็บแอปบน AWS หรือ Azure โดยตั้งค่า network, security group และฐานข้อมูลเอง แล้วสรุปค่าใช้จ่ายต่อเดือน\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Docker / containers, Kubernetes, Infrastructure as code (Terraform), CI/CD, Software architecture / system design, Python",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/cloud-engineer-vs-cloud-architect",
+    "language": "en",
+    "file": "pdf/08-cloud-engineer.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/entry-level-cloud-computing-jobs",
+    "language": "en",
+    "file": "pdf/54-coursera-entry-level-cloud-jobs.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/how-to-become-a-cloud-architect",
+    "language": "en",
+    "file": "pdf/55-coursera-cloud-architect.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 45000,
+   "max_thb": 80000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "data-analyst",
+  "title_th": "นักวิเคราะห์ข้อมูล",
+  "title_en": "Data Analyst",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "excel"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "data-visualization"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "tableau",
+     "power-bi"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "statistics"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "data-cleaning"
+    ],
+    "min_level": 2,
+    "weight": 2
+   }
+  ],
+  "nice_to_have": [
+   "python",
+   "pandas",
+   "kpi-metrics",
+   "reporting",
+   "data-analysis",
+   "mathematics"
+  ],
+  "soft_skills": [
+   "analytical-thinking",
+   "communication",
+   "presentation",
+   "attention-to-detail"
+  ],
+  "work_style": {
+   "teamwork": 0.5,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.5,
+   "innovation": 0.4,
+   "leadership": 0.2
+  },
+  "description_th": "วิเคราะห์ข้อมูลเพื่อตอบคำถามทางธุรกิจ ทำความสะอาดข้อมูล สร้างรายงานและกราฟที่ผู้บริหารเข้าใจได้\r\n\r\nงานที่ทำเป็นประจำ: ดึงข้อมูลด้วย SQL, ทำความสะอาดข้อมูลใน Excel หรือ Python, สร้าง dashboard และนำเสนอผลวิเคราะห์ให้ทีม\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การคิดวิเคราะห์, การสื่อสาร, ทักษะการนำเสนอ, ความละเอียดรอบคอบ",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Microsoft Excel / spreadsheets (Microsoft Excel / สเปรดชีต): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Data visualization (การนำเสนอข้อมูลด้วยภาพ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. อย่างน้อยหนึ่งอย่างจาก Tableau, Power BI: ฝึกให้ถึงระดับพื้นฐาน\r\n5. Statistics (สถิติ): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Data cleaning (การทำความสะอาดข้อมูล): ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. ทำโปรเจกต์ฝึกหัด: หา dataset สาธารณะ (เช่น จาก data.go.th) ทำความสะอาด วิเคราะห์ และสร้าง dashboard ใน Power BI หรือ Tableau พร้อมสรุปข้อค้นพบ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Python, pandas / NumPy, Business metrics and KPIs, Business reporting, Data analysis, Mathematics (linear algebra, calculus)",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/resumes-cover-letters/data-analyst-entry-level-resume",
+    "language": "en",
+    "file": "pdf/09-data-analyst.pdf"
+   },
+   {
+    "url": "https://www.indeed.com/hire/job-description/data-analyst",
+    "language": "en",
+    "file": "pdf/18-data-analyst-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 30000,
+   "max_thb": 55000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "bi-analyst",
+  "title_th": "นักวิเคราะห์ระบบธุรกิจอัจฉริยะ",
+  "title_en": "Business Intelligence Analyst",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "power-bi",
+     "tableau"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "reporting"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "data-modeling"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "business-analysis"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "excel"
+    ],
+    "min_level": 2,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "data-warehouse",
+   "etl",
+   "python",
+   "statistics",
+   "automation",
+   "oracle-db"
+  ],
+  "soft_skills": [
+   "communication",
+   "problem-solving",
+   "analytical-thinking",
+   "presentation"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.4,
+   "pressure": 0.5,
+   "innovation": 0.4,
+   "leadership": 0.3
+  },
+  "description_th": "แปลงข้อมูลขององค์กรเป็นรายงานและ dashboard ที่ช่วยตัดสินใจ ดูแลโมเดลข้อมูลและตัวชี้วัดทางธุรกิจ\r\n\r\nงานที่ทำเป็นประจำ: คุยกับฝ่ายธุรกิจเพื่อกำหนด KPI, เขียน SQL, สร้างโมเดลข้อมูลและ dashboard และดูแลรายงานประจำ\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การสื่อสาร, การแก้ปัญหา, การคิดวิเคราะห์, ทักษะการนำเสนอ",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก Power BI, Tableau: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Business reporting (การจัดทำรายงานธุรกิจ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Data modeling (การออกแบบแบบจำลองข้อมูล): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Business analysis (การวิเคราะห์ธุรกิจ): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Microsoft Excel / spreadsheets (Microsoft Excel / สเปรดชีต): ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. ทำโปรเจกต์ฝึกหัด: สร้าง dashboard ยอดขายใน Power BI จากข้อมูลหลายตาราง มี data model แบบ star schema และ KPI ที่อธิบายได้\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Data warehousing, ETL / data pipelines, Python, Statistics, Automation, Oracle Database",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/careers/what-does-a-business-intelligence-analyst-do",
+    "language": "en",
+    "file": "pdf/12-business-intelligence-analyst.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+    "language": "en",
+    "file": "pdf/49-microsoft-pl-300-study-guide.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-2051.01",
+    "language": "en",
+    "file": "pdf/74-onet-bi-analysts-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 30000,
+   "max_thb": 55000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "data-scientist",
+  "title_th": "นักวิทยาศาสตร์ข้อมูล",
+  "title_en": "Data Scientist",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "python",
+     "r"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "statistics"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "machine-learning"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "mathematics"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "pandas"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "data-visualization"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "scikit-learn",
+   "deep-learning",
+   "predictive-modeling",
+   "technical-documentation",
+   "reporting",
+   "data-management"
+  ],
+  "soft_skills": [
+   "analytical-thinking",
+   "problem-solving",
+   "communication",
+   "self-motivation",
+   "attention-to-detail"
+  ],
+  "work_style": {
+   "teamwork": 0.5,
+   "structure": 0.3,
+   "ambiguity": 0.8,
+   "pressure": 0.4,
+   "innovation": 0.8,
+   "leadership": 0.3
+  },
+  "description_th": "ใช้สถิติและ machine learning หาข้อมูลเชิงลึกและสร้างโมเดลทำนาย เพื่อช่วยแก้ปัญหาทางธุรกิจ\r\n\r\nงานที่ทำเป็นประจำ: สำรวจและเตรียมข้อมูล, สร้างและประเมินโมเดล, ทดลองหลายแนวทาง และสื่อสารผลให้คนที่ไม่ใช่สายเทคนิคเข้าใจ\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การคิดวิเคราะห์, การแก้ปัญหา, การสื่อสาร, การทำงานได้ด้วยตนเองและมีแรงจูงใจ, ความละเอียดรอบคอบ",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. อย่างน้อยหนึ่งอย่างจาก Python, R: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Statistics (สถิติ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Machine learning (แมชชีนเลิร์นนิง): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Mathematics (linear algebra, calculus) (คณิตศาสตร์ (พีชคณิตเชิงเส้น แคลคูลัส)): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. pandas / NumPy: ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. Data visualization (การนำเสนอข้อมูลด้วยภาพ): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: ทำโปรเจกต์ทำนายผล (เช่น ราคาบ้านหรือการยกเลิกบริการ) ใน Jupyter ตั้งแต่สำรวจข้อมูลจนประเมินโมเดล และสรุปผลเป็นภาษาธุรกิจ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): scikit-learn, Deep learning, Predictive modeling, Technical documentation, Business reporting, Data management",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/data-scientist",
+    "language": "en",
+    "file": "pdf/21-data-scientist-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-2051.00",
+    "language": "en",
+    "file": "pdf/31-onet-data-scientists-hot-technologies.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/resources/data-science-learning-roadmap",
+    "language": "en",
+    "file": "pdf/50-coursera-data-science-roadmap.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 50000,
+   "max_thb": 80000,
+   "measure": "monthly_base",
+   "source": "คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม",
+   "url": "https://www.spu.ac.th/fac/informatics/อาชีพสายไอที-2026/",
+   "as_of": "2026-03-19"
+  }
+ },
+ {
+  "role_id": "data-engineer",
+  "title_th": "วิศวกรข้อมูล",
+  "title_en": "Data Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "python",
+     "java",
+     "scala"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "etl"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "data-modeling"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "data-warehouse"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "aws",
+     "gcp",
+     "azure"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "airflow",
+   "big-data",
+   "nosql",
+   "postgresql",
+   "message-queue",
+   "docker",
+   "data-governance"
+  ],
+  "soft_skills": [
+   "analytical-thinking",
+   "communication",
+   "problem-solving"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.5,
+   "innovation": 0.5,
+   "leadership": 0.2
+  },
+  "description_th": "สร้างและดูแล pipeline ที่เก็บ ย้าย และแปลงข้อมูล ให้ทีมวิเคราะห์และทีม AI มีข้อมูลที่ถูกต้องและพร้อมใช้\r\n\r\nงานที่ทำเป็นประจำ: เขียน ETL pipeline, ออกแบบ data warehouse, ตั้งเวลาการทำงานของ job และตรวจคุณภาพข้อมูล\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การคิดวิเคราะห์, การสื่อสาร, การแก้ปัญหา",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก Python, Java, Scala: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. ETL / data pipelines (กระบวนการ ETL และไปป์ไลน์ข้อมูล): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Data modeling (การออกแบบแบบจำลองข้อมูล): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Data warehousing (คลังข้อมูล (Data Warehouse)): ฝึกให้ถึงระดับพื้นฐาน\r\n6. อย่างน้อยหนึ่งอย่างจาก AWS, Google Cloud, Microsoft Azure: ฝึกให้ถึงระดับพื้นฐาน\r\n7. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: สร้าง pipeline ที่ดึงข้อมูลจาก API ทุกวัน แปลงข้อมูลด้วย Python แล้วโหลดเข้า PostgreSQL หรือ BigQuery โดยตั้งเวลาด้วย Airflow\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Workflow orchestration (Airflow), Big data (Spark, Hadoop), NoSQL (MongoDB etc.), PostgreSQL, Message queues (Kafka, RabbitMQ), Docker / containers, Data governance and security",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/data-engineer",
+    "language": "en",
+    "file": "pdf/20-data-engineer-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/resources/data-engineering-learning-roadmap",
+    "language": "en",
+    "file": "pdf/48-coursera-data-engineering-roadmap.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 30000,
+   "max_thb": 60000,
+   "measure": "monthly_base",
+   "source": "X10 IT Outsource",
+   "url": "https://www.x10-it.com/post/อัปเดตเงินเดือน-ตำแหน่งงานสายitสูงสุด-ปี-2026",
+   "as_of": "2026-02-02"
+  }
+ },
+ {
+  "role_id": "data-architect",
+  "title_th": "สถาปนิกข้อมูล",
+  "title_en": "Data Architect",
+  "career_stage": "senior",
+  "required": [
+   {
+    "skills": [
+     "data-modeling"
+    ],
+    "min_level": 3,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "database-design"
+    ],
+    "min_level": 3,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 3,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "data-governance"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "data-warehouse"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "cloud-computing"
+    ],
+    "min_level": 2,
+    "weight": 2
+   }
+  ],
+  "nice_to_have": [
+   "big-data",
+   "etl",
+   "nosql",
+   "aws",
+   "data-management",
+   "reporting"
+  ],
+  "soft_skills": [
+   "communication",
+   "leadership",
+   "presentation",
+   "attention-to-detail",
+   "interpersonal"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.4,
+   "ambiguity": 0.7,
+   "pressure": 0.4,
+   "innovation": 0.6,
+   "leadership": 0.7
+  },
+  "description_th": "ออกแบบโครงสร้างข้อมูลระดับองค์กร กำหนดมาตรฐาน การจัดเก็บ และการกำกับดูแลข้อมูลให้ทุกระบบใช้ร่วมกันได้\r\n\r\nงานที่ทำเป็นประจำ: ออกแบบ data model และ data warehouse, วางมาตรฐานและนโยบายข้อมูล, เลือกเทคโนโลยี และให้คำปรึกษาทีมข้อมูล\r\n\r\nระดับตำแหน่ง: เป็นตำแหน่งระดับอาวุโส มักต้องมีประสบการณ์ด้านข้อมูลหรือฐานข้อมูล 5 ปีขึ้นไป เด็กจบใหม่มักเริ่มจาก Data Engineer หรือ Database Administrator\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การสื่อสาร, ภาวะผู้นำ, ทักษะการนำเสนอ, ความละเอียดรอบคอบ, ทักษะมนุษยสัมพันธ์",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Data modeling (การออกแบบแบบจำลองข้อมูล): ฝึกให้ถึงระดับคล่อง\r\n2. Database design (การออกแบบฐานข้อมูล): ฝึกให้ถึงระดับคล่อง\r\n3. SQL: ฝึกให้ถึงระดับคล่อง\r\n4. Data governance and security (ธรรมาภิบาลข้อมูล): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Data warehousing (คลังข้อมูล (Data Warehouse)): ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. Cloud computing (คลาวด์คอมพิวติ้ง): ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. ทำโปรเจกต์ฝึกหัด: ออกแบบ data warehouse ของธุรกิจสมมติ ตั้งแต่ source systems จนถึง star schema พร้อมเอกสารมาตรฐานข้อมูลและ data governance\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Big data (Spark, Hadoop), ETL / data pipelines, NoSQL (MongoDB etc.), AWS, Data management, Business reporting",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/data-architect",
+    "language": "en",
+    "file": "pdf/19-data-architect-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://ca.indeed.com/career-advice/finding-a-job/how-to-become-data-architect",
+    "language": "en",
+    "file": "pdf/42-how-to-become-data-architect.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/data-architect-vs-data-engineer",
+    "language": "en",
+    "file": "pdf/73-coursera-data-architect-vs-data-engineer.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/details/15-1243.00",
+    "language": "en",
+    "file": "pdf/35-onet-database-architects.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1243.00",
+    "language": "en",
+    "file": "pdf/34-onet-database-architects-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "ml-engineer",
+  "title_th": "วิศวกรแมชชีนเลิร์นนิง",
+  "title_en": "Machine Learning Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "python"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "machine-learning"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "pytorch",
+     "tensorflow",
+     "scikit-learn"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "data-structures-algorithms"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "mathematics"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "statistics"
+    ],
+    "min_level": 2,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "mlops",
+   "docker",
+   "deep-learning",
+   "aws",
+   "system-design",
+   "data-modeling"
+  ],
+  "soft_skills": [
+   "analytical-thinking",
+   "problem-solving",
+   "communication",
+   "creativity"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.4,
+   "ambiguity": 0.7,
+   "pressure": 0.5,
+   "innovation": 0.7,
+   "leadership": 0.3
+  },
+  "description_th": "นำโมเดล machine learning ไปใช้งานจริง สร้างระบบ train, deploy และดูแลโมเดลให้ทำงานเสถียรใน production\r\n\r\nงานที่ทำเป็นประจำ: เตรียมข้อมูลและ train โมเดล, ปรับโค้ดให้มีประสิทธิภาพ, deploy โมเดลเป็น service และติดตามประสิทธิภาพของโมเดล\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การคิดวิเคราะห์, การแก้ปัญหา, การสื่อสาร, ความคิดสร้างสรรค์",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Python: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Machine learning (แมชชีนเลิร์นนิง): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. อย่างน้อยหนึ่งอย่างจาก PyTorch, TensorFlow, scikit-learn: ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Data structures and algorithms (โครงสร้างข้อมูลและอัลกอริทึม): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Mathematics (linear algebra, calculus) (คณิตศาสตร์ (พีชคณิตเชิงเส้น แคลคูลัส)): ฝึกให้ถึงระดับใช้งานได้จริง\r\n6. Statistics (สถิติ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n7. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n8. SQL: ฝึกให้ถึงระดับพื้นฐาน\r\n9. ทำโปรเจกต์ฝึกหัด: train โมเดลด้วย scikit-learn หรือ PyTorch แล้ว deploy เป็น API ใน Docker พร้อม log ผลการทำนายเพื่อติดตามโมเดล\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): MLOps / model deployment, Docker / containers, Deep learning, AWS, Software architecture / system design, Data modeling",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/hire/job-description/machine-learning-engineer",
+    "language": "en",
+    "file": "pdf/25-ml-engineer-job-description.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/resources/machine-learning-interview-prep-guide",
+    "language": "en",
+    "file": "pdf/59-coursera-machine-learning-interview-guide.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1221.00",
+    "language": "en",
+    "file": "pdf/32-onet-research-scientists-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 30000,
+   "max_thb": 50000,
+   "measure": "monthly_base",
+   "source": "X10 IT Outsource",
+   "url": "https://www.x10-it.com/post/อัปเดตเงินเดือน-ตำแหน่งงานสายitสูงสุด-ปี-2026",
+   "as_of": "2026-02-02"
+  }
+ },
+ {
+  "role_id": "ai-engineer",
+  "title_th": "วิศวกรปัญญาประดิษฐ์",
+  "title_en": "AI Engineer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "python"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "machine-learning"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "llm"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "deep-learning"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "pytorch",
+     "tensorflow"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "git"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "nlp",
+   "mlops",
+   "docker",
+   "data-structures-algorithms",
+   "statistics",
+   "mathematics",
+   "automation"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "analytical-thinking",
+   "adaptability",
+   "communication",
+   "teamwork"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.3,
+   "ambiguity": 0.8,
+   "pressure": 0.6,
+   "innovation": 0.9,
+   "leadership": 0.3
+  },
+  "description_th": "สร้างแอปที่ใช้ AI เช่น ระบบที่ใช้ LLM, chatbot และ RAG โดยเชื่อมโมเดลเข้ากับข้อมูลและระบบขององค์กร\r\n\r\nงานที่ทำเป็นประจำ: ออกแบบ prompt และ pipeline ของ LLM, สร้าง RAG, เชื่อม AI กับ API ของระบบ, ประเมินคุณภาพคำตอบ และควบคุมค่าใช้จ่าย\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การคิดวิเคราะห์, การปรับตัวและเรียนรู้อย่างต่อเนื่อง, การสื่อสาร, การทำงานเป็นทีม",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Python: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Machine learning (แมชชีนเลิร์นนิง): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Large language models / generative AI (โมเดลภาษาขนาดใหญ่ / Generative AI): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Deep learning (ดีปเลิร์นนิง): ฝึกให้ถึงระดับพื้นฐาน\r\n5. อย่างน้อยหนึ่งอย่างจาก PyTorch, TensorFlow: ฝึกให้ถึงระดับพื้นฐาน\r\n6. Git / version control (Git และการควบคุมเวอร์ชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: สร้าง chatbot ถาม-ตอบจากเอกสารด้วย RAG ที่เรียก LLM ผ่าน API มีการอ้างอิงแหล่งที่มา และวัดความถูกต้องด้วยชุดคำถามทดสอบ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Natural language processing, MLOps / model deployment, Docker / containers, Data structures and algorithms, Statistics, Mathematics (linear algebra, calculus), Automation",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/recruitment/job-description/ai-engineer",
+    "language": "en",
+    "file": "pdf/16-ai-engineer-job-description.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/ai-engineer",
+    "language": "en",
+    "file": "pdf/46-coursera-ai-engineer.pdf"
+   },
+   {
+    "url": "https://www.x10-it.com/post/อัปเดตเงินเดือน-ตำแหน่งงานสายitสูงสุด-ปี-2026",
+    "language": "th",
+    "file": "pdf/28-x10-it-salary-update-2026.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1221.00",
+    "language": "en",
+    "file": "pdf/32-onet-research-scientists-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 30000,
+   "max_thb": 50000,
+   "measure": "monthly_base",
+   "source": "X10 IT Outsource",
+   "url": "https://www.x10-it.com/post/อัปเดตเงินเดือน-ตำแหน่งงานสายitสูงสุด-ปี-2026",
+   "as_of": "2026-02-02"
+  }
+ },
+ {
+  "role_id": "database-administrator",
+  "title_th": "ผู้ดูแลระบบฐานข้อมูล",
+  "title_en": "Database Administrator",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "sql"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "mysql",
+     "postgresql",
+     "sql-server",
+     "oracle-db"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "backup-recovery"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "performance-tuning"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "linux",
+     "windows-server"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "database-design"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "cybersecurity"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "bash",
+   "capacity-planning",
+   "nosql",
+   "cloud-computing",
+   "big-data"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "analytical-thinking",
+   "organization",
+   "communication"
+  ],
+  "work_style": {
+   "teamwork": 0.5,
+   "structure": 0.8,
+   "ambiguity": 0.3,
+   "pressure": 0.7,
+   "innovation": 0.3,
+   "leadership": 0.2
+  },
+  "description_th": "ดูแลฐานข้อมูลขององค์กรให้ปลอดภัย พร้อมใช้งาน สำรองข้อมูลได้ และทำงานเร็ว\r\n\r\nงานที่ทำเป็นประจำ: ติดตั้งและตั้งค่าฐานข้อมูล, สำรองและกู้คืนข้อมูล, ปรับแต่ง query ที่ช้า, จัดการสิทธิ์ผู้ใช้ และวางแผนการขยายระบบ\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การคิดวิเคราะห์, การจัดระเบียบงาน, การสื่อสาร",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. SQL: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. อย่างน้อยหนึ่งอย่างจาก MySQL, PostgreSQL, Microsoft SQL Server, Oracle Database: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Backup and disaster recovery (การสำรองและกู้คืนข้อมูล): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Database performance tuning (การปรับแต่งประสิทธิภาพฐานข้อมูล): ฝึกให้ถึงระดับพื้นฐาน\r\n5. อย่างน้อยหนึ่งอย่างจาก Linux, Windows Server: ฝึกให้ถึงระดับพื้นฐาน\r\n6. Database design (การออกแบบฐานข้อมูล): ฝึกให้ถึงระดับพื้นฐาน\r\n7. Cybersecurity (ความมั่นคงปลอดภัยไซเบอร์): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: ติดตั้ง PostgreSQL หรือ MySQL บน Linux ตั้งระบบ backup อัตโนมัติ ทดลองกู้คืน และปรับ query ที่ช้าด้วย index\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Shell scripting (Bash/PowerShell), Capacity planning, NoSQL (MongoDB etc.), Cloud computing, Big data (Spark, Hadoop)",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/careers/what-does-a-database-administrator-do",
+    "language": "en",
+    "file": "pdf/06-database-administrator.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/database-administrator",
+    "language": "en",
+    "file": "pdf/69-coursera-database-administrator.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "information-security-analyst",
+  "title_th": "นักวิเคราะห์ความปลอดภัยสารสนเทศ",
+  "title_en": "Information Security Analyst",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "cybersecurity"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "networking"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "tcp-ip"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "vulnerability-assessment"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "firewall"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "incident-response"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "linux"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "monitoring"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "siem",
+   "security-certs",
+   "encryption",
+   "risk-compliance",
+   "identity-access",
+   "network-security",
+   "cloud-computing",
+   "routing-switching"
+  ],
+  "soft_skills": [
+   "analytical-thinking",
+   "problem-solving",
+   "decision-making",
+   "communication",
+   "adaptability"
+  ],
+  "work_style": {
+   "teamwork": 0.5,
+   "structure": 0.6,
+   "ambiguity": 0.5,
+   "pressure": 0.8,
+   "innovation": 0.5,
+   "leadership": 0.3
+  },
+  "description_th": "ปกป้องระบบและข้อมูลขององค์กรจากภัยคุกคาม เฝ้าระวัง ตรวจหาช่องโหว่ และรับมือเหตุการณ์ด้านความปลอดภัย\r\n\r\nงานที่ทำเป็นประจำ: ดู alert จากระบบเฝ้าระวัง, สแกนหาช่องโหว่, ตรวจ log, ตอบสนองเหตุการณ์ และเขียนรายงานความเสี่ยง\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การคิดวิเคราะห์, การแก้ปัญหา, การตัดสินใจ, การสื่อสาร, การปรับตัวและเรียนรู้อย่างต่อเนื่อง",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Cybersecurity (ความมั่นคงปลอดภัยไซเบอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Computer networking (เครือข่ายคอมพิวเตอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. TCP/IP, DNS, DHCP: ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Vulnerability assessment / penetration testing (การประเมินช่องโหว่และทดสอบเจาะระบบ): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Firewalls (ไฟร์วอลล์): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Incident response (การตอบสนองต่อเหตุการณ์ด้านความปลอดภัย): ฝึกให้ถึงระดับพื้นฐาน\r\n7. Linux: ฝึกให้ถึงระดับพื้นฐาน\r\n8. Monitoring and logging (การเฝ้าระวังและบันทึกระบบ): ฝึกให้ถึงระดับพื้นฐาน\r\n9. ทำโปรเจกต์ฝึกหัด: ตั้ง lab ด้วย virtual machine แล้วสแกนช่องโหว่ วิเคราะห์ log และเขียนรายงานพร้อมวิธีแก้ หรือฝึกโจทย์บน TryHackMe\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): SIEM / security monitoring, Security certifications (CompTIA Security+, CISSP, CEH), Encryption, Risk management and compliance, Authentication and access control, Network security, Cloud computing, Routing and switching",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/career-development/information-security-analyst-skills",
+    "language": "en",
+    "file": "pdf/07-information-security-analyst.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/cybersecurity-analyst-skills",
+    "language": "en",
+    "file": "pdf/61-coursera-cybersecurity-analyst-skills.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 40000,
+   "max_thb": 70000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "network-administrator",
+  "title_th": "ผู้ดูแลระบบเครือข่าย",
+  "title_en": "Network Administrator",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "networking"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "tcp-ip"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "routing-switching"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "troubleshooting"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "firewall"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "lan-wan"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "monitoring"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "cisco",
+   "comptia",
+   "active-directory",
+   "identity-access",
+   "windows-server",
+   "linux",
+   "network-security"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "communication"
+  ],
+  "work_style": {
+   "teamwork": 0.5,
+   "structure": 0.7,
+   "ambiguity": 0.3,
+   "pressure": 0.7,
+   "innovation": 0.3,
+   "leadership": 0.2
+  },
+  "description_th": "ดูแลระบบเครือข่ายขององค์กรให้เชื่อมต่อได้เสถียรและปลอดภัย ทั้ง LAN, WAN, firewall และอุปกรณ์เครือข่าย\r\n\r\nงานที่ทำเป็นประจำ: ตั้งค่า router และ switch, จัดการ firewall, monitor เครือข่าย และแก้ปัญหาการเชื่อมต่อของผู้ใช้\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การสื่อสาร",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Computer networking (เครือข่ายคอมพิวเตอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. TCP/IP, DNS, DHCP: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Routing and switching (การกำหนดเส้นทางและสวิตชิ่ง): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Technical troubleshooting (การแก้ไขปัญหาทางเทคนิค): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Firewalls (ไฟร์วอลล์): ฝึกให้ถึงระดับพื้นฐาน\r\n6. LAN / WAN / Wi-Fi: ฝึกให้ถึงระดับพื้นฐาน\r\n7. Monitoring and logging (การเฝ้าระวังและบันทึกระบบ): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: จำลองเครือข่ายสำนักงานใน Cisco Packet Tracer ที่มี VLAN, routing และ firewall rule พร้อมทดสอบการเชื่อมต่อ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Cisco (CCNA), CompTIA A+ / Network+, Active Directory, Authentication and access control, Windows Server, Linux, Network security",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/interviewing/network-administrator-interview-questions",
+    "language": "en",
+    "file": "pdf/02-network-administrator.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide",
+    "language": "en",
+    "file": "pdf/57-coursera-network-administrator.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "systems-administrator",
+  "title_th": "ผู้ดูแลระบบ",
+  "title_en": "Systems Administrator",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "linux",
+     "windows-server"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "server-administration"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "operating-systems"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "networking"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "virtualization"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "backup-recovery"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "bash"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "active-directory",
+   "cloud-computing",
+   "monitoring",
+   "automation",
+   "device-management",
+   "cybersecurity",
+   "hardware-troubleshooting"
+  ],
+  "soft_skills": [
+   "problem-solving",
+   "strategic-thinking",
+   "communication"
+  ],
+  "work_style": {
+   "teamwork": 0.5,
+   "structure": 0.7,
+   "ambiguity": 0.3,
+   "pressure": 0.7,
+   "innovation": 0.3,
+   "leadership": 0.2
+  },
+  "description_th": "ดูแลเซิร์ฟเวอร์และระบบปฏิบัติการขององค์กร ติดตั้ง ตั้งค่า อัปเดต สำรองข้อมูล และแก้ปัญหาให้ระบบพร้อมใช้งาน\r\n\r\nงานที่ทำเป็นประจำ: ติดตั้งและอัปเดตเซิร์ฟเวอร์, จัดการผู้ใช้และสิทธิ์, ดูแล virtual machine, สำรองข้อมูล และเขียนสคริปต์ทำงานอัตโนมัติ\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การแก้ปัญหา, การคิดเชิงกลยุทธ์, การสื่อสาร",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. อย่างน้อยหนึ่งอย่างจาก Linux, Windows Server: ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Server administration (การดูแลเซิร์ฟเวอร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Operating systems (ระบบปฏิบัติการ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Computer networking (เครือข่ายคอมพิวเตอร์): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Virtualization (VMware, Hyper-V) (เวอร์ชวลไลเซชัน): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Backup and disaster recovery (การสำรองและกู้คืนข้อมูล): ฝึกให้ถึงระดับพื้นฐาน\r\n7. Shell scripting (Bash/PowerShell) (การเขียนสคริปต์เชลล์): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: ตั้งเซิร์ฟเวอร์ Linux บน virtual machine ติดตั้ง web server ตั้งผู้ใช้และสิทธิ์ และเขียน bash script สำรองข้อมูลทุกวัน\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Active Directory, Cloud computing, Monitoring and logging, Automation, Device management, Cybersecurity, Hardware installation and troubleshooting",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/system-administrator-vs-network-administrator",
+    "language": "en",
+    "file": "pdf/03-systems-administrator.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/what-is-a-system-administrator-a-career-guide",
+    "language": "en",
+    "file": "pdf/58-coursera-system-administrator.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1244.00",
+    "language": "en",
+    "file": "pdf/72-onet-network-admins-hot-technologies.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/details/15-1244.00",
+    "language": "en",
+    "file": "pdf/75-onet-systems-administrators.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "it-support",
+  "title_th": "เจ้าหน้าที่สนับสนุนด้านไอที",
+  "title_en": "IT Support Specialist",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "hardware-troubleshooting"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "troubleshooting"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "operating-systems"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "software-installation"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "help-desk"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "networking"
+    ],
+    "min_level": 1,
+    "weight": 2
+   }
+  ],
+  "nice_to_have": [
+   "active-directory",
+   "windows-server",
+   "macos",
+   "itil",
+   "comptia",
+   "user-training",
+   "technical-documentation",
+   "cybersecurity"
+  ],
+  "soft_skills": [
+   "customer-service",
+   "communication",
+   "patience",
+   "problem-solving",
+   "organization"
+  ],
+  "work_style": {
+   "teamwork": 0.6,
+   "structure": 0.7,
+   "ambiguity": 0.3,
+   "pressure": 0.7,
+   "innovation": 0.2,
+   "leadership": 0.1
+  },
+  "description_th": "ช่วยผู้ใช้ในองค์กรแก้ปัญหาคอมพิวเตอร์ ซอฟต์แวร์ และเครือข่าย เป็นด่านแรกที่ทำให้ทุกคนทำงานต่อได้\r\n\r\nงานที่ทำเป็นประจำ: รับแจ้งปัญหาผ่าน help desk, ติดตั้งและซ่อมเครื่อง, ติดตั้งโปรแกรม, แก้ปัญหาเครือข่ายเบื้องต้น และสอนผู้ใช้\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การบริการลูกค้า, การสื่อสาร, ความอดทน, การแก้ปัญหา, การจัดระเบียบงาน",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Hardware installation and troubleshooting (การติดตั้งและแก้ไขปัญหาฮาร์ดแวร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Technical troubleshooting (การแก้ไขปัญหาทางเทคนิค): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Operating systems (ระบบปฏิบัติการ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Software installation and configuration (การติดตั้งและตั้งค่าซอฟต์แวร์): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. Help desk / ticketing (งาน Help desk และระบบตั๋วแจ้งปัญหา): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Computer networking (เครือข่ายคอมพิวเตอร์): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: ประกอบหรือติดตั้งเครื่องใหม่ตั้งแต่ลง OS จนตั้งค่าเครือข่าย แล้วเขียนคู่มือแก้ปัญหาที่พบบ่อยสำหรับผู้ใช้\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Active Directory, Windows Server, macOS, ITIL / IT service management, CompTIA A+ / Network+, End-user training, Technical documentation, Cybersecurity",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/it-support-specialists",
+    "language": "en",
+    "file": "pdf/01-it-support-specialist.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 18000,
+   "max_thb": 30000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "ux-ui-designer",
+  "title_th": "นักออกแบบ UX/UI",
+  "title_en": "UX/UI Designer",
+  "career_stage": "entry",
+  "required": [
+   {
+    "skills": [
+     "ux-design"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "ui-design"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "figma"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "wireframing"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "ux-research"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "responsive-design"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "web-accessibility",
+   "mobile-ui",
+   "graphic-design",
+   "html",
+   "css",
+   "web-design"
+  ],
+  "soft_skills": [
+   "creativity",
+   "empathy",
+   "communication",
+   "teamwork",
+   "analytical-thinking"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.4,
+   "ambiguity": 0.7,
+   "pressure": 0.5,
+   "innovation": 0.8,
+   "leadership": 0.3
+  },
+  "description_th": "ออกแบบประสบการณ์และหน้าตาของแอปหรือเว็บให้ใช้งานง่าย ตรงความต้องการผู้ใช้ และสวยงาม\r\n\r\nงานที่ทำเป็นประจำ: สัมภาษณ์และทดสอบกับผู้ใช้, ทำ wireframe และ prototype ใน Figma, ออกแบบ UI และส่งต่องานให้นักพัฒนา\r\n\r\nระดับตำแหน่ง: เหมาะกับผู้เริ่มต้นและเด็กจบใหม่\r\n\r\nทักษะด้านบุคคลที่สำคัญ: ความคิดสร้างสรรค์, ความเข้าอกเข้าใจผู้อื่น, การสื่อสาร, การทำงานเป็นทีม, การคิดวิเคราะห์",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. UX design (การออกแบบประสบการณ์ผู้ใช้ (UX)): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. UI design (การออกแบบส่วนติดต่อผู้ใช้ (UI)): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Figma / design tools (Figma และเครื่องมือออกแบบ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Wireframing and prototyping (การทำ Wireframe และต้นแบบ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n5. User research (การวิจัยผู้ใช้): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Responsive design (การออกแบบเว็บแบบ Responsive): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: เลือกแอปที่ใช้งานยาก ทำ user research กับผู้ใช้ 3-5 คน ออกแบบใหม่ใน Figma และทำ usability test เปรียบเทียบก่อนและหลัง\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Web accessibility, Mobile UI development, Graphic design, HTML, CSS, Web design principles",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/careers/what-does-a-ux-designer-do",
+    "language": "en",
+    "file": "pdf/13-ux-designer.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/resources/guide-to-changing-your-career-to-user-experience-ux",
+    "language": "en",
+    "file": "pdf/70-coursera-ux-career-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/what-is-a-user-interface-ui-designer-guide",
+    "language": "en",
+    "file": "pdf/76-coursera-ui-designer.pdf"
+   }
+  ],
+  "salary_reference": {
+   "min_thb": 25000,
+   "max_thb": 45000,
+   "measure": "monthly_base",
+   "source": "Jobsdb ไทย",
+   "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+   "as_of": "2026-06-08"
+  }
+ },
+ {
+  "role_id": "it-project-manager",
+  "title_th": "ผู้จัดการโครงการไอที",
+  "title_en": "IT Project Manager",
+  "career_stage": "mid",
+  "required": [
+   {
+    "skills": [
+     "project-management"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "agile"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "stakeholder-management"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "sdlc"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "risk-compliance"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "budgeting"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "technical-documentation"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "pmp",
+   "requirements-analysis",
+   "bug-tracking",
+   "vendor-management",
+   "sql",
+   "programming"
+  ],
+  "soft_skills": [
+   "leadership",
+   "communication",
+   "organization",
+   "time-management",
+   "negotiation"
+  ],
+  "work_style": {
+   "teamwork": 0.9,
+   "structure": 0.6,
+   "ambiguity": 0.6,
+   "pressure": 0.7,
+   "innovation": 0.4,
+   "leadership": 0.9
+  },
+  "description_th": "วางแผนและควบคุมโครงการ IT ให้เสร็จตามเวลา งบประมาณ และขอบเขต ประสานงานระหว่างทีมเทคนิคและผู้เกี่ยวข้อง\r\n\r\nงานที่ทำเป็นประจำ: วางแผนงานและ sprint, ติดตามความคืบหน้า, จัดการความเสี่ยงและงบ, ประชุมกับลูกค้าหรือผู้บริหาร และแก้ปัญหาในทีม\r\n\r\nระดับตำแหน่ง: มักต้องมีประสบการณ์ทำงานด้าน IT มาก่อน 2-3 ปี เด็กจบใหม่มักเริ่มจากตำแหน่งใกล้เคียงก่อน\r\n\r\nทักษะด้านบุคคลที่สำคัญ: ภาวะผู้นำ, การสื่อสาร, การจัดระเบียบงาน, การบริหารเวลา, การเจรจาต่อรอง",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Project management (การบริหารโครงการ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Agile / Scrum: ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. Stakeholder management (การบริหารผู้มีส่วนได้ส่วนเสีย): ฝึกให้ถึงระดับใช้งานได้จริง\r\n4. Software development life cycle (วงจรการพัฒนาซอฟต์แวร์ (SDLC)): ฝึกให้ถึงระดับพื้นฐาน\r\n5. Risk management and compliance (การบริหารความเสี่ยงและการปฏิบัติตามข้อกำหนด): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Budget management (การบริหารงบประมาณ): ฝึกให้ถึงระดับพื้นฐาน\r\n7. Technical documentation (การเขียนเอกสารทางเทคนิค): ฝึกให้ถึงระดับพื้นฐาน\r\n8. ทำโปรเจกต์ฝึกหัด: รับบทผู้จัดการโครงการในงานกลุ่มหรือโครงงาน ทำ project plan, backlog และ risk register แล้วสรุปบทเรียนหลังจบโครงการ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): PMP / PRINCE2 certification, Requirements gathering and analysis, Bug tracking (Jira), Vendor management, SQL, Programming fundamentals",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/careers/what-does-an-it-project-manager-do",
+    "language": "en",
+    "file": "pdf/10-it-project-manager.pdf"
+   },
+   {
+    "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+    "language": "th",
+    "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/it-project-manager-skills",
+    "language": "en",
+    "file": "pdf/51-coursera-it-project-manager-skills.pdf"
+   }
+  ],
+  "salary_reference": null
+ },
+ {
+  "role_id": "it-consultant",
+  "title_th": "ที่ปรึกษาด้านไอที",
+  "title_en": "IT Consultant",
+  "career_stage": "mid",
+  "required": [
+   {
+    "skills": [
+     "requirements-analysis"
+    ],
+    "min_level": 2,
+    "weight": 3
+   },
+   {
+    "skills": [
+     "business-analysis"
+    ],
+    "min_level": 2,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "it-strategy"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "project-management"
+    ],
+    "min_level": 1,
+    "weight": 2
+   },
+   {
+    "skills": [
+     "erp-crm"
+    ],
+    "min_level": 1,
+    "weight": 1
+   },
+   {
+    "skills": [
+     "cloud-computing"
+    ],
+    "min_level": 1,
+    "weight": 1
+   }
+  ],
+  "nice_to_have": [
+   "stakeholder-management",
+   "cybersecurity",
+   "pmp",
+   "technical-documentation",
+   "hardware-troubleshooting"
+  ],
+  "soft_skills": [
+   "communication",
+   "interpersonal",
+   "critical-thinking",
+   "problem-solving",
+   "adaptability"
+  ],
+  "work_style": {
+   "teamwork": 0.7,
+   "structure": 0.4,
+   "ambiguity": 0.8,
+   "pressure": 0.6,
+   "innovation": 0.6,
+   "leadership": 0.6
+  },
+  "description_th": "ให้คำปรึกษาองค์กรเรื่องการใช้เทคโนโลยี วิเคราะห์ปัญหาทางธุรกิจ และเสนอแนวทางหรือระบบที่เหมาะสม\r\n\r\nงานที่ทำเป็นประจำ: สัมภาษณ์ลูกค้าเพื่อเก็บ requirement, วิเคราะห์กระบวนการ, เปรียบเทียบทางเลือก, นำเสนอข้อเสนอ และติดตามการนำไปใช้\r\n\r\nระดับตำแหน่ง: มักต้องมีประสบการณ์ทำงานด้าน IT มาก่อน 2-3 ปี เด็กจบใหม่มักเริ่มจากตำแหน่งใกล้เคียงก่อน\r\n\r\nทักษะด้านบุคคลที่สำคัญ: การสื่อสาร, ทักษะมนุษยสัมพันธ์, การคิดเชิงวิพากษ์, การแก้ปัญหา, การปรับตัวและเรียนรู้อย่างต่อเนื่อง",
+  "learning_path_th": "เรียงตามความสำคัญต่อการได้งานในตำแหน่งนี้:\r\n\r\n1. Requirements gathering and analysis (การเก็บและวิเคราะห์ความต้องการ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n2. Business analysis (การวิเคราะห์ธุรกิจ): ฝึกให้ถึงระดับใช้งานได้จริง\r\n3. IT strategy and consulting (กลยุทธ์และการให้คำปรึกษาด้านไอที): ฝึกให้ถึงระดับพื้นฐาน\r\n4. Project management (การบริหารโครงการ): ฝึกให้ถึงระดับพื้นฐาน\r\n5. ERP / CRM systems (SAP, Salesforce) (ระบบ ERP / CRM (SAP, Salesforce)): ฝึกให้ถึงระดับพื้นฐาน\r\n6. Cloud computing (คลาวด์คอมพิวติ้ง): ฝึกให้ถึงระดับพื้นฐาน\r\n7. ทำโปรเจกต์ฝึกหัด: เลือกธุรกิจขนาดเล็กหนึ่งแห่ง วิเคราะห์กระบวนการทำงาน เสนอระบบ IT ที่เหมาะสมพร้อมเปรียบเทียบต้นทุน และทำสไลด์นำเสนอ\r\n\r\nทักษะที่ช่วยให้โดดเด่นขึ้น (ไม่บังคับ): Stakeholder management, Cybersecurity, PMP / PRINCE2 certification, Technical documentation, Hardware installation and troubleshooting",
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "sources": [
+   {
+    "url": "https://www.indeed.com/career-advice/finding-a-job/what-is-an-it-consultant",
+    "language": "en",
+    "file": "pdf/15-it-consultant.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/details/15-1211.00",
+    "language": "en",
+    "file": "pdf/36-onet-computer-systems-analysts.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/career-academy/roles/technology-consultant",
+    "language": "en",
+    "file": "pdf/63-coursera-technology-consultant-role.pdf"
+   },
+   {
+    "url": "https://www.coursera.org/articles/what-is-technology-consulting",
+    "language": "en",
+    "file": "pdf/62-coursera-technology-consulting.pdf"
+   },
+   {
+    "url": "https://www.onetonline.org/link/hot_tech/15-1211.00",
+    "language": "en",
+    "file": "pdf/71-onet-systems-analysts-hot-technologies.pdf"
+   }
+  ],
+  "salary_reference": null
+ }
+]

@@ -1,0 +1,263 @@
+{
+  "test_run": {
+    "actor": "mai_amm/jobthai-scraper",
+    "date": "2026-10-31",
+    "input": {
+      "mode": "search",
+      "keyword": "programmer",
+      "jobTypes": [
+        "7"
+      ],
+      "language": "th",
+      "maxItems": 20,
+      "maxPages": 1,
+      "includeDetails": true,
+      "includeContacts": false
+    },
+    "raw_file": "api/var/jobthai_sample.json",
+    "items_returned": 20,
+    "total_results_on_jobthai": 195,
+    "salary_text_present": {
+      "count": 20,
+      "of": 20
+    },
+    "salary_numeric": {
+      "count": 7,
+      "of": 20,
+      "pct": 35
+    },
+    "salary_non_numeric_texts": [
+      "ตามตกลง",
+      "ตามโครงสร้างบริษัทฯ"
+    ],
+    "description_min_200_chars": {
+      "count": 18,
+      "of": 20
+    },
+    "description_length": {
+      "min": 36,
+      "median": 441.0,
+      "max": 1955
+    },
+    "qualifications_present": {
+      "count": 20,
+      "of": 20
+    },
+    "contact_fields_set": 0,
+    "provinces": [
+      "กรุงเทพมหานคร",
+      "ขอนแก่น",
+      "ฉะเชิงเทรา",
+      "ชลบุรี",
+      "นนทบุรี",
+      "ร้อยเอ็ด",
+      "สมุทรปราการ"
+    ],
+    "fields": [
+      "benefits",
+      "company",
+      "companyId",
+      "companyLogo",
+      "description",
+      "detailAvailable",
+      "detailUrl",
+      "district",
+      "hasOnlineInterview",
+      "howToApply",
+      "industrial",
+      "isHybrid",
+      "isWorkFromHome",
+      "jobId",
+      "jobType",
+      "jobTypeId",
+      "location",
+      "metaDescription",
+      "page",
+      "position",
+      "province",
+      "qualifications",
+      "region",
+      "salary",
+      "scrapedAt",
+      "source",
+      "sourceUrl",
+      "tags",
+      "title",
+      "totalResults",
+      "transitStations",
+      "updatedAtText",
+      "urgent",
+      "url",
+      "vacancies",
+      "workLocation"
+    ],
+    "salaries": [
+      {
+        "title": "Programmer & Web Application Programmer",
+        "company": "บริษัท โสมาภา อินฟอร์เมชั่น เทคโนโลยี จำกัด (มหาชน)",
+        "salary": "20,000 - 30,000 บาท",
+        "url": "https://www.jobthai.com/th/job/1555769"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท วีอาร์พี ฟู้ด แอนด์ เบเกอรี่ จำกัด",
+        "salary": "20,000 - 40,000 บาท",
+        "url": "https://www.jobthai.com/th/job/1852666"
+      },
+      {
+        "title": "PHP Programmer",
+        "company": "GMO-Z.com NetDesign Co., Ltd.",
+        "salary": "20,000 - 30,000 บาท",
+        "url": "https://www.jobthai.com/th/job/1024668"
+      },
+      {
+        "title": "Programmer Officer",
+        "company": "Home and More Co., Ltd.",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1947978"
+      },
+      {
+        "title": "Network/Programmer",
+        "company": "QMB Co.,Ltd.",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1153758"
+      },
+      {
+        "title": "Senior PHP Programmer",
+        "company": "บริษัท ไทย รูท ดอท คอม จำกัด",
+        "salary": "30,000–40,000 บาท (พิจารณาตามประสบการณ์และความสามารถ)",
+        "url": "https://www.jobthai.com/th/job/1970503"
+      },
+      {
+        "title": "Programmer/Web Developer",
+        "company": "TakraOnline ( ตะกร้าออนไลน์ )",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "url": "https://www.jobthai.com/th/job/1403387"
+      },
+      {
+        "title": "เจ้าหน้าที่ Programmer",
+        "company": "บริษัท ไทยซอสเซส มาร์เก็ตติ้ง จำกัด",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1949514"
+      },
+      {
+        "title": "Programmer Support Officer",
+        "company": "บริษัท สยามคอมเมอร์เชียล ซีพอร์ท จำกัด",
+        "salary": "23,000 - 25,000 บาท",
+        "url": "https://www.jobthai.com/th/job/1857350"
+      },
+      {
+        "title": "Programmer (ประจำกรุงเทพ )",
+        "company": "บริษัท ไทย อกริ ฟู้ดส์ จำกัด (มหาชน)",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1017656"
+      },
+      {
+        "title": ".NET Programmer (Inhouse)",
+        "company": "GMO-Z.com NetDesign Co., Ltd.",
+        "salary": "30,000 - 35,000 บาท",
+        "url": "https://www.jobthai.com/th/job/1758892"
+      },
+      {
+        "title": "พนักงานพัฒนาระบบไอที (Programmer)",
+        "company": "บริษัท เมืองไทย แคปปิตอล จำกัด (มหาชน)",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "url": "https://www.jobthai.com/th/job/1894099"
+      },
+      {
+        "title": "Programmer (C#.net, React TypeScript, Flutter)",
+        "company": "Home Product Center (Public) Co., Ltd.",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "url": "https://www.jobthai.com/th/job/1440968"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท ขอนแก่นแหอวน จำกัด และ บริษัทในเครือ บริษัท เคเคเอฟ อินเตอร์เนชั่นแนล กรุ๊ป จำกัด",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/412393"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท เฮลท์ อัพ จำกัด",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1631062"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท อิมโก้ ฟู๊ดแพ็ค จำกัด (IMCO FOOD PACK CO., LTD.)",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1787575"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท พีเอซี (สยาม) จำกัด",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "url": "https://www.jobthai.com/th/job/1954580"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท อินโนเว็ก โฮลดิ้ง จำกัด",
+        "salary": "20,000 - 30,000 บาท",
+        "url": "https://www.jobthai.com/th/job/1746310"
+      },
+      {
+        "title": "Programmer",
+        "company": "บริษัท เอสเจเอกซ์ แคปติวา จำกัด",
+        "salary": "ตามโครงสร้างบริษัทฯ",
+        "url": "https://www.jobthai.com/th/job/1574561"
+      },
+      {
+        "title": "IT Programmer",
+        "company": "La-Z-Boy-Thailand Co., Ltd.",
+        "salary": "ตามตกลง",
+        "url": "https://www.jobthai.com/th/job/1954673"
+      }
+    ]
+  },
+  "cost": {
+    "pricing_model": "PAY_PER_EVENT",
+    "usd_per_item": 0.001,
+    "usd_per_actor_start": 5e-05,
+    "usd_per_run_20_items": 0.02005,
+    "free_plan_items_per_run": 20,
+    "account": {
+      "max_monthly_usage_usd": 5,
+      "used_usd": 0.02,
+      "cycle": {
+        "start": "2026-10-31",
+        "end": "2026-11-29"
+      },
+      "max_concurrent_runs": 5
+    },
+    "runs_per_cycle_max": 249
+  },
+  "budget_26_roles_weekly": {
+    "roles": 26,
+    "max_refreshes_per_cycle": 5,
+    "plans": [
+      {
+        "keywords_per_role": 1,
+        "runs_per_refresh": 26,
+        "usd_per_refresh": 0.5213,
+        "usd_per_cycle_5_refreshes": 2.61,
+        "fits_5usd": true
+      },
+      {
+        "keywords_per_role": 2,
+        "runs_per_refresh": 52,
+        "usd_per_refresh": 1.0426,
+        "usd_per_cycle_5_refreshes": 5.21,
+        "fits_5usd": false
+      },
+      {
+        "keywords_per_role": 3,
+        "runs_per_refresh": 78,
+        "usd_per_refresh": 1.5639,
+        "usd_per_cycle_5_refreshes": 7.82,
+        "fits_5usd": false
+      }
+    ],
+    "max_runs_per_refresh_within_budget": 49,
+    "recommendation": "1 keyword per role; add a 2nd keyword only for roles with few numeric salaries; keep REFRESH_DAILY_CAP low"
+  }
+}

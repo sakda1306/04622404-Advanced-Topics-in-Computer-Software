@@ -1,0 +1,115 @@
+{
+  "role_id": "ai-engineer",
+  "title_th": "วิศวกรปัญญาประดิษฐ์",
+  "title_en": "AI Engineer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "python",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/46-coursera-ai-engineer.pdf"
+      ]
+    },
+    {
+      "skill_id": "machine-learning",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/16-ai-engineer-job-description.pdf"
+      ]
+    },
+    {
+      "skill_id": "llm",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/28-x10-it-salary-update-2026.pdf"
+      ]
+    },
+    {
+      "skill_id": "deep-learning",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/46-coursera-ai-engineer.pdf"
+      ]
+    },
+    {
+      "any_of": [
+        "pytorch",
+        "tensorflow"
+      ],
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/46-coursera-ai-engineer.pdf"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/32-onet-research-scientists-hot-technologies.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "nlp",
+    "mlops",
+    "docker",
+    "data-structures-algorithms",
+    "statistics",
+    "mathematics",
+    "automation"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "analytical-thinking",
+    "adaptability",
+    "communication",
+    "teamwork"
+  ],
+  "work_style": {
+    "teamwork": 0.6,
+    "structure": 0.3,
+    "ambiguity": 0.8,
+    "pressure": 0.6,
+    "innovation": 0.9,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/16-ai-engineer-job-description.pdf",
+      "url": "https://www.indeed.com/recruitment/job-description/ai-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/46-coursera-ai-engineer.pdf",
+      "url": "https://www.coursera.org/articles/ai-engineer",
+      "language": "en"
+    },
+    {
+      "file": "pdf/28-x10-it-salary-update-2026.pdf",
+      "url": "https://www.x10-it.com/post/อัปเดตเงินเดือน-ตำแหน่งงานสายitสูงสุด-ปี-2026",
+      "language": "th"
+    },
+    {
+      "file": "pdf/32-onet-research-scientists-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1221.00",
+      "language": "en"
+    }
+  ]
+}

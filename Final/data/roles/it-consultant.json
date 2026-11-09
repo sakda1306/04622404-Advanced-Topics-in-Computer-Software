@@ -1,0 +1,117 @@
+{
+  "role_id": "it-consultant",
+  "title_th": "ที่ปรึกษาด้านไอที",
+  "title_en": "IT Consultant",
+  "career_stage": "mid",
+  "required": [
+    {
+      "skill_id": "requirements-analysis",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/36-onet-computer-systems-analysts.pdf"
+      ]
+    },
+    {
+      "skill_id": "business-analysis",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/63-coursera-technology-consultant-role.pdf"
+      ]
+    },
+    {
+      "skill_id": "it-strategy",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/15-it-consultant.pdf",
+        "pdf/62-coursera-technology-consulting.pdf"
+      ]
+    },
+    {
+      "skill_id": "project-management",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/15-it-consultant.pdf"
+      ]
+    },
+    {
+      "skill_id": "erp-crm",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/15-it-consultant.pdf",
+        "pdf/71-onet-systems-analysts-hot-technologies.pdf"
+      ]
+    },
+    {
+      "skill_id": "cloud-computing",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/71-onet-systems-analysts-hot-technologies.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "stakeholder-management",
+    "cybersecurity",
+    "pmp",
+    "technical-documentation",
+    "hardware-troubleshooting"
+  ],
+  "soft_skills": [
+    "communication",
+    "interpersonal",
+    "critical-thinking",
+    "problem-solving",
+    "adaptability"
+  ],
+  "work_style": {
+    "teamwork": 0.7,
+    "structure": 0.4,
+    "ambiguity": 0.8,
+    "pressure": 0.6,
+    "innovation": 0.6,
+    "leadership": 0.6
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/15-it-consultant.pdf",
+      "url": "https://www.indeed.com/career-advice/finding-a-job/what-is-an-it-consultant",
+      "language": "en"
+    },
+    {
+      "file": "pdf/36-onet-computer-systems-analysts.pdf",
+      "url": "https://www.onetonline.org/link/details/15-1211.00",
+      "language": "en"
+    },
+    {
+      "file": "pdf/63-coursera-technology-consultant-role.pdf",
+      "url": "https://www.coursera.org/career-academy/roles/technology-consultant",
+      "language": "en"
+    },
+    {
+      "file": "pdf/62-coursera-technology-consulting.pdf",
+      "url": "https://www.coursera.org/articles/what-is-technology-consulting",
+      "language": "en"
+    },
+    {
+      "file": "pdf/71-onet-systems-analysts-hot-technologies.pdf",
+      "url": "https://www.onetonline.org/link/hot_tech/15-1211.00",
+      "language": "en"
+    }
+  ]
+}

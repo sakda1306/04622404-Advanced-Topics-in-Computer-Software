@@ -1,0 +1,114 @@
+{
+  "role_id": "ux-ui-designer",
+  "title_th": "นักออกแบบ UX/UI",
+  "title_en": "UX/UI Designer",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "ux-design",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/13-ux-designer.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "ui-design",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/13-ux-designer.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "figma",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/13-ux-designer.pdf",
+        "pdf/70-coursera-ux-career-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "wireframing",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/13-ux-designer.pdf"
+      ]
+    },
+    {
+      "skill_id": "ux-research",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/13-ux-designer.pdf"
+      ]
+    },
+    {
+      "skill_id": "responsive-design",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/76-coursera-ui-designer.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "web-accessibility",
+    "mobile-ui",
+    "graphic-design",
+    "html",
+    "css",
+    "web-design"
+  ],
+  "soft_skills": [
+    "creativity",
+    "empathy",
+    "communication",
+    "teamwork",
+    "analytical-thinking"
+  ],
+  "work_style": {
+    "teamwork": 0.7,
+    "structure": 0.4,
+    "ambiguity": 0.7,
+    "pressure": 0.5,
+    "innovation": 0.8,
+    "leadership": 0.3
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/13-ux-designer.pdf",
+      "url": "https://www.indeed.com/career-advice/careers/what-does-a-ux-designer-do",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/70-coursera-ux-career-guide.pdf",
+      "url": "https://www.coursera.org/resources/guide-to-changing-your-career-to-user-experience-ux",
+      "language": "en"
+    },
+    {
+      "file": "pdf/76-coursera-ui-designer.pdf",
+      "url": "https://www.coursera.org/articles/what-is-a-user-interface-ui-designer-guide",
+      "language": "en"
+    }
+  ]
+}

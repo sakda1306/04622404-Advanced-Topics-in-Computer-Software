@@ -1,0 +1,114 @@
+{
+  "role_id": "network-administrator",
+  "title_th": "ผู้ดูแลระบบเครือข่าย",
+  "title_en": "Network Administrator",
+  "career_stage": "entry",
+  "required": [
+    {
+      "skill_id": "networking",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/02-network-administrator.pdf",
+        "pdf/27-jobsdb-tech-starting-salary-guide.pdf"
+      ]
+    },
+    {
+      "skill_id": "tcp-ip",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/02-network-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "routing-switching",
+      "min_level": 2,
+      "weight": 3,
+      "basis": "source",
+      "evidence": [
+        "pdf/02-network-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "troubleshooting",
+      "min_level": 2,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/57-coursera-network-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "firewall",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/02-network-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "lan-wan",
+      "min_level": 1,
+      "weight": 2,
+      "basis": "source",
+      "evidence": [
+        "pdf/57-coursera-network-administrator.pdf"
+      ]
+    },
+    {
+      "skill_id": "monitoring",
+      "min_level": 1,
+      "weight": 1,
+      "basis": "source",
+      "evidence": [
+        "pdf/02-network-administrator.pdf"
+      ]
+    }
+  ],
+  "nice_to_have": [
+    "cisco",
+    "comptia",
+    "active-directory",
+    "identity-access",
+    "windows-server",
+    "linux",
+    "network-security"
+  ],
+  "soft_skills": [
+    "problem-solving",
+    "communication"
+  ],
+  "work_style": {
+    "teamwork": 0.5,
+    "structure": 0.7,
+    "ambiguity": 0.3,
+    "pressure": 0.7,
+    "innovation": 0.3,
+    "leadership": 0.2
+  },
+  "author": "Phanlop Boonleua",
+  "reviewer": "sakda1306",
+  "status": "reviewed",
+  "updated_at": "2026-11-03",
+  "sources": [
+    {
+      "file": "pdf/02-network-administrator.pdf",
+      "url": "https://www.indeed.com/career-advice/interviewing/network-administrator-interview-questions",
+      "language": "en"
+    },
+    {
+      "file": "pdf/27-jobsdb-tech-starting-salary-guide.pdf",
+      "url": "https://th.jobsdb.com/th/career-advice/article/tech-starting-salary-guide",
+      "language": "th"
+    },
+    {
+      "file": "pdf/57-coursera-network-administrator.pdf",
+      "url": "https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide",
+      "language": "en"
+    }
+  ]
+}

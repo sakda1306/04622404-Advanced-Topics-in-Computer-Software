@@ -32,3 +32,7 @@ Week 4–5 are my individual work (no team repository).
 | 5 | RAG problems found by testing my week 4 system (vocabulary mismatch, data quality, chunking, memory, evaluation) with simulation scripts | [`week5/`](week5/) |
 | 6 | Team D project (Travel Safety Assistant): API Backend (module 02), team coordination, integration of all modules | [`week6/`](week6/) |
 | 7 | Team D-II project (Football Assistant): API Backend (module 02), Retrieval (module 05), team coordination | [`week7/`](week7/) |
+
+## Final Project
+
+[CareerMirror project files](Final/) — [Team repository](https://github.com/sakda1306/Advanced-Topic-in-Computer-Software-Course-Career-Mirror)
